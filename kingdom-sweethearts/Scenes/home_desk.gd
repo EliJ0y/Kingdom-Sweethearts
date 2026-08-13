@@ -12,7 +12,7 @@ func _process(delta: float) -> void:
 
 
 func _on_scroll_icon_pressed() -> void:
-	pass # Replace with function body.
+	get_tree().change_scene_to_file("res://Scenes/scrolls.tscn")
 
 
 func _on_town_icon_pressed() -> void:
