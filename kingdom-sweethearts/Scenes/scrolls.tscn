@@ -5,7 +5,10 @@
 [ext_resource type="Texture2D" uid="uid://574o5nh84p60" path="res://Graphics/Tied Scroll (Silvester).png" id="2_vcovl"]
 [ext_resource type="Texture2D" uid="uid://qc5rdfnfa2qg" path="res://Graphics/Tied Scroll (Kohan).png" id="3_t1w5x"]
 [ext_resource type="FontFile" uid="uid://cculgpajct2e0" path="res://Fonts/Nickainley-Normal.otf" id="4_bbba4"]
+[ext_resource type="FontFile" uid="uid://bxxjm50ms0pnt" path="res://Fonts/Fontspring-DEMO-theseasons-reg.otf" id="4_ewrjh"]
+[ext_resource type="Texture2D" uid="uid://bteijx4vbhw0e" path="res://Graphics/Coins Sparkle.png" id="4_pu1om"]
 [ext_resource type="Texture2D" uid="uid://cqxtbuaojmee" path="res://Graphics/Opened Scroll.png" id="5_o5rgq"]
+[ext_resource type="Texture2D" uid="uid://c7mlstotxyst5" path="res://Graphics/Coins.PNG" id="5_qmqk0"]
 
 [node name="Scrolls" type="Node2D" unique_id=1368439968]
 script = ExtResource("1_t1w5x")
@@ -24,13 +27,38 @@ grow_horizontal = 2
 grow_vertical = 2
 mouse_filter = 2
 
+[node name="Coin Counter" type="Sprite2D" parent="CanvasLayer" unique_id=1169980361]
+visible = false
+position = Vector2(96, 48)
+scale = Vector2(0.6198655, 0.6198655)
+texture = ExtResource("5_qmqk0")
+
+[node name="Coin Text" type="Label" parent="CanvasLayer/Coin Counter" unique_id=433055581]
+offset_left = 148.4193
+offset_right = 338.4193
+offset_bottom = 104.0
+theme_override_fonts/font = ExtResource("4_ewrjh")
+theme_override_font_sizes/font_size = 100
+text = "80G"
+
 [node name="Opened Scroll" type="Sprite2D" parent="CanvasLayer" unique_id=627563621]
 visible = false
 position = Vector2(960, 540)
 scale = Vector2(1.3, 1.3)
 texture = ExtResource("5_o5rgq")
 
-[node name="Label" type="Label" parent="CanvasLayer/Opened Scroll" unique_id=1205525138]
+[node name="Coins Sparkle" type="Sprite2D" parent="CanvasLayer/Opened Scroll" unique_id=1378459203]
+position = Vector2(8.461548, -4.615387)
+scale = Vector2(1.2159002, 0.8875767)
+texture = ExtResource("4_pu1om")
+
+[node name="Coins" type="Sprite2D" parent="CanvasLayer/Opened Scroll/Coins Sparkle" unique_id=425604575]
+position = Vector2(-1.5631104, -7.07341)
+scale = Vector2(0.18473172, 0.1999007)
+texture = ExtResource("5_qmqk0")
+
+[node name="Silv Scroll" type="Label" parent="CanvasLayer/Opened Scroll" unique_id=1205525138]
+visible = false
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
