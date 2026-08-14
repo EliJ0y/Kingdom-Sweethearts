@@ -10,6 +10,7 @@
 [ext_resource type="Texture2D" uid="uid://cqxtbuaojmee" path="res://Graphics/Opened Scroll.png" id="5_o5rgq"]
 [ext_resource type="Texture2D" uid="uid://c7mlstotxyst5" path="res://Graphics/Coins.PNG" id="5_qmqk0"]
 [ext_resource type="Texture2D" uid="uid://de7fmarngvlv5" path="res://Graphics/Ribbon Arrow.png" id="8_hw0rl"]
+[ext_resource type="FontFile" uid="uid://2igbcqe8jbxy" path="res://Fonts/BERNIER™ Regular.ttf" id="8_k3gyr"]
 
 [node name="Scrolls" type="Node2D" unique_id=1368439968]
 script = ExtResource("1_t1w5x")
@@ -72,6 +73,23 @@ grow_vertical = 2
 scale = Vector2(0.70779884, 0.6540894)
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("4_bbba4")
+theme_override_font_sizes/font_size = 26
+autowrap_mode = 3
+
+[node name="Kohan Scroll" type="Label" parent="CanvasLayer/Opened Scroll" unique_id=348963257]
+visible = false
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -152.30768
+offset_top = -176.92308
+offset_right = -152.30768
+offset_bottom = -176.9231
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.70779884, 0.6540894)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("8_k3gyr")
 theme_override_font_sizes/font_size = 26
 autowrap_mode = 3
 
