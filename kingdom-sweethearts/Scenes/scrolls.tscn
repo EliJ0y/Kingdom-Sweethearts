@@ -9,6 +9,7 @@
 [ext_resource type="Texture2D" uid="uid://bteijx4vbhw0e" path="res://Graphics/Coins Sparkle.png" id="4_pu1om"]
 [ext_resource type="Texture2D" uid="uid://cqxtbuaojmee" path="res://Graphics/Opened Scroll.png" id="5_o5rgq"]
 [ext_resource type="Texture2D" uid="uid://c7mlstotxyst5" path="res://Graphics/Coins.PNG" id="5_qmqk0"]
+[ext_resource type="Texture2D" uid="uid://de7fmarngvlv5" path="res://Graphics/Ribbon Arrow.png" id="8_hw0rl"]
 
 [node name="Scrolls" type="Node2D" unique_id=1368439968]
 script = ExtResource("1_t1w5x")
@@ -39,7 +40,7 @@ offset_right = 338.4193
 offset_bottom = 104.0
 theme_override_fonts/font = ExtResource("4_ewrjh")
 theme_override_font_sizes/font_size = 100
-text = "80G"
+text = "80GCoi"
 
 [node name="Opened Scroll" type="Sprite2D" parent="CanvasLayer" unique_id=627563621]
 visible = false
@@ -72,16 +73,26 @@ scale = Vector2(0.70779884, 0.6540894)
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("4_bbba4")
 theme_override_font_sizes/font_size = 26
-text = "Hail and well met from Oceirea! 
-
-I am Duke Silvester, who is set to be matchmade with Duke Kohan from Wildegon in three days.
-
-I have heard much of his strength and admire him greatly! I do hope these feelings are mutual. 
-
-To help you in your preparations, I have heard that Duke Kohan has a soft spot for flowers. Perhaps a bouquet would be a nice gift? 
-
-I eagerly anticipate meeting him!"
 autowrap_mode = 3
+
+[node name="Ribbon Arrow" type="TextureButton" parent="CanvasLayer/Opened Scroll" unique_id=1263998519]
+visible = false
+offset_left = 90.76924
+offset_top = 160.76924
+offset_right = 806.7692
+offset_bottom = 374.76926
+scale = Vector2(0.23139471, 0.23139471)
+texture_normal = ExtResource("8_hw0rl")
+
+[node name="Next Scroll" type="Label" parent="CanvasLayer/Opened Scroll/Ribbon Arrow" unique_id=941201896]
+layout_mode = 0
+offset_left = 192.81076
+offset_top = 63.162144
+offset_right = 571.8108
+offset_bottom = 146.16216
+theme_override_fonts/font = ExtResource("4_ewrjh")
+theme_override_font_sizes/font_size = 80
+text = "Next Scroll"
 
 [node name="Tied Scroll (Silv)" type="TextureButton" parent="CanvasLayer" unique_id=1428922647]
 offset_left = 400.0
@@ -101,5 +112,6 @@ scale = Vector2(1.2568711, 1.2568711)
 action_mode = 0
 texture_normal = ExtResource("3_t1w5x")
 
+[connection signal="pressed" from="CanvasLayer/Opened Scroll/Ribbon Arrow" to="." method="_on_ribbon_arrow_pressed"]
 [connection signal="pressed" from="CanvasLayer/Tied Scroll (Silv)" to="." method="_on_tied_scroll_silv_pressed"]
 [connection signal="pressed" from="CanvasLayer/Tied Scroll (Kohan)" to="." method="_on_tied_scroll_kohan_pressed"]
