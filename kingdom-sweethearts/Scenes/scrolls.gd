@@ -16,7 +16,7 @@ var total_coins = 0
 
 var silv_scroll_pressed = false
 var kohan_scroll_pressed = false
-
+var stop_text_animation = false
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
@@ -27,6 +27,11 @@ func _ready() -> void:
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
 	pass
+	
+func _input(event: InputEvent) -> void:
+	if Input.is_action_just_pressed("Enter") && silv_scroll.visible_characters > 0:
+		stop_text_animation = true
+		silv_scroll.visible_characters = -1
 
 
 func _on_tied_scroll_silv_pressed() -> void:
@@ -82,14 +87,11 @@ func _type_scroll_silv() -> void:
 	await get_tree().create_timer(0.5).timeout
 	silv_scroll.visible_characters = 0
 	
-	while silv_scroll.visible_characters < silv_scroll.text.length():
+	while silv_scroll.visible_characters < silv_scroll.text.length() && stop_text_animation == false:
 		silv_scroll.visible_characters += 1
 		await get_tree().create_timer(0.03).timeout
-	if Input.is_action_just_pressed("Enter"):
-		print("Enter Pressed")
-		silv_scroll.visible_characters == silv_scroll.text.length()
 	
-	if silv_scroll.visible_characters == silv_scroll.text.length():
+	if silv_scroll.visible_characters == silv_scroll.text.length() || silv_scroll.visible_characters == -1:
 		await get_tree().create_timer(0.5).timeout
 		$"CanvasLayer/Opened Scroll/Ribbon Arrow".show()
 
@@ -97,7 +99,9 @@ func _on_ribbon_arrow_pressed() -> void:
 	$"CanvasLayer/Opened Scroll".hide()
 	if silv_scroll_pressed:
 		$"CanvasLayer/Tied Scroll (Kohan)".show()
+		$"CanvasLayer/Opened Scroll/Ribbon Arrow".hide()
 		_on_tied_scroll_kohan_pressed()
 	if kohan_scroll_pressed:
 		$"CanvasLayer/Tied Scroll (Silv)".show()
+		$"CanvasLayer/Opened Scroll/Ribbon Arrow".hide()
 		_on_tied_scroll_silv_pressed()
