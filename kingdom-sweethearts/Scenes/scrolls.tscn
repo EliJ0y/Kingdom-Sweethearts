@@ -1,9 +1,7 @@
 [gd_scene format=3 uid="uid://if26wtpabve4"]
 
 [ext_resource type="Texture2D" uid="uid://yra6wmejvfs" path="res://Graphics/Home Desk.png" id="1_sryen"]
-[ext_resource type="Script" uid="uid://c0mmneywuh3j3" path="res://Scenes/scrolls.gd" id="1_t1w5x"]
-[ext_resource type="Texture2D" uid="uid://574o5nh84p60" path="res://Graphics/Tied Scroll (Silvester).png" id="2_vcovl"]
-[ext_resource type="Texture2D" uid="uid://qc5rdfnfa2qg" path="res://Graphics/Tied Scroll (Kohan).png" id="3_t1w5x"]
+[ext_resource type="Script" uid="uid://c0mmneywuh3j3" path="res://Scripts/scrolls.gd" id="1_t1w5x"]
 [ext_resource type="FontFile" uid="uid://cculgpajct2e0" path="res://Fonts/Nickainley-Normal.otf" id="4_bbba4"]
 [ext_resource type="FontFile" uid="uid://bxxjm50ms0pnt" path="res://Fonts/Fontspring-DEMO-theseasons-reg.otf" id="4_ewrjh"]
 [ext_resource type="Texture2D" uid="uid://bteijx4vbhw0e" path="res://Graphics/Coins Sparkle.png" id="4_pu1om"]
@@ -59,7 +57,7 @@ position = Vector2(-1.5631104, -7.07341)
 scale = Vector2(0.18473172, 0.1999007)
 texture = ExtResource("5_qmqk0")
 
-[node name="Silv Scroll" type="Label" parent="CanvasLayer/Opened Scroll" unique_id=1205525138]
+[node name="Text 1" type="Label" parent="CanvasLayer/Opened Scroll" unique_id=1205525138]
 visible = false
 anchors_preset = 15
 anchor_right = 1.0
@@ -76,7 +74,7 @@ theme_override_fonts/font = ExtResource("4_bbba4")
 theme_override_font_sizes/font_size = 26
 autowrap_mode = 3
 
-[node name="Kohan Scroll" type="Label" parent="CanvasLayer/Opened Scroll" unique_id=348963257]
+[node name="Text 2" type="Label" parent="CanvasLayer/Opened Scroll" unique_id=348963257]
 visible = false
 anchors_preset = 15
 anchor_right = 1.0
@@ -112,24 +110,22 @@ theme_override_fonts/font = ExtResource("4_ewrjh")
 theme_override_font_sizes/font_size = 80
 text = "Next Scroll"
 
-[node name="Tied Scroll (Silv)" type="TextureButton" parent="CanvasLayer" unique_id=1428922647]
+[node name="Tied Scroll 1" type="TextureButton" parent="CanvasLayer" unique_id=1428922647]
 offset_left = 400.0
 offset_top = 440.0
 offset_right = 760.0
 offset_bottom = 603.0
 scale = Vector2(1.2568711, 1.2568711)
 action_mode = 0
-texture_normal = ExtResource("2_vcovl")
 
-[node name="Tied Scroll (Kohan)" type="TextureButton" parent="CanvasLayer" unique_id=271329927]
+[node name="Tied Scroll 2" type="TextureButton" parent="CanvasLayer" unique_id=271329927]
 offset_left = 1100.0
 offset_top = 440.0
 offset_right = 1463.0001
 offset_bottom = 604.0001
 scale = Vector2(1.2568711, 1.2568711)
 action_mode = 0
-texture_normal = ExtResource("3_t1w5x")
 
 [connection signal="pressed" from="CanvasLayer/Opened Scroll/Ribbon Arrow" to="." method="_on_ribbon_arrow_pressed"]
-[connection signal="pressed" from="CanvasLayer/Tied Scroll (Silv)" to="." method="_on_tied_scroll_silv_pressed"]
-[connection signal="pressed" from="CanvasLayer/Tied Scroll (Kohan)" to="." method="_on_tied_scroll_kohan_pressed"]
+[connection signal="pressed" from="CanvasLayer/Tied Scroll 1" to="." method="_on_tied_scroll_silv_pressed"]
+[connection signal="pressed" from="CanvasLayer/Tied Scroll 2" to="." method="_on_tied_scroll_kohan_pressed"]
