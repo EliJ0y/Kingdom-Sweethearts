@@ -22,11 +22,11 @@ action_mode = 0
 texture_normal = ExtResource("2_ffuct")
 
 [node name="Town Icon" type="TextureButton" parent="." unique_id=681816291]
-offset_left = 1744.0
-offset_top = 219.0
-offset_right = 2247.0
-offset_bottom = 724.0
-scale = Vector2(0.25373322, 0.25373322)
+offset_left = 51.0
+offset_top = 156.0
+offset_right = 554.0
+offset_bottom = 661.0
+scale = Vector2(0.9549716, 0.7962345)
 action_mode = 0
 texture_normal = ExtResource("3_eupsi")
 

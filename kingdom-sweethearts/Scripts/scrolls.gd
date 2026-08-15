@@ -8,7 +8,6 @@ var scroll_2 = GlobalTracker.scrolls_list[1]
 @onready var tied_scroll_1 = $"CanvasLayer/Tied Scroll 1"
 @onready var tied_scroll_2 = $"CanvasLayer/Tied Scroll 2"
 
-var scroll_text
 var scroll_1_text = "\n\n".join(scroll_1.lines)
 var scroll_2_text = "\n\n".join(scroll_2.lines)
 
@@ -17,6 +16,7 @@ var total_coins = 0
 
 var scroll_1_pressed = false
 var scroll_2_pressed = false
+var scroll_count = 0
 var stop_text_animation = false
 
 
@@ -43,16 +43,17 @@ func _input(event: InputEvent) -> void:
 		opened_scroll_2.visible_characters = -1
 
 
-func _on_tied_scroll_silv_pressed() -> void:
-	tied_scroll_1.disabled = true 
+func _on_tied_scroll_1_pressed() -> void:
+	tied_scroll_1.disabled = true
 	tied_scroll_2.hide()
-	scroll_1_pressed = true;
+	scroll_1_pressed = true
+	scroll_count += 1
 	
-	var silvtween = create_tween()
-	silvtween.tween_property($"CanvasLayer/Tied Scroll (Silv)", "position", Vector2(740, 440), 0.8)
-	silvtween.tween_callback(_open_scroll_silv)
-	
-func _open_scroll_silv() -> void:
+	var scroll_1_tween = create_tween()
+	scroll_1_tween.tween_property($"CanvasLayer/Tied Scroll 1", "position", Vector2(740, 440), 0.8)
+	scroll_1_tween.tween_callback(open_scroll_1)
+
+func open_scroll_1() -> void:
 	await get_tree().create_timer(0.2).timeout
 	tied_scroll_1.hide()
 	$"CanvasLayer/Opened Scroll".show()
@@ -60,16 +61,17 @@ func _open_scroll_silv() -> void:
 	_coins_appear()
 
 
-func _on_tied_scroll_kohan_pressed() -> void:
+func _on_tied_scroll_2_pressed() -> void:
 	tied_scroll_2.disabled = true
 	tied_scroll_1.hide()
 	scroll_2_pressed = true
+	scroll_count += 1
 	
-	var kohantween = create_tween()
-	kohantween.tween_property($"CanvasLayer/Tied Scroll (Kohan)", "position", Vector2(740, 440), 0.8)
-	kohantween.tween_callback(_open_scroll_kohan)
+	var scroll_2_tween = create_tween()
+	scroll_2_tween.tween_property($"CanvasLayer/Tied Scroll 2", "position", Vector2(740, 440), 0.8)
+	scroll_2_tween.tween_callback(open_scroll_2)
 
-func _open_scroll_kohan() -> void:
+func open_scroll_2() -> void:
 	await get_tree().create_timer(0.2).timeout
 	tied_scroll_2.hide()
 	$"CanvasLayer/Opened Scroll".show()
@@ -96,7 +98,6 @@ func _type_scroll_text() -> void:
 	if scroll_1_pressed:
 		opened_scroll_2.hide()
 		opened_scroll_1.show()
-		scroll_text = scroll_1_text
 		
 		while opened_scroll_1.visible_characters < opened_scroll_1.text.length() && stop_text_animation == false:
 			opened_scroll_1.visible_characters += 1
@@ -105,28 +106,34 @@ func _type_scroll_text() -> void:
 	if scroll_2_pressed:
 		opened_scroll_1.hide()
 		opened_scroll_2.show()
-		scroll_text = scroll_2_text
 		
 		while opened_scroll_2.visible_characters < opened_scroll_2.text.length() && stop_text_animation == false:
 			opened_scroll_2.visible_characters += 1
 			await get_tree().create_timer(0.03).timeout
 		
 	await get_tree().create_timer(0.5).timeout
-	
-	if opened_scroll_1.visible_characters == opened_scroll_1.text.length() || opened_scroll_1.visible_characters == -1:
-		await get_tree().create_timer(0.5).timeout
-		$"CanvasLayer/Opened Scroll/Ribbon Arrow".show()
-	if opened_scroll_2.visible_characters == opened_scroll_2.text.length() || opened_scroll_2.visible_characters == -1:
-		await get_tree().create_timer(0.5).timeout
-		$"CanvasLayer/Opened Scroll/Ribbon Arrow".show()
+	if scroll_count < 2:
+		if (opened_scroll_1.visible_characters == opened_scroll_1.text.length() || opened_scroll_1.visible_characters == -1):
+			await get_tree().create_timer(0.5).timeout
+			$"CanvasLayer/Opened Scroll/Ribbon Arrow".show()
+		else: if (opened_scroll_2.visible_characters == opened_scroll_2.text.length() || opened_scroll_2.visible_characters == -1):
+			await get_tree().create_timer(0.5).timeout
+			$"CanvasLayer/Opened Scroll/Ribbon Arrow".show()
 
 func _on_ribbon_arrow_pressed() -> void:
 	$"CanvasLayer/Opened Scroll".hide()
+	stop_text_animation = false
+	
 	if scroll_1_pressed:
+		scroll_1_pressed = false
 		tied_scroll_2.show()
 		$"CanvasLayer/Opened Scroll/Ribbon Arrow".hide()
-		_on_tied_scroll_kohan_pressed()
+		opened_scroll_1.hide()
+		_on_tied_scroll_2_pressed()
+		
 	if scroll_2_pressed:
+		scroll_2_pressed = false
 		tied_scroll_1.show()
 		$"CanvasLayer/Opened Scroll/Ribbon Arrow".hide()
-		_on_tied_scroll_silv_pressed()
+		opened_scroll_2.hide()
+		_on_tied_scroll_1_pressed()

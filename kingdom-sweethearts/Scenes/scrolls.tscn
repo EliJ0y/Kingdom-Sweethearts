@@ -128,4 +128,6 @@ action_mode = 0
 
 [connection signal="pressed" from="CanvasLayer/Opened Scroll/Ribbon Arrow" to="." method="_on_ribbon_arrow_pressed"]
 [connection signal="pressed" from="CanvasLayer/Tied Scroll 1" to="." method="_on_tied_scroll_silv_pressed"]
+[connection signal="pressed" from="CanvasLayer/Tied Scroll 1" to="." method="_on_tied_scroll_1_pressed"]
 [connection signal="pressed" from="CanvasLayer/Tied Scroll 2" to="." method="_on_tied_scroll_kohan_pressed"]
+[connection signal="pressed" from="CanvasLayer/Tied Scroll 2" to="." method="_on_tied_scroll_2_pressed"]
