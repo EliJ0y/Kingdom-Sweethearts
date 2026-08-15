@@ -116,7 +116,7 @@ func _type_scroll_text() -> void:
 		if (opened_scroll_1.visible_characters == opened_scroll_1.text.length() || opened_scroll_1.visible_characters == -1):
 			await get_tree().create_timer(0.5).timeout
 			$"CanvasLayer/Opened Scroll/Ribbon Arrow".show()
-		else: if (opened_scroll_2.visible_characters == opened_scroll_2.text.length() || opened_scroll_2.visible_characters == -1):
+		elif (opened_scroll_2.visible_characters == opened_scroll_2.text.length() || opened_scroll_2.visible_characters == -1):
 			await get_tree().create_timer(0.5).timeout
 			$"CanvasLayer/Opened Scroll/Ribbon Arrow".show()
 
@@ -131,7 +131,7 @@ func _on_ribbon_arrow_pressed() -> void:
 		opened_scroll_1.hide()
 		_on_tied_scroll_2_pressed()
 		
-	if scroll_2_pressed:
+	elif scroll_2_pressed:
 		scroll_2_pressed = false
 		tied_scroll_1.show()
 		$"CanvasLayer/Opened Scroll/Ribbon Arrow".hide()

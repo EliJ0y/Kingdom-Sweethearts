@@ -2,6 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://yra6wmejvfs" path="res://Graphics/Home Desk.png" id="1_sryen"]
 [ext_resource type="Script" uid="uid://c0mmneywuh3j3" path="res://Scripts/scrolls.gd" id="1_t1w5x"]
+[ext_resource type="Texture2D" uid="uid://b1spnq58mcm32" path="res://Graphics/Town Icon.png" id="3_hw0rl"]
 [ext_resource type="FontFile" uid="uid://cculgpajct2e0" path="res://Fonts/Nickainley-Normal.otf" id="4_bbba4"]
 [ext_resource type="FontFile" uid="uid://bxxjm50ms0pnt" path="res://Fonts/Fontspring-DEMO-theseasons-reg.otf" id="4_ewrjh"]
 [ext_resource type="Texture2D" uid="uid://bteijx4vbhw0e" path="res://Graphics/Coins Sparkle.png" id="4_pu1om"]
@@ -16,6 +17,15 @@ script = ExtResource("1_t1w5x")
 [node name="Desk" type="Sprite2D" parent="." unique_id=304354609]
 texture = ExtResource("1_sryen")
 centered = false
+
+[node name="Town Icon" type="TextureButton" parent="." unique_id=1347654041]
+offset_left = 51.0
+offset_top = 156.0
+offset_right = 554.0
+offset_bottom = 661.0
+scale = Vector2(0.9549716, 0.7962345)
+action_mode = 0
+texture_normal = ExtResource("3_hw0rl")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1123515218]
 
