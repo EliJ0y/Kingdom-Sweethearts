@@ -111,6 +111,7 @@ scale = Vector2(0.23139471, 0.23139471)
 texture_normal = ExtResource("8_hw0rl")
 
 [node name="Next Scroll" type="Label" parent="CanvasLayer/Opened Scroll/Ribbon Arrow" unique_id=941201896]
+visible = false
 layout_mode = 0
 offset_left = 192.81076
 offset_top = 63.162144
@@ -119,6 +120,17 @@ offset_bottom = 146.16216
 theme_override_fonts/font = ExtResource("4_ewrjh")
 theme_override_font_sizes/font_size = 80
 text = "Next Scroll"
+
+[node name="Finish Reading" type="Label" parent="CanvasLayer/Opened Scroll/Ribbon Arrow" unique_id=1273736827]
+visible = false
+layout_mode = 0
+offset_left = 122.99997
+offset_top = 63.162144
+offset_right = 634.0
+offset_bottom = 146.16216
+theme_override_fonts/font = ExtResource("4_ewrjh")
+theme_override_font_sizes/font_size = 80
+text = "Finish Reading"
 
 [node name="Tied Scroll 1" type="TextureButton" parent="CanvasLayer" unique_id=1428922647]
 offset_left = 400.0
