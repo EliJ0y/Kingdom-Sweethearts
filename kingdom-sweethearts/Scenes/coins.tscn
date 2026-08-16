@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://brewn7dcybla"]
 
-[ext_resource type="Script" uid="uid://btaq4hng4suxm" path="res://Scenes/coins.gd" id="1_m2shm"]
+[ext_resource type="Script" uid="uid://btaq4hng4suxm" path="res://Scripts/coins.gd" id="1_m2shm"]
 [ext_resource type="Texture2D" uid="uid://c7mlstotxyst5" path="res://Graphics/Coins.PNG" id="1_ojwyu"]
 [ext_resource type="FontFile" uid="uid://bxxjm50ms0pnt" path="res://Fonts/Fontspring-DEMO-theseasons-reg.otf" id="2_m2shm"]
 

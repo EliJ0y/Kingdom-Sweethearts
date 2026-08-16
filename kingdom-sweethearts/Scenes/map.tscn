@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://e43h6uusebdy"]
 
 [ext_resource type="Texture2D" uid="uid://b1spnq58mcm32" path="res://Graphics/Town Icon.png" id="1_ci6au"]
-[ext_resource type="Script" uid="uid://f2a3njcvtagk" path="res://Scenes/map.gd" id="1_p3ir5"]
+[ext_resource type="Script" uid="uid://f2a3njcvtagk" path="res://Scripts/map.gd" id="1_p3ir5"]
 [ext_resource type="Texture2D" uid="uid://b47an7qgesya4" path="res://Graphics/Craft Shop/Craft Shop Icon.png" id="3_p3ir5"]
 
 [node name="Map" type="Node2D" unique_id=1125190912]
