@@ -49,7 +49,6 @@ offset_right = 338.4193
 offset_bottom = 104.0
 theme_override_fonts/font = ExtResource("4_ewrjh")
 theme_override_font_sizes/font_size = 100
-text = "80GCoi"
 
 [node name="Opened Scroll" type="Sprite2D" parent="CanvasLayer" unique_id=627563621]
 visible = false

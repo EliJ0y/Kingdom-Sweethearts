@@ -1,0 +1,24 @@
+[gd_scene format=3 uid="uid://brewn7dcybla"]
+
+[ext_resource type="Script" uid="uid://btaq4hng4suxm" path="res://Scenes/coins.gd" id="1_m2shm"]
+[ext_resource type="Texture2D" uid="uid://c7mlstotxyst5" path="res://Graphics/Coins.PNG" id="1_ojwyu"]
+[ext_resource type="FontFile" uid="uid://bxxjm50ms0pnt" path="res://Fonts/Fontspring-DEMO-theseasons-reg.otf" id="2_m2shm"]
+
+[node name="Coins" type="Node2D" unique_id=1568081122]
+script = ExtResource("1_m2shm")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=730694245]
+
+[node name="Coin Counter" type="Sprite2D" parent="CanvasLayer" unique_id=1805449455]
+visible = false
+position = Vector2(96, 48)
+scale = Vector2(0.6198655, 0.6198655)
+texture = ExtResource("1_ojwyu")
+
+[node name="Coin Text" type="Label" parent="CanvasLayer/Coin Counter" unique_id=146384966]
+offset_left = 148.4193
+offset_right = 338.4193
+offset_bottom = 104.0
+theme_override_colors/font_color = Color(0.4, 0.14000002, 0, 1)
+theme_override_fonts/font = ExtResource("2_m2shm")
+theme_override_font_sizes/font_size = 100
