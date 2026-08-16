@@ -97,7 +97,14 @@ offset_right = 795.0
 offset_bottom = 250.0
 theme_override_colors/font_color = Color(0.4, 0.14117648, 0, 1)
 theme_override_fonts/font = ExtResource("10_4tw14")
-theme_override_font_sizes/font_size = 60
+theme_override_font_sizes/font_size = 50
+autowrap_mode = 3
+
+[node name="Coins (Cost)" type="Sprite2D" parent="CanvasLayer/Shop Panel" unique_id=2021464498]
+
+[node name="Cost Amount" type="Label" parent="CanvasLayer/Shop Panel/Coins (Cost)" unique_id=56582070]
+offset_right = 40.0
+offset_bottom = 23.0
 
 [connection signal="pressed" from="CanvasLayer/Plain (Bundle)" to="." method="_on_plain_bundle_pressed"]
 [connection signal="pressed" from="CanvasLayer/Plain (Stack)" to="." method="_on_plain_stack_pressed"]

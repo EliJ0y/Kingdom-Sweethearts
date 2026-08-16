@@ -1,0 +1,8 @@
+[gd_resource type="Resource" script_class="ShopsResource" format=3 uid="uid://boormkj54se3g"]
+
+[ext_resource type="Script" uid="uid://s28xadn5y5j3" path="res://Scripts/shops_resource.gd" id="1_sbx6e"]
+
+[resource]
+script = ExtResource("1_sbx6e")
+description = "A bundle of plain paper and envelopes."
+metadata/_custom_type_script = "uid://s28xadn5y5j3"
