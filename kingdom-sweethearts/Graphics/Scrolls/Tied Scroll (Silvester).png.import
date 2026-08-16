@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://beqk7eama4iqb"
-path="res://.godot/imported/Craft Shop.png-bd1889fe742ceae07fc9c9b40c115075.ctex"
+uid="uid://574o5nh84p60"
+path="res://.godot/imported/Tied Scroll (Silvester).png-f4b3da0238a5f58a0d016c7af1d6275e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Graphics/Craft Shop.png"
-dest_files=["res://.godot/imported/Craft Shop.png-bd1889fe742ceae07fc9c9b40c115075.ctex"]
+source_file="res://Graphics/Scrolls/Tied Scroll (Silvester).png"
+dest_files=["res://.godot/imported/Tied Scroll (Silvester).png-f4b3da0238a5f58a0d016c7af1d6275e.ctex"]
 
 [params]
 

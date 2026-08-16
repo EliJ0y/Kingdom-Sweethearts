@@ -1,0 +1,72 @@
+[gd_scene format=3 uid="uid://dfawuledx7cdk"]
+
+[ext_resource type="Texture2D" uid="uid://ds8554fvjwlan" path="res://Graphics/Craft Shop/Craft Shop BG.png" id="1_e5462"]
+[ext_resource type="Script" uid="uid://bq85fklcjucp8" path="res://Scenes/craft_shop.gd" id="1_s5bet"]
+[ext_resource type="Texture2D" uid="uid://b4o27e0jsg2da" path="res://Graphics/Craft Shop/Craft Shop Stocked.png" id="2_tm15x"]
+[ext_resource type="Texture2D" uid="uid://dfmghvv276jir" path="res://Graphics/Craft Shop/Plain (bundle).png" id="3_2gak8"]
+[ext_resource type="Texture2D" uid="uid://cv63l7050s3sg" path="res://Graphics/Craft Shop/Plain (stack).png" id="4_s5bet"]
+[ext_resource type="Texture2D" uid="uid://drdhfqkuunbs2" path="res://Graphics/Craft Shop/Fancy (bundle).png" id="5_4tw14"]
+[ext_resource type="Texture2D" uid="uid://ccisbm8u2c1fs" path="res://Graphics/Craft Shop/Fancy (stack).png" id="6_nu1o7"]
+[ext_resource type="Texture2D" uid="uid://ba6qkr77ssvgm" path="res://Graphics/Craft Shop/Ornate (bundle).png" id="7_2todf"]
+[ext_resource type="Texture2D" uid="uid://ef4srtjb57e8" path="res://Graphics/Shop Panel.PNG" id="8_2gak8"]
+
+[node name="Craft Shop" type="Node2D" unique_id=461295048]
+script = ExtResource("1_s5bet")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1943395183]
+
+[node name="Craft Shop BG" type="Sprite2D" parent="CanvasLayer" unique_id=1938208358]
+texture = ExtResource("1_e5462")
+centered = false
+
+[node name="Craft Shop Stocked" type="Sprite2D" parent="CanvasLayer/Craft Shop BG" unique_id=114190973]
+visible = false
+texture = ExtResource("2_tm15x")
+centered = false
+
+[node name="Plain (Bundle)" type="TextureButton" parent="CanvasLayer" unique_id=1775277480]
+offset_left = 280.0
+offset_top = 305.0
+offset_right = 429.00046
+offset_bottom = 429.0
+texture_normal = ExtResource("3_2gak8")
+
+[node name="Plain (Stack)" type="TextureButton" parent="CanvasLayer" unique_id=1830893261]
+offset_left = 580.0
+offset_top = 258.0
+offset_right = 734.00037
+offset_bottom = 429.0
+texture_normal = ExtResource("4_s5bet")
+
+[node name="Fancy (Bundle)" type="TextureButton" parent="CanvasLayer" unique_id=740292856]
+offset_left = 880.0
+offset_top = 305.0
+offset_right = 1029.0004
+offset_bottom = 429.0
+texture_normal = ExtResource("5_4tw14")
+
+[node name="Fancy (Stack)" type="TextureButton" parent="CanvasLayer" unique_id=608997384]
+offset_left = 1180.0
+offset_top = 258.0
+offset_right = 1334.0004
+offset_bottom = 429.0
+texture_normal = ExtResource("6_nu1o7")
+
+[node name="Ornate (Bundle)" type="TextureButton" parent="CanvasLayer" unique_id=827374676]
+offset_left = 1480.0
+offset_top = 305.0
+offset_right = 1629.0004
+offset_bottom = 429.0
+texture_normal = ExtResource("7_2todf")
+
+[node name="Shop Panel" type="Sprite2D" parent="CanvasLayer" unique_id=1228542888]
+visible = false
+position = Vector2(550, 700)
+texture = ExtResource("8_2gak8")
+centered = false
+
+[connection signal="pressed" from="CanvasLayer/Plain (Bundle)" to="." method="_on_plain_bundle_pressed"]
+[connection signal="pressed" from="CanvasLayer/Plain (Stack)" to="." method="_on_plain_stack_pressed"]
+[connection signal="pressed" from="CanvasLayer/Fancy (Bundle)" to="." method="_on_fancy_bundle_pressed"]
+[connection signal="pressed" from="CanvasLayer/Fancy (Stack)" to="." method="_on_fancy_stack_pressed"]
+[connection signal="pressed" from="CanvasLayer/Ornate (Bundle)" to="." method="_on_ornate_bundle_pressed"]

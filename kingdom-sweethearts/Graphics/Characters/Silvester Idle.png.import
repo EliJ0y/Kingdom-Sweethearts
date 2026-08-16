@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://de7fmarngvlv5"
-path="res://.godot/imported/Ribbon Arrow.png-a6f9b74d5434313238b6667510c3f5f2.ctex"
+uid="uid://bd3wikugaacqs"
+path="res://.godot/imported/Silvester Idle.png-c697fcdceedd45ffb8e66892a1764370.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Graphics/Ribbon Arrow.png"
-dest_files=["res://.godot/imported/Ribbon Arrow.png-a6f9b74d5434313238b6667510c3f5f2.ctex"]
+source_file="res://Graphics/Characters/Silvester Idle.png"
+dest_files=["res://.godot/imported/Silvester Idle.png-c697fcdceedd45ffb8e66892a1764370.ctex"]
 
 [params]
 

@@ -1,7 +1,7 @@
 [gd_resource type="Resource" script_class="ScrollsResource" format=3 uid="uid://ddmrnwey55ckp"]
 
 [ext_resource type="Script" uid="uid://b8ely3pohkd0v" path="res://Scripts/scrolls_resource.gd" id="1_3k75i"]
-[ext_resource type="Texture2D" uid="uid://qc5rdfnfa2qg" path="res://Graphics/Tied Scroll (Kohan).png" id="2_srq50"]
+[ext_resource type="Texture2D" uid="uid://qc5rdfnfa2qg" path="res://Graphics/Scrolls/Tied Scroll (Kohan).png" id="2_srq50"]
 
 [resource]
 script = ExtResource("1_3k75i")

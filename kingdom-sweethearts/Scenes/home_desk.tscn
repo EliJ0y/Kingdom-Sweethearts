@@ -22,7 +22,7 @@ scale = Vector2(0.5159164, 0.5159164)
 action_mode = 0
 texture_normal = ExtResource("2_ffuct")
 
-[node name="Town Icon" type="TextureButton" parent="." unique_id=681816291]
+[node name="Map Icon" type="TextureButton" parent="." unique_id=681816291]
 offset_left = 51.0
 offset_top = 156.0
 offset_right = 554.0
@@ -34,4 +34,5 @@ texture_normal = ExtResource("3_eupsi")
 [node name="Coins" parent="." unique_id=1568081122 instance=ExtResource("5_o1j7g")]
 
 [connection signal="pressed" from="Scroll Icon" to="." method="_on_scroll_icon_pressed"]
-[connection signal="pressed" from="Town Icon" to="." method="_on_town_icon_pressed"]
+[connection signal="pressed" from="Map Icon" to="." method="_on_town_icon_pressed"]
+[connection signal="pressed" from="Map Icon" to="." method="_on_map_icon_pressed"]

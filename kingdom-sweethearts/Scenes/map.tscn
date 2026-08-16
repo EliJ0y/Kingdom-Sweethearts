@@ -1,0 +1,25 @@
+[gd_scene format=3 uid="uid://e43h6uusebdy"]
+
+[ext_resource type="Texture2D" uid="uid://b1spnq58mcm32" path="res://Graphics/Town Icon.png" id="1_ci6au"]
+[ext_resource type="Script" uid="uid://f2a3njcvtagk" path="res://Scenes/map.gd" id="1_p3ir5"]
+[ext_resource type="Texture2D" uid="uid://bkneqmgytr28f" path="res://Graphics/Craft Shop Icon.png" id="2_26yhd"]
+
+[node name="Map" type="Node2D" unique_id=1125190912]
+script = ExtResource("1_p3ir5")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=653549421]
+
+[node name="Map" type="Sprite2D" parent="CanvasLayer" unique_id=1759443944]
+scale = Vector2(3.8210738, 2.140594)
+texture = ExtResource("1_ci6au")
+centered = false
+
+[node name="Craft Shop Icon" type="TextureButton" parent="CanvasLayer" unique_id=1487133905]
+offset_left = 382.0
+offset_top = 288.0
+offset_right = 905.0
+offset_bottom = 765.0
+scale = Vector2(0.62735826, 0.62735826)
+texture_normal = ExtResource("2_26yhd")
+
+[connection signal="pressed" from="CanvasLayer/Craft Shop Icon" to="." method="_on_craft_shop_icon_pressed"]

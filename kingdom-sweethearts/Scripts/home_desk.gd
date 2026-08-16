@@ -14,6 +14,5 @@ func _on_scroll_icon_pressed() -> void:
 	if GlobalTracker.scroll_count < 2:
 		get_tree().change_scene_to_file("res://Scenes/scrolls.tscn")
 
-
-func _on_town_icon_pressed() -> void:
-	pass # Replace with function body.
+func _on_map_icon_pressed() -> void:
+	get_tree().change_scene_to_file("res://Scenes/map.tscn")

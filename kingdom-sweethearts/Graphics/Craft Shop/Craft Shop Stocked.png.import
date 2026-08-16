@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://qc5rdfnfa2qg"
-path="res://.godot/imported/Tied Scroll (Kohan).png-5f9cec16fc6fef23e8f0bd4182e41eff.ctex"
+uid="uid://b4o27e0jsg2da"
+path="res://.godot/imported/Craft Shop Stocked.png-91153c467d9d09c5332672dae12477f5.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Graphics/Tied Scroll (Kohan).png"
-dest_files=["res://.godot/imported/Tied Scroll (Kohan).png-5f9cec16fc6fef23e8f0bd4182e41eff.ctex"]
+source_file="res://Graphics/Craft Shop/Craft Shop Stocked.png"
+dest_files=["res://.godot/imported/Craft Shop Stocked.png-91153c467d9d09c5332672dae12477f5.ctex"]
 
 [params]
 

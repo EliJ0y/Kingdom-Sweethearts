@@ -6,9 +6,9 @@
 [ext_resource type="FontFile" uid="uid://cculgpajct2e0" path="res://Fonts/Nickainley-Normal.otf" id="4_bbba4"]
 [ext_resource type="FontFile" uid="uid://bxxjm50ms0pnt" path="res://Fonts/Fontspring-DEMO-theseasons-reg.otf" id="4_ewrjh"]
 [ext_resource type="Texture2D" uid="uid://bteijx4vbhw0e" path="res://Graphics/Coins Sparkle.png" id="4_pu1om"]
-[ext_resource type="Texture2D" uid="uid://cqxtbuaojmee" path="res://Graphics/Opened Scroll.png" id="5_o5rgq"]
+[ext_resource type="Texture2D" uid="uid://cqxtbuaojmee" path="res://Graphics/Scrolls/Opened Scroll.png" id="5_o5rgq"]
 [ext_resource type="Texture2D" uid="uid://c7mlstotxyst5" path="res://Graphics/Coins.PNG" id="5_qmqk0"]
-[ext_resource type="Texture2D" uid="uid://de7fmarngvlv5" path="res://Graphics/Ribbon Arrow.png" id="8_hw0rl"]
+[ext_resource type="Texture2D" uid="uid://de7fmarngvlv5" path="res://Graphics/Scrolls/Ribbon Arrow.png" id="8_hw0rl"]
 [ext_resource type="FontFile" uid="uid://2igbcqe8jbxy" path="res://Fonts/BERNIER™ Regular.ttf" id="8_k3gyr"]
 
 [node name="Scrolls" type="Node2D" unique_id=1368439968]
@@ -49,6 +49,7 @@ offset_right = 338.4193
 offset_bottom = 104.0
 theme_override_fonts/font = ExtResource("4_ewrjh")
 theme_override_font_sizes/font_size = 100
+text = "80GCoi"
 
 [node name="Opened Scroll" type="Sprite2D" parent="CanvasLayer" unique_id=627563621]
 visible = false
