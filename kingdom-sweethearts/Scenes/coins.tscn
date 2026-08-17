@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" uid="uid://btaq4hng4suxm" path="res://Scripts/coins.gd" id="1_m2shm"]
 [ext_resource type="Texture2D" uid="uid://c7mlstotxyst5" path="res://Graphics/Coins.PNG" id="1_ojwyu"]
-[ext_resource type="FontFile" uid="uid://bxxjm50ms0pnt" path="res://Fonts/Fontspring-DEMO-theseasons-reg.otf" id="2_m2shm"]
+[ext_resource type="FontFile" uid="uid://c1lr353bluq7k" path="res://Fonts/TheSeasons-Reg.otf" id="3_m2shm"]
 
 [node name="Coins" type="Node2D" unique_id=1568081122]
 script = ExtResource("1_m2shm")
@@ -20,5 +20,5 @@ offset_left = 148.4193
 offset_right = 338.4193
 offset_bottom = 104.0
 theme_override_colors/font_color = Color(0.4, 0.14000002, 0, 1)
-theme_override_fonts/font = ExtResource("2_m2shm")
+theme_override_fonts/font = ExtResource("3_m2shm")
 theme_override_font_sizes/font_size = 100

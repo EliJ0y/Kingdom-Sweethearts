@@ -2,8 +2,8 @@
 
 [ext_resource type="Texture2D" uid="uid://yra6wmejvfs" path="res://Graphics/Home Desk.png" id="1_nq32b"]
 [ext_resource type="Script" uid="uid://eo10k053o0vc" path="res://Scripts/home_desk.gd" id="1_tr8l1"]
-[ext_resource type="Texture2D" uid="uid://c7yr7v1bsqpcd" path="res://Graphics/Scroll Icon.png" id="2_ffuct"]
 [ext_resource type="Texture2D" uid="uid://b1spnq58mcm32" path="res://Graphics/Town Icon.png" id="3_eupsi"]
+[ext_resource type="PackedScene" uid="uid://cm6i7vcbypte4" path="res://Scenes/navigation.tscn" id="5_0ttai"]
 [ext_resource type="PackedScene" uid="uid://brewn7dcybla" path="res://Scenes/coins.tscn" id="5_o1j7g"]
 
 [node name="HomeDesk" type="Node2D" unique_id=719714100]
@@ -13,14 +13,7 @@ script = ExtResource("1_tr8l1")
 texture = ExtResource("1_nq32b")
 centered = false
 
-[node name="Scroll Icon" type="TextureButton" parent="." unique_id=1839782778]
-offset_left = 1695.0
-offset_top = 9.000015
-offset_right = 2115.0
-offset_bottom = 324.0
-scale = Vector2(0.5159164, 0.5159164)
-action_mode = 0
-texture_normal = ExtResource("2_ffuct")
+[node name="Coins" parent="." unique_id=1568081122 instance=ExtResource("5_o1j7g")]
 
 [node name="Map Icon" type="TextureButton" parent="." unique_id=681816291]
 offset_left = 51.0
@@ -31,8 +24,7 @@ scale = Vector2(0.9549716, 0.7962345)
 action_mode = 0
 texture_normal = ExtResource("3_eupsi")
 
-[node name="Coins" parent="." unique_id=1568081122 instance=ExtResource("5_o1j7g")]
+[node name="Navigation" parent="." unique_id=651092304 instance=ExtResource("5_0ttai")]
 
-[connection signal="pressed" from="Scroll Icon" to="." method="_on_scroll_icon_pressed"]
 [connection signal="pressed" from="Map Icon" to="." method="_on_town_icon_pressed"]
 [connection signal="pressed" from="Map Icon" to="." method="_on_map_icon_pressed"]

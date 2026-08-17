@@ -1,0 +1,39 @@
+[gd_scene format=3 uid="uid://cm6i7vcbypte4"]
+
+[ext_resource type="Texture2D" uid="uid://c7yr7v1bsqpcd" path="res://Graphics/Scroll Icon.png" id="1_ekuf8"]
+[ext_resource type="Script" uid="uid://mfvy44yu6jwn" path="res://Scripts/navigation.gd" id="1_gxgjm"]
+[ext_resource type="Texture2D" uid="uid://b1spnq58mcm32" path="res://Graphics/Town Icon.png" id="2_gxgjm"]
+[ext_resource type="Texture2D" uid="uid://dlnoq6f0qlp7m" path="res://Graphics/Home Icon.png" id="2_ut0uc"]
+
+[node name="Navigation" type="Node2D" unique_id=651092304]
+script = ExtResource("1_gxgjm")
+
+[node name="Home Icon" type="TextureButton" parent="." unique_id=1801588294]
+offset_left = 1740.0
+offset_top = 15.0
+offset_right = 2168.0
+offset_bottom = 461.0
+scale = Vector2(0.40561053, 0.40561053)
+texture_normal = ExtResource("2_ut0uc")
+
+[node name="Scroll Icon" type="TextureButton" parent="." unique_id=1993742965]
+offset_left = 1710.0
+offset_top = 200.0
+offset_right = 2130.0
+offset_bottom = 515.0
+scale = Vector2(0.5159164, 0.5159164)
+action_mode = 0
+texture_normal = ExtResource("1_ekuf8")
+
+[node name="Map Icon" type="TextureButton" parent="." unique_id=310295487]
+offset_left = 1740.0
+offset_top = 390.0
+offset_right = 2243.0
+offset_bottom = 895.0
+scale = Vector2(0.30827844, 0.25703585)
+action_mode = 0
+texture_normal = ExtResource("2_gxgjm")
+
+[connection signal="pressed" from="Home Icon" to="." method="_on_home_icon_pressed"]
+[connection signal="pressed" from="Scroll Icon" to="." method="_on_scroll_icon_pressed"]
+[connection signal="pressed" from="Map Icon" to="." method="_on_map_icon_pressed"]

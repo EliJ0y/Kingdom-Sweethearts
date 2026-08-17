@@ -2,13 +2,13 @@
 
 importer="font_data_dynamic"
 type="FontFile"
-uid="uid://bxxjm50ms0pnt"
-path="res://.godot/imported/Fontspring-DEMO-theseasons-reg.otf-32496eb401cf7e3182e9b659d2d7c772.fontdata"
+uid="uid://c1lr353bluq7k"
+path="res://.godot/imported/TheSeasons-Reg.otf-6e50f8669c14a4bfdb926176b2902616.fontdata"
 
 [deps]
 
-source_file="res://Fonts/Fontspring-DEMO-theseasons-reg.otf"
-dest_files=["res://.godot/imported/Fontspring-DEMO-theseasons-reg.otf-32496eb401cf7e3182e9b659d2d7c772.fontdata"]
+source_file="res://Fonts/TheSeasons-Reg.otf"
+dest_files=["res://.godot/imported/TheSeasons-Reg.otf-6e50f8669c14a4bfdb926176b2902616.fontdata"]
 
 [params]
 

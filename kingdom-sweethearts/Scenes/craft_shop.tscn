@@ -9,9 +9,20 @@
 [ext_resource type="Texture2D" uid="uid://ccisbm8u2c1fs" path="res://Graphics/Craft Shop/Fancy (stack).png" id="6_nu1o7"]
 [ext_resource type="Texture2D" uid="uid://ba6qkr77ssvgm" path="res://Graphics/Craft Shop/Ornate (bundle).png" id="7_2todf"]
 [ext_resource type="Texture2D" uid="uid://ef4srtjb57e8" path="res://Graphics/Shop Panel.PNG" id="8_2gak8"]
-[ext_resource type="FontFile" uid="uid://bxxjm50ms0pnt" path="res://Fonts/Fontspring-DEMO-theseasons-reg.otf" id="10_4tw14"]
+[ext_resource type="FontFile" uid="uid://c1lr353bluq7k" path="res://Fonts/TheSeasons-Reg.otf" id="11_2todf"]
+[ext_resource type="Texture2D" uid="uid://c7mlstotxyst5" path="res://Graphics/Coins.PNG" id="11_nu1o7"]
+[ext_resource type="PackedScene" uid="uid://brewn7dcybla" path="res://Scenes/coins.tscn" id="12_2todf"]
+[ext_resource type="PackedScene" uid="uid://cm6i7vcbypte4" path="res://Scenes/navigation.tscn" id="13_dlw3c"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_n01f5"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_2todf"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_dlw3c"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_6ewy6"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_vgfvf"]
 
 [node name="Craft Shop" type="Node2D" unique_id=461295048]
 script = ExtResource("1_s5bet")
@@ -69,25 +80,29 @@ texture = ExtResource("8_2gak8")
 centered = false
 
 [node name="Buy Item" type="Button" parent="CanvasLayer/Shop Panel" unique_id=1020129278]
-offset_left = 560.0
-offset_top = 280.0
-offset_right = 765.0
-offset_bottom = 340.0
+offset_left = 600.0
+offset_top = 285.0
+offset_right = 718.0
+offset_bottom = 317.0
 theme_override_colors/font_color = Color(0.4, 0.14117648, 0, 1)
-theme_override_fonts/font = ExtResource("10_4tw14")
+theme_override_fonts/font = ExtResource("11_2todf")
 theme_override_font_sizes/font_size = 30
 theme_override_styles/normal = SubResource("StyleBoxEmpty_n01f5")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_2todf")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_dlw3c")
 text = "Buy Item"
 
 [node name="Back" type="Button" parent="CanvasLayer/Shop Panel" unique_id=1771785304]
-offset_left = 670.0
-offset_top = 280.0
-offset_right = 874.9999
-offset_bottom = 340.0
+offset_left = 740.0
+offset_top = 285.0
+offset_right = 805.0
+offset_bottom = 317.0
 theme_override_colors/font_color = Color(0.4, 0.14117648, 0, 1)
-theme_override_fonts/font = ExtResource("10_4tw14")
+theme_override_fonts/font = ExtResource("11_2todf")
 theme_override_font_sizes/font_size = 30
 theme_override_styles/normal = SubResource("StyleBoxEmpty_n01f5")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_6ewy6")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_vgfvf")
 text = "Back"
 
 [node name="Description" type="Label" parent="CanvasLayer/Shop Panel" unique_id=254546958]
@@ -96,18 +111,31 @@ offset_top = 50.0
 offset_right = 795.0
 offset_bottom = 250.0
 theme_override_colors/font_color = Color(0.4, 0.14117648, 0, 1)
-theme_override_fonts/font = ExtResource("10_4tw14")
+theme_override_fonts/font = ExtResource("11_2todf")
 theme_override_font_sizes/font_size = 50
 autowrap_mode = 3
 
 [node name="Coins (Cost)" type="Sprite2D" parent="CanvasLayer/Shop Panel" unique_id=2021464498]
+position = Vector2(89.99999, 263.99997)
+scale = Vector2(0.4728404, 0.4728404)
+texture = ExtResource("11_nu1o7")
 
-[node name="Cost Amount" type="Label" parent="CanvasLayer/Shop Panel/Coins (Cost)" unique_id=56582070]
-offset_right = 40.0
-offset_bottom = 23.0
+[node name="Price" type="Label" parent="CanvasLayer/Shop Panel/Coins (Cost)" unique_id=56582070]
+offset_left = 145.9266
+offset_right = 335.92664
+offset_bottom = 104.0
+theme_override_colors/font_color = Color(0.4, 0.14117648, 0, 1)
+theme_override_fonts/font = ExtResource("11_2todf")
+theme_override_font_sizes/font_size = 100
+
+[node name="Coins" parent="CanvasLayer" unique_id=1568081122 instance=ExtResource("12_2todf")]
+
+[node name="Navigation" parent="CanvasLayer" unique_id=651092304 instance=ExtResource("13_dlw3c")]
 
 [connection signal="pressed" from="CanvasLayer/Plain (Bundle)" to="." method="_on_plain_bundle_pressed"]
 [connection signal="pressed" from="CanvasLayer/Plain (Stack)" to="." method="_on_plain_stack_pressed"]
 [connection signal="pressed" from="CanvasLayer/Fancy (Bundle)" to="." method="_on_fancy_bundle_pressed"]
 [connection signal="pressed" from="CanvasLayer/Fancy (Stack)" to="." method="_on_fancy_stack_pressed"]
 [connection signal="pressed" from="CanvasLayer/Ornate (Bundle)" to="." method="_on_ornate_bundle_pressed"]
+[connection signal="pressed" from="CanvasLayer/Shop Panel/Buy Item" to="." method="_on_buy_item_pressed"]
+[connection signal="pressed" from="CanvasLayer/Shop Panel/Back" to="." method="_on_back_pressed"]

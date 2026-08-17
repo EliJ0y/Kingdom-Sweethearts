@@ -5,4 +5,5 @@
 [resource]
 script = ExtResource("1_sbx6e")
 description = "A bundle of plain paper and envelopes."
+price = "20G"
 metadata/_custom_type_script = "uid://s28xadn5y5j3"
