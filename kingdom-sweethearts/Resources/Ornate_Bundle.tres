@@ -1,9 +1,0 @@
-[gd_resource type="Resource" script_class="ShopsResource" format=3 uid="uid://men4co73ux10"]
-
-[ext_resource type="Script" uid="uid://s28xadn5y5j3" path="res://Scripts/shops_resource.gd" id="1_h2ma2"]
-
-[resource]
-script = ExtResource("1_h2ma2")
-description = "A bundle of ornate paper and envelopes."
-price = "50G"
-metadata/_custom_type_script = "uid://s28xadn5y5j3"

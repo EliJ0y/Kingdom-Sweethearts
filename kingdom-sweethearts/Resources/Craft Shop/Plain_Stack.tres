@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="ShopsResource" format=3 uid="uid://dgxj7g18650wy"]
+
+[ext_resource type="Script" uid="uid://s28xadn5y5j3" path="res://Scripts/shops_resource.gd" id="1_no0hu"]
+[ext_resource type="Texture2D" uid="uid://cv63l7050s3sg" path="res://Graphics/Craft Shop/Plain (stack).png" id="2_40b2c"]
+
+[resource]
+script = ExtResource("1_no0hu")
+description = "A stack of plain paper and envelopes."
+price = "30G"
+texture = ExtResource("2_40b2c")
+metadata/_custom_type_script = "uid://s28xadn5y5j3"

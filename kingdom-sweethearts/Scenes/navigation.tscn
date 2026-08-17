@@ -4,10 +4,18 @@
 [ext_resource type="Script" uid="uid://mfvy44yu6jwn" path="res://Scripts/navigation.gd" id="1_gxgjm"]
 [ext_resource type="Texture2D" uid="uid://b1spnq58mcm32" path="res://Graphics/Town Icon.png" id="2_gxgjm"]
 [ext_resource type="Texture2D" uid="uid://dlnoq6f0qlp7m" path="res://Graphics/Home Icon.png" id="2_ut0uc"]
+[ext_resource type="PackedScene" uid="uid://dscywhb6lbuyh" path="res://Scenes/inventory.tscn" id="2_wi6jk"]
 [ext_resource type="Texture2D" uid="uid://drnrdl4arl283" path="res://Graphics/Inventory Icon.png" id="5_5pagq"]
 
 [node name="Navigation" type="Node2D" unique_id=651092304]
 script = ExtResource("1_gxgjm")
+
+[node name="Inventory" parent="." unique_id=1905093856 instance=ExtResource("2_wi6jk")]
+visible = false
+offset_left = 215.0
+offset_top = 154.0
+offset_right = 3735.0
+offset_bottom = 1984.0
 
 [node name="Home Icon" type="TextureButton" parent="." unique_id=1801588294]
 offset_left = 1790.0

@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="ShopsResource" format=3 uid="uid://bv1d30woubu6b"]
+
+[ext_resource type="Script" uid="uid://s28xadn5y5j3" path="res://Scripts/shops_resource.gd" id="1_243y6"]
+[ext_resource type="Texture2D" uid="uid://6udrvvpyixyt" path="res://Graphics/Craft Shop/Postcards_Coasts.png" id="2_dapqd"]
+
+[resource]
+script = ExtResource("1_243y6")
+description = "Postcards of coasts. It’s almost like you could reach out and touch the waves."
+price = "30G"
+texture = ExtResource("2_dapqd")
+metadata/_custom_type_script = "uid://s28xadn5y5j3"

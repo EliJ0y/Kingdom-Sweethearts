@@ -5,26 +5,26 @@ extends Node2D
 
 var selected_item
 
-var plain_bundle = preload("res://Resources/Plain_Bundle.tres")
+var plain_bundle = preload("res://Resources/Craft Shop/Plain_Bundle.tres")
 
-var plain_stack = preload("res://Resources/Plain_Stack.tres")
+var plain_stack = preload("res://Resources/Craft Shop/Plain_Stack.tres")
 
-var fancy_bundle = preload("res://Resources/Fancy_Bundle.tres")
+var fancy_bundle = preload("res://Resources/Craft Shop/Fancy_Bundle.tres")
 
-var fancy_stack = preload("res://Resources/Fancy_Stack.tres")
+var fancy_stack = preload("res://Resources/Craft Shop/Fancy_Stack.tres")
 
-var ornate_bundle = preload("res://Resources/Ornate_Bundle.tres")
+var ornate_bundle = preload("res://Resources/Craft Shop/Ornate_Bundle.tres")
 
 
-var postcards_coasts = preload("res://Resources/Postcards_Coasts.tres")
+var postcards_coasts = preload("res://Resources/Craft Shop/Postcards_Coasts.tres")
 
-var postcards_deserts = preload("res://Resources/Postcards_Deserts.tres")
+var postcards_deserts = preload("res://Resources/Craft Shop/Postcards_Deserts.tres")
 
-var postcards_forests = preload("res://Resources/Postcards_Forests.tres")
+var postcards_forests = preload("res://Resources/Craft Shop/Postcards_Forests.tres")
 
-var postcards_mesas = preload("res://Resources/Postcards_Mesas.tres")
+var postcards_mesas = preload("res://Resources/Craft Shop/Postcards_Mesas.tres")
 
-var postcards_mountains = preload("res://Resources/Postcards_Mountains.tres")
+var postcards_mountains = preload("res://Resources/Craft Shop/Postcards_Mountains.tres")
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:

@@ -1,9 +1,0 @@
-[gd_resource type="Resource" script_class="ShopsResource" format=3 uid="uid://bv1d30woubu6b"]
-
-[ext_resource type="Script" uid="uid://s28xadn5y5j3" path="res://Scripts/shops_resource.gd" id="1_685n0"]
-
-[resource]
-script = ExtResource("1_685n0")
-description = "Postcards of coasts. It’s almost like you could reach out and touch the waves."
-price = "30G"
-metadata/_custom_type_script = "uid://s28xadn5y5j3"
