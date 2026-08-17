@@ -11,7 +11,7 @@ script = ExtResource("1_m2shm")
 
 [node name="Coin Counter" type="Sprite2D" parent="CanvasLayer" unique_id=1805449455]
 visible = false
-position = Vector2(96, 48)
+position = Vector2(87, 39)
 scale = Vector2(0.6198655, 0.6198655)
 texture = ExtResource("1_ojwyu")
 
@@ -22,3 +22,4 @@ offset_bottom = 104.0
 theme_override_colors/font_color = Color(0.4, 0.14000002, 0, 1)
 theme_override_fonts/font = ExtResource("3_m2shm")
 theme_override_font_sizes/font_size = 100
+metadata/_edit_use_anchors_ = true

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cffp7gxxqyqu0"
-path="res://.godot/imported/Silvester Speaking.png-4460670e72e4f3c17e9a571e6aeb764d.ctex"
+uid="uid://dn0bm47p6gscl"
+path="res://.godot/imported/Dialogue Panel.png-62acc3724ddea96adadd58ebc9b0cd2e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Graphics/Characters/Silvester Speaking.png"
-dest_files=["res://.godot/imported/Silvester Speaking.png-4460670e72e4f3c17e9a571e6aeb764d.ctex"]
+source_file="res://Graphics/Dialogue Panel.png"
+dest_files=["res://.godot/imported/Dialogue Panel.png-62acc3724ddea96adadd58ebc9b0cd2e.ctex"]
 
 [params]
 

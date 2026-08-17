@@ -15,3 +15,6 @@ func _on_home_icon_pressed() -> void:
 
 func _on_craft_shop_icon_pressed() -> void:
 	get_tree().change_scene_to_file("res://Scenes/craft_shop.tscn")
+
+func _on_gazebo_icon_pressed() -> void:
+	get_tree().change_scene_to_file("res://Scenes/dialogue.tscn")

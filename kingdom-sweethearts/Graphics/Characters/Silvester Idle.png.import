@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bd3wikugaacqs"
-path="res://.godot/imported/Silvester Idle.png-c697fcdceedd45ffb8e66892a1764370.ctex"
+uid="uid://dt5ciycb1crjg"
+path="res://.godot/imported/Silvester Idle.PNG-b6594bfe6a390fa4864ab9d6145a068f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Graphics/Characters/Silvester Idle.png"
-dest_files=["res://.godot/imported/Silvester Idle.png-c697fcdceedd45ffb8e66892a1764370.ctex"]
+source_file="res://Graphics/Characters/Silvester Idle.PNG"
+dest_files=["res://.godot/imported/Silvester Idle.PNG-b6594bfe6a390fa4864ab9d6145a068f.ctex"]
 
 [params]
 

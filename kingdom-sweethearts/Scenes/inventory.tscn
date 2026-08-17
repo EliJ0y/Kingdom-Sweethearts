@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://dscywhb6lbuyh"]
+
+[ext_resource type="Texture2D" uid="uid://ef4srtjb57e8" path="res://Graphics/Shop Panel.PNG" id="1_wdn4f"]
+
+[node name="Inventory" type="Node2D" unique_id=1301300938]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=89233993]
+
+[node name="Inventory BG" type="Sprite2D" parent="CanvasLayer" unique_id=1856895529]
+position = Vector2(360, 280)
+scale = Vector2(1.4704226, 1.4704225)
+texture = ExtResource("1_wdn4f")
+centered = false

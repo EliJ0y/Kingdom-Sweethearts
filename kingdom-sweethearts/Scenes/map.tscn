@@ -4,6 +4,7 @@
 [ext_resource type="Script" uid="uid://f2a3njcvtagk" path="res://Scripts/map.gd" id="1_p3ir5"]
 [ext_resource type="Texture2D" uid="uid://dlnoq6f0qlp7m" path="res://Graphics/Home Icon.png" id="3_myvm1"]
 [ext_resource type="Texture2D" uid="uid://b47an7qgesya4" path="res://Graphics/Craft Shop/Craft Shop Icon.png" id="3_p3ir5"]
+[ext_resource type="Texture2D" uid="uid://crfal3rdn80ah" path="res://Graphics/Gazebo_Foreground.png" id="5_q0mm3"]
 
 [node name="Map" type="Node2D" unique_id=1125190912]
 script = ExtResource("1_p3ir5")
@@ -15,21 +16,30 @@ scale = Vector2(3.8210738, 2.140594)
 texture = ExtResource("1_ci6au")
 centered = false
 
-[node name="Home Icon" type="TextureButton" parent="CanvasLayer" unique_id=796689518]
-offset_left = 1740.0
-offset_top = 15.0
-offset_right = 2168.0
-offset_bottom = 461.0
-scale = Vector2(0.40561053, 0.40561053)
+[node name="Home Icon" type="TextureButton" parent="CanvasLayer" unique_id=51589049]
+offset_left = 202.0
+offset_top = 568.0
+offset_right = 630.00146
+offset_bottom = 1014.0
+scale = Vector2(0.6538253, 0.6516003)
 texture_normal = ExtResource("3_myvm1")
 
 [node name="Craft Shop Icon" type="TextureButton" parent="CanvasLayer" unique_id=1487133905]
-offset_left = 382.0
-offset_top = 288.0
-offset_right = 905.0
-offset_bottom = 765.0
+offset_left = 447.0
+offset_top = 249.0
+offset_right = 970.0
+offset_bottom = 726.0
 scale = Vector2(0.62735826, 0.62735826)
 texture_normal = ExtResource("3_p3ir5")
 
+[node name="Gazebo Icon" type="TextureButton" parent="CanvasLayer" unique_id=1974336633]
+offset_left = 1475.0
+offset_top = 345.0
+offset_right = 1934.0
+offset_bottom = 725.0
+scale = Vector2(0.8622824, 0.8622824)
+texture_normal = ExtResource("5_q0mm3")
+
 [connection signal="pressed" from="CanvasLayer/Home Icon" to="." method="_on_home_icon_pressed"]
 [connection signal="pressed" from="CanvasLayer/Craft Shop Icon" to="." method="_on_craft_shop_icon_pressed"]
+[connection signal="pressed" from="CanvasLayer/Gazebo Icon" to="." method="_on_gazebo_icon_pressed"]

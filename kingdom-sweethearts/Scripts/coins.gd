@@ -8,6 +8,6 @@ func _ready() -> void:
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
-	if GlobalTracker.total_coins > 0:
+	if GlobalTracker.total_coins >= 0 && GlobalTracker.scroll_count > 0:
 		$"CanvasLayer/Coin Counter".show()
-		$"CanvasLayer/Coin Counter/Coin Text".text = str(GlobalTracker.total_coins)
+		$"CanvasLayer/Coin Counter/Coin Text".text = str(GlobalTracker.total_coins) + "G"

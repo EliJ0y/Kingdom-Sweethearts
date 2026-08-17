@@ -14,8 +14,15 @@ func _on_home_icon_pressed() -> void:
 	get_tree().change_scene_to_file("res://Scenes/home_desk.tscn")
 
 func _on_scroll_icon_pressed() -> void:
-	if GlobalTracker.scroll_count < 2:
-		get_tree().change_scene_to_file("res://Scenes/scrolls.tscn")
+	if get_tree().current_scene.scene_file_path == "res://Scenes/home_desk.tscn":
+		$"Scroll Icon".disabled = false
+		if GlobalTracker.scroll_count < 2:
+			get_tree().change_scene_to_file("res://Scenes/scrolls.tscn")
+	else:
+		$"Scroll Icon".disabled = true
 
 func _on_map_icon_pressed() -> void:
 	get_tree().change_scene_to_file("res://Scenes/map.tscn")
+
+func _on_inventory_icon_pressed() -> void:
+	pass # Replace with function body.
