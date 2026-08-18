@@ -35,10 +35,10 @@ func _process(delta: float) -> void:
 	pass
 	
 func _input(event: InputEvent) -> void:
-	if Input.is_action_just_pressed("Enter") && opened_scroll_1.visible_characters > 0:
+	if Input.is_action_just_pressed("ui_accept") && opened_scroll_1.visible_characters > 0:
 		stop_text_animation = true
 		opened_scroll_1.visible_characters = -1
-	if Input.is_action_just_pressed("Enter") && opened_scroll_2.visible_characters > 0:
+	if Input.is_action_just_pressed("ui_accept") && opened_scroll_2.visible_characters > 0:
 		stop_text_animation = true
 		opened_scroll_2.visible_characters = -1
 
