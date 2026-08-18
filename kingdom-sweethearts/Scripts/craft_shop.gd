@@ -6,24 +6,15 @@ extends Node2D
 var selected_item
 
 var plain_bundle = preload("res://Resources/Craft Shop/Plain_Bundle.tres")
-
 var plain_stack = preload("res://Resources/Craft Shop/Plain_Stack.tres")
-
 var fancy_bundle = preload("res://Resources/Craft Shop/Fancy_Bundle.tres")
-
 var fancy_stack = preload("res://Resources/Craft Shop/Fancy_Stack.tres")
-
 var ornate_bundle = preload("res://Resources/Craft Shop/Ornate_Bundle.tres")
 
-
 var postcards_coasts = preload("res://Resources/Craft Shop/Postcards_Coasts.tres")
-
 var postcards_deserts = preload("res://Resources/Craft Shop/Postcards_Deserts.tres")
-
 var postcards_forests = preload("res://Resources/Craft Shop/Postcards_Forests.tres")
-
 var postcards_mesas = preload("res://Resources/Craft Shop/Postcards_Mesas.tres")
-
 var postcards_mountains = preload("res://Resources/Craft Shop/Postcards_Mountains.tres")
 
 # Called when the node enters the scene tree for the first time.
@@ -35,69 +26,65 @@ func _ready() -> void:
 func _process(delta: float) -> void:
 	pass
 
+func update_shop_panel():
+	description.text = selected_item.description
+	price.text = selected_item.price
+	reset_to_buy()
+
 func _on_plain_bundle_pressed() -> void:
 	$"CanvasLayer/Shop Panel".show()
 	selected_item = plain_bundle
-	description.text = selected_item.description
-	price.text = selected_item.price
+	update_shop_panel()
 
 func _on_plain_stack_pressed() -> void:
 	$"CanvasLayer/Shop Panel".show()
 	selected_item = plain_stack
-	description.text = selected_item.description
-	price.text = selected_item.price
+	update_shop_panel()
 
 func _on_fancy_bundle_pressed() -> void:
 	$"CanvasLayer/Shop Panel".show()
 	selected_item = fancy_bundle
-	description.text = selected_item.description
-	price.text = selected_item.price
+	update_shop_panel()
 
 func _on_fancy_stack_pressed() -> void:
 	$"CanvasLayer/Shop Panel".show()
 	selected_item = fancy_stack
-	description.text = selected_item.description
-	price.text = selected_item.price
+	update_shop_panel()
 
 func _on_ornate_bundle_pressed() -> void:
 	$"CanvasLayer/Shop Panel".show()
 	selected_item = ornate_bundle
-	description.text = selected_item.description
-	price.text = selected_item.price
+	update_shop_panel()
 
 
 func _on_postcards_coast_pressed() -> void:
 	$"CanvasLayer/Shop Panel".show()
 	selected_item = postcards_coasts
-	description.text = selected_item.description
-	price.text = selected_item.price
+	update_shop_panel()
 
 func _on_postcards_deserts_pressed() -> void:
 	$"CanvasLayer/Shop Panel".show()
 	selected_item = postcards_deserts
-	description.text = selected_item.description
-	price.text = selected_item.price
+	update_shop_panel()
 
 func _on_postcards_forests_pressed() -> void:
 	$"CanvasLayer/Shop Panel".show()
 	selected_item = postcards_forests
-	description.text = selected_item.description
-	price.text = selected_item.price
+	update_shop_panel()
 
 func _on_postcards_mesas_pressed() -> void:
 	$"CanvasLayer/Shop Panel".show()
 	selected_item = postcards_mesas
-	description.text = selected_item.description
-	price.text = selected_item.price
+	update_shop_panel()
 
 func _on_postcards_mountains_pressed() -> void:
 	$"CanvasLayer/Shop Panel".show()
 	selected_item = postcards_mountains
-	description.text = selected_item.description
-	price.text = selected_item.price
+	update_shop_panel()
 
 
 func _on_back_pressed() -> void:
+	reset_to_buy()
 	$"CanvasLayer/Shop Panel".hide()
 
 func _on_buy_item_pressed() -> void:
@@ -108,4 +95,9 @@ func _on_buy_item_pressed() -> void:
 func _on_confirm_pressed() -> void:
 	GlobalTracker.player_inventory.inventory.append(selected_item)
 	GlobalTracker.total_coins -= int(selected_item.price)
+	reset_to_buy()
 	$"CanvasLayer/Shop Panel".hide()
+
+func reset_to_buy():
+	$"CanvasLayer/Shop Panel/Buy Item".show()
+	$"CanvasLayer/Shop Panel/Confirm".hide()

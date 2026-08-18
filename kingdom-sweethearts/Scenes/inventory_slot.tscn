@@ -1,18 +1,27 @@
 [gd_scene format=3 uid="uid://cmqqrccvku78v"]
 
-[ext_resource type="Script" uid="uid://lfqgkxpflw3l" path="res://Scenes/inventory_slot.gd" id="1_0cu6i"]
+[ext_resource type="Script" uid="uid://lfqgkxpflw3l" path="res://Scripts/inventory_slot.gd" id="1_0cu6i"]
 [ext_resource type="Texture2D" uid="uid://ef4srtjb57e8" path="res://Graphics/Shop Panel.PNG" id="1_0v82l"]
 
 [node name="Inventory Slot" type="Panel" unique_id=1940188951]
-custom_minimum_size = Vector2(40, 40)
-offset_right = 40.0
-offset_bottom = 40.0
-scale = Vector2(10, 10)
+custom_minimum_size = Vector2(100, 100)
+offset_right = 100.0
+offset_bottom = 100.0
 script = ExtResource("1_0cu6i")
 
 [node name="Slot" type="Sprite2D" parent="." unique_id=629113978]
-scale = Vector2(0.04749403, 0.11239437)
+scale = Vector2(0.12052506, 0.28450707)
 texture = ExtResource("1_0v82l")
 centered = false
 
-[node name="Item Display" type="Sprite2D" parent="." unique_id=738687073]
+[node name="CenterContainer" type="CenterContainer" parent="." unique_id=2091832155]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 0
+offset_right = 100.0
+offset_bottom = 100.0
+
+[node name="Panel" type="Panel" parent="CenterContainer" unique_id=1912170311]
+layout_mode = 2
+
+[node name="Item Display" type="Sprite2D" parent="CenterContainer/Panel" unique_id=738687073]
+scale = Vector2(0.35, 0.35)

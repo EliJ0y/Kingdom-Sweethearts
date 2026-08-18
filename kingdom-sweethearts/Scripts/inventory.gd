@@ -10,3 +10,9 @@ func _ready() -> void:
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
 	pass
+
+func update_slots():
+	print("slots updated")
+	print(player_inventory.inventory)
+	for i in range(min(player_inventory.inventory.size(), slots_list.size())):
+		slots_list[i].update_item(player_inventory.inventory[i])

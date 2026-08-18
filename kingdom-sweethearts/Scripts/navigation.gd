@@ -25,6 +25,7 @@ func _on_map_icon_pressed() -> void:
 	get_tree().change_scene_to_file("res://Scenes/map.tscn")
 
 func _on_inventory_icon_pressed() -> void:
+	$Inventory.update_slots()
 	if is_inventory_open:
 		$Inventory.visible = false
 		is_inventory_open = false

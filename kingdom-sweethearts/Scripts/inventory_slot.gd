@@ -1,6 +1,6 @@
 extends Panel
 
-@onready var item_display: Sprite2D = $"Item Display"
+@onready var item_display: Sprite2D = $"CenterContainer/Panel/Item Display"
 
 func update_item(item: ShopsResource):
 	if !item:

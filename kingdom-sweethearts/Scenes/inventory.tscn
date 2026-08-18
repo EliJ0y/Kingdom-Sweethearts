@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://dscywhb6lbuyh"]
 
 [ext_resource type="Texture2D" uid="uid://ef4srtjb57e8" path="res://Graphics/Shop Panel.PNG" id="1_wdn4f"]
-[ext_resource type="Script" uid="uid://c8fvr8luc6fq6" path="res://Scenes/inventory.gd" id="1_yxepq"]
+[ext_resource type="Script" uid="uid://c8fvr8luc6fq6" path="res://Scripts/inventory.gd" id="1_yxepq"]
 [ext_resource type="PackedScene" uid="uid://cmqqrccvku78v" path="res://Scenes/inventory_slot.tscn" id="2_k5gp2"]
 
 [node name="Inventory" type="Control" unique_id=1905093856]
@@ -46,13 +46,13 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -56.60691
-offset_top = -41.981472
-offset_right = 115.39309
-offset_bottom = 42.018528
+offset_left = -57.64485
+offset_top = -44.70814
+offset_right = 354.35516
+offset_bottom = 159.29185
 grow_horizontal = 2
 grow_vertical = 2
-scale = Vector2(0.6500149, 1)
+scale = Vector2(0.2790325, 0.43999994)
 columns = 4
 
 [node name="Inventory Slot1" parent="NinePatchRect/GridContainer" unique_id=1940188951 instance=ExtResource("2_k5gp2")]

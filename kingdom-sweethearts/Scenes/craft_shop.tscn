@@ -76,35 +76,35 @@ texture_normal = ExtResource("7_2todf")
 offset_left = 120.0
 offset_top = 91.0
 offset_right = 393.0
-offset_bottom = 215.0
+offset_bottom = 203.0
 texture_normal = ExtResource("9_nnco4")
 
 [node name="Postcards (Deserts)" type="TextureButton" parent="CanvasLayer" unique_id=1532711056]
 offset_left = 470.0
 offset_top = 91.0
 offset_right = 743.0
-offset_bottom = 262.0
+offset_bottom = 205.0
 texture_normal = ExtResource("10_5otd3")
 
 [node name="Postcards (Forests)" type="TextureButton" parent="CanvasLayer" unique_id=2018936153]
 offset_left = 820.0
 offset_top = 91.0
 offset_right = 1093.0
-offset_bottom = 215.0
+offset_bottom = 210.0
 texture_normal = ExtResource("11_r6gu5")
 
 [node name="Postcards (Mesas)" type="TextureButton" parent="CanvasLayer" unique_id=2097806361]
 offset_left = 1170.0
 offset_top = 91.0
 offset_right = 1443.0
-offset_bottom = 262.0
+offset_bottom = 205.0
 texture_normal = ExtResource("12_6y8u7")
 
 [node name="Postcards (Mountains)" type="TextureButton" parent="CanvasLayer" unique_id=1086597343]
 offset_left = 1520.0
 offset_top = 91.0
 offset_right = 1793.0
-offset_bottom = 215.0
+offset_bottom = 208.0
 texture_normal = ExtResource("13_82wk7")
 
 [node name="Shop Panel" type="Sprite2D" parent="CanvasLayer" unique_id=1228542888]
@@ -186,15 +186,10 @@ theme_override_font_sizes/font_size = 100
 [connection signal="pressed" from="CanvasLayer/Fancy (Stack)" to="." method="_on_fancy_stack_pressed"]
 [connection signal="pressed" from="CanvasLayer/Ornate (Bundle)" to="." method="_on_ornate_bundle_pressed"]
 [connection signal="pressed" from="CanvasLayer/Postcards (Coast)" to="." method="_on_postcards_coast_pressed"]
-[connection signal="pressed" from="CanvasLayer/Postcards (Coast)" to="." method="_on_plain_bundle_pressed"]
 [connection signal="pressed" from="CanvasLayer/Postcards (Deserts)" to="." method="_on_postcards_deserts_pressed"]
-[connection signal="pressed" from="CanvasLayer/Postcards (Deserts)" to="." method="_on_plain_stack_pressed"]
 [connection signal="pressed" from="CanvasLayer/Postcards (Forests)" to="." method="_on_postcards_forests_pressed"]
-[connection signal="pressed" from="CanvasLayer/Postcards (Forests)" to="." method="_on_fancy_bundle_pressed"]
 [connection signal="pressed" from="CanvasLayer/Postcards (Mesas)" to="." method="_on_postcards_mesas_pressed"]
-[connection signal="pressed" from="CanvasLayer/Postcards (Mesas)" to="." method="_on_fancy_stack_pressed"]
 [connection signal="pressed" from="CanvasLayer/Postcards (Mountains)" to="." method="_on_postcards_mountains_pressed"]
-[connection signal="pressed" from="CanvasLayer/Postcards (Mountains)" to="." method="_on_ornate_bundle_pressed"]
 [connection signal="pressed" from="CanvasLayer/Shop Panel/Buy Item" to="." method="_on_buy_item_pressed"]
 [connection signal="pressed" from="CanvasLayer/Shop Panel/Confirm" to="." method="_on_confirm_pressed"]
 [connection signal="pressed" from="CanvasLayer/Shop Panel/Confirm" to="." method="_on_buy_item_pressed"]
