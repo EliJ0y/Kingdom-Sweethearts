@@ -10,6 +10,8 @@ var is_dialogue_active: bool = false
 
 func _ready() -> void:
 	dialogue_box.visible = false
+	
+	start_dialogue(["Finally it works!"])
 
 func start_dialogue(lines: Array[String]):
 	get_tree().paused = true

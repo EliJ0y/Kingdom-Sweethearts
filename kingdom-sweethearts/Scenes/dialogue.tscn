@@ -4,7 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://cf5xateryb4nj" path="res://Graphics/Gazebo_Background.png" id="1_dgfud"]
 [ext_resource type="Texture2D" uid="uid://dn0bm47p6gscl" path="res://Graphics/Dialogue Panel.png" id="2_p21q5"]
 [ext_resource type="Texture2D" uid="uid://dt5ciycb1crjg" path="res://Graphics/Characters/Silvester Idle.PNG" id="2_pjl42"]
-[ext_resource type="FontFile" uid="uid://dgqasjigm6mb6" path="res://Fonts/OPTIEngraversOldEnglish.otf" id="5_5mcti"]
+[ext_resource type="FontFile" uid="uid://crb2i4elinjsj" path="res://Fonts/PirataOne-Regular.ttf" id="5_5mcti"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_4kxuq"]
 texture = ExtResource("2_p21q5")
