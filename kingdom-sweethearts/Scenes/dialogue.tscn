@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://c51frugbjl4eq" path="res://Scripts/dialogue.gd" id="1_5mcti"]
 [ext_resource type="Texture2D" uid="uid://cf5xateryb4nj" path="res://Graphics/Gazebo_Background.png" id="1_dgfud"]
+[ext_resource type="PackedScene" uid="uid://cm6i7vcbypte4" path="res://Scenes/navigation.tscn" id="3_p21q5"]
 
 [node name="Dialogue" type="Node2D" unique_id=565725109]
 process_mode = 3
@@ -24,3 +25,5 @@ centered = false
 position = Vector2(0, 207)
 scale = Vector2(1.4665108, 1.4665108)
 centered = false
+
+[node name="Navigation" parent="CanvasLayer" unique_id=651092304 instance=ExtResource("3_p21q5")]
