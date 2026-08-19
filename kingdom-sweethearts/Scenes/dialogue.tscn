@@ -5,9 +5,6 @@
 [ext_resource type="Texture2D" uid="uid://dn0bm47p6gscl" path="res://Graphics/Dialogue Panel.png" id="2_p21q5"]
 [ext_resource type="FontFile" uid="uid://crb2i4elinjsj" path="res://Fonts/PirataOne-Regular.ttf" id="5_5mcti"]
 
-[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_pjl42"]
-texture = ExtResource("2_p21q5")
-
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_4kxuq"]
 texture = ExtResource("2_p21q5")
 
@@ -34,7 +31,6 @@ scale = Vector2(1.4665108, 1.4665108)
 centered = false
 
 [node name="Dialogue Options" type="Control" parent="CanvasLayer" unique_id=1145031911]
-visible = false
 layout_mode = 3
 anchors_preset = 8
 anchor_left = 0.5
@@ -48,13 +44,12 @@ offset_bottom = 180.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="Dialogue Option 1" type="Panel" parent="CanvasLayer/Dialogue Options" unique_id=1626571920]
-layout_mode = 1
-anchors_preset = 10
-anchor_right = 1.0
-offset_bottom = 200.0
-grow_horizontal = 2
-theme_override_styles/panel = SubResource("StyleBoxTexture_pjl42")
+[node name="Dialogue Option 1" type="TextureButton" parent="CanvasLayer/Dialogue Options" unique_id=907801944]
+layout_mode = 0
+offset_right = 900.0
+offset_bottom = 277.0
+scale = Vector2(0.77554893, 0.71844476)
+texture_normal = ExtResource("2_p21q5")
 
 [node name="MarginContainer" type="MarginContainer" parent="CanvasLayer/Dialogue Options/Dialogue Option 1" unique_id=312010682]
 layout_mode = 1
@@ -63,12 +58,13 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -280.0
-offset_top = -60.0
-offset_right = 280.0
-offset_bottom = 60.0
+offset_left = -360.0
+offset_top = -78.5
+offset_right = 360.0
+offset_bottom = 81.5
 grow_horizontal = 2
 grow_vertical = 2
+scale = Vector2(1, 0.9980667)
 
 [node name="Option 1 Text" type="Label" parent="CanvasLayer/Dialogue Options/Dialogue Option 1/MarginContainer" unique_id=236019703]
 custom_minimum_size = Vector2(560, 120)
@@ -79,33 +75,30 @@ theme_override_fonts/font = ExtResource("5_5mcti")
 theme_override_font_sizes/font_size = 30
 autowrap_mode = 3
 
-[node name="Dialogue Option 2" type="Panel" parent="CanvasLayer/Dialogue Options" unique_id=1959123274]
-layout_mode = 1
-anchors_preset = 14
-anchor_top = 0.5
-anchor_right = 1.0
-anchor_bottom = 0.5
-offset_top = -110.0
-offset_bottom = 90.0
-grow_horizontal = 2
-grow_vertical = 2
-theme_override_styles/panel = SubResource("StyleBoxTexture_pjl42")
+[node name="Dialogue Option 2" type="TextureButton" parent="CanvasLayer/Dialogue Options" unique_id=142421456]
+layout_mode = 0
+offset_top = 220.0
+offset_right = 900.0
+offset_bottom = 497.0
+scale = Vector2(0.77554893, 0.71844476)
+texture_normal = ExtResource("2_p21q5")
 
-[node name="MarginContainer" type="MarginContainer" parent="CanvasLayer/Dialogue Options/Dialogue Option 2" unique_id=494482742]
+[node name="MarginContainer" type="MarginContainer" parent="CanvasLayer/Dialogue Options/Dialogue Option 2" unique_id=1539494022]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -280.0
-offset_top = -60.0
-offset_right = 280.0
-offset_bottom = 60.0
+offset_left = -360.0
+offset_top = -78.5
+offset_right = 360.0
+offset_bottom = 81.5
 grow_horizontal = 2
 grow_vertical = 2
+scale = Vector2(1, 0.9980667)
 
-[node name="Option 2 Text" type="Label" parent="CanvasLayer/Dialogue Options/Dialogue Option 2/MarginContainer" unique_id=2068245372]
+[node name="Option 2 Text" type="Label" parent="CanvasLayer/Dialogue Options/Dialogue Option 2/MarginContainer" unique_id=1497464729]
 custom_minimum_size = Vector2(560, 120)
 layout_mode = 2
 size_flags_vertical = 1
@@ -114,33 +107,30 @@ theme_override_fonts/font = ExtResource("5_5mcti")
 theme_override_font_sizes/font_size = 30
 autowrap_mode = 3
 
-[node name="Dialogue Option 3" type="Panel" parent="CanvasLayer/Dialogue Options" unique_id=35695346]
-layout_mode = 1
-anchors_preset = 12
-anchor_top = 1.0
-anchor_right = 1.0
-anchor_bottom = 1.0
-offset_top = -220.0
-offset_bottom = -20.0
-grow_horizontal = 2
-grow_vertical = 0
-theme_override_styles/panel = SubResource("StyleBoxTexture_pjl42")
+[node name="Dialogue Option 3" type="TextureButton" parent="CanvasLayer/Dialogue Options" unique_id=13576717]
+layout_mode = 0
+offset_top = 440.0
+offset_right = 900.0
+offset_bottom = 717.0
+scale = Vector2(0.77554893, 0.71844476)
+texture_normal = ExtResource("2_p21q5")
 
-[node name="MarginContainer" type="MarginContainer" parent="CanvasLayer/Dialogue Options/Dialogue Option 3" unique_id=824667611]
+[node name="MarginContainer" type="MarginContainer" parent="CanvasLayer/Dialogue Options/Dialogue Option 3" unique_id=928104527]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -280.0
-offset_top = -60.0
-offset_right = 280.0
-offset_bottom = 60.0
+offset_left = -360.0
+offset_top = -78.5
+offset_right = 360.0
+offset_bottom = 81.5
 grow_horizontal = 2
 grow_vertical = 2
+scale = Vector2(1, 0.9980667)
 
-[node name="Option 3 Text" type="Label" parent="CanvasLayer/Dialogue Options/Dialogue Option 3/MarginContainer" unique_id=1578259620]
+[node name="Option 3 Text" type="Label" parent="CanvasLayer/Dialogue Options/Dialogue Option 3/MarginContainer" unique_id=17087897]
 custom_minimum_size = Vector2(560, 120)
 layout_mode = 2
 size_flags_vertical = 1
