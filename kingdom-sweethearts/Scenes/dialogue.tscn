@@ -3,7 +3,6 @@
 [ext_resource type="Script" uid="uid://c51frugbjl4eq" path="res://Scripts/dialogue.gd" id="1_5mcti"]
 [ext_resource type="Texture2D" uid="uid://cf5xateryb4nj" path="res://Graphics/Gazebo_Background.png" id="1_dgfud"]
 [ext_resource type="Texture2D" uid="uid://dn0bm47p6gscl" path="res://Graphics/Dialogue Panel.png" id="2_p21q5"]
-[ext_resource type="Texture2D" uid="uid://dt5ciycb1crjg" path="res://Graphics/Characters/Silvester Idle.PNG" id="2_pjl42"]
 [ext_resource type="FontFile" uid="uid://crb2i4elinjsj" path="res://Fonts/PirataOne-Regular.ttf" id="5_5mcti"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_4kxuq"]
@@ -21,10 +20,9 @@ position = Vector2(975, 450)
 scale = Vector2(3.2930665, 2.2154703)
 texture = ExtResource("1_dgfud")
 
-[node name="Silvester Idle" type="Sprite2D" parent="CanvasLayer" unique_id=1597908151]
+[node name="Character Sprite" type="Sprite2D" parent="CanvasLayer" unique_id=1597908151]
 position = Vector2(1074, 147)
 scale = Vector2(0.4598963, 0.4598963)
-texture = ExtResource("2_pjl42")
 centered = false
 
 [node name="Dialogue Box" type="Panel" parent="CanvasLayer" unique_id=1703995752]
@@ -34,9 +32,9 @@ anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
-offset_left = -700.0
+offset_left = -710.0
 offset_top = -360.0
-offset_right = 700.0
+offset_right = 730.0
 offset_bottom = -60.0
 grow_horizontal = 2
 grow_vertical = 0
@@ -47,6 +45,10 @@ layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
+offset_left = 20.0
+offset_top = 12.0
+offset_right = -20.0
+offset_bottom = -8.0
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_constants/margin_left = 135
@@ -55,8 +57,10 @@ theme_override_constants/margin_right = 125
 theme_override_constants/margin_bottom = 50
 
 [node name="Dialogue Text" type="Label" parent="CanvasLayer/Dialogue Box/MarginContainer" unique_id=1538113817]
+custom_minimum_size = Vector2(1140, 180)
 layout_mode = 2
 size_flags_vertical = 1
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("5_5mcti")
 theme_override_font_sizes/font_size = 50
+autowrap_mode = 3

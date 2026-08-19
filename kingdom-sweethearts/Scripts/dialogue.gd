@@ -11,7 +11,8 @@ var is_dialogue_active: bool = false
 func _ready() -> void:
 	dialogue_box.visible = false
 	
-	start_dialogue(["Finally it works!"])
+	start_dialogue(["You arrive at a quaint gazebo, the pleasant view of a garden surrounding it.",
+					"You check your satchel, ensuring all is prepared as a noble walks up to you."])
 
 func start_dialogue(lines: Array[String]):
 	get_tree().paused = true
