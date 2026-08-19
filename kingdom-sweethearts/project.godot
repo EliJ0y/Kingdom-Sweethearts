@@ -11,13 +11,18 @@ config_version=5
 [application]
 
 config/name="Kingdom Sweethearts"
-run/main_scene="uid://bvsqho1pn4i5c"
+run/main_scene="uid://5xpglr5ijuw1"
 config/features=PackedStringArray("4.7", "Forward Plus")
 config/icon="res://icon.svg"
 
 [autoload]
 
 GlobalTracker="*uid://wob8f2ds111w"
+DialogueManager="*uid://c3rodes2l3gxb"
+
+[dialogue_manager]
+
+runtime/balloon_path="res://Dialogue Manager/dialogue_balloon/balloon.tscn"
 
 [display]
 
@@ -26,6 +31,10 @@ window/size/viewport_height=1080
 window/stretch/mode="canvas_items"
 window/stretch/aspect="expand"
 
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/dialogue_manager/plugin.cfg")
+
 [input]
 
 Enter={
@@ -33,6 +42,10 @@ Enter={
 "events": [Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":-1,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"pressed":false,"keycode":0,"physical_keycode":4194309,"key_label":0,"unicode":0,"location":0,"echo":false,"script":null)
 ]
 }
+
+[internationalization]
+
+locale/translations_pot_files=PackedStringArray("res://Dialogue Manager/Silvester_Dialogue.dialogue", "res://Dialogue Manager/Start_Dialogue.dialogue")
 
 [physics]
 

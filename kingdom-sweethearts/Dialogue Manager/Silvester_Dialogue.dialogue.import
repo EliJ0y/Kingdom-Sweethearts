@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=18
+type="Resource"
+uid="uid://2xslc0qfalv3"
+path="res://.godot/imported/Silvester_Dialogue.dialogue-f1dc0c7cbfa6e54882ca876322084b72.tres"
+
+[deps]
+
+source_file="res://Dialogue Manager/Silvester_Dialogue.dialogue"
+dest_files=["res://.godot/imported/Silvester_Dialogue.dialogue-f1dc0c7cbfa6e54882ca876322084b72.tres"]
+
+[params]
+
+defaults=true

@@ -1,0 +1,20 @@
+~ start
+Silvester: Hey, Cupid! It is nice to meet you. 
+Cupid: Greetings, Duke Silvester. I prepared the bouquet as requested.
+
+- These are poppies and primroses.
+	Cupid: These are poppies and primroses. 
+- These are lavenders and primroses.
+	Cupid: These are lavenders and primroses.
+- These are lavenders and baby’s breath.
+	Cupid: These are lavenders and baby’s breath.
+=>< player_choice_2
+
+
+Silvester: Thank you! I’m sure Duke Kohan will appreciate this. Wish me luck!
+=> END
+
+~ player_choice_2
+- They are wildflowers, native to the forests of Wildegon.
+- They are cultivated flowers, grown specifically for their beauty.
+- They are home-grown flowers, plucked fresh from my garden.
