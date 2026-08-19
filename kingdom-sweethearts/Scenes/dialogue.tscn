@@ -31,6 +31,7 @@ scale = Vector2(1.4665108, 1.4665108)
 centered = false
 
 [node name="Dialogue Options" type="Control" parent="CanvasLayer" unique_id=1145031911]
+visible = false
 layout_mode = 3
 anchors_preset = 8
 anchor_left = 0.5
