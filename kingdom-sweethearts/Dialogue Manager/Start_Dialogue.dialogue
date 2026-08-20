@@ -1,4 +1,8 @@
 ~ start
-[wait=1] You arrive at a quaint gazebo, the pleasant view of a garden surrounding it.
-You check your satchel, ensuring all is prepared as a noble walks up to you.
+if GlobalTracker.gazebo_first_visit == true:
+	[wait=0.5] You arrive at a quaint gazebo, the pleasant view of a garden surrounding it.
+	You check your satchel, ensuring all is prepared as a noble walks up to you.
+	$> GlobalTracker.gazebo_first_visit = false
+else:
+	The gazebo is pleasant as always.
 => END

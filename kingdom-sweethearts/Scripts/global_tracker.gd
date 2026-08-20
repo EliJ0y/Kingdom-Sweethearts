@@ -5,6 +5,8 @@ var player_inventory = preload("res://Resources/Player_Inventory.tres")
 var total_coins = 100
 var scroll_count = 0
 
+var gazebo_first_visit = true
+
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	pass # Replace with function body.
