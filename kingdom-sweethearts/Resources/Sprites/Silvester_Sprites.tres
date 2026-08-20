@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="SpritesResource" format=3 uid="uid://dnx7fyw1s0r0l"]
+
+[ext_resource type="Texture2D" uid="uid://bslct3k0crj1q" path="res://Graphics/Characters/Silvester Idle.PNG" id="1_m5ka0"]
+[ext_resource type="Script" uid="uid://c3hfy4nf71pn7" path="res://Scripts/sprites_resource.gd" id="2_11b08"]
+[ext_resource type="Texture2D" uid="uid://bhsrsae7faaip" path="res://Graphics/Characters/Silvester Talking.PNG" id="3_wkq31"]
+
+[resource]
+script = ExtResource("2_11b08")
+idle_sprite = ExtResource("1_m5ka0")
+talking_sprite = ExtResource("3_wkq31")
+metadata/_custom_type_script = "uid://c3hfy4nf71pn7"

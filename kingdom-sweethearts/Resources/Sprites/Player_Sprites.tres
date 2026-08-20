@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="SpritesResource" format=3 uid="uid://8b48kk7l5tpd"]
+
+[ext_resource type="Texture2D" uid="uid://ccy8y4n0141ci" path="res://Graphics/Characters/Player Idle.png" id="1_gai2g"]
+[ext_resource type="Script" uid="uid://c3hfy4nf71pn7" path="res://Scripts/sprites_resource.gd" id="2_vfwd6"]
+[ext_resource type="Texture2D" uid="uid://56yg3adocxi4" path="res://Graphics/Characters/Player Talking.png" id="3_hwgam"]
+
+[resource]
+script = ExtResource("2_vfwd6")
+idle_sprite = ExtResource("1_gai2g")
+talking_sprite = ExtResource("3_hwgam")
+metadata/_custom_type_script = "uid://c3hfy4nf71pn7"
