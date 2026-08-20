@@ -17,14 +17,6 @@ var postcards_forests = preload("res://Resources/Craft Shop/Postcards_Forests.tr
 var postcards_mesas = preload("res://Resources/Craft Shop/Postcards_Mesas.tres")
 var postcards_mountains = preload("res://Resources/Craft Shop/Postcards_Mountains.tres")
 
-# Called when the node enters the scene tree for the first time.
-func _ready() -> void:
-	pass # Replace with function body.
-
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta: float) -> void:
-	pass
 
 func update_shop_panel():
 	description.text = selected_item.description

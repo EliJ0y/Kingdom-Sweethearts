@@ -1,0 +1,186 @@
+[gd_scene format=3 uid="uid://c2e88rd4mck5t"]
+
+[ext_resource type="Script" uid="uid://5qavxipj7ybx" path="res://Scenes/bakery.gd" id="1_5df3p"]
+[ext_resource type="Texture2D" uid="uid://0uhuxei6ey4x" path="res://Graphics/Bakery/Bakery BG.png" id="2_70i4k"]
+[ext_resource type="Texture2D" uid="uid://bcyvc5ykktpav" path="res://Graphics/Bakery/Glazed Donuts.png" id="4_p5upb"]
+[ext_resource type="Texture2D" uid="uid://dulc5s7poy2s4" path="res://Graphics/Bakery/Chocolate Bread.png" id="5_x21c3"]
+[ext_resource type="Texture2D" uid="uid://c4tqiljpk60f7" path="res://Graphics/Bakery/Plain Muffins.png" id="6_70i4k"]
+[ext_resource type="Texture2D" uid="uid://ddwuhcgwjwuy6" path="res://Graphics/Bakery/Apple Strudels.png" id="7_5df3p"]
+[ext_resource type="Texture2D" uid="uid://bfswme6uas1nf" path="res://Graphics/Bakery/Croissants.png" id="7_tm1hf"]
+[ext_resource type="Texture2D" uid="uid://xcoixkk873ak" path="res://Graphics/Bakery/Loaf of Bread.png" id="8_5df3p"]
+[ext_resource type="Texture2D" uid="uid://bd5dxxer0el6j" path="res://Graphics/Bakery/Cinammon Rolls.png" id="9_70i4k"]
+[ext_resource type="Texture2D" uid="uid://vqn5ejqlfxif" path="res://Graphics/Bakery/Baguettes.png" id="9_fb6sb"]
+[ext_resource type="Texture2D" uid="uid://ef4srtjb57e8" path="res://Graphics/Shop Panel.PNG" id="13_qqqo5"]
+[ext_resource type="FontFile" uid="uid://c1lr353bluq7k" path="res://Fonts/TheSeasons-Reg.otf" id="14_hwoo1"]
+[ext_resource type="Texture2D" uid="uid://c7mlstotxyst5" path="res://Graphics/Coins.PNG" id="15_plpos"]
+[ext_resource type="PackedScene" uid="uid://brewn7dcybla" path="res://Scenes/coins.tscn" id="16_s0ssm"]
+[ext_resource type="PackedScene" uid="uid://cm6i7vcbypte4" path="res://Scenes/navigation.tscn" id="17_l3hgh"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_n01f5"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_2todf"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_dlw3c"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_6ewy6"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_vgfvf"]
+
+[node name="Bakery" type="Node2D" unique_id=461295048]
+script = ExtResource("1_5df3p")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1943395183]
+
+[node name="Craft Shop BG" type="Sprite2D" parent="CanvasLayer" unique_id=1938208358]
+texture = ExtResource("2_70i4k")
+centered = false
+
+[node name="Glazed Donuts" type="TextureButton" parent="CanvasLayer" unique_id=1775277480]
+offset_left = 430.0
+offset_top = 760.0
+offset_right = 680.0
+offset_bottom = 910.0
+texture_normal = ExtResource("4_p5upb")
+
+[node name="Chocolate Bread" type="TextureButton" parent="CanvasLayer" unique_id=1830893261]
+offset_left = 800.0
+offset_top = 760.0
+offset_right = 1050.0
+offset_bottom = 931.0
+texture_normal = ExtResource("5_x21c3")
+
+[node name="Plain Muffins" type="TextureButton" parent="CanvasLayer" unique_id=740292856]
+offset_left = 1170.0
+offset_top = 755.0
+offset_right = 1420.0
+offset_bottom = 905.0
+texture_normal = ExtResource("6_70i4k")
+
+[node name="Croissants" type="TextureButton" parent="CanvasLayer" unique_id=608997384]
+offset_left = 1540.0
+offset_top = 755.0
+offset_right = 1790.0
+offset_bottom = 926.0
+texture_normal = ExtResource("7_tm1hf")
+
+[node name="Apple Strudels" type="TextureButton" parent="CanvasLayer" unique_id=827374676]
+offset_left = 1360.0
+offset_top = 563.0
+offset_right = 1610.0
+offset_bottom = 713.0
+texture_normal = ExtResource("7_5df3p")
+
+[node name="Loaf of Bread" type="TextureButton" parent="CanvasLayer" unique_id=1195238289]
+offset_left = 990.0
+offset_top = 565.0
+offset_right = 1263.0
+offset_bottom = 715.0
+texture_normal = ExtResource("8_5df3p")
+
+[node name="Cinammon Rolls" type="TextureButton" parent="CanvasLayer" unique_id=1532711056]
+offset_left = 620.0
+offset_top = 562.0
+offset_right = 893.0
+offset_bottom = 712.0
+texture_normal = ExtResource("9_70i4k")
+
+[node name="Baguettes" type="TextureButton" parent="CanvasLayer" unique_id=2018936153]
+offset_left = 470.0
+offset_top = 361.0
+offset_right = 743.0
+offset_bottom = 511.0
+texture_normal = ExtResource("9_fb6sb")
+
+[node name="Shop Panel" type="Sprite2D" parent="CanvasLayer" unique_id=1228542888]
+visible = false
+position = Vector2(870, 669)
+texture = ExtResource("13_qqqo5")
+centered = false
+
+[node name="Buy Item" type="Button" parent="CanvasLayer/Shop Panel" unique_id=1020129278]
+offset_left = 590.0
+offset_top = 285.0
+offset_right = 708.0
+offset_bottom = 317.0
+theme_override_colors/font_color = Color(0.4, 0.14117648, 0, 1)
+theme_override_fonts/font = ExtResource("14_hwoo1")
+theme_override_font_sizes/font_size = 30
+theme_override_styles/normal = SubResource("StyleBoxEmpty_n01f5")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_2todf")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_dlw3c")
+text = "Buy Item"
+
+[node name="Confirm" type="Button" parent="CanvasLayer/Shop Panel" unique_id=1231769725]
+visible = false
+offset_left = 590.0
+offset_top = 285.0
+offset_right = 708.0
+offset_bottom = 317.0
+theme_override_colors/font_color = Color(0.4, 0.14117648, 0, 1)
+theme_override_fonts/font = ExtResource("14_hwoo1")
+theme_override_font_sizes/font_size = 30
+theme_override_styles/normal = SubResource("StyleBoxEmpty_n01f5")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_2todf")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_dlw3c")
+text = "Confirm"
+
+[node name="Back" type="Button" parent="CanvasLayer/Shop Panel" unique_id=1771785304]
+offset_left = 740.0
+offset_top = 285.0
+offset_right = 805.0
+offset_bottom = 317.0
+theme_override_colors/font_color = Color(0.4, 0.14117648, 0, 1)
+theme_override_fonts/font = ExtResource("14_hwoo1")
+theme_override_font_sizes/font_size = 30
+theme_override_styles/normal = SubResource("StyleBoxEmpty_n01f5")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_6ewy6")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_vgfvf")
+text = "Back"
+
+[node name="Description" type="Label" parent="CanvasLayer/Shop Panel" unique_id=254546958]
+offset_left = 45.0
+offset_top = 50.0
+offset_right = 795.0
+offset_bottom = 250.0
+theme_override_colors/font_color = Color(0.4, 0.14117648, 0, 1)
+theme_override_fonts/font = ExtResource("14_hwoo1")
+theme_override_font_sizes/font_size = 50
+autowrap_mode = 3
+
+[node name="Coins (Cost)" type="Sprite2D" parent="CanvasLayer/Shop Panel" unique_id=2021464498]
+position = Vector2(89.99999, 263.99997)
+scale = Vector2(0.4728404, 0.4728404)
+texture = ExtResource("15_plpos")
+
+[node name="Price" type="Label" parent="CanvasLayer/Shop Panel/Coins (Cost)" unique_id=56582070]
+offset_left = 145.9266
+offset_right = 335.92664
+offset_bottom = 104.0
+theme_override_colors/font_color = Color(0.4, 0.14117648, 0, 1)
+theme_override_fonts/font = ExtResource("14_hwoo1")
+theme_override_font_sizes/font_size = 100
+
+[node name="Coins" parent="CanvasLayer" unique_id=1568081122 instance=ExtResource("16_s0ssm")]
+
+[node name="Navigation" parent="CanvasLayer" unique_id=651092304 instance=ExtResource("17_l3hgh")]
+
+[connection signal="pressed" from="CanvasLayer/Glazed Donuts" to="." method="_on_plain_bundle_pressed"]
+[connection signal="pressed" from="CanvasLayer/Glazed Donuts" to="." method="_on_glazed_donuts_pressed"]
+[connection signal="pressed" from="CanvasLayer/Chocolate Bread" to="." method="_on_plain_stack_pressed"]
+[connection signal="pressed" from="CanvasLayer/Chocolate Bread" to="." method="_on_chocolate_bread_pressed"]
+[connection signal="pressed" from="CanvasLayer/Plain Muffins" to="." method="_on_fancy_bundle_pressed"]
+[connection signal="pressed" from="CanvasLayer/Plain Muffins" to="." method="_on_plain_muffins_pressed"]
+[connection signal="pressed" from="CanvasLayer/Croissants" to="." method="_on_fancy_stack_pressed"]
+[connection signal="pressed" from="CanvasLayer/Croissants" to="." method="_on_croissants_pressed"]
+[connection signal="pressed" from="CanvasLayer/Apple Strudels" to="." method="_on_ornate_bundle_pressed"]
+[connection signal="pressed" from="CanvasLayer/Apple Strudels" to="." method="_on_apple_strudels_pressed"]
+[connection signal="pressed" from="CanvasLayer/Loaf of Bread" to="." method="_on_postcards_coast_pressed"]
+[connection signal="pressed" from="CanvasLayer/Loaf of Bread" to="." method="_on_loaf_of_bread_pressed"]
+[connection signal="pressed" from="CanvasLayer/Cinammon Rolls" to="." method="_on_postcards_deserts_pressed"]
+[connection signal="pressed" from="CanvasLayer/Cinammon Rolls" to="." method="_on_cinammon_rolls_pressed"]
+[connection signal="pressed" from="CanvasLayer/Baguettes" to="." method="_on_postcards_forests_pressed"]
+[connection signal="pressed" from="CanvasLayer/Baguettes" to="." method="_on_baguettes_pressed"]
+[connection signal="pressed" from="CanvasLayer/Shop Panel/Buy Item" to="." method="_on_buy_item_pressed"]
+[connection signal="pressed" from="CanvasLayer/Shop Panel/Confirm" to="." method="_on_buy_item_pressed"]
+[connection signal="pressed" from="CanvasLayer/Shop Panel/Confirm" to="." method="_on_confirm_pressed"]
+[connection signal="pressed" from="CanvasLayer/Shop Panel/Back" to="." method="_on_back_pressed"]

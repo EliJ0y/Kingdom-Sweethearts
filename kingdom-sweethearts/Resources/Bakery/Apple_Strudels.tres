@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="ShopsResource" format=3 uid="uid://s0mm7pxfq631"]
+
+[ext_resource type="Script" uid="uid://s28xadn5y5j3" path="res://Scripts/shops_resource.gd" id="1_57hsl"]
+[ext_resource type="Texture2D" uid="uid://ddwuhcgwjwuy6" path="res://Graphics/Bakery/Apple Strudels.png" id="2_xvp3i"]
+
+[resource]
+script = ExtResource("1_57hsl")
+description = "Apple strudels. Bundles of flaky crust that reveal soft, spiced apple fillings within."
+price = "25"
+texture = ExtResource("2_xvp3i")
+metadata/_custom_type_script = "uid://s28xadn5y5j3"

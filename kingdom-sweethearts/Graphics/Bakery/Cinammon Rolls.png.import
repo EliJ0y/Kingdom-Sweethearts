@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b4o27e0jsg2da"
-path="res://.godot/imported/Craft Shop Stocked.png-91153c467d9d09c5332672dae12477f5.ctex"
+uid="uid://bd5dxxer0el6j"
+path="res://.godot/imported/Cinammon Rolls.png-53957d3d4a6f03742a936498dd29804d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Graphics/Craft Shop/Craft Shop Stocked.png"
-dest_files=["res://.godot/imported/Craft Shop Stocked.png-91153c467d9d09c5332672dae12477f5.ctex"]
+source_file="res://Graphics/Bakery/Cinammon Rolls.png"
+dest_files=["res://.godot/imported/Cinammon Rolls.png-53957d3d4a6f03742a936498dd29804d.ctex"]
 
 [params]
 

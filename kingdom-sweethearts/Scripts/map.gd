@@ -18,3 +18,9 @@ func _on_craft_shop_icon_pressed() -> void:
 
 func _on_gazebo_icon_pressed() -> void:
 	get_tree().change_scene_to_file("res://Scenes/dialogue.tscn")
+
+func _on_bakery_icon_pressed() -> void:
+	get_tree().change_scene_to_file("res://Scenes/bakery.tscn")
+
+func _on_florist_icon_pressed() -> void:
+	pass
