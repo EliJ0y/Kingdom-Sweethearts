@@ -27,10 +27,10 @@ scale = Vector2(0.65, 0.65)
 texture_normal = ExtResource("3_myvm1")
 
 [node name="Craft Shop Icon" type="TextureButton" parent="CanvasLayer" unique_id=1487133905]
-offset_left = 486.0
-offset_top = 253.0
-offset_right = 1009.0
-offset_bottom = 730.0
+offset_left = 500.0
+offset_top = 250.0
+offset_right = 1023.0
+offset_bottom = 727.0
 scale = Vector2(0.62, 0.62)
 texture_normal = ExtResource("3_p3ir5")
 
@@ -43,18 +43,18 @@ scale = Vector2(0.8622824, 0.8622824)
 texture_normal = ExtResource("5_q0mm3")
 
 [node name="Bakery Icon" type="TextureButton" parent="CanvasLayer" unique_id=296191679]
-offset_left = 901.0
-offset_top = 783.0
-offset_right = 1378.0
-offset_bottom = 1241.0
+offset_left = 900.0
+offset_top = 760.0
+offset_right = 1377.0
+offset_bottom = 1218.0
 scale = Vector2(0.6, 0.6)
 texture_normal = ExtResource("6_np2xp")
 
 [node name="Florist Icon" type="TextureButton" parent="CanvasLayer" unique_id=63312706]
-offset_left = 1152.0
-offset_top = 168.0
-offset_right = 1512.0
-offset_bottom = 628.0
+offset_left = 1150.0
+offset_top = 160.0
+offset_right = 1510.0
+offset_bottom = 620.0
 scale = Vector2(0.65, 0.65)
 texture_normal = ExtResource("7_w7jjh")
 
