@@ -19,12 +19,12 @@ scale = Vector2(3.2930665, 2.2154703)
 texture = ExtResource("1_dgfud")
 
 [node name="Character Sprite" type="Sprite2D" parent="CanvasLayer" unique_id=1597908151]
-position = Vector2(1074, 147)
+position = Vector2(1060, 140)
 scale = Vector2(0.4598963, 0.4598963)
 centered = false
 
 [node name="Player Sprite" type="Sprite2D" parent="CanvasLayer" unique_id=1358397334]
-position = Vector2(0, 207)
+position = Vector2(0, 200)
 scale = Vector2(1.4665108, 1.4665108)
 centered = false
 

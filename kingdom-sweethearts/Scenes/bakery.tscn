@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://c2e88rd4mck5t"]
 
-[ext_resource type="Script" uid="uid://5qavxipj7ybx" path="res://Scenes/bakery.gd" id="1_5df3p"]
+[ext_resource type="Script" uid="uid://5qavxipj7ybx" path="res://Scripts/bakery.gd" id="1_5df3p"]
 [ext_resource type="Texture2D" uid="uid://0uhuxei6ey4x" path="res://Graphics/Bakery/Bakery BG.png" id="2_70i4k"]
 [ext_resource type="Texture2D" uid="uid://bcyvc5ykktpav" path="res://Graphics/Bakery/Glazed Donuts.png" id="4_p5upb"]
 [ext_resource type="Texture2D" uid="uid://dulc5s7poy2s4" path="res://Graphics/Bakery/Chocolate Bread.png" id="5_x21c3"]
@@ -93,7 +93,7 @@ texture_normal = ExtResource("9_fb6sb")
 
 [node name="Shop Panel" type="Sprite2D" parent="CanvasLayer" unique_id=1228542888]
 visible = false
-position = Vector2(870, 669)
+position = Vector2(820, 90)
 texture = ExtResource("13_qqqo5")
 centered = false
 
@@ -164,22 +164,22 @@ theme_override_font_sizes/font_size = 100
 
 [node name="Navigation" parent="CanvasLayer" unique_id=651092304 instance=ExtResource("17_l3hgh")]
 
-[connection signal="pressed" from="CanvasLayer/Glazed Donuts" to="." method="_on_plain_bundle_pressed"]
 [connection signal="pressed" from="CanvasLayer/Glazed Donuts" to="." method="_on_glazed_donuts_pressed"]
-[connection signal="pressed" from="CanvasLayer/Chocolate Bread" to="." method="_on_plain_stack_pressed"]
+[connection signal="pressed" from="CanvasLayer/Glazed Donuts" to="." method="_on_plain_bundle_pressed"]
 [connection signal="pressed" from="CanvasLayer/Chocolate Bread" to="." method="_on_chocolate_bread_pressed"]
-[connection signal="pressed" from="CanvasLayer/Plain Muffins" to="." method="_on_fancy_bundle_pressed"]
+[connection signal="pressed" from="CanvasLayer/Chocolate Bread" to="." method="_on_plain_stack_pressed"]
 [connection signal="pressed" from="CanvasLayer/Plain Muffins" to="." method="_on_plain_muffins_pressed"]
-[connection signal="pressed" from="CanvasLayer/Croissants" to="." method="_on_fancy_stack_pressed"]
+[connection signal="pressed" from="CanvasLayer/Plain Muffins" to="." method="_on_fancy_bundle_pressed"]
 [connection signal="pressed" from="CanvasLayer/Croissants" to="." method="_on_croissants_pressed"]
-[connection signal="pressed" from="CanvasLayer/Apple Strudels" to="." method="_on_ornate_bundle_pressed"]
+[connection signal="pressed" from="CanvasLayer/Croissants" to="." method="_on_fancy_stack_pressed"]
 [connection signal="pressed" from="CanvasLayer/Apple Strudels" to="." method="_on_apple_strudels_pressed"]
-[connection signal="pressed" from="CanvasLayer/Loaf of Bread" to="." method="_on_postcards_coast_pressed"]
+[connection signal="pressed" from="CanvasLayer/Apple Strudels" to="." method="_on_ornate_bundle_pressed"]
 [connection signal="pressed" from="CanvasLayer/Loaf of Bread" to="." method="_on_loaf_of_bread_pressed"]
-[connection signal="pressed" from="CanvasLayer/Cinammon Rolls" to="." method="_on_postcards_deserts_pressed"]
+[connection signal="pressed" from="CanvasLayer/Loaf of Bread" to="." method="_on_postcards_coast_pressed"]
 [connection signal="pressed" from="CanvasLayer/Cinammon Rolls" to="." method="_on_cinammon_rolls_pressed"]
-[connection signal="pressed" from="CanvasLayer/Baguettes" to="." method="_on_postcards_forests_pressed"]
+[connection signal="pressed" from="CanvasLayer/Cinammon Rolls" to="." method="_on_postcards_deserts_pressed"]
 [connection signal="pressed" from="CanvasLayer/Baguettes" to="." method="_on_baguettes_pressed"]
+[connection signal="pressed" from="CanvasLayer/Baguettes" to="." method="_on_postcards_forests_pressed"]
 [connection signal="pressed" from="CanvasLayer/Shop Panel/Buy Item" to="." method="_on_buy_item_pressed"]
 [connection signal="pressed" from="CanvasLayer/Shop Panel/Confirm" to="." method="_on_buy_item_pressed"]
 [connection signal="pressed" from="CanvasLayer/Shop Panel/Confirm" to="." method="_on_confirm_pressed"]
