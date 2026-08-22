@@ -1,6 +1,14 @@
 extends Node
 
-var scrolls_list = [preload("res://Resources/Silvester_Scroll.tres"), preload("res://Resources/Kohan_Scroll.tres")]
+var current_level = 1
+
+var scrolls_list = [preload("res://Resources/Scrolls/Silvester_Scroll.tres"), 
+					preload("res://Resources/Scrolls/Kohan_Scroll.tres"),
+					preload("res://Resources/Scrolls/Farai_Scroll.tres"),
+					preload("res://Resources/Scrolls/Rei_Scroll.tres"),
+					preload("res://Resources/Scrolls/Nasim_Scroll.tres"),
+					preload("res://Resources/Scrolls/Izzy_Scroll.tres")]
+
 var player_inventory = preload("res://Resources/Player_Inventory.tres")
 var total_coins = 100
 var scroll_count = 0

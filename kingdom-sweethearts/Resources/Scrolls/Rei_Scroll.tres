@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="ScrollsResource" format=3 uid="uid://bfe33mnnqdtt6"]
+
+[ext_resource type="FontFile" uid="uid://ci7hx68ncaaoh" path="res://Fonts/Brixton Medium.ttf" id="1_jg2ef"]
+[ext_resource type="Script" uid="uid://b8ely3pohkd0v" path="res://Scripts/scrolls_resource.gd" id="2_0aj7n"]
+[ext_resource type="Texture2D" uid="uid://qc5rdfnfa2qg" path="res://Graphics/Scrolls/Tied Scroll (Kohan).png" id="3_clpjw"]
+
+[resource]
+script = ExtResource("2_0aj7n")
+texturebutton = ExtResource("3_clpjw")
+lines = Array[String](["Greetings from Princess Rei of the territory of Vigoust.", "My match, Royal Farai, is one who is deeply entwined with magic. My sources tell me that they take great joy in life’s natural beauty as well.", "On a related note, many praise the skill of baking to be akin to magic. I believe a few delicious pastries ought to sweeten our first meeting.", "Thank you for your service."])
+font = ExtResource("1_jg2ef")
+metadata/_custom_type_script = "uid://b8ely3pohkd0v"
