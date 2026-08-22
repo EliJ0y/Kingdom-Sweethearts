@@ -8,16 +8,17 @@ var is_character_speaking = false
 var character
 var normal_colour = Color(1.0, 1.0, 1.0, 1.0)
 var grey_out = Color(0.5, 0.5, 0.5, 1.0)
+var has_silvester_spoken = false
+var has_kohan_spoken = false
 
 var player_sprites = preload("res://Resources/Sprites/Player_Sprites.tres")
 var characters = {"Silvester": preload("res://Resources/Sprites/Silvester_Sprites.tres"),
-				  }
+				  "Kohan": preload("res://Resources/Sprites/Kohan_Sprites.tres")}
 
 func _ready() -> void:
 	DialogueManager.got_dialogue.connect(dialogue_character_check)
 	DialogueManager.dialogue_ended.connect(start_dialogue)
 	DialogueManager.dialogue_ended.connect(end_dialogue)
-	
 	DialogueManager.show_dialogue_balloon(load("res://Dialogue Manager/Start_Dialogue.dialogue"), "start")
 
 func start_dialogue(resource: DialogueResource):
@@ -26,12 +27,22 @@ func start_dialogue(resource: DialogueResource):
 
 func end_dialogue(resource: DialogueResource):
 	if resource.resource_path == "res://Dialogue Manager/Silvester_Dialogue.dialogue":
+		character_sprite.visible = false
+		DialogueManager.show_dialogue_balloon(load("res://Dialogue Manager/Connector_Dialogue.dialogue"), "start")
+	elif resource.resource_path == "res://Dialogue Manager/Connector_Dialogue.dialogue":
+		$"CanvasLayer/Start Dialogue Button".visible = true
+	elif resource.resource_path == "res://Dialogue Manager/Kohan_Dialogue.dialogue":
 		player_sprite.visible = false
 		character_sprite.visible = false
 
 func _on_start_dialogue_button_pressed() -> void:
 	$"CanvasLayer/Start Dialogue Button".visible = false
-	DialogueManager.show_dialogue_balloon(load("res://Dialogue Manager/Silvester_Dialogue.dialogue"), "start")
+	if !has_silvester_spoken:
+		DialogueManager.show_dialogue_balloon(load("res://Dialogue Manager/Silvester_Dialogue.dialogue"), "start")
+		has_silvester_spoken = true
+	elif !has_kohan_spoken:
+		DialogueManager.show_dialogue_balloon(load("res://Dialogue Manager/Kohan_Dialogue.dialogue"), "start")
+		has_kohan_spoken = true
 	
 func dialogue_character_check(line: DialogueLine):
 	set_speaker(line.character)
@@ -48,6 +59,7 @@ func player_animation():
 func character_animation():
 	if character == null:
 		return
+	character_sprite.visible = true
 	if is_character_speaking == false:
 		character_sprite.texture = character.idle_sprite
 		character_sprite.modulate = Color(grey_out)
@@ -58,7 +70,7 @@ func character_animation():
 func set_speaker(speaker: String):
 	if speaker == null:
 		return
-	elif speaker  == "Cupid":
+	if speaker  == "Cupid":
 		is_player_speaking = true
 		is_character_speaking = false
 	else:

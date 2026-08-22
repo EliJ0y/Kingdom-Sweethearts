@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="SpritesResource" format=3 uid="uid://dag083k2ldyhm"]
+
+[ext_resource type="Texture2D" uid="uid://4j0rsg6ko4nq" path="res://Graphics/Characters/Kohan Idle.PNG" id="1_hx52f"]
+[ext_resource type="Script" uid="uid://c3hfy4nf71pn7" path="res://Scripts/sprites_resource.gd" id="2_3lmwr"]
+[ext_resource type="Texture2D" uid="uid://b52ocqjudd1is" path="res://Graphics/Characters/Kohan Talking.PNG" id="3_lcfoh"]
+
+[resource]
+script = ExtResource("2_3lmwr")
+idle_sprite = ExtResource("1_hx52f")
+talking_sprite = ExtResource("3_lcfoh")
+metadata/_custom_type_script = "uid://c3hfy4nf71pn7"
