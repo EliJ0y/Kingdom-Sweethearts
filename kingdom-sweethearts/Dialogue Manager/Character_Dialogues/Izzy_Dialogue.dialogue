@@ -2,6 +2,8 @@
 Izzy: Hello! Hey! Hi! Cupid! So good to see you.
 Cupid: Greetings heir of Philsopoll, here are the suitable flowers.
 
+$> navigation.open_inventory_for_dialogue()
+
 => player_choice_1
 ~ player_choice_1
 - These are forget-me-nots and daisies.

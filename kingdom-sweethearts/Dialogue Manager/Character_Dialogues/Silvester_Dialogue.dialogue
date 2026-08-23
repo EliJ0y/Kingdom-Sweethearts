@@ -2,6 +2,8 @@
 Silvester: Hey, Cupid! It is nice to meet you. 
 Cupid: Greetings, Duke Silvester. I prepared the bouquet as requested.
 
+$> navigation.open_inventory_for_dialogue()
+
 => player_choice_1
 ~ player_choice_1
 - These are poppies and primroses.

@@ -2,6 +2,7 @@ extends Node2D
 
 var level_number: LevelsResource
 
+
 @onready var player_sprite: Sprite2D = $"CanvasLayer/Player Sprite"
 @onready var character_sprite: Sprite2D = $"CanvasLayer/Character Sprite"
 var player_sprites = preload("res://Resources/Sprites/Player_Sprites.tres")
@@ -15,6 +16,7 @@ var character: CharactersResource
 
 var normal_colour = Color(1.0, 1.0, 1.0, 1.0)
 var grey_out = Color(0.5, 0.5, 0.5, 1.0)
+
 
 func _ready() -> void:
 	level_number = GlobalTracker.get_current_level()

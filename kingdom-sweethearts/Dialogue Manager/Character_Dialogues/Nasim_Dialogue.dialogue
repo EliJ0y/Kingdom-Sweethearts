@@ -2,6 +2,8 @@
 Nasim: What a pleasure to meet you, Cupid, and to receive your help.
 Cupid: Greetings heir of Crathod, the pleasure is all mine. Here are the pastries.
 
+$> navigation.open_inventory_for_dialogue()
+
 => player_choice_1
 ~ player_choice_1
 - A cinnamon roll and a strudel.

@@ -1,18 +1,24 @@
 extends Control
 
+signal item_selected(item:ShopsResource)
+
 @onready var player_inventory = preload("res://Resources/Player_Inventory.tres")
 @onready var slots_list = $NinePatchRect/GridContainer.get_children()
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	pass
+	for slot in slots_list:
+		slot.item_pressed.connect(on_slot_item_pressed) #signal from inventory_slot script
 
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta: float) -> void:
-	pass
+func update_slots(): 
+	for i in range(slots_list.size()):
+		if i < player_inventory.inventory.size():
+			slots_list[i].update_item(player_inventory.inventory[i])
+		else:
+			slots_list[i].update_item(null)
 
-func update_slots():
-	print("slots updated")
-	print(player_inventory.inventory)
-	for i in range(min(player_inventory.inventory.size(), slots_list.size())):
-		slots_list[i].update_item(player_inventory.inventory[i])
+func on_slot_item_pressed(item: ShopsResource):
+	if item == null:
+		return
+	
+	item_selected.emit(item)

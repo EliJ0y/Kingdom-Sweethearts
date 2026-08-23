@@ -1,10 +1,11 @@
 extends Node2D
 
 var is_inventory_open = false
+var selected_inventory_item: ShopsResource = null
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	pass
+	$Inventory.item_selected.connect(on_inventory_item_selected)
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
@@ -32,3 +33,25 @@ func _on_inventory_icon_pressed() -> void:
 	else:
 		$Inventory.visible = true
 		is_inventory_open = true
+
+
+func on_inventory_item_selected(item: ShopsResource):
+	selected_inventory_item = item
+
+func open_inventory_for_dialogue() -> ShopsResource:
+	selected_inventory_item = null
+	$Inventory.update_slots()
+	$Inventory.visible = true
+	is_inventory_open = true
+	
+	await $Inventory.item_selected
+	$Inventory.visible = false
+	is_inventory_open = false
+	
+	var inventory = $Inventory.player_inventory.inventory
+	var item_index = inventory.find(selected_inventory_item)
+	if item_index != -1:
+		inventory.remove_at(item_index)
+		$Inventory.update_slots()
+	
+	return selected_inventory_item

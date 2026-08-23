@@ -2,6 +2,8 @@
 Rei: Greetings, Cupid. I take it that you brought the pastries? 
 Cupid: Greetings, Princess Rei. Here they are as requested.
 
+$> navigation.open_inventory_for_dialogue()
+
 => player_choice_1
 ~ player_choice_1
 - A few slices of plain bread, a baguette, and a chocolate bread.

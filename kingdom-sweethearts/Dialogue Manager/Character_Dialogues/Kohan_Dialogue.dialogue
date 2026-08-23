@@ -2,6 +2,8 @@
 Kohan: You are Cupid, yes? I am Kohan Wildri. Did you bring the postcards?
 Cupid: Greetings, Duke Kohan. Yes, I am and here are the postcards.
 
+$> navigation.open_inventory_for_dialogue()
+
 => player_choice
 ~ player_choice
 - Each one shows a mesa, which is a Spanish word that means flat.

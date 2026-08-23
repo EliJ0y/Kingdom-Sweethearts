@@ -2,6 +2,8 @@
 Farai: Nice to put a name to a face, Cupid. Thank you for meeting me early.
 Cupid: Greetings, Royal Farai. Here are the materials, and you're welcome.
 
+$> navigation.open_inventory_for_dialogue()
+
 => player_choice_1
 ~ player_choice_1
 - A fountain pen should be used to make the writing more sophisticated.
