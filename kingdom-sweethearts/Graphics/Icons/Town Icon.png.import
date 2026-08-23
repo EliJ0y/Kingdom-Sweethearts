@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c7yr7v1bsqpcd"
-path="res://.godot/imported/Scroll Icon.png-8c1057e3caacaa976a3a960aea1d5545.ctex"
+uid="uid://b1spnq58mcm32"
+path="res://.godot/imported/Town Icon.png-eecc5cdde7b2546ce010371381dbce49.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Graphics/Scroll Icon.png"
-dest_files=["res://.godot/imported/Scroll Icon.png-8c1057e3caacaa976a3a960aea1d5545.ctex"]
+source_file="res://Graphics/Icons/Town Icon.png"
+dest_files=["res://.godot/imported/Town Icon.png-eecc5cdde7b2546ce010371381dbce49.ctex"]
 
 [params]
 

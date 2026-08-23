@@ -1,11 +1,11 @@
 [gd_scene format=3 uid="uid://cm6i7vcbypte4"]
 
-[ext_resource type="Texture2D" uid="uid://c7yr7v1bsqpcd" path="res://Graphics/Scroll Icon.png" id="1_ekuf8"]
+[ext_resource type="Texture2D" uid="uid://c7yr7v1bsqpcd" path="res://Graphics/Icons/Scroll Icon.png" id="1_ekuf8"]
 [ext_resource type="Script" uid="uid://mfvy44yu6jwn" path="res://Scripts/navigation.gd" id="1_gxgjm"]
-[ext_resource type="Texture2D" uid="uid://b1spnq58mcm32" path="res://Graphics/Town Icon.png" id="2_gxgjm"]
-[ext_resource type="Texture2D" uid="uid://dlnoq6f0qlp7m" path="res://Graphics/Home Icon.png" id="2_ut0uc"]
+[ext_resource type="Texture2D" uid="uid://dlnoq6f0qlp7m" path="res://Graphics/Icons/Home Icon.png" id="2_ut0uc"]
 [ext_resource type="PackedScene" uid="uid://dscywhb6lbuyh" path="res://Scenes/inventory.tscn" id="2_wi6jk"]
-[ext_resource type="Texture2D" uid="uid://drnrdl4arl283" path="res://Graphics/Inventory Icon.png" id="5_5pagq"]
+[ext_resource type="Texture2D" uid="uid://drnrdl4arl283" path="res://Graphics/Icons/Inventory Icon.png" id="5_5pagq"]
+[ext_resource type="Texture2D" uid="uid://dj1frigyo2fxb" path="res://Graphics/Icons/Map Icon.png" id="5_wi6jk"]
 
 [node name="Navigation" type="Node2D" unique_id=651092304]
 script = ExtResource("1_gxgjm")
@@ -20,35 +20,35 @@ offset_bottom = 1984.0
 [node name="Home Icon" type="TextureButton" parent="." unique_id=1801588294]
 offset_left = 1790.0
 offset_top = 10.0
-offset_right = 2218.0015
-offset_bottom = 456.0
-scale = Vector2(0.2995688, 0.29854935)
+offset_right = 2030.0
+offset_bottom = 250.0
+scale = Vector2(0.5, 0.5)
 texture_normal = ExtResource("2_ut0uc")
 
 [node name="Scroll Icon" type="TextureButton" parent="." unique_id=1993742965]
-offset_left = 1770.0
+offset_left = 1790.0
 offset_top = 140.0
-offset_right = 2190.0
-offset_bottom = 455.0
-scale = Vector2(0.38103664, 0.37974)
+offset_right = 2030.0
+offset_bottom = 380.0
+scale = Vector2(0.5, 0.5)
 action_mode = 0
 texture_normal = ExtResource("1_ekuf8")
 
 [node name="Map Icon" type="TextureButton" parent="." unique_id=310295487]
-offset_left = 1790.0
-offset_top = 280.0
-offset_right = 2293.0
-offset_bottom = 785.0
-scale = Vector2(0.22768298, 0.18919106)
+offset_left = 1785.0
+offset_top = 260.0
+offset_right = 2025.0
+offset_bottom = 500.0
+scale = Vector2(0.5, 0.5)
 action_mode = 0
-texture_normal = ExtResource("2_gxgjm")
+texture_normal = ExtResource("5_wi6jk")
 
 [node name="Inventory Icon" type="TextureButton" parent="." unique_id=915603776]
-offset_left = 1770.0
-offset_top = 410.0
-offset_right = 2376.0
-offset_bottom = 766.0
-scale = Vector2(0.24241051, 0.24241051)
+offset_left = 1790.0
+offset_top = 380.0
+offset_right = 2030.0
+offset_bottom = 620.0
+scale = Vector2(0.5, 0.5)
 texture_normal = ExtResource("5_5pagq")
 
 [connection signal="pressed" from="Home Icon" to="." method="_on_home_icon_pressed"]

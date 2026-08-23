@@ -2,9 +2,13 @@
 
 [ext_resource type="Texture2D" uid="uid://yra6wmejvfs" path="res://Graphics/Home Desk.png" id="1_nq32b"]
 [ext_resource type="Script" uid="uid://eo10k053o0vc" path="res://Scripts/home_desk.gd" id="1_tr8l1"]
-[ext_resource type="Texture2D" uid="uid://b1spnq58mcm32" path="res://Graphics/Town Icon.png" id="3_eupsi"]
+[ext_resource type="Texture2D" uid="uid://b1spnq58mcm32" path="res://Graphics/Icons/Town Icon.png" id="3_eupsi"]
 [ext_resource type="PackedScene" uid="uid://cm6i7vcbypte4" path="res://Scenes/navigation.tscn" id="5_0ttai"]
 [ext_resource type="PackedScene" uid="uid://brewn7dcybla" path="res://Scenes/coins.tscn" id="5_o1j7g"]
+[ext_resource type="Texture2D" uid="uid://ef4srtjb57e8" path="res://Graphics/Shop Panel.PNG" id="6_0ttai"]
+[ext_resource type="FontFile" uid="uid://c1lr353bluq7k" path="res://Fonts/TheSeasons-Reg.otf" id="7_bsgyu"]
+[ext_resource type="Texture2D" uid="uid://c7yr7v1bsqpcd" path="res://Graphics/Icons/Scroll Icon.png" id="8_cx8jn"]
+[ext_resource type="Texture2D" uid="uid://bteijx4vbhw0e" path="res://Graphics/Coins Sparkle.png" id="9_fecnm"]
 
 [node name="HomeDesk" type="Node2D" unique_id=719714100]
 script = ExtResource("1_tr8l1")
@@ -26,5 +30,58 @@ texture_normal = ExtResource("3_eupsi")
 
 [node name="Navigation" parent="." unique_id=651092304 instance=ExtResource("5_0ttai")]
 
+[node name="Panel" type="Panel" parent="." unique_id=1443207450]
+visible = false
+offset_right = 1920.0
+offset_bottom = 1080.0
+
+[node name="Control" type="Control" parent="." unique_id=491510518]
+visible = false
+layout_mode = 3
+anchors_preset = 0
+offset_left = 320.0
+offset_top = 700.0
+offset_right = 1520.0
+offset_bottom = 1020.0
+
+[node name="Context Panel" type="Sprite2D" parent="Control" unique_id=1448397763]
+position = Vector2(-8, 0)
+scale = Vector2(1.45, 0.9)
+texture = ExtResource("6_0ttai")
+centered = false
+
+[node name="Context" type="Label" parent="Control" unique_id=1894080612]
+custom_minimum_size = Vector2(1140, 260)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 32.0
+offset_top = 29.0
+offset_right = -28.0
+offset_bottom = -31.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("7_bsgyu")
+theme_override_font_sizes/font_size = 50
+autowrap_mode = 3
+
+[node name="Scroll Icon" type="TextureButton" parent="." unique_id=1752684107]
+visible = false
+offset_left = 1790.0
+offset_top = 140.0
+offset_right = 2030.0
+offset_bottom = 380.0
+scale = Vector2(0.5, 0.5)
+action_mode = 0
+texture_normal = ExtResource("8_cx8jn")
+
+[node name="Sparkle" type="Sprite2D" parent="Scroll Icon" unique_id=2032301276]
+position = Vector2(120, 110)
+scale = Vector2(2, 2)
+texture = ExtResource("9_fecnm")
+
 [connection signal="pressed" from="Map Icon" to="." method="_on_town_icon_pressed"]
 [connection signal="pressed" from="Map Icon" to="." method="_on_map_icon_pressed"]
+[connection signal="pressed" from="Scroll Icon" to="." method="_on_scroll_icon_pressed"]

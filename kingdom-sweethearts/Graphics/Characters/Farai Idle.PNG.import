@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://drnrdl4arl283"
-path="res://.godot/imported/Inventory Icon.png-06783f76dc2505592c9128d2dd5a13b0.ctex"
+uid="uid://bj3xj76m4hgjt"
+path="res://.godot/imported/Farai Idle.PNG-30b00bb3a6433601575b29b704b67150.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Graphics/Inventory Icon.png"
-dest_files=["res://.godot/imported/Inventory Icon.png-06783f76dc2505592c9128d2dd5a13b0.ctex"]
+source_file="res://Graphics/Characters/Farai Idle.PNG"
+dest_files=["res://.godot/imported/Farai Idle.PNG-30b00bb3a6433601575b29b704b67150.ctex"]
 
 [params]
 

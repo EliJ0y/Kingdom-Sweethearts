@@ -1,5 +1,6 @@
 extends Node
 
+var new_game = true
 var current_level = 1
 
 var levels = [preload("res://Resources/Levels/Level_1.tres"), 
@@ -7,7 +8,7 @@ var levels = [preload("res://Resources/Levels/Level_1.tres"),
 			  preload("res://Resources/Levels/Level_3.tres")]
 
 var player_inventory = preload("res://Resources/Player_Inventory.tres")
-var total_coins = 100
+var total_coins = 0
 var scroll_count = 0
 
 var gazebo_first_visit = true

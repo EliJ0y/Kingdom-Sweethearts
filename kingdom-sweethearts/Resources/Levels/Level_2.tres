@@ -6,11 +6,15 @@
 [ext_resource type="Script" uid="uid://b8ely3pohkd0v" path="res://Scripts/scrolls_resource.gd" id="2_6saib"]
 [ext_resource type="Resource" uid="uid://wvn5w21cid6v" path="res://Dialogue Manager/Character_Dialogues/Rei_Dialogue.dialogue" id="3_1w6jt"]
 [ext_resource type="Resource" uid="uid://bey4yaxxtgfsn" path="res://Resources/Scrolls/Farai_Scroll.tres" id="3_7or7v"]
+[ext_resource type="Script" uid="uid://ccwxluiyextw2" path="res://Scripts/characters_resource.gd" id="4_1w6jt"]
 [ext_resource type="Resource" uid="uid://bfe33mnnqdtt6" path="res://Resources/Scrolls/Rei_Scroll.tres" id="4_edbp8"]
+[ext_resource type="Resource" uid="uid://df7im63n5x0rk" path="res://Resources/Characters/Farai.tres" id="5_k3qaa"]
+[ext_resource type="Resource" uid="uid://dq8mrh3vm43qn" path="res://Resources/Characters/Kohan.tres" id="6_k3qaa"]
 
 [resource]
 script = ExtResource("1_njdvo")
 level = 2
 scrolls = Array[ExtResource("2_6saib")]([ExtResource("3_7or7v"), ExtResource("4_edbp8")])
 character_dialogues = Array[ExtResource("1_edbp8")]([ExtResource("2_4oq2c"), ExtResource("3_1w6jt")])
+characters = Array[ExtResource("4_1w6jt")]([ExtResource("5_k3qaa"), ExtResource("6_k3qaa")])
 metadata/_custom_type_script = "uid://bkfrj7xwd614l"
