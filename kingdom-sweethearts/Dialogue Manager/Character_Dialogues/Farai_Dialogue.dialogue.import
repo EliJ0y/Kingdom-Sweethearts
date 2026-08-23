@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=18
+type="Resource"
+uid="uid://bhgdadloihehw"
+path="res://.godot/imported/Farai_Dialogue.dialogue-d803f157183cba5bcc1eac5581b1544c.tres"
+
+[deps]
+
+source_file="res://Dialogue Manager/Character_Dialogues/Farai_Dialogue.dialogue"
+dest_files=["res://.godot/imported/Farai_Dialogue.dialogue-d803f157183cba5bcc1eac5581b1544c.tres"]
+
+[params]
+
+defaults=true

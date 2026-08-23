@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=18
+type="Resource"
+uid="uid://wvn5w21cid6v"
+path="res://.godot/imported/Rei_Dialogue.dialogue-2a385a54ce3ba90809eea936370700cb.tres"
+
+[deps]
+
+source_file="res://Dialogue Manager/Character_Dialogues/Rei_Dialogue.dialogue"
+dest_files=["res://.godot/imported/Rei_Dialogue.dialogue-2a385a54ce3ba90809eea936370700cb.tres"]
+
+[params]
+
+defaults=true

@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=18
+type="Resource"
+uid="uid://cferu62xioius"
+path="res://.godot/imported/Kohan_Dialogue.dialogue-e8278a98acffcf68c61edf715e8f0953.tres"
+
+[deps]
+
+source_file="res://Dialogue Manager/Character_Dialogues/Kohan_Dialogue.dialogue"
+dest_files=["res://.godot/imported/Kohan_Dialogue.dialogue-e8278a98acffcf68c61edf715e8f0953.tres"]
+
+[params]
+
+defaults=true

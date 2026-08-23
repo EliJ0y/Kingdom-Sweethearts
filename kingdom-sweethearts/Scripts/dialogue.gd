@@ -1,21 +1,24 @@
 extends Node2D
 
+var level_number: LevelsResource
+
 @onready var player_sprite: Sprite2D = $"CanvasLayer/Player Sprite"
 @onready var character_sprite: Sprite2D = $"CanvasLayer/Character Sprite"
+var player_sprites = preload("res://Resources/Sprites/Player_Sprites.tres")
 
 var is_player_speaking = false
 var is_character_speaking = false
-var character
+var has_character_1_spoken = false
+var has_character_2_spoken = false
+
+var character: CharactersResource
+
 var normal_colour = Color(1.0, 1.0, 1.0, 1.0)
 var grey_out = Color(0.5, 0.5, 0.5, 1.0)
-var has_silvester_spoken = false
-var has_kohan_spoken = false
-
-var player_sprites = preload("res://Resources/Sprites/Player_Sprites.tres")
-var characters = {"Silvester": preload("res://Resources/Sprites/Silvester_Sprites.tres"),
-				  "Kohan": preload("res://Resources/Sprites/Kohan_Sprites.tres")}
 
 func _ready() -> void:
+	level_number = GlobalTracker.get_current_level()
+	
 	DialogueManager.got_dialogue.connect(dialogue_character_check)
 	DialogueManager.dialogue_ended.connect(start_dialogue)
 	DialogueManager.dialogue_ended.connect(end_dialogue)
@@ -26,23 +29,23 @@ func start_dialogue(resource: DialogueResource):
 		$"CanvasLayer/Start Dialogue Button".visible = true
 
 func end_dialogue(resource: DialogueResource):
-	if resource.resource_path == "res://Dialogue Manager/Silvester_Dialogue.dialogue":
+	if resource == level_number.character_dialogues[0]:
 		character_sprite.visible = false
 		DialogueManager.show_dialogue_balloon(load("res://Dialogue Manager/Connector_Dialogue.dialogue"), "start")
-	elif resource.resource_path == "res://Dialogue Manager/Connector_Dialogue.dialogue":
-		$"CanvasLayer/Start Dialogue Button".visible = true
-	elif resource.resource_path == "res://Dialogue Manager/Kohan_Dialogue.dialogue":
+	elif resource == level_number.character_dialogues[1]:
 		player_sprite.visible = false
 		character_sprite.visible = false
+	elif resource.resource_path == "res://Dialogue Manager/Connector_Dialogue.dialogue":
+		$"CanvasLayer/Start Dialogue Button".visible = true
 
 func _on_start_dialogue_button_pressed() -> void:
 	$"CanvasLayer/Start Dialogue Button".visible = false
-	if !has_silvester_spoken:
-		DialogueManager.show_dialogue_balloon(load("res://Dialogue Manager/Silvester_Dialogue.dialogue"), "start")
-		has_silvester_spoken = true
-	elif !has_kohan_spoken:
-		DialogueManager.show_dialogue_balloon(load("res://Dialogue Manager/Kohan_Dialogue.dialogue"), "start")
-		has_kohan_spoken = true
+	if !has_character_1_spoken:
+		DialogueManager.show_dialogue_balloon((level_number.character_dialogues[0]), "start")
+		has_character_1_spoken = true
+	elif !has_character_2_spoken:
+		DialogueManager.show_dialogue_balloon((level_number.character_dialogues[1]), "start")
+		has_character_2_spoken = true
 	
 func dialogue_character_check(line: DialogueLine):
 	set_speaker(line.character)
@@ -51,21 +54,21 @@ func dialogue_character_check(line: DialogueLine):
 func player_animation():
 	if is_player_speaking == false:
 		player_sprite.texture = player_sprites.idle_sprite
-		player_sprite.modulate = Color(grey_out)
+		player_sprite.modulate = grey_out
 	else:
 		player_sprite.texture = player_sprites.talking_sprite
-		player_sprite.modulate = Color(normal_colour)
+		player_sprite.modulate = normal_colour
 
 func character_animation():
 	if character == null:
 		return
 	character_sprite.visible = true
 	if is_character_speaking == false:
-		character_sprite.texture = character.idle_sprite
-		character_sprite.modulate = Color(grey_out)
+		character_sprite.texture = character.character_sprites.idle_sprite
+		character_sprite.modulate = grey_out
 	else:
-		character_sprite.texture = character.talking_sprite
-		character_sprite.modulate = Color(normal_colour)
+		character_sprite.texture = character.character_sprites.talking_sprite
+		character_sprite.modulate = normal_colour
 
 func set_speaker(speaker: String):
 	if speaker == null:
@@ -76,7 +79,14 @@ func set_speaker(speaker: String):
 	else:
 		is_player_speaking = false
 		is_character_speaking = true
-		character = characters.get(speaker)
+		character = get_character(speaker)
 	
 	player_animation()
 	character_animation()
+
+		
+func get_character(character_name: String) -> CharactersResource:
+	for character_data in level_number.characters:
+		if character_data.character_name == character_name:
+			return character_data
+	return null

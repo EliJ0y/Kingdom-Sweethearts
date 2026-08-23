@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=18
+type="Resource"
+uid="uid://bmooig4k6mjh6"
+path="res://.godot/imported/Nasim_Dialogue.dialogue-02c8bc99f898029132d2a878ea4a1ee8.tres"
+
+[deps]
+
+source_file="res://Dialogue Manager/Character_Dialogues/Nasim_Dialogue.dialogue"
+dest_files=["res://.godot/imported/Nasim_Dialogue.dialogue-02c8bc99f898029132d2a878ea4a1ee8.tres"]
+
+[params]
+
+defaults=true

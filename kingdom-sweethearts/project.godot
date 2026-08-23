@@ -45,7 +45,7 @@ Enter={
 
 [internationalization]
 
-locale/translations_pot_files=PackedStringArray("res://Dialogue Manager/Silvester_Dialogue.dialogue", "res://Dialogue Manager/Start_Dialogue.dialogue", "res://Dialogue Manager/Kohan_Dialogue.dialogue", "res://Dialogue Manager/Connector_Dialogue.dialogue")
+locale/translations_pot_files=PackedStringArray("res://Dialogue Manager/Start_Dialogue.dialogue", "res://Dialogue Manager/Connector_Dialogue.dialogue", "res://Dialogue Manager/Character_Dialogues/Kohan_Dialogue.dialogue", "res://Dialogue Manager/Character_Dialogues/Silvester_Dialogue.dialogue", "res://Dialogue Manager/Character_Dialogues/Farai_Dialogue.dialogue", "res://Dialogue Manager/Character_Dialogues/Rei_Dialogue.dialogue", "res://Dialogue Manager/Character_Dialogues/Nasim_Dialogue.dialogue", "res://Dialogue Manager/Character_Dialogues/Izzy_Dialogue.dialogue")
 
 [physics]
 

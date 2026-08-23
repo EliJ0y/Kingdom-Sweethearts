@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=18
+type="Resource"
+uid="uid://bghs7ys8nbo7m"
+path="res://.godot/imported/Izzy_Dialogue.dialogue-ef737e07ab2dc14ec593a6957691b613.tres"
+
+[deps]
+
+source_file="res://Dialogue Manager/Character_Dialogues/Izzy_Dialogue.dialogue"
+dest_files=["res://.godot/imported/Izzy_Dialogue.dialogue-ef737e07ab2dc14ec593a6957691b613.tres"]
+
+[params]
+
+defaults=true

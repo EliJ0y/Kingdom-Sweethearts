@@ -1,15 +1,16 @@
 extends Node2D
 
-var scroll_1 = GlobalTracker.scrolls_list[0]
-var scroll_2 = GlobalTracker.scrolls_list[1]
+var level_number: LevelsResource
+var scroll_1 
+var scroll_2 
 
 @onready var opened_scroll_1 = $"CanvasLayer/Opened Scroll/Text 1"
 @onready var opened_scroll_2 = $"CanvasLayer/Opened Scroll/Text 2"
 @onready var tied_scroll_1 = $"CanvasLayer/Tied Scroll 1"
 @onready var tied_scroll_2 = $"CanvasLayer/Tied Scroll 2"
 
-var scroll_1_text = "\n\n".join(scroll_1.lines)
-var scroll_2_text = "\n\n".join(scroll_2.lines)
+var scroll_1_text
+var scroll_2_text
 
 var scroll_coins = 0
 
@@ -20,6 +21,17 @@ var stop_text_animation = false
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
+	load_level()
+	
+func load_level():
+	level_number = GlobalTracker.get_current_level()
+	scroll_1 = level_number.scrolls[0]
+	scroll_1_text = "\n\n".join(scroll_1.lines)
+	scroll_2 = level_number.scrolls[1]
+	scroll_2_text = "\n\n".join(scroll_2.lines)
+	setup_scrolls()
+	
+func setup_scrolls():
 	opened_scroll_1.text = scroll_1_text
 	opened_scroll_1.add_theme_font_override("font", scroll_1.font)
 	opened_scroll_1.visible_characters = 0

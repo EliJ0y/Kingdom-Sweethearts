@@ -1,0 +1,15 @@
+~ start
+Farai: Nice to put a name to a face, Cupid. Thank you for meeting me early.
+Cupid: Greetings, Royal Farai. Here are the materials, and you're welcome.
+
+=> player_choice_1
+~ player_choice_1
+- A fountain pen should be used to make the writing more sophisticated.
+	Cupid: A fountain pen should be used to make the writing more sophisticated.
+- Acquire a quill and some ink to embody the past times.
+	Cupid: Acquire a quill and some ink to embody the past times.
+- A ballpoint pen’s ink will dry fast enough to prevent smudging.
+	Cupid: A ballpoint pen’s ink will dry fast enough to prevent smudging.
+
+Farai: Ah, thank you for your advice. I will take my leave now. May we meet again. 
+=> END

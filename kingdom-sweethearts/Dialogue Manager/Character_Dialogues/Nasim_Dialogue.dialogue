@@ -1,0 +1,24 @@
+~ start
+Nasim: What a pleasure to meet you, Cupid, and to receive your help.
+Cupid: Greetings heir of Crathod, the pleasure is all mine. Here are the pastries.
+
+=> player_choice_1
+~ player_choice_1
+- A cinnamon roll and a strudel.
+	Cupid: A cinnamon roll and a strudel.
+- A muffin and a strudel.
+	Cupid: A muffin and a strudel.
+- A muffin and a donut.
+	Cupid: A muffin and a donut.
+
+=> player_choice_2
+~ player_choice_2
+- Their uniqueness lies in requiring a specific charcoal oven to be baked in.
+	Cupid: Their uniqueness lies in requiring a specific charcoal oven to be baked in.
+- Their uniqueness lies in preparing the dough together with filling before baking.
+	Cupid: Their uniqueness lies in preparing the dough together with filling before baking.
+- Their uniqueness lies in requiring the highest quality ingredients to taste any good.
+	Cupid: Their uniqueness lies in requiring the highest quality ingredients to taste any good.
+
+Nasim: Many thanks. I am too eager to stand still, so I will see you another time. 
+=> END

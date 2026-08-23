@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="LevelsResource" format=3 uid="uid://8i3op7f8lb4d"]
+
+[ext_resource type="Script" uid="uid://dbs4435dsf3ry" path="res://addons/dialogue_manager/dialogue_resource.gd" id="1_edbp8"]
+[ext_resource type="Script" uid="uid://bkfrj7xwd614l" path="res://Scripts/levels_resource.gd" id="1_njdvo"]
+[ext_resource type="Resource" uid="uid://bhgdadloihehw" path="res://Dialogue Manager/Character_Dialogues/Farai_Dialogue.dialogue" id="2_4oq2c"]
+[ext_resource type="Script" uid="uid://b8ely3pohkd0v" path="res://Scripts/scrolls_resource.gd" id="2_6saib"]
+[ext_resource type="Resource" uid="uid://wvn5w21cid6v" path="res://Dialogue Manager/Character_Dialogues/Rei_Dialogue.dialogue" id="3_1w6jt"]
+[ext_resource type="Resource" uid="uid://bey4yaxxtgfsn" path="res://Resources/Scrolls/Farai_Scroll.tres" id="3_7or7v"]
+[ext_resource type="Resource" uid="uid://bfe33mnnqdtt6" path="res://Resources/Scrolls/Rei_Scroll.tres" id="4_edbp8"]
+
+[resource]
+script = ExtResource("1_njdvo")
+level = 2
+scrolls = Array[ExtResource("2_6saib")]([ExtResource("3_7or7v"), ExtResource("4_edbp8")])
+character_dialogues = Array[ExtResource("1_edbp8")]([ExtResource("2_4oq2c"), ExtResource("3_1w6jt")])
+metadata/_custom_type_script = "uid://bkfrj7xwd614l"

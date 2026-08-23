@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="CharactersResource" format=3 uid="uid://dq8mrh3vm43qn"]
+
+[ext_resource type="Script" uid="uid://ccwxluiyextw2" path="res://Scripts/characters_resource.gd" id="1_8di1a"]
+[ext_resource type="Resource" uid="uid://dag083k2ldyhm" path="res://Resources/Sprites/Kohan_Sprites.tres" id="1_54ipx"]
+
+[resource]
+script = ExtResource("1_8di1a")
+character_name = "Kohan"
+character_sprites = ExtResource("1_54ipx")
+metadata/_custom_type_script = "uid://ccwxluiyextw2"
