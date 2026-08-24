@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="RequestedItemsResource" format=3 uid="uid://c2eumddlg0u8w"]
+
+[ext_resource type="Script" uid="uid://s28xadn5y5j3" path="res://Scripts/shops_resource.gd" id="1_y31ic"]
+[ext_resource type="Resource" uid="uid://kdtwc35bstlt" path="res://Resources/Craft Shop/Postcards_Mesas.tres" id="2_a8qyy"]
+[ext_resource type="Resource" uid="uid://cadcvieuruw6j" path="res://Resources/Craft Shop/Postcards_Mountains.tres" id="3_4h2pq"]
+[ext_resource type="Script" uid="uid://dbqtkxc5y0ql0" path="res://Scripts/requested_items_resource.gd" id="4_bg5wt"]
+
+[resource]
+script = ExtResource("4_bg5wt")
+request_name = "Postcards"
+acceptable_items = Array[ExtResource("1_y31ic")]([ExtResource("2_a8qyy"), ExtResource("3_4h2pq")])
+metadata/_custom_type_script = "uid://dbqtkxc5y0ql0"

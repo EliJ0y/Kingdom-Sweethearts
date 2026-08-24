@@ -8,4 +8,5 @@ script = ExtResource("1_y6a2h")
 description = "Plain muffins. Dense, moist, and slightly crumbly handfuls of happiness."
 price = "20"
 texture = ExtResource("2_bqslb")
+item_type = 2
 metadata/_custom_type_script = "uid://s28xadn5y5j3"

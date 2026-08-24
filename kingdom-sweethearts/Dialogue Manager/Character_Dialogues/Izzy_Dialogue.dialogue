@@ -2,9 +2,17 @@
 Izzy: Hello! Hey! Hi! Cupid! So good to see you.
 Cupid: Greetings heir of Philsopoll, here are the suitable flowers.
 
-$> navigation.open_inventory_for_dialogue()
+$> dialogue.start_item_requests(1)
 
-=> player_choice
+if dialogue.wrong_item_type():
+	Izzy: Ah, oh my, this is all wrong! Doom awaits me now because of you!
+elif dialogue.wrong_specific_item():
+	Izzy: Thank you and may you have a good day! 
+else:
+	=> player_choice
+
+=> END
+
 ~ player_choice
 - They are wildflowers, gathered from different regions in the kingdom.
 	Cupid: They are wildflowers, gathered from different regions in the kingdom.
@@ -12,6 +20,4 @@ $> navigation.open_inventory_for_dialogue()
 	Cupid: They are cultivated flowers, a few stalks grown at a time to ensure quality.
 - They are a group of flowers cultivated in various beautiful and vibrant colours. 
 	Cupid: They are a group of flowers cultivated in various beautiful and vibrant colours. 
-
 Izzy: Oh my, what a sight! Thank you and may you have a good day! 
-=> END

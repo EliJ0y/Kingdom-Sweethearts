@@ -8,4 +8,5 @@ script = ExtResource("1_cn676")
 description = "Chocolate bread. Scrumptious buns filled with chocolate-y goodness."
 price = "15"
 texture = ExtResource("2_x0cop")
+item_type = 2
 metadata/_custom_type_script = "uid://s28xadn5y5j3"

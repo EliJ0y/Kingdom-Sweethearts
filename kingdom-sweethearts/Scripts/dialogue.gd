@@ -2,9 +2,10 @@ extends Node2D
 
 var level_number: LevelsResource
 
-
 @onready var player_sprite: Sprite2D = $"CanvasLayer/Player Sprite"
 @onready var character_sprite: Sprite2D = $"CanvasLayer/Character Sprite"
+@onready var navigation: Node2D = $CanvasLayer/Navigation
+
 var player_sprites = preload("res://Resources/Sprites/Player_Sprites.tres")
 
 var is_player_speaking = false
@@ -14,13 +15,17 @@ var has_character_2_spoken = false
 
 var character: CharactersResource
 
+var completed_item_requests: Array[RequestedItemsResource] = []
+var item_wrong_specific = false
+var item_wrong_type = false
+
 var normal_colour = Color(1.0, 1.0, 1.0, 1.0)
 var grey_out = Color(0.5, 0.5, 0.5, 1.0)
 
 
 func _ready() -> void:
 	level_number = GlobalTracker.get_current_level()
-	
+
 	DialogueManager.got_dialogue.connect(dialogue_character_check)
 	DialogueManager.dialogue_ended.connect(start_dialogue)
 	DialogueManager.dialogue_ended.connect(end_dialogue)
@@ -35,14 +40,16 @@ func end_dialogue(resource: DialogueResource):
 	if resource == level_number.character_dialogues[0]:
 		character_sprite.visible = false
 		DialogueManager.show_dialogue_balloon(load("res://Dialogue Manager/Connector_Dialogue.dialogue"), "start")
+		
+	elif resource.resource_path == "res://Dialogue Manager/Connector_Dialogue.dialogue":
+		$"CanvasLayer/Button".visible = true
+		$"CanvasLayer/Button/Button Text".text = "Start Dialogue"
+		
 	elif resource == level_number.character_dialogues[1]:
 		player_sprite.visible = false
 		character_sprite.visible = false
 		$"CanvasLayer/Button".visible = true
 		$"CanvasLayer/Button/Button Text".text = "Return Home"
-	elif resource.resource_path == "res://Dialogue Manager/Connector_Dialogue.dialogue":
-		$"CanvasLayer/Button".visible = true
-		$"CanvasLayer/Button/Button Text".text = "Start Dialogue"
 
 func _on_button_pressed() -> void:
 	$CanvasLayer/Button.visible = false
@@ -99,3 +106,42 @@ func get_character(character_name: String) -> CharactersResource:
 		if character_data.character_name == character_name:
 			return character_data
 	return null
+
+func item_handed_over(item: ShopsResource):
+	var same_item_type = false
+	
+	for request in character.item_requests:
+		if completed_item_requests.has(request):
+			continue
+			
+		for acceptable_item in request.acceptable_items:
+			if item == acceptable_item:
+				completed_item_requests.append(request)
+				return
+			if item.item_type == acceptable_item.item_type:
+				same_item_type = true #don't immediately set last_item_wrong_specific = true as the item could be acceptable for another request
+	
+	if same_item_type:
+		item_wrong_specific = true
+	else:
+		item_wrong_type = true
+
+func all_requests_completed() -> bool:
+	return completed_item_requests.size() >= character.item_requests.size()
+	
+func wrong_specific_item() -> bool:
+	return item_wrong_specific
+
+func wrong_item_type() -> bool:
+	return item_wrong_type
+
+func reset_item_requests():
+	completed_item_requests.clear()
+	item_wrong_specific = false
+	item_wrong_type = false
+
+func start_item_requests(number_of_requests: int):
+	reset_item_requests()
+	var items_handed_over: Array[ShopsResource] = await navigation.open_inventory_for_dialogue(number_of_requests)
+	for item in items_handed_over:
+		item_handed_over(item)

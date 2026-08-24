@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="RequestedItemsResource" format=3 uid="uid://cwkghs2f1rr7l"]
+
+[ext_resource type="Script" uid="uid://s28xadn5y5j3" path="res://Scripts/shops_resource.gd" id="1_c4or3"]
+[ext_resource type="Resource" uid="uid://ddlyvyrdthbmm" path="res://Resources/Bakery/Plain_Muffins.tres" id="2_4igwk"]
+[ext_resource type="Resource" uid="uid://c3srfa4uhwt6e" path="res://Resources/Bakery/Loaf_of_Bread.tres" id="3_bvvvi"]
+[ext_resource type="Script" uid="uid://dbqtkxc5y0ql0" path="res://Scripts/requested_items_resource.gd" id="4_k8lro"]
+
+[resource]
+script = ExtResource("4_k8lro")
+request_name = "Flowers"
+acceptable_items = Array[ExtResource("1_c4or3")]([ExtResource("2_4igwk"), ExtResource("3_bvvvi")])
+metadata/_custom_type_script = "uid://dbqtkxc5y0ql0"

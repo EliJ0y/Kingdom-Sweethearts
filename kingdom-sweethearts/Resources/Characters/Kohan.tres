@@ -2,9 +2,12 @@
 
 [ext_resource type="Script" uid="uid://ccwxluiyextw2" path="res://Scripts/characters_resource.gd" id="1_8di1a"]
 [ext_resource type="Resource" uid="uid://dag083k2ldyhm" path="res://Resources/Sprites/Kohan_Sprites.tres" id="1_54ipx"]
+[ext_resource type="Script" uid="uid://dbqtkxc5y0ql0" path="res://Scripts/requested_items_resource.gd" id="2_kg5m5"]
+[ext_resource type="Resource" uid="uid://c2eumddlg0u8w" path="res://Resources/ItemRequests/Request_Kohan.tres" id="3_5vcm5"]
 
 [resource]
 script = ExtResource("1_8di1a")
 character_name = "Kohan"
 character_sprites = ExtResource("1_54ipx")
+item_requests = Array[ExtResource("2_kg5m5")]([ExtResource("3_5vcm5")])
 metadata/_custom_type_script = "uid://ccwxluiyextw2"

@@ -8,4 +8,5 @@ script = ExtResource("1_0chb6")
 description = "Postcards of mountains. Their peaks stretch into the sky, among the clouds."
 price = "50G"
 texture = ExtResource("2_m5ye5")
+item_type = 1
 metadata/_custom_type_script = "uid://s28xadn5y5j3"

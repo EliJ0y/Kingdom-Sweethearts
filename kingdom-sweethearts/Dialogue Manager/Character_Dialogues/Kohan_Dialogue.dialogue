@@ -2,9 +2,17 @@
 Kohan: You are Cupid, yes? I am Kohan Wildri. Did you bring the postcards?
 Cupid: Greetings, Duke Kohan. Yes, I am and here are the postcards.
 
-$> navigation.open_inventory_for_dialogue()
+$> dialogue.start_item_requests(1)
 
-=> player_choice
+if dialogue.wrong_item_type():
+	Kohan: These are not postcards. What do you think you’re doing? Damn it, I need to go.
+elif dialogue.wrong_specific_item():
+	Kohan: I give you my thanks. Goodbye now.
+else:
+	=> player_choice
+
+=> END
+
 ~ player_choice
 - Each one shows a mesa, which is a Spanish word that means flat.
 	Cupid: Each one shows a mesa, which is a Spanish word that means flat.
@@ -12,6 +20,4 @@ $> navigation.open_inventory_for_dialogue()
 	Cupid: These are canyons, deep, narrow valleys with steep sides.
 - These are mesas, made of sedimentary rock with varying mineral contents.
 	Cupid: These are mesas, made of sedimentary rock with varying mineral contents.
-
 Kohan: I give you my thanks, your help is appreciated. Goodbye now. 
-=> END

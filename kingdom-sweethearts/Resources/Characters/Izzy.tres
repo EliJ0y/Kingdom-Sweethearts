@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="CharactersResource" format=3 uid="uid://bpllo2dbd4hk7"]
+
+[ext_resource type="Resource" uid="uid://dag083k2ldyhm" path="res://Resources/Sprites/Kohan_Sprites.tres" id="1_b1fkk"]
+[ext_resource type="Script" uid="uid://dbqtkxc5y0ql0" path="res://Scripts/requested_items_resource.gd" id="2_s02pt"]
+[ext_resource type="Resource" uid="uid://cfd5vvd4brl6j" path="res://Resources/ItemRequests/Request_Izzy.tres" id="3_sfno1"]
+[ext_resource type="Script" uid="uid://ccwxluiyextw2" path="res://Scripts/characters_resource.gd" id="4_lsvv5"]
+
+[resource]
+script = ExtResource("4_lsvv5")
+character_name = "Izzy"
+character_sprites = ExtResource("1_b1fkk")
+item_requests = Array[ExtResource("2_s02pt")]([ExtResource("3_sfno1")])
+metadata/_custom_type_script = "uid://ccwxluiyextw2"

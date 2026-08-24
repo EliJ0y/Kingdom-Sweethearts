@@ -8,4 +8,5 @@ script = ExtResource("1_glx8g")
 description = "A stack of fancy paper and envelopes."
 price = "40G"
 texture = ExtResource("2_xf8gm")
+item_type = "Writing Materials"
 metadata/_custom_type_script = "uid://s28xadn5y5j3"

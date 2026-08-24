@@ -8,4 +8,5 @@ script = ExtResource("1_texa1")
 description = "Cinnamon rolls. Sweet, soft, and filled with rich swirls of cinnamon and brown sugar."
 price = "25"
 texture = ExtResource("2_2hd1d")
+item_type = 2
 metadata/_custom_type_script = "uid://s28xadn5y5j3"

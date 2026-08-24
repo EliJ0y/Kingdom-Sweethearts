@@ -20,5 +20,5 @@ func update_slots():
 func on_slot_item_pressed(item: ShopsResource):
 	if item == null:
 		return
-	
+
 	item_selected.emit(item)

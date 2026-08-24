@@ -8,4 +8,5 @@ script = ExtResource("1_gkjj5")
 description = "Baguettes. Long, thin loaves, crispy on the outside and tender on the inside."
 price = "10"
 texture = ExtResource("2_ayjk4")
+item_type = 2
 metadata/_custom_type_script = "uid://s28xadn5y5j3"

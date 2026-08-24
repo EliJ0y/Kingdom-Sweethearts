@@ -67,10 +67,10 @@ horizontal_alignment = 1
 vertical_alignment = 1
 autowrap_mode = 3
 
-[node name="DialogueStateContext" type="Node" parent="." unique_id=1994129738 node_paths=PackedStringArray("target")]
+[node name="DialogueStateContext" type="Node" parent="." unique_id=1004891195 node_paths=PackedStringArray("target")]
 script = ExtResource("6_4hwkt")
-alias = "navigation"
-target = NodePath("../CanvasLayer/Navigation")
+alias = "dialogue"
+target = NodePath("..")
 metadata/_custom_type_script = "uid://cd3222nx3y3k5"
 
 [connection signal="pressed" from="CanvasLayer/Button" to="." method="_on_button_pressed"]

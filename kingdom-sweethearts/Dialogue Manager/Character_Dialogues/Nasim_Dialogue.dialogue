@@ -2,10 +2,17 @@
 Nasim: What a pleasure to meet you, Cupid, and to receive your help.
 Cupid: Greetings heir of Crathod, the pleasure is all mine. Here are the pastries.
 
-$> navigation.open_inventory_for_dialogue()
-$> navigation.open_inventory_for_dialogue()
+$> dialogue.start_item_requests(2)
 
-=> player_choice
+if dialogue.wrong_item_type():
+	Nasim: I gave you clear instructions. Pray that your incompetence will not ruin the meeting.
+elif dialogue.wrong_specific_item():
+	Nasim: Thank you, I will see you another time. 
+else:
+	=> player_choice
+
+=> END
+
 ~ player_choice
 - Their uniqueness lies in requiring a specific charcoal oven to be baked in.
 	Cupid: Their uniqueness lies in requiring a specific charcoal oven to be baked in.
@@ -13,6 +20,4 @@ $> navigation.open_inventory_for_dialogue()
 	Cupid: Their uniqueness lies in preparing the dough together with filling before baking.
 - Their uniqueness lies in requiring the highest quality ingredients to taste any good.
 	Cupid: Their uniqueness lies in requiring the highest quality ingredients to taste any good.
-
 Nasim: Many thanks. I am too eager to stand still, so I will see you another time. 
-=> END

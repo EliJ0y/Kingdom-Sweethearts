@@ -8,4 +8,5 @@ script = ExtResource("1_57hsl")
 description = "Apple strudels. Bundles of flaky crust that reveal soft, spiced apple fillings within."
 price = "25"
 texture = ExtResource("2_xvp3i")
+item_type = 2
 metadata/_custom_type_script = "uid://s28xadn5y5j3"

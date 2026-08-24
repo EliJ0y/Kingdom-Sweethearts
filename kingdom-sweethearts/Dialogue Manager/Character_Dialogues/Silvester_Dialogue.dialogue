@@ -2,9 +2,17 @@
 Silvester: Hey, Cupid! It is nice to meet you. 
 Cupid: Greetings, Duke Silvester. I prepared the bouquet as requested.
 
-$> navigation.open_inventory_for_dialogue()
+$> dialogue.start_item_requests(2)
 
-=> player_choice
+if dialogue.wrong_item_type():
+	Silvester: Uh. These aren’t flowers? I think Duke Kohan is coming soon.. I have to go. 
+elif dialogue.wrong_specific_item():
+	Silvester: Thank you! I think Duke Kohan is coming soon, wish me luck!
+else:
+	=> player_choice
+
+=> END
+
 ~ player_choice
 - They are wildflowers, native to the forests of Wildegon.
 	Cupid: They are wildflowers, native to the forests of Wildegon.
@@ -12,6 +20,4 @@ $> navigation.open_inventory_for_dialogue()
 	Cupid: They are cultivated flowers, grown specifically for their beauty.
 - They are home-grown flowers, plucked fresh from my garden.
 	Cupid: They are home-grown flowers, plucked fresh from my garden.
-
 Silvester: Thank you! I’m sure Duke Kohan will appreciate this. Wish me luck!
-=> END

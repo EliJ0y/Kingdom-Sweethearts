@@ -8,4 +8,5 @@ script = ExtResource("1_w4638")
 description = "Glazed donuts. Indulgent pieces of deep-fried dough topped with a creamy glaze."
 price = "15"
 texture = ExtResource("2_we3t1")
+item_type = 2
 metadata/_custom_type_script = "uid://s28xadn5y5j3"

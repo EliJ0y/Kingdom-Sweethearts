@@ -8,4 +8,5 @@ script = ExtResource("1_llw72")
 description = "Croissants. Crisp golden-brown exteriors enveloping a  soft, buttery flavour"
 price = "15"
 texture = ExtResource("2_bk3ej")
+item_type = 2
 metadata/_custom_type_script = "uid://s28xadn5y5j3"
