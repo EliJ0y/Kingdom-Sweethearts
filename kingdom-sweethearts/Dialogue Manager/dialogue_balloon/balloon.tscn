@@ -1,10 +1,11 @@
 [gd_scene format=3 uid="uid://4fnrabj8npr"]
 
 [ext_resource type="Script" uid="uid://bh4wvibu5xe20" path="res://Dialogue Manager/dialogue_balloon/balloon.gd" id="1_36de5"]
-[ext_resource type="Texture2D" uid="uid://dn0bm47p6gscl" path="res://Graphics/UI/Dialogue Panel.png" id="2_1cgua"]
 [ext_resource type="PackedScene" uid="uid://ckvgyvclnwggo" path="res://addons/dialogue_manager/nodes/dialogue_label/dialogue_label.tscn" id="2_a8ve6"]
+[ext_resource type="Texture2D" uid="uid://cnagpsybv6r7k" path="res://Graphics/UI/Dialogue Panel.PNG" id="2_kmf6j"]
 [ext_resource type="FontFile" uid="uid://crb2i4elinjsj" path="res://Fonts/PirataOne-Regular.ttf" id="3_5h0j3"]
 [ext_resource type="Script" uid="uid://bb52rsfwhkxbn" path="res://addons/dialogue_manager/nodes/responses_menu/dialogue_responses_menu.gd" id="3_72ixx"]
+[ext_resource type="Texture2D" uid="uid://c5r5wbudl45sh" path="res://Graphics/UI/Dialogue Option.PNG" id="6_841o0"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_spyqn"]
 content_margin_left = 20.0
@@ -78,7 +79,7 @@ MarginContainer/constants/margin_top = 15
 PanelContainer/styles/panel = SubResource("StyleBoxFlat_qkmqt")
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_pjl42"]
-texture = ExtResource("2_1cgua")
+texture = ExtResource("2_kmf6j")
 
 [sub_resource type="Animation" id="Animation_nlsx6"]
 length = 0.001
@@ -121,7 +122,7 @@ content_margin_left = 75.0
 content_margin_top = 75.0
 content_margin_right = 75.0
 content_margin_bottom = 75.0
-texture = ExtResource("2_1cgua")
+texture = ExtResource("6_841o0")
 
 [node name="ExampleBalloon" type="CanvasLayer" unique_id=38036521]
 layer = 100
@@ -158,9 +159,9 @@ theme_override_styles/panel = SubResource("StyleBoxTexture_pjl42")
 
 [node name="MarginContainer" type="MarginContainer" parent="Balloon/MarginContainer/PanelContainer" unique_id=903640783]
 layout_mode = 2
-theme_override_constants/margin_left = 150
+theme_override_constants/margin_left = 110
 theme_override_constants/margin_top = 60
-theme_override_constants/margin_right = 140
+theme_override_constants/margin_right = 120
 theme_override_constants/margin_bottom = 50
 
 [node name="HBoxContainer" type="HBoxContainer" parent="Balloon/MarginContainer/PanelContainer/MarginContainer" unique_id=1685890612]
@@ -222,6 +223,7 @@ metadata/_edit_use_anchors_ = true
 
 [node name="ResponseExample" type="Button" parent="Balloon/ResponsesMenu" unique_id=1446810977]
 custom_minimum_size = Vector2(700, 200)
+custom_maximum_size = Vector2(700, 200)
 layout_mode = 2
 size_flags_vertical = 3
 theme_override_colors/font_color = Color(0, 0, 0, 1)
@@ -230,6 +232,7 @@ theme_override_font_sizes/font_size = 30
 theme_override_styles/normal = SubResource("StyleBoxTexture_4kxuq")
 text = "Response example"
 autowrap_mode = 3
+autowrap_trim_flags = 192
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=1162558754]
 unique_name_in_owner = true

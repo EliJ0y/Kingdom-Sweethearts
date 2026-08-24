@@ -3,6 +3,16 @@ extends Node2D
 var is_inventory_open = false
 
 
+func _input(event: InputEvent) -> void:
+	if !is_inventory_open:
+		return
+	if event is InputEventMouseButton:
+		if event.button_index == MOUSE_BUTTON_LEFT and event.pressed:
+			if not $Inventory.get_global_rect().has_point(event.position):
+				$Inventory.visible = false
+				is_inventory_open = false
+				$Inventory.item_selected.emit(null)
+
 func _on_home_icon_pressed() -> void:
 	get_tree().change_scene_to_file("res://Scenes/home_desk.tscn")
 
@@ -35,12 +45,10 @@ func open_inventory_for_dialogue(number_of_requests: int) -> Array[ShopsResource
 	
 	while items_handed_over.size() < number_of_requests:
 		var inventory = $Inventory.player_inventory.inventory
-		if inventory.is_empty():
-			break
-		
 		var item: ShopsResource = await $Inventory.item_selected
-		if item == null:
-			continue
+		
+		if !is_inventory_open or item == null:
+			return items_handed_over
 		
 		var item_index = inventory.find(item)
 		if item_index != -1:

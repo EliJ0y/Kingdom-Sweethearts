@@ -62,7 +62,7 @@ func _on_tied_scroll_1_pressed() -> void:
 	GlobalTracker.scroll_count += 1
 	
 	var scroll_1_tween = create_tween()
-	scroll_1_tween.tween_property($"CanvasLayer/Tied Scroll 1", "position", Vector2(740, 440), 0.8)
+	scroll_1_tween.tween_property($"CanvasLayer/Tied Scroll 1", "position", Vector2(720, 440), 0.8)
 	scroll_1_tween.tween_callback(open_scroll_1)
 
 func open_scroll_1() -> void:
@@ -80,7 +80,7 @@ func _on_tied_scroll_2_pressed() -> void:
 	GlobalTracker.scroll_count += 1
 	
 	var scroll_2_tween = create_tween()
-	scroll_2_tween.tween_property($"CanvasLayer/Tied Scroll 2", "position", Vector2(740, 440), 0.8)
+	scroll_2_tween.tween_property($"CanvasLayer/Tied Scroll 2", "position", Vector2(720, 440), 0.8)
 	scroll_2_tween.tween_callback(open_scroll_2)
 
 func open_scroll_2() -> void:

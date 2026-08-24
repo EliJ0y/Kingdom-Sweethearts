@@ -5,7 +5,7 @@ Cupid: Greetings, Duke Silvester. I prepared the bouquet as requested.
 $> dialogue.start_item_requests(2)
 
 if dialogue.wrong_item_type():
-	Silvester: Uh. These aren’t flowers? I think Duke Kohan is coming soon.. I have to go. 
+	Silvester: Uh. This isn't what I asked for? I think Duke Kohan is coming soon.. I have to go. 
 elif dialogue.wrong_specific_item():
 	Silvester: Thank you! I think Duke Kohan is coming soon, wish me luck!
 else:

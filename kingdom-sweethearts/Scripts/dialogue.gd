@@ -100,12 +100,26 @@ func set_speaker(speaker: String):
 	player_animation()
 	character_animation()
 
-		
 func get_character(character_name: String) -> CharactersResource:
 	for character_data in level_number.characters:
 		if character_data.character_name == character_name:
 			return character_data
 	return null
+
+
+func start_item_requests(number_of_requests: int):
+	reset_item_requests()
+	var items_handed_over: Array[ShopsResource] = await navigation.open_inventory_for_dialogue(number_of_requests)
+	if items_handed_over.size() < number_of_requests:
+		item_wrong_type = true
+		return 
+	for item in items_handed_over:
+		item_handed_over(item)
+
+func reset_item_requests():
+	completed_item_requests.clear()
+	item_wrong_specific = false
+	item_wrong_type = false
 
 func item_handed_over(item: ShopsResource):
 	var same_item_type = false
@@ -134,14 +148,3 @@ func wrong_specific_item() -> bool:
 
 func wrong_item_type() -> bool:
 	return item_wrong_type
-
-func reset_item_requests():
-	completed_item_requests.clear()
-	item_wrong_specific = false
-	item_wrong_type = false
-
-func start_item_requests(number_of_requests: int):
-	reset_item_requests()
-	var items_handed_over: Array[ShopsResource] = await navigation.open_inventory_for_dialogue(number_of_requests)
-	for item in items_handed_over:
-		item_handed_over(item)

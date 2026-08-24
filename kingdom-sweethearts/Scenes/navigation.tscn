@@ -10,6 +10,13 @@
 [node name="Navigation" type="Node2D" unique_id=651092304]
 script = ExtResource("1_gxgjm")
 
+[node name="Outside Inventory" type="Control" parent="." unique_id=1274824769]
+visible = false
+layout_mode = 3
+anchors_preset = 0
+offset_right = 1920.0
+offset_bottom = 1090.0
+
 [node name="Inventory" parent="." unique_id=1905093856 instance=ExtResource("2_wi6jk")]
 visible = false
 offset_left = 215.0

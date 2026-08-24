@@ -5,7 +5,7 @@ Cupid: Greetings, Duke Kohan. Yes, I am and here are the postcards.
 $> dialogue.start_item_requests(1)
 
 if dialogue.wrong_item_type():
-	Kohan: These are not postcards. What do you think you’re doing? Damn it, I need to go.
+	Kohan: This is wrong. What do you think you’re doing? Damn it, I need to go.
 elif dialogue.wrong_specific_item():
 	Kohan: I give you my thanks. Goodbye now.
 else:
