@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dhk5e2btjawhi"
-path="res://.godot/imported/Inventory Slot.PNG-ca4fc93df46743589d8a1ff546d14e8a.ctex"
+uid="uid://dd5c38pssf4xg"
+path="res://.godot/imported/Farai Scroll.png-1ae083bd9e69123d5837e43a1ee572ef.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Graphics/Inventory Slot.PNG"
-dest_files=["res://.godot/imported/Inventory Slot.PNG-ca4fc93df46743589d8a1ff546d14e8a.ctex"]
+source_file="res://Graphics/Scrolls/Farai Scroll.png"
+dest_files=["res://.godot/imported/Farai Scroll.png-1ae083bd9e69123d5837e43a1ee572ef.ctex"]
 
 [params]
 

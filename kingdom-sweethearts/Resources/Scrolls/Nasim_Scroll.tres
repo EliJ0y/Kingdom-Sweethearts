@@ -2,11 +2,11 @@
 
 [ext_resource type="FontFile" uid="uid://cd3s4otj2b7nh" path="res://Fonts/AllertaStencil-Regular.ttf" id="1_ksrpf"]
 [ext_resource type="Script" uid="uid://b8ely3pohkd0v" path="res://Scripts/scrolls_resource.gd" id="2_myqg7"]
-[ext_resource type="Texture2D" uid="uid://qc5rdfnfa2qg" path="res://Graphics/Scrolls/Tied Scroll (Kohan).png" id="3_6yqcf"]
+[ext_resource type="Texture2D" uid="uid://drhch3rvah4aa" path="res://Graphics/Scrolls/Nasim Scroll.png" id="3_ksrpf"]
 
 [resource]
 script = ExtResource("2_myqg7")
-texturebutton = ExtResource("3_6yqcf")
-lines = Array[String](["Pleased to meet you, Cupid. I am Nasim Cranter, the heir to Crathod.", "I simply cannot wait to meet the heir of Philsopoll, Izzy, in two days! While our fields differ, I am sure we can learn much from each other!", "While we are both passionate, I recall tales of them forgetting his bodily needs. I hazard a guess that the pastries for our meeting might need to be slightly more intricate for it to remember to take a bite.", "Well wishes to you and Izzy!"])
+texturebutton = ExtResource("3_ksrpf")
+lines = Array[String](["Pleased to meet you, Cupid. I am Nasim Cranter, heir of Crathod.", "I simply cannot wait to meet the heir of Philsopoll, Izzy! While our fields differ, I am sure we can learn much from each other!", "Due to her passion, I recall tales of them forgetting its bodily needs. I hazard a guess that the pastries for our meeting might need more intricacy for him to be intirgued enough take a bite.", "Well wishes to you and Izzy!"])
 font = ExtResource("1_ksrpf")
 metadata/_custom_type_script = "uid://b8ely3pohkd0v"

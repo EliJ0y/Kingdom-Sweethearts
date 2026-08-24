@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://qc5rdfnfa2qg"
-path="res://.godot/imported/Tied Scroll (Kohan).png-9dcfe5feabeb2609155f5da776fde69c.ctex"
+uid="uid://drhch3rvah4aa"
+path="res://.godot/imported/Nasim Scroll.png-d85b691406885d95701ac84df1e35f5a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Graphics/Scrolls/Tied Scroll (Kohan).png"
-dest_files=["res://.godot/imported/Tied Scroll (Kohan).png-9dcfe5feabeb2609155f5da776fde69c.ctex"]
+source_file="res://Graphics/Scrolls/Nasim Scroll.png"
+dest_files=["res://.godot/imported/Nasim Scroll.png-d85b691406885d95701ac84df1e35f5a.ctex"]
 
 [params]
 

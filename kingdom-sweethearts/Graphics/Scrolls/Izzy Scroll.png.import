@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bteijx4vbhw0e"
-path="res://.godot/imported/Coins Sparkle.png-ac8489dcf34c39bed90e3cf83238e3ea.ctex"
+uid="uid://cfq4p0a451p5j"
+path="res://.godot/imported/Izzy Scroll.png-fb8b098210fc2b2c67544d2cfb035d20.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Graphics/Coins Sparkle.png"
-dest_files=["res://.godot/imported/Coins Sparkle.png-ac8489dcf34c39bed90e3cf83238e3ea.ctex"]
+source_file="res://Graphics/Scrolls/Izzy Scroll.png"
+dest_files=["res://.godot/imported/Izzy Scroll.png-fb8b098210fc2b2c67544d2cfb035d20.ctex"]
 
 [params]
 

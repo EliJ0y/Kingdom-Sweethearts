@@ -2,11 +2,11 @@
 
 [ext_resource type="Script" uid="uid://b8ely3pohkd0v" path="res://Scripts/scrolls_resource.gd" id="1_3k75i"]
 [ext_resource type="FontFile" uid="uid://2igbcqe8jbxy" path="res://Fonts/BERNIER™ Regular.ttf" id="1_srq50"]
-[ext_resource type="Texture2D" uid="uid://qc5rdfnfa2qg" path="res://Graphics/Scrolls/Tied Scroll (Kohan).png" id="2_srq50"]
+[ext_resource type="Texture2D" uid="uid://ov1hgfw8elrs" path="res://Graphics/Scrolls/Kohan Scroll.png" id="3_6thkk"]
 
 [resource]
 script = ExtResource("1_3k75i")
-texturebutton = ExtResource("2_srq50")
-lines = Array[String](["I am Duke Kohan from Wildegon.", "I am aware that you, Cupid, will assist in my matchmaking with the charming Duke Silvester from Oceirea in three days.", "One of the few things I know of him is his great sense of responsibility to Oceirea. It seems unlikely for him to travel.", "As such, I believe it would be beneficial to bring postcards as a gift.", "May we get along well."])
+texturebutton = ExtResource("3_6thkk")
+lines = Array[String](["I am Duke Kohan from Wildegon.", "I am aware that you, Cupid, will assist in my matchmaking with the charming Duke Silvester from Oceirea in three days.", "One of the few things I know of him is his great sense of responsibility to Oceirea. It seems unlikely for him to travel.", "As such, I believe it would be beneficial to bring postcards of other regions as a gift.", "May we get along well."])
 font = ExtResource("1_srq50")
 metadata/_custom_type_script = "uid://b8ely3pohkd0v"

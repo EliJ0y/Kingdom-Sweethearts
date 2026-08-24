@@ -28,7 +28,8 @@ func _ready() -> void:
 
 func start_dialogue(resource: DialogueResource):
 	if resource.resource_path == "res://Dialogue Manager/Start_Dialogue.dialogue":
-		$"CanvasLayer/Start Dialogue Button".visible = true
+		$CanvasLayer/Button.visible = true
+		$"CanvasLayer/Button/Button Text".text = "Start Dialogue"
 
 func end_dialogue(resource: DialogueResource):
 	if resource == level_number.character_dialogues[0]:
@@ -37,17 +38,23 @@ func end_dialogue(resource: DialogueResource):
 	elif resource == level_number.character_dialogues[1]:
 		player_sprite.visible = false
 		character_sprite.visible = false
+		$"CanvasLayer/Button".visible = true
+		$"CanvasLayer/Button/Button Text".text = "Return Home"
 	elif resource.resource_path == "res://Dialogue Manager/Connector_Dialogue.dialogue":
-		$"CanvasLayer/Start Dialogue Button".visible = true
+		$"CanvasLayer/Button".visible = true
+		$"CanvasLayer/Button/Button Text".text = "Start Dialogue"
 
-func _on_start_dialogue_button_pressed() -> void:
-	$"CanvasLayer/Start Dialogue Button".visible = false
+func _on_button_pressed() -> void:
+	$CanvasLayer/Button.visible = false
 	if !has_character_1_spoken:
 		DialogueManager.show_dialogue_balloon((level_number.character_dialogues[0]), "start")
 		has_character_1_spoken = true
 	elif !has_character_2_spoken:
 		DialogueManager.show_dialogue_balloon((level_number.character_dialogues[1]), "start")
 		has_character_2_spoken = true
+	else:
+		GlobalTracker.next_level()
+		get_tree().change_scene_to_file("res://Scenes/home_desk.tscn")
 	
 func dialogue_character_check(line: DialogueLine):
 	set_speaker(line.character)

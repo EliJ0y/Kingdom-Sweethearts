@@ -2,11 +2,11 @@
 
 [ext_resource type="FontFile" uid="uid://djt3y07vl5wfc" path="res://Fonts/Aprila-Regular.otf" id="1_4vyip"]
 [ext_resource type="Script" uid="uid://b8ely3pohkd0v" path="res://Scripts/scrolls_resource.gd" id="2_waajl"]
-[ext_resource type="Texture2D" uid="uid://qc5rdfnfa2qg" path="res://Graphics/Scrolls/Tied Scroll (Kohan).png" id="3_vjubv"]
+[ext_resource type="Texture2D" uid="uid://dd5c38pssf4xg" path="res://Graphics/Scrolls/Farai Scroll.png" id="3_4vyip"]
 
 [resource]
 script = ExtResource("2_waajl")
-texturebutton = ExtResource("3_vjubv")
-lines = Array[String](["Good day! I am Royal Farai.", "My life is soon to be filled with more magic as I will meet Princess Rei in but four days!", "I understand she will serve in Vigoust’s military, and request your help in obtaining letter-writing materials. Whether we hit it off or not, I want to show her my commitment.", "Here’s hoping it goes splendid!"])
+texturebutton = ExtResource("3_4vyip")
+lines = Array[String](["Good day! I am Royal Farai.", "My life is soon to be filled with more magic as I will meet Princess Rei in but four days!", "I understand she will serve in Vigoust’s military, and request your help in obtaining letter-writing materials. If we manage to hit it off, I want to show her my commitment for keeping in contact.", "Here’s hoping it goes splendid!"])
 font = ExtResource("1_4vyip")
 metadata/_custom_type_script = "uid://b8ely3pohkd0v"

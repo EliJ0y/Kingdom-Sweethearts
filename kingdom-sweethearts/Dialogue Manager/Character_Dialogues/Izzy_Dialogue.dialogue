@@ -4,17 +4,8 @@ Cupid: Greetings heir of Philsopoll, here are the suitable flowers.
 
 $> navigation.open_inventory_for_dialogue()
 
-=> player_choice_1
-~ player_choice_1
-- These are forget-me-nots and daisies.
-	Cupid: These are forget-me-nots and daisies.
-- These are lilies.
-	Cupid: These are lilies.
-- These are hydrangeas.
-	Cupid: These are hydrangeas.
-
-=> player_choice_2
-~ player_choice_2
+=> player_choice
+~ player_choice
 - They are wildflowers, gathered from different regions in the kingdom.
 	Cupid: They are wildflowers, gathered from different regions in the kingdom.
 - They are cultivated flowers, a few stalks grown at a time to ensure quality.

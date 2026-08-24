@@ -2,11 +2,11 @@
 
 [ext_resource type="FontFile" uid="uid://bjg45k55yvke5" path="res://Fonts/ITC Bauhaus Light.ttf" id="1_6q470"]
 [ext_resource type="Script" uid="uid://b8ely3pohkd0v" path="res://Scripts/scrolls_resource.gd" id="2_nty7a"]
-[ext_resource type="Texture2D" uid="uid://qc5rdfnfa2qg" path="res://Graphics/Scrolls/Tied Scroll (Kohan).png" id="3_allu8"]
+[ext_resource type="Texture2D" uid="uid://cfq4p0a451p5j" path="res://Graphics/Scrolls/Izzy Scroll.png" id="3_6q470"]
 
 [resource]
 script = ExtResource("2_nty7a")
-texturebutton = ExtResource("3_allu8")
-lines = Array[String](["Salutations from Izzy Phillos, the heir to Philsopoll.", "Nasim Cranter is a wonderfully fitting match! I will take full advantage of this chance to learn of their precise craft. Intriguingly, her sense of self is non-rigid too, in contrast. I must share with them of such occurrences in nature!", "Ah, I am getting ahead of myself. Flower printing is rising in popularity, and will thus make an appropriate gift.", "Knowledge, and possibly, love awaits!"])
+texturebutton = ExtResource("3_6q470")
+lines = Array[String](["Salutations from Izzy Phillos, the heir of Philsopoll.", "Nasim Cranter is a wonderfully fitting match! I will take full advantage of this chance to learn of their precise craft. Intriguingly, her sense of self is non-rigid in contrast, just like me. I must share with them of such occurrences in nature!", "Ah, I am getting ahead of myself. Flower printing is rising in popularity, and flowers will thus make an appropriate gift for them to try out the craft.", "Knowledge, and possibly, love awaits!"])
 font = ExtResource("1_6q470")
 metadata/_custom_type_script = "uid://b8ely3pohkd0v"

@@ -2,13 +2,12 @@
 
 [ext_resource type="Texture2D" uid="uid://yra6wmejvfs" path="res://Graphics/Home Desk.png" id="1_nq32b"]
 [ext_resource type="Script" uid="uid://eo10k053o0vc" path="res://Scripts/home_desk.gd" id="1_tr8l1"]
-[ext_resource type="Texture2D" uid="uid://b1spnq58mcm32" path="res://Graphics/Icons/Town Icon.png" id="3_eupsi"]
 [ext_resource type="PackedScene" uid="uid://cm6i7vcbypte4" path="res://Scenes/navigation.tscn" id="5_0ttai"]
 [ext_resource type="PackedScene" uid="uid://brewn7dcybla" path="res://Scenes/coins.tscn" id="5_o1j7g"]
-[ext_resource type="Texture2D" uid="uid://ef4srtjb57e8" path="res://Graphics/Shop Panel.PNG" id="6_0ttai"]
+[ext_resource type="Texture2D" uid="uid://ef4srtjb57e8" path="res://Graphics/UI/Shop Panel.PNG" id="6_0ttai"]
 [ext_resource type="FontFile" uid="uid://c1lr353bluq7k" path="res://Fonts/TheSeasons-Reg.otf" id="7_bsgyu"]
-[ext_resource type="Texture2D" uid="uid://c7yr7v1bsqpcd" path="res://Graphics/Icons/Scroll Icon.png" id="8_cx8jn"]
-[ext_resource type="Texture2D" uid="uid://bteijx4vbhw0e" path="res://Graphics/Coins Sparkle.png" id="9_fecnm"]
+[ext_resource type="Texture2D" uid="uid://cp2yn3d5b313s" path="res://Graphics/Icons/Scroll Icon.PNG" id="8_cx8jn"]
+[ext_resource type="Texture2D" uid="uid://bteijx4vbhw0e" path="res://Graphics/UI/Coins Sparkle.png" id="9_fecnm"]
 
 [node name="HomeDesk" type="Node2D" unique_id=719714100]
 script = ExtResource("1_tr8l1")
@@ -18,15 +17,6 @@ texture = ExtResource("1_nq32b")
 centered = false
 
 [node name="Coins" parent="." unique_id=1568081122 instance=ExtResource("5_o1j7g")]
-
-[node name="Map Icon" type="TextureButton" parent="." unique_id=681816291]
-offset_left = 51.0
-offset_top = 156.0
-offset_right = 554.0
-offset_bottom = 661.0
-scale = Vector2(0.9549716, 0.7962345)
-action_mode = 0
-texture_normal = ExtResource("3_eupsi")
 
 [node name="Navigation" parent="." unique_id=651092304 instance=ExtResource("5_0ttai")]
 
@@ -82,6 +72,4 @@ position = Vector2(120, 110)
 scale = Vector2(2, 2)
 texture = ExtResource("9_fecnm")
 
-[connection signal="pressed" from="Map Icon" to="." method="_on_town_icon_pressed"]
-[connection signal="pressed" from="Map Icon" to="." method="_on_map_icon_pressed"]
 [connection signal="pressed" from="Scroll Icon" to="." method="_on_scroll_icon_pressed"]

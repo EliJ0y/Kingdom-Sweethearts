@@ -3,7 +3,7 @@
 [ext_resource type="Script" uid="uid://c51frugbjl4eq" path="res://Scripts/dialogue.gd" id="1_5mcti"]
 [ext_resource type="Texture2D" uid="uid://cf5xateryb4nj" path="res://Graphics/Gazebo_Background.png" id="1_dgfud"]
 [ext_resource type="PackedScene" uid="uid://cm6i7vcbypte4" path="res://Scenes/navigation.tscn" id="3_p21q5"]
-[ext_resource type="Texture2D" uid="uid://dn0bm47p6gscl" path="res://Graphics/Dialogue Panel.png" id="4_pjl42"]
+[ext_resource type="Texture2D" uid="uid://dn0bm47p6gscl" path="res://Graphics/UI/Dialogue Panel.png" id="4_pjl42"]
 [ext_resource type="FontFile" uid="uid://crb2i4elinjsj" path="res://Fonts/PirataOne-Regular.ttf" id="5_5mcti"]
 [ext_resource type="Script" uid="uid://cd3222nx3y3k5" path="res://addons/dialogue_manager/nodes/context/dialogue_state_context.gd" id="6_4hwkt"]
 
@@ -31,7 +31,7 @@ centered = false
 
 [node name="Navigation" parent="CanvasLayer" unique_id=651092304 instance=ExtResource("3_p21q5")]
 
-[node name="Start Dialogue Button" type="TextureButton" parent="CanvasLayer" unique_id=1789056820]
+[node name="Button" type="TextureButton" parent="CanvasLayer" unique_id=1789056820]
 visible = false
 anchors_preset = 8
 anchor_left = 0.5
@@ -46,7 +46,7 @@ grow_horizontal = 2
 grow_vertical = 2
 texture_normal = ExtResource("4_pjl42")
 
-[node name="Start Dialogue" type="Label" parent="CanvasLayer/Start Dialogue Button" unique_id=1009411958]
+[node name="Button Text" type="Label" parent="CanvasLayer/Button" unique_id=1009411958]
 custom_minimum_size = Vector2(700, 160)
 layout_mode = 1
 anchors_preset = 8
@@ -63,7 +63,6 @@ grow_vertical = 2
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("5_5mcti")
 theme_override_font_sizes/font_size = 100
-text = "Start Dialogue"
 horizontal_alignment = 1
 vertical_alignment = 1
 autowrap_mode = 3
@@ -74,4 +73,4 @@ alias = "navigation"
 target = NodePath("../CanvasLayer/Navigation")
 metadata/_custom_type_script = "uid://cd3222nx3y3k5"
 
-[connection signal="pressed" from="CanvasLayer/Start Dialogue Button" to="." method="_on_start_dialogue_button_pressed"]
+[connection signal="pressed" from="CanvasLayer/Button" to="." method="_on_button_pressed"]

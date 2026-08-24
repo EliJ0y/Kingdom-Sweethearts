@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://4fnrabj8npr"]
 
 [ext_resource type="Script" uid="uid://bh4wvibu5xe20" path="res://Dialogue Manager/dialogue_balloon/balloon.gd" id="1_36de5"]
-[ext_resource type="Texture2D" uid="uid://dn0bm47p6gscl" path="res://Graphics/Dialogue Panel.png" id="2_1cgua"]
+[ext_resource type="Texture2D" uid="uid://dn0bm47p6gscl" path="res://Graphics/UI/Dialogue Panel.png" id="2_1cgua"]
 [ext_resource type="PackedScene" uid="uid://ckvgyvclnwggo" path="res://addons/dialogue_manager/nodes/dialogue_label/dialogue_label.tscn" id="2_a8ve6"]
 [ext_resource type="FontFile" uid="uid://crb2i4elinjsj" path="res://Fonts/PirataOne-Regular.ttf" id="3_5h0j3"]
 [ext_resource type="Script" uid="uid://bb52rsfwhkxbn" path="res://addons/dialogue_manager/nodes/responses_menu/dialogue_responses_menu.gd" id="3_72ixx"]

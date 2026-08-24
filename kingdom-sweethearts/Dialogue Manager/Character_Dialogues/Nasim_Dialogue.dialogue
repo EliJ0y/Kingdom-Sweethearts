@@ -3,18 +3,10 @@ Nasim: What a pleasure to meet you, Cupid, and to receive your help.
 Cupid: Greetings heir of Crathod, the pleasure is all mine. Here are the pastries.
 
 $> navigation.open_inventory_for_dialogue()
+$> navigation.open_inventory_for_dialogue()
 
-=> player_choice_1
-~ player_choice_1
-- A cinnamon roll and a strudel.
-	Cupid: A cinnamon roll and a strudel.
-- A muffin and a strudel.
-	Cupid: A muffin and a strudel.
-- A muffin and a donut.
-	Cupid: A muffin and a donut.
-
-=> player_choice_2
-~ player_choice_2
+=> player_choice
+~ player_choice
 - Their uniqueness lies in requiring a specific charcoal oven to be baked in.
 	Cupid: Their uniqueness lies in requiring a specific charcoal oven to be baked in.
 - Their uniqueness lies in preparing the dough together with filling before baking.

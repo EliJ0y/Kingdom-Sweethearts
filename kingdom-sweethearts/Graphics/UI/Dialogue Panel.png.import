@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://574o5nh84p60"
-path="res://.godot/imported/Tied Scroll (Silvester).png-f4b3da0238a5f58a0d016c7af1d6275e.ctex"
+uid="uid://dn0bm47p6gscl"
+path="res://.godot/imported/Dialogue Panel.png-337199c47d62a55d1f4c7eeafa539ff7.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Graphics/Scrolls/Tied Scroll (Silvester).png"
-dest_files=["res://.godot/imported/Tied Scroll (Silvester).png-f4b3da0238a5f58a0d016c7af1d6275e.ctex"]
+source_file="res://Graphics/UI/Dialogue Panel.png"
+dest_files=["res://.godot/imported/Dialogue Panel.png-337199c47d62a55d1f4c7eeafa539ff7.ctex"]
 
 [params]
 

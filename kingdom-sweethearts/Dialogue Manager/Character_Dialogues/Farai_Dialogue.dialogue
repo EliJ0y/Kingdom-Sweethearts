@@ -4,8 +4,8 @@ Cupid: Greetings, Royal Farai. Here are the materials, and you're welcome.
 
 $> navigation.open_inventory_for_dialogue()
 
-=> player_choice_1
-~ player_choice_1
+=> player_choice
+~ player_choice
 - A fountain pen should be used to make the writing more sophisticated.
 	Cupid: A fountain pen should be used to make the writing more sophisticated.
 - Acquire a quill and some ink to embody the past times.

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dn0bm47p6gscl"
-path="res://.godot/imported/Dialogue Panel.png-62acc3724ddea96adadd58ebc9b0cd2e.ctex"
+uid="uid://bh5ptsk233oem"
+path="res://.godot/imported/Rei Scroll.png-1d99c94a62213c275d4f88ce57057bda.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Graphics/Dialogue Panel.png"
-dest_files=["res://.godot/imported/Dialogue Panel.png-62acc3724ddea96adadd58ebc9b0cd2e.ctex"]
+source_file="res://Graphics/Scrolls/Rei Scroll.png"
+dest_files=["res://.godot/imported/Rei Scroll.png-1d99c94a62213c275d4f88ce57057bda.ctex"]
 
 [params]
 

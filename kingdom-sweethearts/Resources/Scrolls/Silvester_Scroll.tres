@@ -2,11 +2,11 @@
 
 [ext_resource type="FontFile" uid="uid://cculgpajct2e0" path="res://Fonts/Nickainley-Normal.otf" id="1_4i4uf"]
 [ext_resource type="Script" uid="uid://b8ely3pohkd0v" path="res://Scripts/scrolls_resource.gd" id="1_aqj1x"]
-[ext_resource type="Texture2D" uid="uid://574o5nh84p60" path="res://Graphics/Scrolls/Tied Scroll (Silvester).png" id="2_4i4uf"]
+[ext_resource type="Texture2D" uid="uid://c14fsgaj0us5j" path="res://Graphics/Scrolls/Silvester Scroll.png" id="3_vc8kh"]
 
 [resource]
 script = ExtResource("1_aqj1x")
-texturebutton = ExtResource("2_4i4uf")
-lines = Array[String](["Hail and well met from Oceirea!", "I am Duke Silvester, who is set to be matchmade with Duke Kohan from Wildegon in three days.", "I have heard much of his strength and admire him greatly! I do hope these feelings are mutual.", "To help you in your preparations, I have heard that Duke Kohan has a soft spot for flowers. Perhaps a bouquet would be a nice gift?", "I eagerly anticipate meeting him!"])
+texturebutton = ExtResource("3_vc8kh")
+lines = Array[String](["Hail and well met from Oceirea!", "I am Duke Silvester, who is set to be matchmade with Duke Kohan from Wildegon in three days.", "I have heard much of his strength and admire him greatly! I do hope these feelings are mutual.", "To help you in your preparations, I have heard that Duke Kohan has a soft spot for wildflowers. Perhaps a bouquet would be a nice gift?", "I eagerly anticipate meeting him!"])
 font = ExtResource("1_4i4uf")
 metadata/_custom_type_script = "uid://b8ely3pohkd0v"

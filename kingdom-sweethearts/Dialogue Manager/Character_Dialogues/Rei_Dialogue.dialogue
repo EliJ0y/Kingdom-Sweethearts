@@ -3,18 +3,11 @@ Rei: Greetings, Cupid. I take it that you brought the pastries?
 Cupid: Greetings, Princess Rei. Here they are as requested.
 
 $> navigation.open_inventory_for_dialogue()
+$> navigation.open_inventory_for_dialogue()
+$> navigation.open_inventory_for_dialogue()
 
-=> player_choice_1
-~ player_choice_1
-- A few slices of plain bread, a baguette, and a chocolate bread.
-	Cupid: A few slices of plain bread, a baguette, and a chocolate bread.
-- A few slices of plain bread, a croissant, and a chocolate bread. 
-	Cupid: A few slices of plain bread, a croissant, and a chocolate bread. 
-- A few slices of plain bread, a baguette, and a cinammon roll.
-	Cupid: A few slices of plain bread, a baguette, and a cinammon roll.
-
-=> player_choice_2
-~ player_choice_2
+=> player_choice
+~ player_choice
 - Baking is a difficult craft that very few people can get skilled at.
 	Cupid: Baking is a difficult craft that very few people can get skilled at.
 - Baked goods rise as CO2 from yeast is trapped and expands from the heat.
