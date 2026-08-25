@@ -8,10 +8,11 @@ func _input(event: InputEvent) -> void:
 		return
 	if event is InputEventMouseButton:
 		if event.button_index == MOUSE_BUTTON_LEFT and event.pressed:
-			if not $Inventory.get_global_rect().has_point(event.position):
+			if not ($Inventory.get_global_rect().has_point(event.position) or $"Inventory Icon".get_global_rect().has_point(event.position)):
 				$Inventory.visible = false
 				is_inventory_open = false
 				$Inventory.item_selected.emit(null)
+				get_viewport().set_input_as_handled()
 
 func _on_home_icon_pressed() -> void:
 	get_tree().change_scene_to_file("res://Scenes/home_desk.tscn")

@@ -4,7 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://cf5xateryb4nj" path="res://Graphics/Gazebo_Background.png" id="1_dgfud"]
 [ext_resource type="PackedScene" uid="uid://cm6i7vcbypte4" path="res://Scenes/navigation.tscn" id="3_p21q5"]
 [ext_resource type="Texture2D" uid="uid://c5r5wbudl45sh" path="res://Graphics/UI/Dialogue Option.PNG" id="4_4hwkt"]
-[ext_resource type="Texture2D" uid="uid://cnagpsybv6r7k" path="res://Graphics/UI/Dialogue Panel.PNG" id="4_shd1d"]
+[ext_resource type="Texture2D" uid="uid://cnagpsybv6r7k" path="res://Graphics/UI/Dialogue Panel.png" id="4_shd1d"]
 [ext_resource type="FontFile" uid="uid://crb2i4elinjsj" path="res://Fonts/PirataOne-Regular.ttf" id="5_5mcti"]
 [ext_resource type="Script" uid="uid://cd3222nx3y3k5" path="res://addons/dialogue_manager/nodes/context/dialogue_state_context.gd" id="6_4hwkt"]
 

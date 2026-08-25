@@ -9,7 +9,7 @@
 [ext_resource type="Script" uid="uid://ccwxluiyextw2" path="res://Scripts/characters_resource.gd" id="4_1w6jt"]
 [ext_resource type="Resource" uid="uid://bfe33mnnqdtt6" path="res://Resources/Scrolls/Rei_Scroll.tres" id="4_edbp8"]
 [ext_resource type="Resource" uid="uid://df7im63n5x0rk" path="res://Resources/Characters/Farai.tres" id="5_k3qaa"]
-[ext_resource type="Resource" uid="uid://dq8mrh3vm43qn" path="res://Resources/Characters/Kohan.tres" id="6_k3qaa"]
+[ext_resource type="Resource" uid="uid://bv7u46mjudthi" path="res://Resources/Characters/Rei.tres" id="6_k3qaa"]
 
 [resource]
 script = ExtResource("1_njdvo")

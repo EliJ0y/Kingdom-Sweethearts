@@ -6,11 +6,15 @@
 [ext_resource type="Script" uid="uid://b8ely3pohkd0v" path="res://Scripts/scrolls_resource.gd" id="2_l45qg"]
 [ext_resource type="Resource" uid="uid://bbs20ywnmsq1i" path="res://Resources/Scrolls/Nasim_Scroll.tres" id="3_at1ur"]
 [ext_resource type="Resource" uid="uid://bghs7ys8nbo7m" path="res://Dialogue Manager/Character_Dialogues/Izzy_Dialogue.dialogue" id="3_tsswn"]
+[ext_resource type="Script" uid="uid://ccwxluiyextw2" path="res://Scripts/characters_resource.gd" id="4_ivwfq"]
 [ext_resource type="Resource" uid="uid://5dyfbn4bps6n" path="res://Resources/Scrolls/Izzy_Scroll.tres" id="4_o3obg"]
+[ext_resource type="Resource" uid="uid://cm3esupirrw1i" path="res://Resources/Characters/Nasim.tres" id="5_ivwfq"]
+[ext_resource type="Resource" uid="uid://bpllo2dbd4hk7" path="res://Resources/Characters/Izzy.tres" id="6_wmsxf"]
 
 [resource]
 script = ExtResource("1_m2ba4")
 level = 3
 scrolls = Array[ExtResource("2_l45qg")]([ExtResource("3_at1ur"), ExtResource("4_o3obg")])
 character_dialogues = Array[ExtResource("1_o3obg")]([ExtResource("2_31f3s"), ExtResource("3_tsswn")])
+characters = Array[ExtResource("4_ivwfq")]([ExtResource("5_ivwfq"), ExtResource("6_wmsxf")])
 metadata/_custom_type_script = "uid://bkfrj7xwd614l"
