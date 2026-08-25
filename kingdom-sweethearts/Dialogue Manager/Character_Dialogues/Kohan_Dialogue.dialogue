@@ -5,10 +5,13 @@ Cupid: Greetings, Duke Kohan. Yes, I am and here are the postcards.
 $> dialogue.start_item_requests(1)
 
 if dialogue.wrong_item_type():
+	$> dialogue.record_tier_result(0)
 	Kohan: This is wrong. What do you think you’re doing? Damn it, I need to go.
 elif dialogue.wrong_specific_item():
+	$> dialogue.record_tier_result(1)
 	Kohan: I give you my thanks. Goodbye now.
 else:
+	$> dialogue.record_tier_result(2)
 	=> player_choice
 
 => END

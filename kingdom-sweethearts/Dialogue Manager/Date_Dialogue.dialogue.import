@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=18
+type="Resource"
+uid="uid://dug6ywklr5wdy"
+path="res://.godot/imported/Date_Dialogue.dialogue-03c128071fffe23b2fa2f66a20411409.tres"
+
+[deps]
+
+source_file="res://Dialogue Manager/Date_Dialogue.dialogue"
+dest_files=["res://.godot/imported/Date_Dialogue.dialogue-03c128071fffe23b2fa2f66a20411409.tres"]
+
+[params]
+
+defaults=true

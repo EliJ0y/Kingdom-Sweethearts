@@ -4,6 +4,7 @@ var level_number: LevelsResource
 
 @onready var player_sprite: Sprite2D = $"CanvasLayer/Player Sprite"
 @onready var character_sprite: Sprite2D = $"CanvasLayer/Character Sprite"
+@onready var character_sprite_date: Sprite2D = $"CanvasLayer/Character Sprite Date"
 @onready var navigation: Node2D = $CanvasLayer/Navigation
 
 var player_sprites = preload("res://Resources/Sprites/Player_Sprites.tres")
@@ -12,12 +13,16 @@ var is_player_speaking = false
 var is_character_speaking = false
 var has_character_1_spoken = false
 var has_character_2_spoken = false
+var is_date_scene = false
 
 var character: CharactersResource
+var character_1: CharactersResource
+var character_2: CharactersResource
 
 var completed_item_requests: Array[RequestedItemsResource] = []
 var item_wrong_specific = false
 var item_wrong_type = false
+var character_index = -1
 
 var normal_colour = Color(1.0, 1.0, 1.0, 1.0)
 var grey_out = Color(0.5, 0.5, 0.5, 1.0)
@@ -38,6 +43,7 @@ func start_dialogue(resource: DialogueResource):
 
 func end_dialogue(resource: DialogueResource):
 	if resource == level_number.character_dialogues[0]:
+		character_1 = character
 		character_sprite.visible = false
 		DialogueManager.show_dialogue_balloon(load("res://Dialogue Manager/Connector_Dialogue.dialogue"), "start")
 		
@@ -46,17 +52,39 @@ func end_dialogue(resource: DialogueResource):
 		$"CanvasLayer/Button/Button Text".text = "Start Dialogue"
 		
 	elif resource == level_number.character_dialogues[1]:
+		character_2 = character
+		date_dialogue()
+		
+	elif resource.resource_path == "res://Dialogue Manager/Date_Dialogue.dialogue":
+		is_date_scene = false
 		player_sprite.visible = false
+		character_sprite_date.visible = false
 		character_sprite.visible = false
 		$"CanvasLayer/Button".visible = true
 		$"CanvasLayer/Button/Button Text".text = "Return Home"
 
+func date_dialogue():
+	is_date_scene = true
+	player_sprite.visible = false
+	character_sprite_date.visible = true
+	character_sprite.visible = true
+	
+	character_sprite_date.texture = character_1.character_sprites.talking_sprite
+	character_sprite.texture = character_2.character_sprites.talking_sprite
+	character_sprite_date.modulate = normal_colour
+	character_sprite.modulate = normal_colour
+	
+	var ending_result = GlobalTracker.get_date_ending()
+	DialogueManager.show_dialogue_balloon(load("res://Dialogue Manager/Date_Dialogue.dialogue"), ending_result)
+
 func _on_button_pressed() -> void:
 	$CanvasLayer/Button.visible = false
 	if !has_character_1_spoken:
+		character_index = 0
 		DialogueManager.show_dialogue_balloon((level_number.character_dialogues[0]), "start")
 		has_character_1_spoken = true
 	elif !has_character_2_spoken:
+		character_index = 1
 		DialogueManager.show_dialogue_balloon((level_number.character_dialogues[1]), "start")
 		has_character_2_spoken = true
 	else:
@@ -65,6 +93,9 @@ func _on_button_pressed() -> void:
 	
 func dialogue_character_check(line: DialogueLine):
 	set_speaker(line.character)
+	
+func record_tier_result(tier: int):
+	GlobalTracker.record_gift_tier(character_index, tier)
 
 
 func player_animation():
@@ -87,7 +118,7 @@ func character_animation():
 		character_sprite.modulate = normal_colour
 
 func set_speaker(speaker: String):
-	if speaker == null:
+	if speaker == null or is_date_scene:
 		return
 	if speaker  == "Cupid":
 		is_player_speaking = true

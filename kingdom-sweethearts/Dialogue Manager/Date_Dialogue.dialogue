@@ -1,0 +1,22 @@
+~ start
+
+~ hate_ending
+You hide away in some nearby bushes as the date starts, watching to see how your efforts will turn out.
+The greetings between the two start pleasantly enough.
+Unfortunately, both their gifts are lacklustre and sour their first meeting.
+In the end, their relationship comes out worse than if they had never met at all.
+=> END
+
+~ friendship_ending
+You hide away in some nearby bushes as the date starts, watching to see how your efforts will turn out.
+The two greet each other with nervous, but vibrant energy.
+Gifts are exchanged with warm smiles and the sentiment that the other tried to get to know them.
+In the end, they have started on the right foot as new friends.
+=> END
+
+~ love_ending
+You hide away in some nearby bushes as the date starts, watching to see how your efforts will turn out.
+The two greet each other, a mix of happiness and excitement bubbling within.
+Their gifts make each other feel seen, truly things that deserve to be cherished.
+In the end, the bond between them has blossomed into the first trappings of love.
+=> END

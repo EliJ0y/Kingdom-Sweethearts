@@ -24,6 +24,12 @@ position = Vector2(1300, 180)
 scale = Vector2(0.4598963, 0.4598963)
 centered = false
 
+[node name="Character Sprite Date" type="Sprite2D" parent="CanvasLayer" unique_id=1096122426]
+position = Vector2(0, 180)
+scale = Vector2(0.4598963, 0.4598963)
+centered = false
+flip_h = true
+
 [node name="Player Sprite" type="Sprite2D" parent="CanvasLayer" unique_id=1358397334]
 position = Vector2(0, 200)
 scale = Vector2(1.4665108, 1.4665108)

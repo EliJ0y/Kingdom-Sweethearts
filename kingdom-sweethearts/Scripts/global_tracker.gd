@@ -13,6 +13,8 @@ var scroll_count = 0
 
 var gazebo_first_visit = true
 
+var date_tiers:Array[int] = [-1, -1]
+
 func get_current_level() -> LevelsResource:
 	return levels[current_level - 1]
 
@@ -20,3 +22,19 @@ func next_level():
 	if current_level < levels.size():
 		current_level += 1
 		scroll_count = 0
+
+func reset_date_tiers():
+	date_tiers = [-1, -1]
+
+func record_gift_tier(character_index: int, tier: int):
+	if character_index >= 0 and character_index < date_tiers.size():
+		date_tiers[character_index] = tier
+
+func get_date_ending() -> String:
+	var total = date_tiers[0] + date_tiers[1]
+	if total <= 1:
+		return "hate_ending"
+	elif total > 1 and total <= 3:
+		return "friendship_ending"
+	else:
+		return "love_ending"
