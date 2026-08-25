@@ -18,6 +18,7 @@ else:
 
 ~ player_choice
 - They are wildflowers, native to the forests of Wildegon.
+	$> dialogue.increase_tier_for_correct_choice()
 	Cupid: They are wildflowers, native to the forests of Wildegon.
 - They are cultivated flowers, grown specifically for their beauty.
 	Cupid: They are cultivated flowers, grown specifically for their beauty.

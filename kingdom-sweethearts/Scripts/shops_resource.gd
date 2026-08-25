@@ -4,7 +4,8 @@ class_name ShopsResource
 
 enum ItemType {WritingMaterials, 
 			   Postcards, 
-			   BakedGoods}
+			   BakedGoods,
+			   Flowers}
 
 @export var description: String
 @export var price: String

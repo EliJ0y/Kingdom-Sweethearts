@@ -19,10 +19,11 @@ var character: CharactersResource
 var character_1: CharactersResource
 var character_2: CharactersResource
 
-var completed_item_requests: Array[RequestedItemsResource] = []
+var completed_item_requests: Array[int] = []
 var item_wrong_specific = false
 var item_wrong_type = false
 var character_index = -1
+var ending_result
 
 var normal_colour = Color(1.0, 1.0, 1.0, 1.0)
 var grey_out = Color(0.5, 0.5, 0.5, 1.0)
@@ -60,6 +61,15 @@ func end_dialogue(resource: DialogueResource):
 		player_sprite.visible = false
 		character_sprite_date.visible = false
 		character_sprite.visible = false
+		
+		$"CanvasLayer/Ending Title Panel".visible = true
+		if ending_result == "hate_ending":
+			$"CanvasLayer/Ending Title Panel/Ending Title".text = "Hate Ending"
+		elif ending_result == "friendship_ending":
+			$"CanvasLayer/Ending Title Panel/Ending Title".text = "Friendship Ending"
+		else:
+			$"CanvasLayer/Ending Title Panel/Ending Title".text = "Love Ending"
+		
 		$"CanvasLayer/Button".visible = true
 		$"CanvasLayer/Button/Button Text".text = "Return Home"
 
@@ -74,7 +84,7 @@ func date_dialogue():
 	character_sprite_date.modulate = normal_colour
 	character_sprite.modulate = normal_colour
 	
-	var ending_result = GlobalTracker.get_date_ending()
+	ending_result = GlobalTracker.get_date_ending()
 	DialogueManager.show_dialogue_balloon(load("res://Dialogue Manager/Date_Dialogue.dialogue"), ending_result)
 
 func _on_button_pressed() -> void:
@@ -96,6 +106,9 @@ func dialogue_character_check(line: DialogueLine):
 	
 func record_tier_result(tier: int):
 	GlobalTracker.record_gift_tier(character_index, tier)
+
+func increase_tier_for_correct_choice():
+	GlobalTracker.increment_gift_tier(character_index)
 
 
 func player_animation():
@@ -155,13 +168,14 @@ func reset_item_requests():
 func item_handed_over(item: ShopsResource):
 	var same_item_type = false
 	
-	for request in character.item_requests:
-		if completed_item_requests.has(request):
+	for i in range(character.item_requests.size()):
+		if completed_item_requests.has(i):
 			continue
+		var request = character.item_requests[i]
 			
 		for acceptable_item in request.acceptable_items:
 			if item == acceptable_item:
-				completed_item_requests.append(request)
+				completed_item_requests.append(i)
 				return
 			if item.item_type == acceptable_item.item_type:
 				same_item_type = true #don't immediately set last_item_wrong_specific = true as the item could be acceptable for another request

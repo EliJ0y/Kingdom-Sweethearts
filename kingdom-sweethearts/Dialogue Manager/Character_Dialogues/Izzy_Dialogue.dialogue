@@ -5,10 +5,13 @@ Cupid: Greetings heir of Philsopoll, here are the suitable flowers.
 $> dialogue.start_item_requests(1)
 
 if dialogue.wrong_item_type():
+	$> dialogue.record_tier_result(0)
 	Izzy: Ah, oh my, this is all wrong! Doom awaits me now because of you!
 elif dialogue.wrong_specific_item():
+	$> dialogue.record_tier_result(1)
 	Izzy: Thank you and may you have a good day! 
 else:
+	$> dialogue.record_tier_result(2)
 	=> player_choice
 
 => END
@@ -19,5 +22,6 @@ else:
 - They are cultivated flowers, a few stalks grown at a time to ensure quality.
 	Cupid: They are cultivated flowers, a few stalks grown at a time to ensure quality.
 - They are a group of flowers cultivated in various beautiful and vibrant colours. 
+	$> dialogue.increase_tier_for_correct_choice()
 	Cupid: They are a group of flowers cultivated in various beautiful and vibrant colours. 
 Izzy: Oh my, what a sight! Thank you and may you have a good day! 

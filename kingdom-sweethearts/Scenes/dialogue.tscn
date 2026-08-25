@@ -4,6 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://cf5xateryb4nj" path="res://Graphics/Gazebo_Background.png" id="1_dgfud"]
 [ext_resource type="PackedScene" uid="uid://cm6i7vcbypte4" path="res://Scenes/navigation.tscn" id="3_p21q5"]
 [ext_resource type="Texture2D" uid="uid://c5r5wbudl45sh" path="res://Graphics/UI/Dialogue Option.PNG" id="4_4hwkt"]
+[ext_resource type="Texture2D" uid="uid://cnagpsybv6r7k" path="res://Graphics/UI/Dialogue Panel.PNG" id="4_shd1d"]
 [ext_resource type="FontFile" uid="uid://crb2i4elinjsj" path="res://Fonts/PirataOne-Regular.ttf" id="5_5mcti"]
 [ext_resource type="Script" uid="uid://cd3222nx3y3k5" path="res://addons/dialogue_manager/nodes/context/dialogue_state_context.gd" id="6_4hwkt"]
 
@@ -36,6 +37,27 @@ scale = Vector2(1.4665108, 1.4665108)
 centered = false
 
 [node name="Navigation" parent="CanvasLayer" unique_id=651092304 instance=ExtResource("3_p21q5")]
+
+[node name="Ending Title Panel" type="Sprite2D" parent="CanvasLayer" unique_id=2117056693]
+visible = false
+position = Vector2(200, 0)
+texture = ExtResource("4_shd1d")
+centered = false
+
+[node name="Ending Title" type="Label" parent="CanvasLayer/Ending Title Panel" unique_id=1716486906]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 115.0
+offset_top = 60.0
+offset_right = -125.0
+offset_bottom = -60.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("5_5mcti")
+theme_override_font_sizes/font_size = 150
+horizontal_alignment = 1
 
 [node name="Button" type="TextureButton" parent="CanvasLayer" unique_id=1789056820]
 visible = false

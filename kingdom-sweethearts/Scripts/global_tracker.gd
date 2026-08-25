@@ -30,6 +30,10 @@ func record_gift_tier(character_index: int, tier: int):
 	if character_index >= 0 and character_index < date_tiers.size():
 		date_tiers[character_index] = tier
 
+func increment_gift_tier(character_index: int):
+	if character_index >= 0 and character_index < date_tiers.size():
+		date_tiers[character_index] = min(date_tiers[character_index] + 1, 3)
+
 func get_date_ending() -> String:
 	var total = date_tiers[0] + date_tiers[1]
 	if total <= 1:

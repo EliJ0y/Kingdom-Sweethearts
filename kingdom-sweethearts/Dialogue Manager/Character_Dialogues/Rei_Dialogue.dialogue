@@ -5,8 +5,10 @@ Cupid: Greetings, Princess Rei. Here they are as requested.
 $> dialogue.start_item_requests(3)
 
 if dialogue.wrong_item_type():
+	$> dialogue.record_tier_result(0)
 	Rei: Are you making a mockery of me? You will be dealt with another time.
 else:
+	$> dialogue.record_tier_result(2)
 	=> player_choice
 
 => END
@@ -15,6 +17,7 @@ else:
 - Baking is a difficult craft that very few people can get skilled at.
 	Cupid: Baking is a difficult craft that very few people can get skilled at.
 - Baked goods rise as CO2 from yeast is trapped and expands from the heat.
+	$> dialogue.increase_tier_for_correct_choice()
 	Cupid: Baked goods rise as CO2 from yeast is trapped and expands from the heat.
 - Baking is a method of preparing food that uses moist heat.
 	Cupid: Baking is a method of preparing food that uses moist heat.

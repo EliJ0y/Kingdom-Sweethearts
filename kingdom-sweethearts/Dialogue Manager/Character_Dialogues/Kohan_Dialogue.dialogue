@@ -22,5 +22,6 @@ else:
 - These are canyons, deep, narrow valleys with steep sides.
 	Cupid: These are canyons, deep, narrow valleys with steep sides.
 - These are mesas, made of sedimentary rock with varying mineral contents.
+	$> dialogue.increase_tier_for_correct_choice()
 	Cupid: These are mesas, made of sedimentary rock with varying mineral contents.
 Kohan: I give you my thanks, your help is appreciated. Goodbye now. 
