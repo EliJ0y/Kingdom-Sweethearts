@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="ShopsResource" format=3 uid="uid://bm7xc84uxsatf"]
+
+[ext_resource type="Script" uid="uid://s28xadn5y5j3" path="res://Scripts/shops_resource.gd" id="1_eqbdq"]
+[ext_resource type="Texture2D" uid="uid://c76goe76he8vk" path="res://Graphics/Florist/Violets.png" id="2_nru7b"]
+
+[resource]
+script = ExtResource("1_eqbdq")
+description = "Violets"
+price = "10G"
+texture = ExtResource("2_nru7b")
+item_type = 3
+metadata/_custom_type_script = "uid://s28xadn5y5j3"

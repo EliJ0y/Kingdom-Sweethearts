@@ -9,5 +9,5 @@
 script = ExtResource("4_lsvv5")
 character_name = "Izzy"
 character_sprites = ExtResource("1_b1fkk")
-item_requests = Array[ExtResource("2_s02pt")]([ExtResource("3_sfno1")])
+item_requests = Array[ExtResource("2_s02pt")]([ExtResource("3_sfno1"), ExtResource("3_sfno1")])
 metadata/_custom_type_script = "uid://ccwxluiyextw2"

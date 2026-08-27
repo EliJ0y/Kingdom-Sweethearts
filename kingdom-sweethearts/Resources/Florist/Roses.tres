@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="ShopsResource" format=3 uid="uid://ca1bqx3qv4ng3"]
+
+[ext_resource type="Script" uid="uid://s28xadn5y5j3" path="res://Scripts/shops_resource.gd" id="1_mfdlo"]
+[ext_resource type="Texture2D" uid="uid://ch644ycpyf0vf" path="res://Graphics/Florist/Roses.png" id="2_6v0bk"]
+
+[resource]
+script = ExtResource("1_mfdlo")
+description = "Roses"
+price = "25G"
+texture = ExtResource("2_6v0bk")
+item_type = 3
+metadata/_custom_type_script = "uid://s28xadn5y5j3"

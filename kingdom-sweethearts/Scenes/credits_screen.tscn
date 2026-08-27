@@ -1,0 +1,141 @@
+[gd_scene format=3 uid="uid://dr5x6kakx3u8r"]
+
+[ext_resource type="Texture2D" uid="uid://c73akm0cu0qd0" path="res://Graphics/UI/Map BG.PNG" id="1_c4fpl"]
+[ext_resource type="Script" uid="uid://dbmkjcccewdn3" path="res://Scripts/credits_screen.gd" id="1_kwkrj"]
+[ext_resource type="FontFile" uid="uid://crb2i4elinjsj" path="res://Fonts/PirataOne-Regular.ttf" id="2_kwkrj"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_amjhk"]
+texture = ExtResource("1_c4fpl")
+
+[node name="Credits Screen" type="Node2D" unique_id=1678540497]
+script = ExtResource("1_kwkrj")
+
+[node name="Control" type="Control" parent="." unique_id=51867911]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 1920.0
+offset_bottom = 1080.0
+
+[node name="Background" type="Panel" parent="Control" unique_id=1533716738]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_amjhk")
+
+[node name="Credits" type="Label" parent="Control" unique_id=1912773131]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.36770833
+anchor_top = 0.074074075
+anchor_right = 0.6322917
+anchor_bottom = 0.31296295
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_kwkrj")
+theme_override_font_sizes/font_size = 200
+text = "CREDITS"
+metadata/_edit_use_anchors_ = true
+
+[node name="Elijah" type="Label" parent="Control" unique_id=723893940]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.30833334
+anchor_top = 0.37037036
+anchor_right = 0.40729168
+anchor_bottom = 0.46759257
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_kwkrj")
+theme_override_font_sizes/font_size = 80
+text = "Elijah"
+horizontal_alignment = 2
+metadata/_edit_use_anchors_ = true
+
+[node name="Elijah\'s Contributions" type="Label" parent="Control" unique_id=1832453232]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.45416668
+anchor_top = 0.32407406
+anchor_right = 0.70677084
+anchor_bottom = 0.5092593
+offset_top = 3.0517578e-05
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_constants/line_spacing = -10
+theme_override_fonts/font = ExtResource("2_kwkrj")
+theme_override_font_sizes/font_size = 80
+text = "Programmer
+Music & Audio"
+metadata/_edit_use_anchors_ = true
+
+[node name="Fae" type="Label" parent="Control" unique_id=1800638992]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.30833334
+anchor_top = 0.6018519
+anchor_right = 0.40729168
+anchor_bottom = 0.6990741
+offset_top = -6.1035156e-05
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_kwkrj")
+theme_override_font_sizes/font_size = 80
+text = "Fae"
+horizontal_alignment = 2
+metadata/_edit_use_anchors_ = true
+
+[node name="Fae\'s Contributions" type="Label" parent="Control" unique_id=64873756]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.45416668
+anchor_top = 0.55555564
+anchor_right = 0.7260417
+anchor_bottom = 0.74074084
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_constants/line_spacing = -10
+theme_override_fonts/font = ExtResource("2_kwkrj")
+theme_override_font_sizes/font_size = 80
+text = "Backgrounds &
+Assets Artist"
+metadata/_edit_use_anchors_ = true
+
+[node name="Raine" type="Label" parent="Control" unique_id=1471966075]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.3078125
+anchor_top = 0.787037
+anchor_right = 0.4078125
+anchor_bottom = 0.8842593
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_kwkrj")
+theme_override_font_sizes/font_size = 80
+text = "Raine"
+horizontal_alignment = 2
+metadata/_edit_use_anchors_ = true
+
+[node name="Raine\'s Contributions" type="Label" parent="Control" unique_id=750373638]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.45416668
+anchor_top = 0.787037
+anchor_right = 0.73802084
+anchor_bottom = 0.8842593
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_constants/line_spacing = -10
+theme_override_fonts/font = ExtResource("2_kwkrj")
+theme_override_font_sizes/font_size = 80
+text = "Character artist"
+metadata/_edit_use_anchors_ = true

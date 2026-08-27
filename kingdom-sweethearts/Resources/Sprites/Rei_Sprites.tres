@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="SpritesResource" format=3 uid="uid://bpyyp05lygrko"]
+
+[ext_resource type="Texture2D" uid="uid://duf7edxtw4ntw" path="res://Graphics/Characters/Rei Idle.PNG" id="1_dcliy"]
+[ext_resource type="Script" uid="uid://c3hfy4nf71pn7" path="res://Scripts/sprites_resource.gd" id="2_ig683"]
+[ext_resource type="Texture2D" uid="uid://bg0gpm730d7s7" path="res://Graphics/Characters/Rei Talking.PNG" id="3_mabo5"]
+
+[resource]
+script = ExtResource("2_ig683")
+idle_sprite = ExtResource("1_dcliy")
+talking_sprite = ExtResource("3_mabo5")
+metadata/_custom_type_script = "uid://c3hfy4nf71pn7"

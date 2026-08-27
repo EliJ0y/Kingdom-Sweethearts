@@ -6,6 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://cv77htlibthwt" path="res://Graphics/Scrolls/Opened Scroll.PNG" id="4_qmqk0"]
 [ext_resource type="Texture2D" uid="uid://c7mlstotxyst5" path="res://Graphics/UI/Coins.PNG" id="5_qmqk0"]
 [ext_resource type="Texture2D" uid="uid://bbo2o33b6xwix" path="res://Graphics/Scrolls/Ribbon Arrow.png" id="8_hw0rl"]
+[ext_resource type="PackedScene" uid="uid://37tq3gi8sclw" path="res://Scenes/pause_screen.tscn" id="8_pu1om"]
 [ext_resource type="FontFile" uid="uid://c1lr353bluq7k" path="res://Fonts/TheSeasons-Reg.otf" id="10_hw0rl"]
 
 [sub_resource type="Image" id="Image_k3gyr"]
@@ -405,8 +406,11 @@ offset_bottom = 604.0001
 scale = Vector2(1.2568711, 1.2568711)
 action_mode = 0
 
+[node name="Pause Screen" parent="CanvasLayer" unique_id=1599019131 instance=ExtResource("8_pu1om")]
+visible = false
+
 [connection signal="pressed" from="CanvasLayer/Opened Scroll/Ribbon Arrow" to="." method="_on_ribbon_arrow_pressed"]
 [connection signal="pressed" from="CanvasLayer/Tied Scroll 1" to="." method="_on_tied_scroll_silv_pressed"]
 [connection signal="pressed" from="CanvasLayer/Tied Scroll 1" to="." method="_on_tied_scroll_1_pressed"]
-[connection signal="pressed" from="CanvasLayer/Tied Scroll 2" to="." method="_on_tied_scroll_kohan_pressed"]
 [connection signal="pressed" from="CanvasLayer/Tied Scroll 2" to="." method="_on_tied_scroll_2_pressed"]
+[connection signal="pressed" from="CanvasLayer/Tied Scroll 2" to="." method="_on_tied_scroll_kohan_pressed"]

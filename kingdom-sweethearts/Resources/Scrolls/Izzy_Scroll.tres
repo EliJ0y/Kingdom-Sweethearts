@@ -7,6 +7,6 @@
 [resource]
 script = ExtResource("2_nty7a")
 texturebutton = ExtResource("3_6q470")
-lines = Array[String](["Salutations from Izzy Phillos, the heir of Philsopoll.", "Nasim Cranter is a wonderfully fitting match! I will take full advantage of this chance to learn of their precise craft. Intriguingly, her sense of self is non-rigid in contrast, just like me. I must share with them of such occurrences in nature!", "Ah, I am getting ahead of myself. Flower printing is rising in popularity, and flowers will thus make an appropriate gift for them to try out the craft.", "Knowledge, and possibly, love awaits!"])
+lines = Array[String](["Salutations from Izzy Phillos, the heir of Philsopoll.", "Nasim Cranter is a wonderfully fitting match! I will take full advantage of this chance to learn of their precise craft. Intriguingly, her sense of self is non-rigid in contrast, just like me. I must share with them of such occurrences in nature!", "Ah, I am getting ahead of myself. Flower printing is rising in popularity, and a few vibrant and colourful cultivatedflowers will thus make an appropriate gift for them to try out the craft.", "Knowledge, and possibly, love awaits!"])
 font = ExtResource("1_6q470")
 metadata/_custom_type_script = "uid://b8ely3pohkd0v"

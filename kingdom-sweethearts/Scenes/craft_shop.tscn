@@ -17,6 +17,7 @@
 [ext_resource type="Texture2D" uid="uid://d14tc1gt6ae7o" path="res://Graphics/Craft Shop/Postcards_Mesas.png" id="12_6y8u7"]
 [ext_resource type="Texture2D" uid="uid://u66xqn5aoobw" path="res://Graphics/Craft Shop/Postcards_Mountains.png" id="13_82wk7"]
 [ext_resource type="PackedScene" uid="uid://cm6i7vcbypte4" path="res://Scenes/navigation.tscn" id="13_dlw3c"]
+[ext_resource type="PackedScene" uid="uid://37tq3gi8sclw" path="res://Scenes/pause_screen.tscn" id="18_nnco4"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_n01f5"]
 
@@ -179,6 +180,9 @@ theme_override_font_sizes/font_size = 100
 [node name="Coins" parent="CanvasLayer" unique_id=1568081122 instance=ExtResource("12_2todf")]
 
 [node name="Navigation" parent="CanvasLayer" unique_id=651092304 instance=ExtResource("13_dlw3c")]
+
+[node name="Pause Screen" parent="CanvasLayer" unique_id=1599019131 instance=ExtResource("18_nnco4")]
+visible = false
 
 [connection signal="pressed" from="CanvasLayer/Plain (Bundle)" to="." method="_on_plain_bundle_pressed"]
 [connection signal="pressed" from="CanvasLayer/Plain (Stack)" to="." method="_on_plain_stack_pressed"]

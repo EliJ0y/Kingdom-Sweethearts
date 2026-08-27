@@ -1,6 +1,6 @@
 [gd_resource type="Resource" script_class="CharactersResource" format=3 uid="uid://bv7u46mjudthi"]
 
-[ext_resource type="Resource" uid="uid://dag083k2ldyhm" path="res://Resources/Sprites/Kohan_Sprites.tres" id="1_q64xr"]
+[ext_resource type="Resource" uid="uid://bpyyp05lygrko" path="res://Resources/Sprites/Rei_Sprites.tres" id="1_q64xr"]
 [ext_resource type="Script" uid="uid://dbqtkxc5y0ql0" path="res://Scripts/requested_items_resource.gd" id="2_du2bf"]
 [ext_resource type="Resource" uid="uid://dj4giohk7fe33" path="res://Resources/ItemRequests/Request_Rei.tres" id="3_tokul"]
 [ext_resource type="Script" uid="uid://ccwxluiyextw2" path="res://Scripts/characters_resource.gd" id="4_i7cmy"]

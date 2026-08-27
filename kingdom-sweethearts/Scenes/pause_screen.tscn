@@ -1,0 +1,139 @@
+[gd_scene format=3 uid="uid://37tq3gi8sclw"]
+
+[ext_resource type="Script" uid="uid://dncrortuhd0so" path="res://Scripts/pause_screen.gd" id="1_hl5t3"]
+[ext_resource type="Texture2D" uid="uid://c73akm0cu0qd0" path="res://Graphics/UI/Map BG.PNG" id="2_16tsp"]
+[ext_resource type="FontFile" uid="uid://crb2i4elinjsj" path="res://Fonts/PirataOne-Regular.ttf" id="2_hl5t3"]
+[ext_resource type="PackedScene" uid="uid://dctq4huouf8y7" path="res://Scenes/settings_screen.tscn" id="4_16tsp"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_3smfs"]
+texture = ExtResource("2_16tsp")
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_8py1w"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_hl5t3"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_16tsp"]
+
+[node name="Pause Screen" type="Node2D" unique_id=1599019131]
+process_mode = 3
+script = ExtResource("1_hl5t3")
+
+[node name="Control" type="Control" parent="." unique_id=1322355667]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 1920.0
+offset_bottom = 1080.0
+
+[node name="Background" type="Panel" parent="Control" unique_id=405550210]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_3smfs")
+
+[node name="Paused" type="Label" parent="Control" unique_id=1353369209]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.36770833
+anchor_top = 0.074074075
+anchor_right = 0.6322917
+anchor_bottom = 0.31296295
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_hl5t3")
+theme_override_font_sizes/font_size = 200
+text = "PAUSED"
+metadata/_edit_use_anchors_ = true
+
+[node name="Resume" type="Button" parent="Control" unique_id=663933177]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.40234375
+anchor_top = 0.37037036
+anchor_right = 0.59765625
+anchor_bottom = 0.48981482
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0.4, 0.4, 0.4, 1)
+theme_override_fonts/font = ExtResource("2_hl5t3")
+theme_override_font_sizes/font_size = 100
+theme_override_styles/normal = SubResource("StyleBoxEmpty_8py1w")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_hl5t3")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_16tsp")
+action_mode = 0
+text = "Resume"
+metadata/_edit_use_anchors_ = true
+
+[node name="Settings" type="Button" parent="Control" unique_id=1034458735]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.40234375
+anchor_top = 0.49074075
+anchor_right = 0.59765625
+anchor_bottom = 0.6101852
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0.4, 0.4, 0.4, 1)
+theme_override_fonts/font = ExtResource("2_hl5t3")
+theme_override_font_sizes/font_size = 100
+theme_override_styles/normal = SubResource("StyleBoxEmpty_8py1w")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_hl5t3")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_16tsp")
+action_mode = 0
+text = "Settings
+"
+metadata/_edit_use_anchors_ = true
+
+[node name="Main Menu" type="Button" parent="Control" unique_id=2090793449]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.40234375
+anchor_top = 0.6111111
+anchor_right = 0.59765625
+anchor_bottom = 0.73055553
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0.4, 0.4, 0.4, 1)
+theme_override_fonts/font = ExtResource("2_hl5t3")
+theme_override_font_sizes/font_size = 100
+theme_override_styles/normal = SubResource("StyleBoxEmpty_8py1w")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_hl5t3")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_16tsp")
+action_mode = 0
+text = "Main Menu
+"
+metadata/_edit_use_anchors_ = true
+
+[node name="Quit Game" type="Button" parent="Control" unique_id=1865538797]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.40234375
+anchor_top = 0.7314815
+anchor_right = 0.59765625
+anchor_bottom = 0.8509259
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0.4, 0.4, 0.4, 1)
+theme_override_fonts/font = ExtResource("2_hl5t3")
+theme_override_font_sizes/font_size = 100
+theme_override_styles/normal = SubResource("StyleBoxEmpty_8py1w")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_hl5t3")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_16tsp")
+action_mode = 0
+text = "Quit Game"
+metadata/_edit_use_anchors_ = true
+
+[node name="Settings Screen" parent="." unique_id=2063954023 instance=ExtResource("4_16tsp")]
+visible = false
+
+[connection signal="pressed" from="Control/Resume" to="." method="_on_resume_pressed"]
+[connection signal="pressed" from="Control/Settings" to="." method="_on_settings_pressed"]
+[connection signal="pressed" from="Control/Main Menu" to="." method="_on_main_menu_pressed"]
+[connection signal="pressed" from="Control/Quit Game" to="." method="_on_quit_game_pressed"]

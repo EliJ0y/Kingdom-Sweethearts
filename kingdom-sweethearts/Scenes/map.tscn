@@ -7,6 +7,7 @@
 [ext_resource type="Texture2D" uid="uid://crfal3rdn80ah" path="res://Graphics/Gazebo_Foreground.png" id="5_q0mm3"]
 [ext_resource type="Texture2D" uid="uid://cyba2s1kj8jec" path="res://Graphics/Icons/Bakery Icon.PNG" id="6_4c2oa"]
 [ext_resource type="Texture2D" uid="uid://bi4ccrahu424h" path="res://Graphics/Icons/Florist Icon.PNG" id="7_olcgw"]
+[ext_resource type="PackedScene" uid="uid://37tq3gi8sclw" path="res://Scenes/pause_screen.tscn" id="8_6q3n4"]
 
 [node name="Map" type="Node2D" unique_id=1125190912]
 script = ExtResource("1_p3ir5")
@@ -56,6 +57,9 @@ offset_right = 1385.0
 offset_bottom = 366.0
 scale = Vector2(1.1, 1.1)
 texture_normal = ExtResource("7_olcgw")
+
+[node name="Pause Screen" parent="CanvasLayer" unique_id=1599019131 instance=ExtResource("8_6q3n4")]
+visible = false
 
 [connection signal="pressed" from="CanvasLayer/Home Icon" to="." method="_on_home_icon_pressed"]
 [connection signal="pressed" from="CanvasLayer/Craft Shop Icon" to="." method="_on_craft_shop_icon_pressed"]

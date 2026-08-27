@@ -1,0 +1,100 @@
+[gd_scene format=3 uid="uid://dctq4huouf8y7"]
+
+[ext_resource type="Script" uid="uid://c7q1ktnsn3ot6" path="res://Scripts/settings_screen.gd" id="1_xi1qj"]
+[ext_resource type="Texture2D" uid="uid://c73akm0cu0qd0" path="res://Graphics/UI/Map BG.PNG" id="2_lii5r"]
+[ext_resource type="FontFile" uid="uid://crb2i4elinjsj" path="res://Fonts/PirataOne-Regular.ttf" id="3_ieuc7"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_hl5t3"]
+texture = ExtResource("2_lii5r")
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_4kxuq"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_mti6b"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_mm1bc"]
+
+[node name="Settings Screen" type="Node2D" unique_id=2063954023]
+script = ExtResource("1_xi1qj")
+
+[node name="Control" type="Control" parent="." unique_id=1093432995]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 1920.0
+offset_bottom = 1080.0
+
+[node name="Background" type="Panel" parent="Control" unique_id=1745377819]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_hl5t3")
+
+[node name="Settings" type="Label" parent="Control" unique_id=2025548338]
+layout_mode = 0
+anchor_left = 0.041666668
+anchor_top = 0.074074075
+anchor_right = 0.35989583
+anchor_bottom = 0.31296295
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_ieuc7")
+theme_override_font_sizes/font_size = 200
+text = "SETTINGS"
+metadata/_edit_use_anchors_ = true
+
+[node name="Graphics" type="Button" parent="Control" unique_id=285142077]
+layout_mode = 0
+offset_left = 80.0
+offset_top = 450.0
+offset_right = 384.0
+offset_bottom = 579.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0.4, 0.4, 0.4, 1)
+theme_override_fonts/font = ExtResource("3_ieuc7")
+theme_override_font_sizes/font_size = 100
+theme_override_styles/normal = SubResource("StyleBoxEmpty_4kxuq")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_mti6b")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_mm1bc")
+action_mode = 0
+text = "Graphics"
+alignment = 0
+
+[node name="Audio" type="Button" parent="Control" unique_id=1987260489]
+layout_mode = 0
+offset_left = 80.0
+offset_top = 580.0
+offset_right = 384.0
+offset_bottom = 709.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0.4, 0.4, 0.4, 1)
+theme_override_fonts/font = ExtResource("3_ieuc7")
+theme_override_font_sizes/font_size = 100
+theme_override_styles/normal = SubResource("StyleBoxEmpty_4kxuq")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_mti6b")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_mm1bc")
+action_mode = 0
+text = "Audio"
+alignment = 0
+
+[node name="Back" type="Button" parent="Control" unique_id=1113459578]
+layout_mode = 0
+offset_left = 80.0
+offset_top = 840.0
+offset_right = 384.0
+offset_bottom = 969.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0.4, 0.4, 0.4, 1)
+theme_override_fonts/font = ExtResource("3_ieuc7")
+theme_override_font_sizes/font_size = 100
+theme_override_styles/normal = SubResource("StyleBoxEmpty_4kxuq")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_mti6b")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_mm1bc")
+action_mode = 0
+text = "Back
+"
+alignment = 0
+
+[connection signal="pressed" from="Control/Graphics" to="." method="_on_graphics_pressed"]
+[connection signal="pressed" from="Control/Audio" to="." method="_on_audio_pressed"]
+[connection signal="pressed" from="Control/Back" to="." method="_on_back_pressed"]

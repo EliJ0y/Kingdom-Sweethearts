@@ -1,0 +1,114 @@
+[gd_scene format=3 uid="uid://b1fxgio3dfwe1"]
+
+[ext_resource type="Script" uid="uid://c0t4hbpnhqc3y" path="res://Scripts/start_screen.gd" id="1_60ddj"]
+[ext_resource type="Texture2D" uid="uid://c73akm0cu0qd0" path="res://Graphics/UI/Map BG.PNG" id="1_i8r30"]
+[ext_resource type="FontFile" uid="uid://crb2i4elinjsj" path="res://Fonts/PirataOne-Regular.ttf" id="2_ainjc"]
+[ext_resource type="PackedScene" uid="uid://dctq4huouf8y7" path="res://Scenes/settings_screen.tscn" id="4_5e717"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_4kxuq"]
+texture = ExtResource("1_i8r30")
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_4kxuq"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_mti6b"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_mm1bc"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_5e717"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_mtlf8"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_nqnrp"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_5a7ho"]
+
+[node name="Start Screen" type="Node2D" unique_id=2083633052]
+script = ExtResource("1_60ddj")
+
+[node name="Control" type="Control" parent="." unique_id=114840856]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 1920.0
+offset_bottom = 1080.0
+
+[node name="Background" type="Panel" parent="Control" unique_id=284107938]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_4kxuq")
+
+[node name="Game Title" type="Label" parent="Control" unique_id=609928444]
+custom_minimum_size = Vector2(960, 480)
+custom_maximum_size = Vector2(960, 480)
+layout_mode = 0
+offset_left = 80.0
+offset_top = 40.0
+offset_right = 1040.0
+offset_bottom = 520.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_constants/line_spacing = -40
+theme_override_fonts/font = ExtResource("2_ainjc")
+theme_override_font_sizes/font_size = 200
+text = "KINGDOM SWEETHEARTS"
+autowrap_mode = 3
+
+[node name="Start Game" type="Button" parent="Control" unique_id=556990719]
+layout_mode = 0
+offset_left = 80.0
+offset_top = 620.0
+offset_right = 455.0
+offset_bottom = 749.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0.4, 0.4, 0.4, 1)
+theme_override_fonts/font = ExtResource("2_ainjc")
+theme_override_font_sizes/font_size = 100
+theme_override_styles/normal = SubResource("StyleBoxEmpty_4kxuq")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_mti6b")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_mm1bc")
+action_mode = 0
+text = "Start Game"
+alignment = 0
+
+[node name="Settings" type="Button" parent="Control" unique_id=17739281]
+layout_mode = 0
+offset_left = 80.0
+offset_top = 750.0
+offset_right = 455.0
+offset_bottom = 879.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0.4, 0.4, 0.4, 1)
+theme_override_fonts/font = ExtResource("2_ainjc")
+theme_override_font_sizes/font_size = 100
+theme_override_styles/normal = SubResource("StyleBoxEmpty_4kxuq")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_5e717")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_mtlf8")
+action_mode = 0
+text = "Settings"
+alignment = 0
+
+[node name="Credits" type="Button" parent="Control" unique_id=424660970]
+layout_mode = 0
+offset_left = 80.0
+offset_top = 880.0
+offset_right = 455.0
+offset_bottom = 1009.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0.4, 0.4, 0.4, 1)
+theme_override_fonts/font = ExtResource("2_ainjc")
+theme_override_font_sizes/font_size = 100
+theme_override_styles/normal = SubResource("StyleBoxEmpty_4kxuq")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_nqnrp")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_5a7ho")
+action_mode = 0
+text = "Credits"
+alignment = 0
+
+[node name="Settings Screen" parent="." unique_id=2063954023 instance=ExtResource("4_5e717")]
+visible = false
+
+[connection signal="pressed" from="Control/Start Game" to="." method="_on_start_game_pressed"]
+[connection signal="pressed" from="Control/Settings" to="." method="_on_settings_pressed"]
+[connection signal="pressed" from="Control/Credits" to="." method="_on_credits_pressed"]
