@@ -71,7 +71,10 @@ func end_dialogue(resource: DialogueResource):
 			$"CanvasLayer/Ending Title Panel/Ending Title".text = "Love Ending"
 		
 		$"CanvasLayer/Button".visible = true
-		$"CanvasLayer/Button/Button Text".text = "Return Home"
+		if GlobalTracker.is_last_level():
+			$"CanvasLayer/Button/Button Text".text = "Thank you for playing!"
+		else:
+			$"CanvasLayer/Button/Button Text".text = "Return Home"
 
 func date_dialogue():
 	is_date_scene = true
@@ -98,8 +101,11 @@ func _on_button_pressed() -> void:
 		DialogueManager.show_dialogue_balloon((level_number.character_dialogues[1]), "start")
 		has_character_2_spoken = true
 	else:
-		GlobalTracker.next_level()
-		get_tree().change_scene_to_file("res://Scenes/home_desk.tscn")
+		if GlobalTracker.is_last_level():
+			get_tree().change_scene_to_file("res://Scenes/credits_screen.tscn")
+		else:
+			GlobalTracker.next_level()
+			get_tree().change_scene_to_file("res://Scenes/home_desk.tscn")
 	
 func dialogue_character_check(line: DialogueLine):
 	set_speaker(line.character)

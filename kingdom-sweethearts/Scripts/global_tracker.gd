@@ -23,6 +23,9 @@ func next_level():
 		current_level += 1
 		scroll_count = 0
 
+func is_last_level():
+	return current_level >= levels.size()
+
 func reset_date_tiers():
 	date_tiers = [-1, -1]
 
