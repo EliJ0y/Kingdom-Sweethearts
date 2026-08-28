@@ -1,7 +1,7 @@
 extends Node
 
 var new_game = true
-var current_level = 3
+var current_level = 1
 
 var levels = [preload("res://Resources/Levels/Level_1.tres"), 
 			  preload("res://Resources/Levels/Level_2.tres"),
