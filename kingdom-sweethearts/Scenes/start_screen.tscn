@@ -49,7 +49,7 @@ offset_top = 40.0
 offset_right = 1040.0
 offset_bottom = 520.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_constants/line_spacing = -40
+theme_override_constants/line_spacing = -60
 theme_override_fonts/font = ExtResource("2_ainjc")
 theme_override_font_sizes/font_size = 200
 text = "KINGDOM SWEETHEARTS"
@@ -58,9 +58,9 @@ autowrap_mode = 3
 [node name="Start Game" type="Button" parent="Control" unique_id=556990719]
 layout_mode = 0
 offset_left = 80.0
-offset_top = 620.0
+offset_top = 520.0
 offset_right = 455.0
-offset_bottom = 749.0
+offset_bottom = 649.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_colors/font_hover_color = Color(0.4, 0.4, 0.4, 1)
 theme_override_fonts/font = ExtResource("2_ainjc")
@@ -75,9 +75,9 @@ alignment = 0
 [node name="Settings" type="Button" parent="Control" unique_id=17739281]
 layout_mode = 0
 offset_left = 80.0
-offset_top = 750.0
+offset_top = 640.0
 offset_right = 455.0
-offset_bottom = 879.0
+offset_bottom = 769.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_colors/font_hover_color = Color(0.4, 0.4, 0.4, 1)
 theme_override_fonts/font = ExtResource("2_ainjc")
@@ -92,9 +92,9 @@ alignment = 0
 [node name="Credits" type="Button" parent="Control" unique_id=424660970]
 layout_mode = 0
 offset_left = 80.0
-offset_top = 880.0
+offset_top = 760.0
 offset_right = 455.0
-offset_bottom = 1009.0
+offset_bottom = 889.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_colors/font_hover_color = Color(0.4, 0.4, 0.4, 1)
 theme_override_fonts/font = ExtResource("2_ainjc")
@@ -106,9 +106,27 @@ action_mode = 0
 text = "Credits"
 alignment = 0
 
+[node name="Quit Game" type="Button" parent="Control" unique_id=1289418437]
+layout_mode = 0
+offset_left = 80.0
+offset_top = 880.0
+offset_right = 419.0
+offset_bottom = 1009.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0.4, 0.4, 0.4, 1)
+theme_override_fonts/font = ExtResource("2_ainjc")
+theme_override_font_sizes/font_size = 100
+theme_override_styles/normal = SubResource("StyleBoxEmpty_4kxuq")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_nqnrp")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_5a7ho")
+action_mode = 0
+text = "Quit Game"
+alignment = 0
+
 [node name="Settings Screen" parent="." unique_id=2063954023 instance=ExtResource("4_5e717")]
 visible = false
 
 [connection signal="pressed" from="Control/Start Game" to="." method="_on_start_game_pressed"]
 [connection signal="pressed" from="Control/Settings" to="." method="_on_settings_pressed"]
 [connection signal="pressed" from="Control/Credits" to="." method="_on_credits_pressed"]
+[connection signal="pressed" from="Control/Quit Game" to="." method="_on_quit_game_pressed"]

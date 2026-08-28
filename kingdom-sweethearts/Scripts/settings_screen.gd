@@ -4,6 +4,21 @@ var is_open = false
 var graphics_settings_open = false
 var audio_settings_open = false
 
+
+func _ready() -> void:
+	update_text()
+
+func update_text():
+	$"Control/Graphics Settings/Resolution Settings/Resolution Text".text = Settings.get_resolution_text()
+	$"Control/Graphics Settings/Window Mode Settings/Window Mode Text".text = Settings.get_window_mode_text()
+	$"Control/Audio Settings/Master Volume Settings/Master Integer".text = str(Settings.master_volume)
+	$"Control/Audio Settings/Music Volume Settings/Music Integer".text = str(Settings.music_volume)
+	$"Control/Audio Settings/Sound Volume Settings/Sound Integer".text = str(Settings.sound_volume)
+	
+func _on_back_pressed() -> void:
+	hide()
+
+
 func _on_graphics_pressed() -> void:
 	if !graphics_settings_open:
 		graphics_settings_open = true
@@ -21,19 +36,19 @@ func _on_graphics_pressed() -> void:
 
 func _on_resolution_arrow_left_pressed() -> void:
 	Settings.change_resolution(-1)
-	$"Control/Graphics Settings/Resolution Settings/Resolution Text".text = Settings.get_resolution_text()
+	update_text()
 
 func _on_resolution_arrow_right_pressed() -> void:
 	Settings.change_resolution(1)
-	$"Control/Graphics Settings/Resolution Settings/Resolution Text".text = Settings.get_resolution_text()
+	update_text()
 
 func _on_window_mode_arrow_left_pressed() -> void:
 	Settings.change_window_mode(-1)
-	$"Control/Graphics Settings/Window Mode Settings/Window Mode Text".text = Settings.get_window_mode_text()
+	update_text()
 
 func _on_window_mode_arrow_right_pressed() -> void:
 	Settings.change_window_mode(1)
-	$"Control/Graphics Settings/Window Mode Settings/Window Mode Text".text = Settings.get_window_mode_text()
+	update_text()
 
 
 func _on_audio_pressed() -> void:
@@ -53,28 +68,24 @@ func _on_audio_pressed() -> void:
 
 func _on_master_arrow_left_pressed() -> void:
 	Settings.change_master_volume(-1)
-	$"Control/Audio Settings/Master Volume Settings/Master Integer".text = str(Settings.master_volume)
+	update_text()
 
 func _on_master_arrow_right_pressed() -> void:
 	Settings.change_master_volume(1)
-	$"Control/Audio Settings/Master Volume Settings/Master Integer".text = str(Settings.master_volume)
+	update_text()
 
 func _on_music_arrow_left_pressed() -> void:
 	Settings.change_music_volume(-1)
-	$"Control/Audio Settings/Music Volume Settings/Music Integer".text = str(Settings.music_volume)
+	update_text()
 
 func _on_music_arrow_right_pressed() -> void:
 	Settings.change_music_volume(1)
-	$"Control/Audio Settings/Music Volume Settings/Music Integer".text = str(Settings.music_volume)
+	update_text()
 
 func _on_sound_arrow_left_pressed() -> void:
 	Settings.change_sound_volume(-1)
-	$"Control/Audio Settings/Sound Volume Settings/Sound Integer".text = str(Settings.sound_volume)
+	update_text()
 
 func _on_sound_arrow_right_pressed() -> void:
 	Settings.change_sound_volume(1)
-	$"Control/Audio Settings/Sound Volume Settings/Sound Integer".text = str(Settings.sound_volume)
-
-
-func _on_back_pressed() -> void:
-	hide()
+	update_text()

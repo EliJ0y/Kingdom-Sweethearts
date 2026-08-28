@@ -95,7 +95,6 @@ offset_bottom = 430.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("3_ieuc7")
 theme_override_font_sizes/font_size = 100
-text = "1920x1080"
 horizontal_alignment = 1
 
 [node name="Resolution Arrow Left" type="TextureButton" parent="Control/Graphics Settings/Resolution Settings" unique_id=499209732]
@@ -145,7 +144,6 @@ offset_bottom = 580.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("3_ieuc7")
 theme_override_font_sizes/font_size = 100
-text = "Fullscreen"
 horizontal_alignment = 1
 
 [node name="Window Mode Arrow Left" type="TextureButton" parent="Control/Graphics Settings/Window Mode Settings" unique_id=1874169229]
@@ -218,8 +216,6 @@ offset_bottom = 430.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("3_ieuc7")
 theme_override_font_sizes/font_size = 100
-text = "10
-"
 horizontal_alignment = 1
 
 [node name="Master Arrow Left" type="TextureButton" parent="Control/Audio Settings/Master Volume Settings" unique_id=1185420621]
@@ -269,8 +265,6 @@ offset_bottom = 580.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("3_ieuc7")
 theme_override_font_sizes/font_size = 100
-text = "10
-"
 horizontal_alignment = 1
 
 [node name="Music Arrow Left" type="TextureButton" parent="Control/Audio Settings/Music Volume Settings" unique_id=298536727]
@@ -320,8 +314,6 @@ offset_bottom = 730.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("3_ieuc7")
 theme_override_font_sizes/font_size = 100
-text = "10
-"
 horizontal_alignment = 1
 
 [node name="Sound Arrow Left" type="TextureButton" parent="Control/Audio Settings/Sound Volume Settings" unique_id=869988456]
