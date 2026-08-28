@@ -19,6 +19,7 @@ config/icon="res://icon.svg"
 
 GlobalTracker="*uid://wob8f2ds111w"
 DialogueManager="*uid://c3rodes2l3gxb"
+Settings="*uid://6137srk12ig"
 
 [dialogue_manager]
 

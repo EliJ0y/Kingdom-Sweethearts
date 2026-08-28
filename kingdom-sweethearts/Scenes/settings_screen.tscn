@@ -3,6 +3,7 @@
 [ext_resource type="Script" uid="uid://c7q1ktnsn3ot6" path="res://Scripts/settings_screen.gd" id="1_xi1qj"]
 [ext_resource type="Texture2D" uid="uid://c73akm0cu0qd0" path="res://Graphics/UI/Map BG.PNG" id="2_lii5r"]
 [ext_resource type="FontFile" uid="uid://crb2i4elinjsj" path="res://Fonts/PirataOne-Regular.ttf" id="3_ieuc7"]
+[ext_resource type="Texture2D" uid="uid://4xxo3v465yq4" path="res://Graphics/UI/Triangle Arrow.png" id="4_lii5r"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_hl5t3"]
 texture = ExtResource("2_lii5r")
@@ -60,6 +61,112 @@ action_mode = 0
 text = "Graphics"
 alignment = 0
 
+[node name="Graphics Settings" type="Control" parent="Control" unique_id=1835992034]
+visible = false
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Resolution Settings" type="Control" parent="Control/Graphics Settings" unique_id=1338116671]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Resolution" type="Label" parent="Control/Graphics Settings/Resolution Settings" unique_id=1140403592]
+layout_mode = 0
+offset_left = 800.0
+offset_top = 300.0
+offset_right = 1194.0
+offset_bottom = 429.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_ieuc7")
+theme_override_font_sizes/font_size = 100
+text = "RESOLUTION"
+horizontal_alignment = 2
+
+[node name="Resolution Text" type="Label" parent="Control/Graphics Settings/Resolution Settings" unique_id=213595222]
+custom_minimum_size = Vector2(360, 130)
+custom_maximum_size = Vector2(360, 130)
+layout_mode = 0
+offset_left = 1380.0
+offset_top = 300.0
+offset_right = 1740.0
+offset_bottom = 430.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_ieuc7")
+theme_override_font_sizes/font_size = 100
+text = "1920x1080"
+horizontal_alignment = 1
+
+[node name="Resolution Arrow Left" type="TextureButton" parent="Control/Graphics Settings/Resolution Settings" unique_id=499209732]
+layout_mode = 0
+offset_left = 1240.0
+offset_top = 315.0
+offset_right = 1334.0
+offset_bottom = 411.0
+action_mode = 0
+texture_normal = ExtResource("4_lii5r")
+
+[node name="Resolution Arrow Right" type="TextureButton" parent="Control/Graphics Settings/Resolution Settings" unique_id=1480708089]
+layout_mode = 0
+offset_left = 1780.0
+offset_top = 315.0
+offset_right = 1874.0
+offset_bottom = 411.0
+action_mode = 0
+texture_normal = ExtResource("4_lii5r")
+flip_h = true
+
+[node name="Window Mode Settings" type="Control" parent="Control/Graphics Settings" unique_id=497500576]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Window Mode" type="Label" parent="Control/Graphics Settings/Window Mode Settings" unique_id=1848291177]
+layout_mode = 0
+offset_left = 710.0
+offset_top = 450.0
+offset_right = 1199.0
+offset_bottom = 579.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_ieuc7")
+theme_override_font_sizes/font_size = 100
+text = "WINDOW MODE"
+horizontal_alignment = 2
+
+[node name="Window Mode Text" type="Label" parent="Control/Graphics Settings/Window Mode Settings" unique_id=717745821]
+custom_minimum_size = Vector2(417, 130)
+custom_maximum_size = Vector2(417, 130)
+layout_mode = 0
+offset_left = 1350.0
+offset_top = 450.0
+offset_right = 1767.0
+offset_bottom = 580.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_ieuc7")
+theme_override_font_sizes/font_size = 100
+text = "Fullscreen"
+horizontal_alignment = 1
+
+[node name="Window Mode Arrow Left" type="TextureButton" parent="Control/Graphics Settings/Window Mode Settings" unique_id=1874169229]
+layout_mode = 0
+offset_left = 1240.0
+offset_top = 465.0
+offset_right = 1334.0
+offset_bottom = 561.0
+action_mode = 0
+texture_normal = ExtResource("4_lii5r")
+
+[node name="Window Mode Arrow Right" type="TextureButton" parent="Control/Graphics Settings/Window Mode Settings" unique_id=2070888891]
+layout_mode = 0
+offset_left = 1780.0
+offset_top = 465.0
+offset_right = 1874.0
+offset_bottom = 561.0
+action_mode = 0
+texture_normal = ExtResource("4_lii5r")
+flip_h = true
+
 [node name="Audio" type="Button" parent="Control" unique_id=1987260489]
 layout_mode = 0
 offset_left = 80.0
@@ -76,6 +183,165 @@ theme_override_styles/hover = SubResource("StyleBoxEmpty_mm1bc")
 action_mode = 0
 text = "Audio"
 alignment = 0
+
+[node name="Audio Settings" type="Control" parent="Control" unique_id=763026987]
+visible = false
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Master Volume Settings" type="Control" parent="Control/Audio Settings" unique_id=1945224531]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Master" type="Label" parent="Control/Audio Settings/Master Volume Settings" unique_id=593209643]
+layout_mode = 0
+offset_left = 800.0
+offset_top = 300.0
+offset_right = 1194.0
+offset_bottom = 429.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_ieuc7")
+theme_override_font_sizes/font_size = 100
+text = "MASTER"
+horizontal_alignment = 2
+
+[node name="Master Integer" type="Label" parent="Control/Audio Settings/Master Volume Settings" unique_id=1189228894]
+custom_minimum_size = Vector2(70, 130)
+custom_maximum_size = Vector2(70, 130)
+layout_mode = 0
+offset_left = 1370.0
+offset_top = 300.0
+offset_right = 1440.0
+offset_bottom = 430.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_ieuc7")
+theme_override_font_sizes/font_size = 100
+text = "10
+"
+horizontal_alignment = 1
+
+[node name="Master Arrow Left" type="TextureButton" parent="Control/Audio Settings/Master Volume Settings" unique_id=1185420621]
+layout_mode = 0
+offset_left = 1240.0
+offset_top = 315.0
+offset_right = 1334.0
+offset_bottom = 411.0
+action_mode = 0
+texture_normal = ExtResource("4_lii5r")
+
+[node name="Master Arrow Right" type="TextureButton" parent="Control/Audio Settings/Master Volume Settings" unique_id=1355214702]
+layout_mode = 0
+offset_left = 1470.0
+offset_top = 315.0
+offset_right = 1564.0
+offset_bottom = 411.0
+action_mode = 0
+texture_normal = ExtResource("4_lii5r")
+flip_h = true
+
+[node name="Music Volume Settings" type="Control" parent="Control/Audio Settings" unique_id=2111538761]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Music" type="Label" parent="Control/Audio Settings/Music Volume Settings" unique_id=822997299]
+layout_mode = 0
+offset_left = 800.0
+offset_top = 450.0
+offset_right = 1194.0
+offset_bottom = 579.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_ieuc7")
+theme_override_font_sizes/font_size = 100
+text = "MUSIC"
+horizontal_alignment = 2
+
+[node name="Music Integer" type="Label" parent="Control/Audio Settings/Music Volume Settings" unique_id=1601790968]
+custom_minimum_size = Vector2(70, 130)
+custom_maximum_size = Vector2(70, 130)
+layout_mode = 0
+offset_left = 1370.0
+offset_top = 450.0
+offset_right = 1440.0
+offset_bottom = 580.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_ieuc7")
+theme_override_font_sizes/font_size = 100
+text = "10
+"
+horizontal_alignment = 1
+
+[node name="Music Arrow Left" type="TextureButton" parent="Control/Audio Settings/Music Volume Settings" unique_id=298536727]
+layout_mode = 0
+offset_left = 1240.0
+offset_top = 465.0
+offset_right = 1334.0
+offset_bottom = 561.0
+action_mode = 0
+texture_normal = ExtResource("4_lii5r")
+
+[node name="Music Arrow Right" type="TextureButton" parent="Control/Audio Settings/Music Volume Settings" unique_id=1449294088]
+layout_mode = 0
+offset_left = 1470.0
+offset_top = 465.0
+offset_right = 1564.0
+offset_bottom = 561.0
+action_mode = 0
+texture_normal = ExtResource("4_lii5r")
+flip_h = true
+
+[node name="Sound Volume Settings" type="Control" parent="Control/Audio Settings" unique_id=566716314]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Sound" type="Label" parent="Control/Audio Settings/Sound Volume Settings" unique_id=2057719098]
+layout_mode = 0
+offset_left = 800.0
+offset_top = 600.0
+offset_right = 1194.0
+offset_bottom = 729.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_ieuc7")
+theme_override_font_sizes/font_size = 100
+text = "MUSIC"
+horizontal_alignment = 2
+
+[node name="Sound Integer" type="Label" parent="Control/Audio Settings/Sound Volume Settings" unique_id=1996563086]
+custom_minimum_size = Vector2(70, 130)
+custom_maximum_size = Vector2(70, 130)
+layout_mode = 0
+offset_left = 1370.0
+offset_top = 600.0
+offset_right = 1440.0
+offset_bottom = 730.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_ieuc7")
+theme_override_font_sizes/font_size = 100
+text = "10
+"
+horizontal_alignment = 1
+
+[node name="Sound Arrow Left" type="TextureButton" parent="Control/Audio Settings/Sound Volume Settings" unique_id=869988456]
+layout_mode = 0
+offset_left = 1240.0
+offset_top = 615.0
+offset_right = 1334.0
+offset_bottom = 711.0
+action_mode = 0
+texture_normal = ExtResource("4_lii5r")
+
+[node name="Sound Arrow Right" type="TextureButton" parent="Control/Audio Settings/Sound Volume Settings" unique_id=1245202842]
+layout_mode = 0
+offset_left = 1470.0
+offset_top = 615.0
+offset_right = 1564.0
+offset_bottom = 711.0
+action_mode = 0
+texture_normal = ExtResource("4_lii5r")
+flip_h = true
 
 [node name="Back" type="Button" parent="Control" unique_id=1113459578]
 layout_mode = 0
@@ -96,5 +362,15 @@ text = "Back
 alignment = 0
 
 [connection signal="pressed" from="Control/Graphics" to="." method="_on_graphics_pressed"]
+[connection signal="pressed" from="Control/Graphics Settings/Resolution Settings/Resolution Arrow Left" to="." method="_on_resolution_arrow_left_pressed"]
+[connection signal="pressed" from="Control/Graphics Settings/Resolution Settings/Resolution Arrow Right" to="." method="_on_resolution_arrow_right_pressed"]
+[connection signal="pressed" from="Control/Graphics Settings/Window Mode Settings/Window Mode Arrow Left" to="." method="_on_window_mode_arrow_left_pressed"]
+[connection signal="pressed" from="Control/Graphics Settings/Window Mode Settings/Window Mode Arrow Right" to="." method="_on_window_mode_arrow_right_pressed"]
 [connection signal="pressed" from="Control/Audio" to="." method="_on_audio_pressed"]
+[connection signal="pressed" from="Control/Audio Settings/Master Volume Settings/Master Arrow Left" to="." method="_on_master_arrow_left_pressed"]
+[connection signal="pressed" from="Control/Audio Settings/Master Volume Settings/Master Arrow Right" to="." method="_on_master_arrow_right_pressed"]
+[connection signal="pressed" from="Control/Audio Settings/Music Volume Settings/Music Arrow Left" to="." method="_on_music_arrow_left_pressed"]
+[connection signal="pressed" from="Control/Audio Settings/Music Volume Settings/Music Arrow Right" to="." method="_on_music_arrow_right_pressed"]
+[connection signal="pressed" from="Control/Audio Settings/Sound Volume Settings/Sound Arrow Left" to="." method="_on_sound_arrow_left_pressed"]
+[connection signal="pressed" from="Control/Audio Settings/Sound Volume Settings/Sound Arrow Right" to="." method="_on_sound_arrow_right_pressed"]
 [connection signal="pressed" from="Control/Back" to="." method="_on_back_pressed"]
