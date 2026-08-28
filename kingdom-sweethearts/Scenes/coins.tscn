@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" uid="uid://btaq4hng4suxm" path="res://Scripts/coins.gd" id="1_m2shm"]
 [ext_resource type="Texture2D" uid="uid://c7mlstotxyst5" path="res://Graphics/UI/Coins.PNG" id="1_ojwyu"]
-[ext_resource type="FontFile" uid="uid://c1lr353bluq7k" path="res://Fonts/TheSeasons-Reg.otf" id="3_m2shm"]
+[ext_resource type="FontFile" uid="uid://dob7bf1fqfppd" path="res://Fonts/The Seasons Regular.ttf" id="3_m2shm"]
 
 [node name="Coins" type="Node2D" unique_id=1568081122]
 script = ExtResource("1_m2shm")
@@ -10,15 +10,15 @@ script = ExtResource("1_m2shm")
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=730694245]
 
 [node name="Coin Counter" type="Sprite2D" parent="CanvasLayer" unique_id=1805449455]
-visible = false
 position = Vector2(87, 39)
 scale = Vector2(0.6198655, 0.6198655)
 texture = ExtResource("1_ojwyu")
 
 [node name="Coin Text" type="Label" parent="CanvasLayer/Coin Counter" unique_id=146384966]
-offset_left = 148.4193
-offset_right = 338.4193
-offset_bottom = 104.0
+offset_left = 148.419
+offset_top = -10.0
+offset_right = 338.419
+offset_bottom = 121.0
 theme_override_colors/font_color = Color(0.4, 0.14000002, 0, 1)
 theme_override_fonts/font = ExtResource("3_m2shm")
 theme_override_font_sizes/font_size = 100

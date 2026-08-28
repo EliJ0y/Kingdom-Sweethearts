@@ -10,7 +10,7 @@
 [ext_resource type="Texture2D" uid="uid://ef4srtjb57e8" path="res://Graphics/UI/Shop Panel.PNG" id="8_2gak8"]
 [ext_resource type="Texture2D" uid="uid://6udrvvpyixyt" path="res://Graphics/Craft Shop/Postcards_Coasts.png" id="9_nnco4"]
 [ext_resource type="Texture2D" uid="uid://d3kbc63p8cklm" path="res://Graphics/Craft Shop/Postcards_Deserts.png" id="10_5otd3"]
-[ext_resource type="FontFile" uid="uid://c1lr353bluq7k" path="res://Fonts/TheSeasons-Reg.otf" id="11_2todf"]
+[ext_resource type="FontFile" uid="uid://dob7bf1fqfppd" path="res://Fonts/The Seasons Regular.ttf" id="11_2todf"]
 [ext_resource type="Texture2D" uid="uid://c7mlstotxyst5" path="res://Graphics/UI/Coins.PNG" id="11_nu1o7"]
 [ext_resource type="Texture2D" uid="uid://cbqiw0cv7hycr" path="res://Graphics/Craft Shop/Postcards_Forests.png" id="11_r6gu5"]
 [ext_resource type="PackedScene" uid="uid://brewn7dcybla" path="res://Scenes/coins.tscn" id="12_2todf"]

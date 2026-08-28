@@ -2,6 +2,7 @@ extends Node
 
 var new_game = true
 var current_level = 1
+var unread_scrolls = false
 
 var levels = [preload("res://Resources/Levels/Level_1.tres"), 
 			  preload("res://Resources/Levels/Level_2.tres"),
@@ -22,6 +23,7 @@ func next_level():
 	if current_level < levels.size():
 		current_level += 1
 		scroll_count = 0
+		unread_scrolls = true
 
 func is_last_level():
 	return current_level >= levels.size()

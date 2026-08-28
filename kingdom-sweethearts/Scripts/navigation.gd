@@ -3,6 +3,12 @@ extends Node2D
 var is_inventory_open = false
 
 
+func _ready() -> void:
+	if GlobalTracker.unread_scrolls:
+		$"Scroll Icon/Sparkle".visible = true
+	else:
+		$"Scroll Icon/Sparkle".visible = false
+
 func _input(event: InputEvent) -> void:
 	if !is_inventory_open:
 		return

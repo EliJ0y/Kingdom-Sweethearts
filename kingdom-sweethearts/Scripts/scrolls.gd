@@ -43,10 +43,11 @@ func setup_scrolls():
 	tied_scroll_2.texture_normal = scroll_2.texturebutton
 	
 func _input(event: InputEvent) -> void:
-	if Input.is_action_just_pressed("ui_accept") && opened_scroll_1.visible_characters > 0:
+	var left_click = event is InputEventMouseButton and event.button_index == MOUSE_BUTTON_LEFT and event.is_pressed()
+	if (Input.is_action_just_pressed("ui_accept") or left_click) && opened_scroll_1.visible_characters > 0:
 		stop_text_animation = true
 		opened_scroll_1.visible_characters = -1
-	if Input.is_action_just_pressed("ui_accept") && opened_scroll_2.visible_characters > 0:
+	if (Input.is_action_just_pressed("ui_accept") or left_click) && opened_scroll_2.visible_characters > 0:
 		stop_text_animation = true
 		opened_scroll_2.visible_characters = -1
 
@@ -100,7 +101,7 @@ func _coins_appear() -> void:
 
 func _coins_update() -> void:
 	$"CanvasLayer/Coin Counter".show()
-	$"CanvasLayer/Coin Counter/Coin Text".text = str(GlobalTracker.total_coins)
+	$"CanvasLayer/Coin Counter/Coin Text".text = str(GlobalTracker.total_coins) + "G"
 
 func _type_scroll_text() -> void:
 	if scroll_1_pressed:
@@ -130,6 +131,7 @@ func _type_scroll_text() -> void:
 			$"CanvasLayer/Opened Scroll/Ribbon Arrow".show()
 			$"CanvasLayer/Opened Scroll/Ribbon Arrow/Next Scroll".show()
 	else: 
+		GlobalTracker.unread_scrolls = false
 		$"CanvasLayer/Opened Scroll/Ribbon Arrow".show()
 		$"CanvasLayer/Opened Scroll/Ribbon Arrow/Finish Reading".show()
 		$"CanvasLayer/Opened Scroll/Ribbon Arrow/Next Scroll".hide()

@@ -5,7 +5,7 @@
 [ext_resource type="PackedScene" uid="uid://cm6i7vcbypte4" path="res://Scenes/navigation.tscn" id="5_0ttai"]
 [ext_resource type="PackedScene" uid="uid://brewn7dcybla" path="res://Scenes/coins.tscn" id="5_o1j7g"]
 [ext_resource type="Texture2D" uid="uid://ef4srtjb57e8" path="res://Graphics/UI/Shop Panel.PNG" id="6_0ttai"]
-[ext_resource type="FontFile" uid="uid://c1lr353bluq7k" path="res://Fonts/TheSeasons-Reg.otf" id="7_bsgyu"]
+[ext_resource type="FontFile" uid="uid://dob7bf1fqfppd" path="res://Fonts/The Seasons Regular.ttf" id="7_bsgyu"]
 [ext_resource type="Texture2D" uid="uid://cp2yn3d5b313s" path="res://Graphics/Icons/Scroll Icon.png" id="8_cx8jn"]
 [ext_resource type="Texture2D" uid="uid://bteijx4vbhw0e" path="res://Graphics/UI/Coins Sparkle.png" id="9_fecnm"]
 [ext_resource type="PackedScene" uid="uid://37tq3gi8sclw" path="res://Scenes/pause_screen.tscn" id="9_vmmc8"]
@@ -44,12 +44,11 @@ offset_right = 1920.0
 offset_bottom = 1080.0
 
 [node name="Control" type="Control" parent="." unique_id=491510518]
-visible = false
 layout_mode = 3
 anchors_preset = 0
-offset_left = 320.0
+offset_left = 340.0
 offset_top = 700.0
-offset_right = 1520.0
+offset_right = 1540.0
 offset_bottom = 1020.0
 
 [node name="Context Panel" type="Sprite2D" parent="Control" unique_id=1448397763]
@@ -71,6 +70,7 @@ offset_bottom = -31.0
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_constants/line_spacing = -10
 theme_override_fonts/font = ExtResource("7_bsgyu")
 theme_override_font_sizes/font_size = 50
 autowrap_mode = 3
