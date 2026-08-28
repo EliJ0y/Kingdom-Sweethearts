@@ -1,0 +1,116 @@
+[gd_scene format=3 uid="uid://br041imb7kpv8"]
+
+[ext_resource type="Texture2D" uid="uid://yra6wmejvfs" path="res://Graphics/Home Desk.png" id="1_mvst3"]
+[ext_resource type="Script" uid="uid://divl1bwiw6wpi" path="res://Scripts/kingdom_book.gd" id="1_ur1r0"]
+[ext_resource type="Texture2D" uid="uid://bl6u8v2kxdh6f" path="res://Graphics/Icons/Kingdom Book Open.png" id="3_67hfm"]
+[ext_resource type="Texture2D" uid="uid://bbo2o33b6xwix" path="res://Graphics/Scrolls/Ribbon Arrow.png" id="5_0gn10"]
+[ext_resource type="FontFile" uid="uid://crb2i4elinjsj" path="res://Fonts/PirataOne-Regular.ttf" id="5_l573l"]
+[ext_resource type="PackedScene" uid="uid://37tq3gi8sclw" path="res://Scenes/pause_screen.tscn" id="7_cj5e8"]
+
+[node name="Kingdom Book" type="Node2D" unique_id=1726288582]
+script = ExtResource("1_ur1r0")
+
+[node name="Desk" type="Sprite2D" parent="." unique_id=1423938199]
+texture = ExtResource("1_mvst3")
+centered = false
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=461136]
+
+[node name="Panel" type="Panel" parent="CanvasLayer" unique_id=22702365]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="Pause Screen" parent="CanvasLayer" unique_id=1599019131 instance=ExtResource("7_cj5e8")]
+visible = false
+
+[node name="Open Book" type="Sprite2D" parent="CanvasLayer" unique_id=530559976]
+position = Vector2(465, 160)
+scale = Vector2(1.75, 1.75)
+texture = ExtResource("3_67hfm")
+centered = false
+
+[node name="Set of Pages" type="Control" parent="CanvasLayer" unique_id=1218196356]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Left Page Title" type="Label" parent="CanvasLayer/Set of Pages" unique_id=1445054715]
+layout_mode = 0
+offset_left = 600.0
+offset_top = 220.0
+offset_right = 900.0
+offset_bottom = 298.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("5_l573l")
+theme_override_font_sizes/font_size = 60
+horizontal_alignment = 1
+
+[node name="Left Page Content" type="Label" parent="CanvasLayer/Set of Pages" unique_id=1051202939]
+custom_minimum_size = Vector2(376, 520)
+custom_maximum_size = Vector2(376, 520)
+layout_mode = 0
+offset_left = 560.0
+offset_top = 310.0
+offset_right = 936.0
+offset_bottom = 830.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("5_l573l")
+theme_override_font_sizes/font_size = 30
+autowrap_mode = 3
+
+[node name="Crest" type="Sprite2D" parent="CanvasLayer/Set of Pages" unique_id=1471010418]
+position = Vector2(610, 370)
+centered = false
+
+[node name="Right Page Title" type="Label" parent="CanvasLayer/Set of Pages" unique_id=1689107159]
+layout_mode = 0
+offset_left = 1020.0
+offset_top = 220.0
+offset_right = 1320.0
+offset_bottom = 298.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("5_l573l")
+theme_override_font_sizes/font_size = 60
+horizontal_alignment = 1
+
+[node name="Right Page Content" type="Label" parent="CanvasLayer/Set of Pages" unique_id=2098679803]
+custom_minimum_size = Vector2(376, 520)
+custom_maximum_size = Vector2(376, 520)
+layout_mode = 0
+offset_left = 990.0
+offset_top = 310.0
+offset_right = 1366.0
+offset_bottom = 830.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("5_l573l")
+theme_override_font_sizes/font_size = 30
+autowrap_mode = 3
+
+[node name="Ribbon Arrow Next" type="TextureButton" parent="CanvasLayer" unique_id=1102417007]
+offset_left = 1270.0
+offset_top = 815.0
+offset_right = 1670.0001
+offset_bottom = 913.0001
+scale = Vector2(0.4, 0.6)
+action_mode = 0
+texture_normal = ExtResource("5_0gn10")
+
+[node name="Ribbon Arrow Previous" type="TextureButton" parent="CanvasLayer" unique_id=1117970387]
+offset_left = 490.0
+offset_top = 815.0
+offset_right = 890.0001
+offset_bottom = 913.0001
+scale = Vector2(0.4, 0.6)
+action_mode = 0
+texture_normal = ExtResource("5_0gn10")
+flip_h = true
+
+[connection signal="pressed" from="CanvasLayer/Ribbon Arrow Next" to="." method="_on_ribbon_arrow_next_pressed"]
+[connection signal="pressed" from="CanvasLayer/Ribbon Arrow Previous" to="." method="_on_ribbon_arrow_previous_pressed"]

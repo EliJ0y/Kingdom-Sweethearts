@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="PagesResource" format=3 uid="uid://dsgi8p32ew32f"]
+
+[ext_resource type="Texture2D" uid="uid://c7mlstotxyst5" path="res://Graphics/UI/Coins.PNG" id="1_8ddtu"]
+[ext_resource type="Script" uid="uid://bfol2ssr330a1" path="res://Scripts/pages_resource.gd" id="1_o0fm0"]
+
+[resource]
+script = ExtResource("1_o0fm0")
+left_page_title = "Uurais"
+crest = ExtResource("1_8ddtu")
+right_page_content = Array[String](["Uurais is a marvelous kingdom that spans many territories. It prides itself on its rich diversity and vibrance that allows anyone to flourish.", "Its history is unfortunately marred by inner conflicts, though none too devastating. The kingdom has always come out stronger after.", "Prosperity to Uurais!"])
+metadata/_custom_type_script = "uid://bfol2ssr330a1"

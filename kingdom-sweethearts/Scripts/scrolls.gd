@@ -41,10 +41,6 @@ func setup_scrolls():
 	opened_scroll_2.add_theme_font_override("font", scroll_2.font)
 	opened_scroll_2.visible_characters = 0
 	tied_scroll_2.texture_normal = scroll_2.texturebutton
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta: float) -> void:
-	pass
 	
 func _input(event: InputEvent) -> void:
 	if Input.is_action_just_pressed("ui_accept") && opened_scroll_1.visible_characters > 0:

@@ -2,7 +2,7 @@
 
 [ext_resource type="Resource" uid="uid://dag083k2ldyhm" path="res://Resources/Sprites/Kohan_Sprites.tres" id="1_o58k8"]
 [ext_resource type="Script" uid="uid://dbqtkxc5y0ql0" path="res://Scripts/requested_items_resource.gd" id="2_ipr6h"]
-[ext_resource type="Resource" uid="uid://cairpf24fxe6h" path="res://Resources/ItemRequests/Request_Nasim.tres" id="3_jkfgb"]
+[ext_resource type="Resource" uid="uid://cairpf24fxe6h" path="res://Resources/Item Requests/Request_Nasim.tres" id="3_jkfgb"]
 [ext_resource type="Script" uid="uid://ccwxluiyextw2" path="res://Scripts/characters_resource.gd" id="4_8awwn"]
 
 [resource]

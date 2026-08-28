@@ -22,3 +22,6 @@ func _on_scroll_icon_pressed() -> void:
 	get_tree().change_scene_to_file("res://Scenes/scrolls.tscn")
 	$Panel.visible = false
 	$"Scroll Icon".visible = false
+
+func _on_kingdom_book_pressed() -> void:
+	get_tree().change_scene_to_file("res://Scenes/kingdom_book.tscn")

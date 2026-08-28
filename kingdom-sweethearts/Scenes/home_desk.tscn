@@ -6,9 +6,10 @@
 [ext_resource type="PackedScene" uid="uid://brewn7dcybla" path="res://Scenes/coins.tscn" id="5_o1j7g"]
 [ext_resource type="Texture2D" uid="uid://ef4srtjb57e8" path="res://Graphics/UI/Shop Panel.PNG" id="6_0ttai"]
 [ext_resource type="FontFile" uid="uid://c1lr353bluq7k" path="res://Fonts/TheSeasons-Reg.otf" id="7_bsgyu"]
-[ext_resource type="Texture2D" uid="uid://cp2yn3d5b313s" path="res://Graphics/Icons/Scroll Icon.PNG" id="8_cx8jn"]
+[ext_resource type="Texture2D" uid="uid://cp2yn3d5b313s" path="res://Graphics/Icons/Scroll Icon.png" id="8_cx8jn"]
 [ext_resource type="Texture2D" uid="uid://bteijx4vbhw0e" path="res://Graphics/UI/Coins Sparkle.png" id="9_fecnm"]
 [ext_resource type="PackedScene" uid="uid://37tq3gi8sclw" path="res://Scenes/pause_screen.tscn" id="9_vmmc8"]
+[ext_resource type="Texture2D" uid="uid://c3ikit0jb0two" path="res://Graphics/Icons/Kingdom Book.png" id="10_vmmc8"]
 
 [node name="HomeDesk" type="Node2D" unique_id=719714100]
 script = ExtResource("1_tr8l1")
@@ -76,4 +77,21 @@ texture = ExtResource("9_fecnm")
 [node name="Pause Screen" parent="." unique_id=1599019131 instance=ExtResource("9_vmmc8")]
 visible = false
 
+[node name="Kingdom Book" type="TextureButton" parent="." unique_id=70601697]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 840.0
+offset_top = 630.0
+offset_right = 1292.0
+offset_bottom = 1182.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.5, 0.5)
+action_mode = 0
+texture_normal = ExtResource("10_vmmc8")
+
 [connection signal="pressed" from="Scroll Icon" to="." method="_on_scroll_icon_pressed"]
+[connection signal="pressed" from="Kingdom Book" to="." method="_on_kingdom_book_pressed"]
