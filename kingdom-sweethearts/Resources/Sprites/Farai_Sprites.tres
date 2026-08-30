@@ -1,7 +1,7 @@
 [gd_resource type="Resource" script_class="SpritesResource" format=3 uid="uid://dxiduo0eh5g3x"]
 
 [ext_resource type="Texture2D" uid="uid://bj3xj76m4hgjt" path="res://Graphics/Characters/Farai Idle.PNG" id="1_oickn"]
-[ext_resource type="Script" uid="uid://c3hfy4nf71pn7" path="res://Scripts/sprites_resource.gd" id="2_mejoa"]
+[ext_resource type="Script" uid="uid://c3hfy4nf71pn7" path="res://Scripts/Resource Scripts/sprites_resource.gd" id="2_mejoa"]
 [ext_resource type="Texture2D" uid="uid://ylj5wvuqfus" path="res://Graphics/Characters/Farai Talking.PNG" id="3_unkkd"]
 
 [resource]

@@ -102,10 +102,10 @@ func _on_button_pressed() -> void:
 		has_character_2_spoken = true
 	else:
 		if GlobalTracker.is_last_level():
-			get_tree().change_scene_to_file("res://Scenes/credits_screen.tscn")
+			get_tree().change_scene_to_file("res://Scenes/UI Screens/credits_screen.tscn")
 		else:
 			GlobalTracker.next_level()
-			get_tree().change_scene_to_file("res://Scenes/home_desk.tscn")
+			get_tree().change_scene_to_file("res://Scenes/Locations/home_desk.tscn")
 	
 func dialogue_character_check(line: DialogueLine):
 	set_speaker(line.character)

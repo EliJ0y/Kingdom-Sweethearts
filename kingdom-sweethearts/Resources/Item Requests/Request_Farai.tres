@@ -1,8 +1,8 @@
 [gd_resource type="Resource" script_class="RequestedItemsResource" format=3 uid="uid://gl5mi2sad2ya"]
 
-[ext_resource type="Script" uid="uid://s28xadn5y5j3" path="res://Scripts/shops_resource.gd" id="1_ecf4e"]
+[ext_resource type="Script" uid="uid://s28xadn5y5j3" path="res://Scripts/Resource Scripts/shops_resource.gd" id="1_ecf4e"]
 [ext_resource type="Resource" uid="uid://dgxj7g18650wy" path="res://Resources/Craft Shop/Plain_Stack.tres" id="2_2rue3"]
-[ext_resource type="Script" uid="uid://dbqtkxc5y0ql0" path="res://Scripts/requested_items_resource.gd" id="3_7h3m0"]
+[ext_resource type="Script" uid="uid://dbqtkxc5y0ql0" path="res://Scripts/Resource Scripts/requested_items_resource.gd" id="3_7h3m0"]
 
 [resource]
 script = ExtResource("3_7h3m0")

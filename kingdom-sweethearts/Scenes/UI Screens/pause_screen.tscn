@@ -1,9 +1,9 @@
 [gd_scene format=3 uid="uid://37tq3gi8sclw"]
 
-[ext_resource type="Script" uid="uid://dncrortuhd0so" path="res://Scripts/pause_screen.gd" id="1_hl5t3"]
+[ext_resource type="Script" uid="uid://dncrortuhd0so" path="res://Scripts/UI Screens/pause_screen.gd" id="1_hl5t3"]
 [ext_resource type="Texture2D" uid="uid://c73akm0cu0qd0" path="res://Graphics/UI/Map BG.PNG" id="2_16tsp"]
 [ext_resource type="FontFile" uid="uid://crb2i4elinjsj" path="res://Fonts/PirataOne-Regular.ttf" id="2_hl5t3"]
-[ext_resource type="PackedScene" uid="uid://dctq4huouf8y7" path="res://Scenes/settings_screen.tscn" id="4_16tsp"]
+[ext_resource type="PackedScene" uid="uid://dctq4huouf8y7" path="res://Scenes/UI Screens/settings_screen.tscn" id="4_16tsp"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_3smfs"]
 texture = ExtResource("2_16tsp")

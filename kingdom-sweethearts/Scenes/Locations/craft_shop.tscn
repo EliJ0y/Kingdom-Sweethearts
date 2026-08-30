@@ -1,23 +1,23 @@
 [gd_scene format=3 uid="uid://dfawuledx7cdk"]
 
-[ext_resource type="Texture2D" uid="uid://ds8554fvjwlan" path="res://Graphics/Craft Shop/Craft Shop BG.png" id="1_e5462"]
-[ext_resource type="Script" uid="uid://bq85fklcjucp8" path="res://Scripts/craft_shop.gd" id="1_s5bet"]
-[ext_resource type="Texture2D" uid="uid://dfmghvv276jir" path="res://Graphics/Craft Shop/Plain (bundle).png" id="3_2gak8"]
-[ext_resource type="Texture2D" uid="uid://cv63l7050s3sg" path="res://Graphics/Craft Shop/Plain (stack).png" id="4_s5bet"]
-[ext_resource type="Texture2D" uid="uid://drdhfqkuunbs2" path="res://Graphics/Craft Shop/Fancy (bundle).png" id="5_4tw14"]
-[ext_resource type="Texture2D" uid="uid://ccisbm8u2c1fs" path="res://Graphics/Craft Shop/Fancy (stack).png" id="6_nu1o7"]
-[ext_resource type="Texture2D" uid="uid://ba6qkr77ssvgm" path="res://Graphics/Craft Shop/Ornate (bundle).png" id="7_2todf"]
-[ext_resource type="Texture2D" uid="uid://ef4srtjb57e8" path="res://Graphics/UI/Shop Panel.PNG" id="8_2gak8"]
-[ext_resource type="Texture2D" uid="uid://6udrvvpyixyt" path="res://Graphics/Craft Shop/Postcards_Coasts.png" id="9_nnco4"]
-[ext_resource type="Texture2D" uid="uid://d3kbc63p8cklm" path="res://Graphics/Craft Shop/Postcards_Deserts.png" id="10_5otd3"]
-[ext_resource type="FontFile" uid="uid://dob7bf1fqfppd" path="res://Fonts/The Seasons Regular.ttf" id="11_2todf"]
-[ext_resource type="Texture2D" uid="uid://c7mlstotxyst5" path="res://Graphics/UI/Coins.PNG" id="11_nu1o7"]
-[ext_resource type="Texture2D" uid="uid://cbqiw0cv7hycr" path="res://Graphics/Craft Shop/Postcards_Forests.png" id="11_r6gu5"]
-[ext_resource type="PackedScene" uid="uid://brewn7dcybla" path="res://Scenes/coins.tscn" id="12_2todf"]
-[ext_resource type="Texture2D" uid="uid://d14tc1gt6ae7o" path="res://Graphics/Craft Shop/Postcards_Mesas.png" id="12_6y8u7"]
-[ext_resource type="Texture2D" uid="uid://u66xqn5aoobw" path="res://Graphics/Craft Shop/Postcards_Mountains.png" id="13_82wk7"]
-[ext_resource type="PackedScene" uid="uid://cm6i7vcbypte4" path="res://Scenes/navigation.tscn" id="13_dlw3c"]
-[ext_resource type="PackedScene" uid="uid://37tq3gi8sclw" path="res://Scenes/pause_screen.tscn" id="18_nnco4"]
+[ext_resource type="Script" uid="uid://bq85fklcjucp8" path="res://Scripts/Locations/craft_shop.gd" id="1_v2t1d"]
+[ext_resource type="Texture2D" uid="uid://ds8554fvjwlan" path="res://Graphics/Craft Shop/Craft Shop BG.png" id="2_j7wxw"]
+[ext_resource type="Texture2D" uid="uid://dfmghvv276jir" path="res://Graphics/Craft Shop/Plain (bundle).png" id="3_qtgxe"]
+[ext_resource type="Texture2D" uid="uid://cv63l7050s3sg" path="res://Graphics/Craft Shop/Plain (stack).png" id="4_5fa47"]
+[ext_resource type="Texture2D" uid="uid://drdhfqkuunbs2" path="res://Graphics/Craft Shop/Fancy (bundle).png" id="5_7ge1q"]
+[ext_resource type="Texture2D" uid="uid://ccisbm8u2c1fs" path="res://Graphics/Craft Shop/Fancy (stack).png" id="6_0h8wh"]
+[ext_resource type="Texture2D" uid="uid://ba6qkr77ssvgm" path="res://Graphics/Craft Shop/Ornate (bundle).png" id="7_cv4um"]
+[ext_resource type="Texture2D" uid="uid://6udrvvpyixyt" path="res://Graphics/Craft Shop/Postcards_Coasts.png" id="8_djxph"]
+[ext_resource type="Texture2D" uid="uid://d3kbc63p8cklm" path="res://Graphics/Craft Shop/Postcards_Deserts.png" id="9_tk7oc"]
+[ext_resource type="Texture2D" uid="uid://cbqiw0cv7hycr" path="res://Graphics/Craft Shop/Postcards_Forests.png" id="10_kuqnf"]
+[ext_resource type="Texture2D" uid="uid://d14tc1gt6ae7o" path="res://Graphics/Craft Shop/Postcards_Mesas.png" id="11_asfm8"]
+[ext_resource type="Texture2D" uid="uid://u66xqn5aoobw" path="res://Graphics/Craft Shop/Postcards_Mountains.png" id="12_xtoal"]
+[ext_resource type="Texture2D" uid="uid://ef4srtjb57e8" path="res://Graphics/UI/Shop Panel.PNG" id="13_d1jvk"]
+[ext_resource type="FontFile" uid="uid://dob7bf1fqfppd" path="res://Fonts/The Seasons Regular.ttf" id="14_keuea"]
+[ext_resource type="Texture2D" uid="uid://c7mlstotxyst5" path="res://Graphics/UI/Coins.PNG" id="15_61bjb"]
+[ext_resource type="PackedScene" uid="uid://brewn7dcybla" path="res://Scenes/coins.tscn" id="16_5ao4s"]
+[ext_resource type="PackedScene" uid="uid://cm6i7vcbypte4" path="res://Scenes/navigation.tscn" id="17_q6oo6"]
+[ext_resource type="PackedScene" uid="uid://37tq3gi8sclw" path="res://Scenes/UI Screens/pause_screen.tscn" id="18_q5kbj"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_n01f5"]
 
@@ -30,12 +30,12 @@
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_vgfvf"]
 
 [node name="Craft Shop" type="Node2D" unique_id=461295048]
-script = ExtResource("1_s5bet")
+script = ExtResource("1_v2t1d")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1943395183]
 
 [node name="Craft Shop BG" type="Sprite2D" parent="CanvasLayer" unique_id=1938208358]
-texture = ExtResource("1_e5462")
+texture = ExtResource("2_j7wxw")
 centered = false
 
 [node name="Plain (Bundle)" type="TextureButton" parent="CanvasLayer" unique_id=1775277480]
@@ -43,75 +43,75 @@ offset_left = 280.0
 offset_top = 305.0
 offset_right = 429.00046
 offset_bottom = 429.0
-texture_normal = ExtResource("3_2gak8")
+texture_normal = ExtResource("3_qtgxe")
 
 [node name="Plain (Stack)" type="TextureButton" parent="CanvasLayer" unique_id=1830893261]
 offset_left = 580.0
 offset_top = 258.0
 offset_right = 734.00037
 offset_bottom = 429.0
-texture_normal = ExtResource("4_s5bet")
+texture_normal = ExtResource("4_5fa47")
 
 [node name="Fancy (Bundle)" type="TextureButton" parent="CanvasLayer" unique_id=740292856]
 offset_left = 880.0
 offset_top = 305.0
 offset_right = 1029.0004
 offset_bottom = 429.0
-texture_normal = ExtResource("5_4tw14")
+texture_normal = ExtResource("5_7ge1q")
 
 [node name="Fancy (Stack)" type="TextureButton" parent="CanvasLayer" unique_id=608997384]
 offset_left = 1180.0
 offset_top = 258.0
 offset_right = 1334.0004
 offset_bottom = 429.0
-texture_normal = ExtResource("6_nu1o7")
+texture_normal = ExtResource("6_0h8wh")
 
 [node name="Ornate (Bundle)" type="TextureButton" parent="CanvasLayer" unique_id=827374676]
 offset_left = 1480.0
 offset_top = 305.0
 offset_right = 1629.0004
 offset_bottom = 429.0
-texture_normal = ExtResource("7_2todf")
+texture_normal = ExtResource("7_cv4um")
 
 [node name="Postcards (Coast)" type="TextureButton" parent="CanvasLayer" unique_id=1195238289]
 offset_left = 120.0
 offset_top = 91.0
 offset_right = 393.0
 offset_bottom = 203.0
-texture_normal = ExtResource("9_nnco4")
+texture_normal = ExtResource("8_djxph")
 
 [node name="Postcards (Deserts)" type="TextureButton" parent="CanvasLayer" unique_id=1532711056]
 offset_left = 470.0
 offset_top = 91.0
 offset_right = 743.0
 offset_bottom = 205.0
-texture_normal = ExtResource("10_5otd3")
+texture_normal = ExtResource("9_tk7oc")
 
 [node name="Postcards (Forests)" type="TextureButton" parent="CanvasLayer" unique_id=2018936153]
 offset_left = 820.0
 offset_top = 91.0
 offset_right = 1093.0
 offset_bottom = 210.0
-texture_normal = ExtResource("11_r6gu5")
+texture_normal = ExtResource("10_kuqnf")
 
 [node name="Postcards (Mesas)" type="TextureButton" parent="CanvasLayer" unique_id=2097806361]
 offset_left = 1170.0
 offset_top = 91.0
 offset_right = 1443.0
 offset_bottom = 205.0
-texture_normal = ExtResource("12_6y8u7")
+texture_normal = ExtResource("11_asfm8")
 
 [node name="Postcards (Mountains)" type="TextureButton" parent="CanvasLayer" unique_id=1086597343]
 offset_left = 1520.0
 offset_top = 91.0
 offset_right = 1793.0
 offset_bottom = 208.0
-texture_normal = ExtResource("13_82wk7")
+texture_normal = ExtResource("12_xtoal")
 
 [node name="Shop Panel" type="Sprite2D" parent="CanvasLayer" unique_id=1228542888]
 visible = false
 position = Vector2(870, 669)
-texture = ExtResource("8_2gak8")
+texture = ExtResource("13_d1jvk")
 centered = false
 
 [node name="Buy Item" type="Button" parent="CanvasLayer/Shop Panel" unique_id=1020129278]
@@ -120,7 +120,7 @@ offset_top = 285.0
 offset_right = 708.0
 offset_bottom = 317.0
 theme_override_colors/font_color = Color(0.4, 0.14117648, 0, 1)
-theme_override_fonts/font = ExtResource("11_2todf")
+theme_override_fonts/font = ExtResource("14_keuea")
 theme_override_font_sizes/font_size = 30
 theme_override_styles/normal = SubResource("StyleBoxEmpty_n01f5")
 theme_override_styles/pressed = SubResource("StyleBoxEmpty_2todf")
@@ -134,7 +134,7 @@ offset_top = 285.0
 offset_right = 708.0
 offset_bottom = 317.0
 theme_override_colors/font_color = Color(0.4, 0.14117648, 0, 1)
-theme_override_fonts/font = ExtResource("11_2todf")
+theme_override_fonts/font = ExtResource("14_keuea")
 theme_override_font_sizes/font_size = 30
 theme_override_styles/normal = SubResource("StyleBoxEmpty_n01f5")
 theme_override_styles/pressed = SubResource("StyleBoxEmpty_2todf")
@@ -147,7 +147,7 @@ offset_top = 285.0
 offset_right = 805.0
 offset_bottom = 317.0
 theme_override_colors/font_color = Color(0.4, 0.14117648, 0, 1)
-theme_override_fonts/font = ExtResource("11_2todf")
+theme_override_fonts/font = ExtResource("14_keuea")
 theme_override_font_sizes/font_size = 30
 theme_override_styles/normal = SubResource("StyleBoxEmpty_n01f5")
 theme_override_styles/pressed = SubResource("StyleBoxEmpty_6ewy6")
@@ -160,28 +160,28 @@ offset_top = 50.0
 offset_right = 795.0
 offset_bottom = 250.0
 theme_override_colors/font_color = Color(0.4, 0.14117648, 0, 1)
-theme_override_fonts/font = ExtResource("11_2todf")
+theme_override_fonts/font = ExtResource("14_keuea")
 theme_override_font_sizes/font_size = 50
 autowrap_mode = 3
 
 [node name="Coins (Cost)" type="Sprite2D" parent="CanvasLayer/Shop Panel" unique_id=2021464498]
 position = Vector2(89.99999, 263.99997)
 scale = Vector2(0.4728404, 0.4728404)
-texture = ExtResource("11_nu1o7")
+texture = ExtResource("15_61bjb")
 
 [node name="Price" type="Label" parent="CanvasLayer/Shop Panel/Coins (Cost)" unique_id=56582070]
 offset_left = 145.9266
 offset_right = 335.92664
 offset_bottom = 104.0
 theme_override_colors/font_color = Color(0.4, 0.14117648, 0, 1)
-theme_override_fonts/font = ExtResource("11_2todf")
+theme_override_fonts/font = ExtResource("14_keuea")
 theme_override_font_sizes/font_size = 100
 
-[node name="Coins" parent="CanvasLayer" unique_id=1568081122 instance=ExtResource("12_2todf")]
+[node name="Coins" parent="CanvasLayer" unique_id=1568081122 instance=ExtResource("16_5ao4s")]
 
-[node name="Navigation" parent="CanvasLayer" unique_id=651092304 instance=ExtResource("13_dlw3c")]
+[node name="Navigation" parent="CanvasLayer" unique_id=651092304 instance=ExtResource("17_q6oo6")]
 
-[node name="Pause Screen" parent="CanvasLayer" unique_id=1599019131 instance=ExtResource("18_nnco4")]
+[node name="Pause Screen" parent="CanvasLayer" unique_id=1599019131 instance=ExtResource("18_q5kbj")]
 visible = false
 
 [connection signal="pressed" from="CanvasLayer/Plain (Bundle)" to="." method="_on_plain_bundle_pressed"]

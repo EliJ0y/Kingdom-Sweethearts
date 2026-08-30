@@ -1,11 +1,11 @@
 [gd_resource type="Resource" script_class="ShopsResource" format=3 uid="uid://c6vuvrp0ff63u"]
 
-[ext_resource type="Script" uid="uid://s28xadn5y5j3" path="res://Scripts/shops_resource.gd" id="1_0risv"]
+[ext_resource type="Script" uid="uid://s28xadn5y5j3" path="res://Scripts/Resource Scripts/shops_resource.gd" id="1_0risv"]
 [ext_resource type="Texture2D" uid="uid://ctoghcicpfddq" path="res://Graphics/Florist/Carnations.png" id="2_gg1n1"]
 
 [resource]
 script = ExtResource("1_0risv")
-description = "Carnations"
+description = "Carnations. Cultivated for over a thousand years and associated with deep love. Costs 25 gold. "
 price = "25G"
 texture = ExtResource("2_gg1n1")
 item_type = 3

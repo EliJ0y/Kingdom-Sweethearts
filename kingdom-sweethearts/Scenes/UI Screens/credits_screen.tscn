@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://dr5x6kakx3u8r"]
 
 [ext_resource type="Texture2D" uid="uid://c73akm0cu0qd0" path="res://Graphics/UI/Map BG.PNG" id="1_c4fpl"]
-[ext_resource type="Script" uid="uid://dbmkjcccewdn3" path="res://Scripts/credits_screen.gd" id="1_kwkrj"]
+[ext_resource type="Script" uid="uid://dbmkjcccewdn3" path="res://Scripts/UI Screens/credits_screen.gd" id="1_kwkrj"]
 [ext_resource type="FontFile" uid="uid://crb2i4elinjsj" path="res://Fonts/PirataOne-Regular.ttf" id="2_kwkrj"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_amjhk"]

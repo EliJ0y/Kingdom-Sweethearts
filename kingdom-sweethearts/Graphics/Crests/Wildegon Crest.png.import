@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bvn0mwgkfpmvd"
-path="res://.godot/imported/Izzy Talking.jpg-9c911964861f9aa5ce82ff432af5b327.ctex"
+uid="uid://dg75fx0l316m0"
+path="res://.godot/imported/Wildegon Crest.png-eabbe9c322042977ae835cd4b9a6173f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Graphics/Characters/Izzy Talking.jpg"
-dest_files=["res://.godot/imported/Izzy Talking.jpg-9c911964861f9aa5ce82ff432af5b327.ctex"]
+source_file="res://Graphics/Crests/Wildegon Crest.png"
+dest_files=["res://.godot/imported/Wildegon Crest.png-eabbe9c322042977ae835cd4b9a6173f.ctex"]
 
 [params]
 

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cp40hl1k8fgtl"
-path="res://.godot/imported/Izzy Idle.jpg-bbf44dc3fb1a31a82e22f1fa8e9ac62c.ctex"
+uid="uid://c4po5gi262r6e"
+path="res://.godot/imported/Oceirea Crest.png-a2249099462e3659ff24a4dd91560cfb.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Graphics/Characters/Izzy Idle.jpg"
-dest_files=["res://.godot/imported/Izzy Idle.jpg-bbf44dc3fb1a31a82e22f1fa8e9ac62c.ctex"]
+source_file="res://Graphics/Crests/Oceirea Crest.png"
+dest_files=["res://.godot/imported/Oceirea Crest.png-a2249099462e3659ff24a4dd91560cfb.ctex"]
 
 [params]
 

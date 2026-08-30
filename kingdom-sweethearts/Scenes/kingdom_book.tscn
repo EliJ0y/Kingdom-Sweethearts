@@ -5,7 +5,7 @@
 [ext_resource type="Texture2D" uid="uid://u7qodnv0sqgx" path="res://Graphics/Open Book Pages.png" id="4_hpxmg"]
 [ext_resource type="Texture2D" uid="uid://bbo2o33b6xwix" path="res://Graphics/Scrolls/Ribbon Arrow.png" id="5_0gn10"]
 [ext_resource type="FontFile" uid="uid://crb2i4elinjsj" path="res://Fonts/PirataOne-Regular.ttf" id="5_l573l"]
-[ext_resource type="PackedScene" uid="uid://37tq3gi8sclw" path="res://Scenes/pause_screen.tscn" id="7_cj5e8"]
+[ext_resource type="PackedScene" uid="uid://37tq3gi8sclw" path="res://Scenes/UI Screens/pause_screen.tscn" id="7_cj5e8"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_n01f5"]
 
@@ -52,9 +52,9 @@ grow_vertical = 2
 
 [node name="Page Title" type="Label" parent="CanvasLayer/Set of Pages" unique_id=1445054715]
 layout_mode = 0
-offset_left = 115.0
+offset_left = 110.0
 offset_top = 50.0
-offset_right = 415.0
+offset_right = 410.0
 offset_bottom = 128.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("5_l573l")
@@ -63,7 +63,7 @@ horizontal_alignment = 1
 
 [node name="Crest" type="Sprite2D" parent="CanvasLayer/Set of Pages" unique_id=1471010418]
 position = Vector2(70, 190)
-scale = Vector2(0.4, 0.4)
+scale = Vector2(0.35, 0.35)
 centered = false
 
 [node name="Page Content" type="Label" parent="CanvasLayer/Set of Pages" unique_id=2098679803]

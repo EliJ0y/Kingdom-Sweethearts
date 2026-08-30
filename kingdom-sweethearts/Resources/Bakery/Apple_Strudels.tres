@@ -1,6 +1,6 @@
 [gd_resource type="Resource" script_class="ShopsResource" format=3 uid="uid://s0mm7pxfq631"]
 
-[ext_resource type="Script" uid="uid://s28xadn5y5j3" path="res://Scripts/shops_resource.gd" id="1_57hsl"]
+[ext_resource type="Script" uid="uid://s28xadn5y5j3" path="res://Scripts/Resource Scripts/shops_resource.gd" id="1_57hsl"]
 [ext_resource type="Texture2D" uid="uid://ddwuhcgwjwuy6" path="res://Graphics/Bakery/Apple Strudels.png" id="2_xvp3i"]
 
 [resource]

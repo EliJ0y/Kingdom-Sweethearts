@@ -1,24 +1,24 @@
 [gd_scene format=3 uid="uid://5xpglr5ijuw1"]
 
-[ext_resource type="Texture2D" uid="uid://yra6wmejvfs" path="res://Graphics/Home Desk.png" id="1_nq32b"]
-[ext_resource type="Script" uid="uid://eo10k053o0vc" path="res://Scripts/home_desk.gd" id="1_tr8l1"]
-[ext_resource type="PackedScene" uid="uid://cm6i7vcbypte4" path="res://Scenes/navigation.tscn" id="5_0ttai"]
-[ext_resource type="PackedScene" uid="uid://brewn7dcybla" path="res://Scenes/coins.tscn" id="5_o1j7g"]
-[ext_resource type="Texture2D" uid="uid://cvswrvt0i0tg1" path="res://Graphics/Open Book.png" id="5_vmmc8"]
-[ext_resource type="Texture2D" uid="uid://ef4srtjb57e8" path="res://Graphics/UI/Shop Panel.PNG" id="6_0ttai"]
-[ext_resource type="FontFile" uid="uid://dob7bf1fqfppd" path="res://Fonts/The Seasons Regular.ttf" id="7_bsgyu"]
-[ext_resource type="Texture2D" uid="uid://cp2yn3d5b313s" path="res://Graphics/Icons/Scroll Icon.PNG" id="8_cx8jn"]
-[ext_resource type="Texture2D" uid="uid://bteijx4vbhw0e" path="res://Graphics/UI/Coins Sparkle.png" id="9_fecnm"]
-[ext_resource type="PackedScene" uid="uid://37tq3gi8sclw" path="res://Scenes/pause_screen.tscn" id="9_vmmc8"]
+[ext_resource type="Script" uid="uid://eo10k053o0vc" path="res://Scripts/Locations/home_desk.gd" id="1_qe8kb"]
+[ext_resource type="Texture2D" uid="uid://yra6wmejvfs" path="res://Graphics/Home Desk.png" id="2_1bsgf"]
+[ext_resource type="PackedScene" uid="uid://brewn7dcybla" path="res://Scenes/coins.tscn" id="3_j50uc"]
+[ext_resource type="Texture2D" uid="uid://cvswrvt0i0tg1" path="res://Graphics/Open Book.png" id="4_6we3t"]
+[ext_resource type="PackedScene" uid="uid://cm6i7vcbypte4" path="res://Scenes/navigation.tscn" id="5_80ut4"]
+[ext_resource type="Texture2D" uid="uid://ef4srtjb57e8" path="res://Graphics/UI/Shop Panel.PNG" id="6_ovl2a"]
+[ext_resource type="FontFile" uid="uid://dob7bf1fqfppd" path="res://Fonts/The Seasons Regular.ttf" id="7_k1frb"]
+[ext_resource type="Texture2D" uid="uid://cp2yn3d5b313s" path="res://Graphics/Icons/Scroll Icon.PNG" id="8_cutc5"]
+[ext_resource type="Texture2D" uid="uid://bteijx4vbhw0e" path="res://Graphics/UI/Coins Sparkle.png" id="9_m4g7f"]
+[ext_resource type="PackedScene" uid="uid://37tq3gi8sclw" path="res://Scenes/UI Screens/pause_screen.tscn" id="10_vcgwa"]
 
 [node name="HomeDesk" type="Node2D" unique_id=719714100]
-script = ExtResource("1_tr8l1")
+script = ExtResource("1_qe8kb")
 
 [node name="Desk" type="Sprite2D" parent="." unique_id=277310977]
-texture = ExtResource("1_nq32b")
+texture = ExtResource("2_1bsgf")
 centered = false
 
-[node name="Coins" parent="." unique_id=1568081122 instance=ExtResource("5_o1j7g")]
+[node name="Coins" parent="." unique_id=1568081122 instance=ExtResource("3_j50uc")]
 
 [node name="Kingdom Book" type="TextureButton" parent="." unique_id=70601697]
 anchors_preset = 8
@@ -33,9 +33,9 @@ offset_bottom = 909.0
 grow_horizontal = 2
 grow_vertical = 2
 action_mode = 0
-texture_normal = ExtResource("5_vmmc8")
+texture_normal = ExtResource("4_6we3t")
 
-[node name="Navigation" parent="." unique_id=651092304 instance=ExtResource("5_0ttai")]
+[node name="Navigation" parent="." unique_id=651092304 instance=ExtResource("5_80ut4")]
 
 [node name="Panel" type="Panel" parent="." unique_id=1443207450]
 visible = false
@@ -53,7 +53,7 @@ offset_bottom = 1020.0
 [node name="Context Panel" type="Sprite2D" parent="Control" unique_id=1448397763]
 position = Vector2(-8, 0)
 scale = Vector2(1.45, 0.9)
-texture = ExtResource("6_0ttai")
+texture = ExtResource("6_ovl2a")
 centered = false
 
 [node name="Context" type="Label" parent="Control" unique_id=1894080612]
@@ -70,7 +70,7 @@ grow_horizontal = 2
 grow_vertical = 2
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_constants/line_spacing = -10
-theme_override_fonts/font = ExtResource("7_bsgyu")
+theme_override_fonts/font = ExtResource("7_k1frb")
 theme_override_font_sizes/font_size = 50
 autowrap_mode = 3
 
@@ -82,14 +82,14 @@ offset_right = 2030.0
 offset_bottom = 380.0
 scale = Vector2(0.5, 0.5)
 action_mode = 0
-texture_normal = ExtResource("8_cx8jn")
+texture_normal = ExtResource("8_cutc5")
 
 [node name="Sparkle" type="Sprite2D" parent="Scroll Icon" unique_id=2032301276]
 position = Vector2(120, 110)
 scale = Vector2(2, 2)
-texture = ExtResource("9_fecnm")
+texture = ExtResource("9_m4g7f")
 
-[node name="Pause Screen" parent="." unique_id=1599019131 instance=ExtResource("9_vmmc8")]
+[node name="Pause Screen" parent="." unique_id=1599019131 instance=ExtResource("10_vcgwa")]
 visible = false
 
 [connection signal="pressed" from="Kingdom Book" to="." method="_on_kingdom_book_pressed"]

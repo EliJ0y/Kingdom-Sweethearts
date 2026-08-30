@@ -1,6 +1,6 @@
 [gd_resource type="Resource" script_class="ShopsResource" format=3 uid="uid://bi2wg4snaol5h"]
 
-[ext_resource type="Script" uid="uid://s28xadn5y5j3" path="res://Scripts/shops_resource.gd" id="1_cn676"]
+[ext_resource type="Script" uid="uid://s28xadn5y5j3" path="res://Scripts/Resource Scripts/shops_resource.gd" id="1_cn676"]
 [ext_resource type="Texture2D" uid="uid://dulc5s7poy2s4" path="res://Graphics/Bakery/Chocolate Bread.png" id="2_x0cop"]
 
 [resource]

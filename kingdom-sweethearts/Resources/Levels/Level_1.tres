@@ -1,15 +1,15 @@
 [gd_resource type="Resource" script_class="LevelsResource" format=3 uid="uid://be5vqoixiu0x5"]
 
 [ext_resource type="Script" uid="uid://dbs4435dsf3ry" path="res://addons/dialogue_manager/dialogue_resource.gd" id="1_2h8oy"]
-[ext_resource type="Script" uid="uid://b8ely3pohkd0v" path="res://Scripts/scrolls_resource.gd" id="2_5ycf7"]
+[ext_resource type="Script" uid="uid://b8ely3pohkd0v" path="res://Scripts/Resource Scripts/scrolls_resource.gd" id="2_5ycf7"]
 [ext_resource type="Resource" uid="uid://2xslc0qfalv3" path="res://Dialogue Manager/Character_Dialogues/Silvester_Dialogue.dialogue" id="2_ykdwr"]
 [ext_resource type="Resource" uid="uid://ck4isabw83gl8" path="res://Resources/Scrolls/Silvester_Scroll.tres" id="3_gw53f"]
 [ext_resource type="Resource" uid="uid://cferu62xioius" path="res://Dialogue Manager/Character_Dialogues/Kohan_Dialogue.dialogue" id="3_le46w"]
 [ext_resource type="Resource" uid="uid://ddmrnwey55ckp" path="res://Resources/Scrolls/Kohan_Scroll.tres" id="4_2h8oy"]
-[ext_resource type="Script" uid="uid://ccwxluiyextw2" path="res://Scripts/characters_resource.gd" id="4_ykdwr"]
+[ext_resource type="Script" uid="uid://ccwxluiyextw2" path="res://Scripts/Resource Scripts/characters_resource.gd" id="4_ykdwr"]
 [ext_resource type="Resource" uid="uid://bqkvskpxawu7d" path="res://Resources/Characters/Silvester.tres" id="5_le46w"]
 [ext_resource type="Resource" uid="uid://dq8mrh3vm43qn" path="res://Resources/Characters/Kohan.tres" id="6_2xfkq"]
-[ext_resource type="Script" uid="uid://bkfrj7xwd614l" path="res://Scripts/levels_resource.gd" id="7_wkpvl"]
+[ext_resource type="Script" uid="uid://bkfrj7xwd614l" path="res://Scripts/Resource Scripts/levels_resource.gd" id="7_wkpvl"]
 
 [resource]
 script = ExtResource("7_wkpvl")

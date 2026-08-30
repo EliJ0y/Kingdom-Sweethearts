@@ -1,23 +1,23 @@
 [gd_scene format=3 uid="uid://bvsqho1pn4i5c"]
 
-[ext_resource type="Script" uid="uid://c51frugbjl4eq" path="res://Scripts/dialogue.gd" id="1_5mcti"]
-[ext_resource type="Texture2D" uid="uid://dlw4alek70ojt" path="res://Graphics/Gazebo BG.png" id="2_j1ns2"]
-[ext_resource type="PackedScene" uid="uid://cm6i7vcbypte4" path="res://Scenes/navigation.tscn" id="3_p21q5"]
-[ext_resource type="Texture2D" uid="uid://c5r5wbudl45sh" path="res://Graphics/UI/Dialogue Option.PNG" id="4_4hwkt"]
-[ext_resource type="Texture2D" uid="uid://cnagpsybv6r7k" path="res://Graphics/UI/Dialogue Panel.PNG" id="4_shd1d"]
-[ext_resource type="FontFile" uid="uid://crb2i4elinjsj" path="res://Fonts/PirataOne-Regular.ttf" id="5_5mcti"]
-[ext_resource type="Script" uid="uid://cd3222nx3y3k5" path="res://addons/dialogue_manager/nodes/context/dialogue_state_context.gd" id="6_4hwkt"]
-[ext_resource type="PackedScene" uid="uid://37tq3gi8sclw" path="res://Scenes/pause_screen.tscn" id="7_j1ns2"]
+[ext_resource type="Script" uid="uid://c51frugbjl4eq" path="res://Scripts/Locations/dialogue.gd" id="1_fwwaw"]
+[ext_resource type="Texture2D" uid="uid://dlw4alek70ojt" path="res://Graphics/Gazebo BG.png" id="2_57jq7"]
+[ext_resource type="PackedScene" uid="uid://cm6i7vcbypte4" path="res://Scenes/navigation.tscn" id="3_t60tv"]
+[ext_resource type="Texture2D" uid="uid://cnagpsybv6r7k" path="res://Graphics/UI/Dialogue Panel.PNG" id="4_0no31"]
+[ext_resource type="FontFile" uid="uid://crb2i4elinjsj" path="res://Fonts/PirataOne-Regular.ttf" id="5_0vhwh"]
+[ext_resource type="Texture2D" uid="uid://c5r5wbudl45sh" path="res://Graphics/UI/Dialogue Option.PNG" id="6_o4iev"]
+[ext_resource type="PackedScene" uid="uid://37tq3gi8sclw" path="res://Scenes/UI Screens/pause_screen.tscn" id="7_6f6u1"]
+[ext_resource type="Script" uid="uid://cd3222nx3y3k5" path="res://addons/dialogue_manager/nodes/context/dialogue_state_context.gd" id="8_upa4e"]
 
 [node name="Dialogue" type="Node2D" unique_id=565725109]
 process_mode = 3
-script = ExtResource("1_5mcti")
+script = ExtResource("1_fwwaw")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1350087754]
 process_mode = 3
 
 [node name="Gazebo BG" type="Sprite2D" parent="CanvasLayer" unique_id=1369257598]
-texture = ExtResource("2_j1ns2")
+texture = ExtResource("2_57jq7")
 centered = false
 
 [node name="Character Sprite" type="Sprite2D" parent="CanvasLayer" unique_id=1597908151]
@@ -32,16 +32,16 @@ centered = false
 flip_h = true
 
 [node name="Player Sprite" type="Sprite2D" parent="CanvasLayer" unique_id=1358397334]
-position = Vector2(0, 200)
-scale = Vector2(1.4665108, 1.4665108)
+position = Vector2(0, 180)
+scale = Vector2(0.46, 0.46)
 centered = false
 
-[node name="Navigation" parent="CanvasLayer" unique_id=651092304 instance=ExtResource("3_p21q5")]
+[node name="Navigation" parent="CanvasLayer" unique_id=651092304 instance=ExtResource("3_t60tv")]
 
 [node name="Ending Title Panel" type="Sprite2D" parent="CanvasLayer" unique_id=2117056693]
 visible = false
 position = Vector2(200, 0)
-texture = ExtResource("4_shd1d")
+texture = ExtResource("4_0no31")
 centered = false
 
 [node name="Ending Title" type="Label" parent="CanvasLayer/Ending Title Panel" unique_id=1716486906]
@@ -55,7 +55,7 @@ offset_bottom = -60.0
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_fonts/font = ExtResource("5_5mcti")
+theme_override_fonts/font = ExtResource("5_0vhwh")
 theme_override_font_sizes/font_size = 150
 horizontal_alignment = 1
 
@@ -72,7 +72,7 @@ offset_right = 481.5
 offset_bottom = 100.0
 grow_horizontal = 2
 grow_vertical = 2
-texture_normal = ExtResource("4_4hwkt")
+texture_normal = ExtResource("6_o4iev")
 
 [node name="Button Text" type="Label" parent="CanvasLayer/Button" unique_id=1009411958]
 custom_minimum_size = Vector2(820, 120)
@@ -89,17 +89,17 @@ offset_bottom = 64.5
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_fonts/font = ExtResource("5_5mcti")
+theme_override_fonts/font = ExtResource("5_0vhwh")
 theme_override_font_sizes/font_size = 100
 horizontal_alignment = 1
 vertical_alignment = 1
 autowrap_mode = 3
 
-[node name="Pause Screen" parent="CanvasLayer" unique_id=1599019131 instance=ExtResource("7_j1ns2")]
+[node name="Pause Screen" parent="CanvasLayer" unique_id=1599019131 instance=ExtResource("7_6f6u1")]
 visible = false
 
 [node name="DialogueStateContext" type="Node" parent="." unique_id=1004891195 node_paths=PackedStringArray("target")]
-script = ExtResource("6_4hwkt")
+script = ExtResource("8_upa4e")
 alias = "dialogue"
 target = NodePath("..")
 metadata/_custom_type_script = "uid://cd3222nx3y3k5"

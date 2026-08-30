@@ -1,8 +1,8 @@
 [gd_resource type="Resource" script_class="CharactersResource" format=3 uid="uid://bqkvskpxawu7d"]
 
 [ext_resource type="Resource" uid="uid://dnx7fyw1s0r0l" path="res://Resources/Sprites/Silvester_Sprites.tres" id="1_376r7"]
-[ext_resource type="Script" uid="uid://ccwxluiyextw2" path="res://Scripts/characters_resource.gd" id="1_hvpyk"]
-[ext_resource type="Script" uid="uid://dbqtkxc5y0ql0" path="res://Scripts/requested_items_resource.gd" id="2_5lhho"]
+[ext_resource type="Script" uid="uid://ccwxluiyextw2" path="res://Scripts/Resource Scripts/characters_resource.gd" id="1_hvpyk"]
+[ext_resource type="Script" uid="uid://dbqtkxc5y0ql0" path="res://Scripts/Resource Scripts/requested_items_resource.gd" id="2_5lhho"]
 [ext_resource type="Resource" uid="uid://cwkghs2f1rr7l" path="res://Resources/Item Requests/Request_Silvester.tres" id="3_qcyfe"]
 
 [resource]

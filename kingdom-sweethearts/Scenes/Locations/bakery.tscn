@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://c2e88rd4mck5t"]
 
-[ext_resource type="Script" uid="uid://5qavxipj7ybx" path="res://Scripts/bakery.gd" id="1_5df3p"]
+[ext_resource type="Script" uid="uid://5qavxipj7ybx" path="res://Scripts/Locations/bakery.gd" id="1_5df3p"]
 [ext_resource type="Texture2D" uid="uid://0uhuxei6ey4x" path="res://Graphics/Bakery/Bakery BG.png" id="2_70i4k"]
 [ext_resource type="Texture2D" uid="uid://bcyvc5ykktpav" path="res://Graphics/Bakery/Glazed Donuts.png" id="4_p5upb"]
 [ext_resource type="Texture2D" uid="uid://dulc5s7poy2s4" path="res://Graphics/Bakery/Chocolate Bread.png" id="5_x21c3"]
@@ -13,7 +13,7 @@
 [ext_resource type="Texture2D" uid="uid://ef4srtjb57e8" path="res://Graphics/UI/Shop Panel.PNG" id="13_qqqo5"]
 [ext_resource type="FontFile" uid="uid://dob7bf1fqfppd" path="res://Fonts/The Seasons Regular.ttf" id="14_hwoo1"]
 [ext_resource type="Texture2D" uid="uid://c7mlstotxyst5" path="res://Graphics/UI/Coins.PNG" id="15_plpos"]
-[ext_resource type="PackedScene" uid="uid://37tq3gi8sclw" path="res://Scenes/pause_screen.tscn" id="16_70i4k"]
+[ext_resource type="PackedScene" uid="uid://37tq3gi8sclw" path="res://Scenes/UI Screens/pause_screen.tscn" id="16_70i4k"]
 [ext_resource type="PackedScene" uid="uid://brewn7dcybla" path="res://Scenes/coins.tscn" id="16_s0ssm"]
 [ext_resource type="PackedScene" uid="uid://cm6i7vcbypte4" path="res://Scenes/navigation.tscn" id="17_l3hgh"]
 

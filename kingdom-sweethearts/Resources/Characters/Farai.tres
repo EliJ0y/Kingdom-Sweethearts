@@ -1,8 +1,8 @@
 [gd_resource type="Resource" script_class="CharactersResource" format=3 uid="uid://df7im63n5x0rk"]
 
 [ext_resource type="Resource" uid="uid://dxiduo0eh5g3x" path="res://Resources/Sprites/Farai_Sprites.tres" id="1_dbsk5"]
-[ext_resource type="Script" uid="uid://dbqtkxc5y0ql0" path="res://Scripts/requested_items_resource.gd" id="2_5ktbu"]
-[ext_resource type="Script" uid="uid://ccwxluiyextw2" path="res://Scripts/characters_resource.gd" id="2_6kb5y"]
+[ext_resource type="Script" uid="uid://dbqtkxc5y0ql0" path="res://Scripts/Resource Scripts/requested_items_resource.gd" id="2_5ktbu"]
+[ext_resource type="Script" uid="uid://ccwxluiyextw2" path="res://Scripts/Resource Scripts/characters_resource.gd" id="2_6kb5y"]
 [ext_resource type="Resource" uid="uid://gl5mi2sad2ya" path="res://Resources/Item Requests/Request_Farai.tres" id="3_vdyjr"]
 
 [resource]

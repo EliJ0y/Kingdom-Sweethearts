@@ -1,8 +1,8 @@
 [gd_resource type="Resource" script_class="SpritesResource" format=3 uid="uid://bh7ys4gdrt8wv"]
 
-[ext_resource type="Texture2D" uid="uid://cp40hl1k8fgtl" path="res://Graphics/Characters/Izzy Idle.jpg" id="1_wjm1w"]
-[ext_resource type="Script" uid="uid://c3hfy4nf71pn7" path="res://Scripts/sprites_resource.gd" id="2_h8jye"]
-[ext_resource type="Texture2D" uid="uid://bvn0mwgkfpmvd" path="res://Graphics/Characters/Izzy Talking.jpg" id="3_b5piq"]
+[ext_resource type="Texture2D" uid="uid://dhdy3linjwd2c" path="res://Graphics/Characters/Izzy Idle.PNG" id="1_wjm1w"]
+[ext_resource type="Script" uid="uid://c3hfy4nf71pn7" path="res://Scripts/Resource Scripts/sprites_resource.gd" id="2_h8jye"]
+[ext_resource type="Texture2D" uid="uid://bm3dvme6iorpt" path="res://Graphics/Characters/Izzy Talking.PNG" id="3_b5piq"]
 
 [resource]
 script = ExtResource("2_h8jye")

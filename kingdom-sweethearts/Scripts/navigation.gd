@@ -21,10 +21,10 @@ func _input(event: InputEvent) -> void:
 				get_viewport().set_input_as_handled()
 
 func _on_home_icon_pressed() -> void:
-	get_tree().change_scene_to_file("res://Scenes/home_desk.tscn")
+	get_tree().change_scene_to_file("res://Scenes/Locations/home_desk.tscn")
 
 func _on_scroll_icon_pressed() -> void:
-	if get_tree().current_scene.scene_file_path != "res://Scenes/dialogue.tscn":
+	if get_tree().current_scene.scene_file_path != "res://Scenes/Locations/dialogue.tscn":
 		if GlobalTracker.scroll_count < 2:
 			$"Scroll Icon".disabled = false
 			get_tree().change_scene_to_file("res://Scenes/scrolls.tscn")

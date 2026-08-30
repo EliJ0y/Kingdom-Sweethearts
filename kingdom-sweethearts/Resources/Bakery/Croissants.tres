@@ -1,6 +1,6 @@
 [gd_resource type="Resource" script_class="ShopsResource" format=3 uid="uid://8nrhedf5l4uf"]
 
-[ext_resource type="Script" uid="uid://s28xadn5y5j3" path="res://Scripts/shops_resource.gd" id="1_llw72"]
+[ext_resource type="Script" uid="uid://s28xadn5y5j3" path="res://Scripts/Resource Scripts/shops_resource.gd" id="1_llw72"]
 [ext_resource type="Texture2D" uid="uid://bfswme6uas1nf" path="res://Graphics/Bakery/Croissants.png" id="2_bk3ej"]
 
 [resource]

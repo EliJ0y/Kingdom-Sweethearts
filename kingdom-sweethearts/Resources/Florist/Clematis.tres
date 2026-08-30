@@ -1,11 +1,11 @@
 [gd_resource type="Resource" script_class="ShopsResource" format=3 uid="uid://c2y7aay51ani8"]
 
-[ext_resource type="Script" uid="uid://s28xadn5y5j3" path="res://Scripts/shops_resource.gd" id="1_rt1b3"]
+[ext_resource type="Script" uid="uid://s28xadn5y5j3" path="res://Scripts/Resource Scripts/shops_resource.gd" id="1_rt1b3"]
 [ext_resource type="Texture2D" uid="uid://qiy1y3yeas8t" path="res://Graphics/Florist/Clematis.png" id="2_d21my"]
 
 [resource]
 script = ExtResource("1_rt1b3")
-description = "Clematis"
+description = "Clematis. Beautifully cultivated flowers that always reach for the sun symbolise mental beauty. Costs 25 gold.  "
 price = "25G"
 texture = ExtResource("2_d21my")
 item_type = 3

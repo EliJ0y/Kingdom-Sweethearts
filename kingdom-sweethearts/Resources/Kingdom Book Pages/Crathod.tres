@@ -1,9 +1,11 @@
 [gd_resource type="Resource" script_class="PagesResource" format=3 uid="uid://cm48obxkyc7x5"]
 
-[ext_resource type="Script" uid="uid://bfol2ssr330a1" path="res://Scripts/pages_resource.gd" id="1_02aga"]
+[ext_resource type="Script" uid="uid://bfol2ssr330a1" path="res://Scripts/Resource Scripts/pages_resource.gd" id="1_02aga"]
+[ext_resource type="Texture2D" uid="uid://bnjpsy31ynxar" path="res://Graphics/Crests/Crathod Crest.png" id="1_up4bq"]
 
 [resource]
 script = ExtResource("1_02aga")
 page_title = "Crathod"
+crest = ExtResource("1_up4bq")
 page_content = Array[String](["Crathod is home to tradespeople, tinkerers, and engineers. The people dedicate vast amounts of time and effort to their crafts.", "Those in Crathod are innovative and meticulous, crafting the many mundane things and wonders of our lives today.", "Crathod’s crafts landscape is ever growing and shifting."])
 metadata/_custom_type_script = "uid://bfol2ssr330a1"

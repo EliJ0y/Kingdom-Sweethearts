@@ -1,6 +1,6 @@
 [gd_resource type="Resource" script_class="ShopsResource" format=3 uid="uid://tdnn2w4mam1p"]
 
-[ext_resource type="Script" uid="uid://s28xadn5y5j3" path="res://Scripts/shops_resource.gd" id="1_qdb8n"]
+[ext_resource type="Script" uid="uid://s28xadn5y5j3" path="res://Scripts/Resource Scripts/shops_resource.gd" id="1_qdb8n"]
 [ext_resource type="Texture2D" uid="uid://cbqiw0cv7hycr" path="res://Graphics/Craft Shop/Postcards_Forests.png" id="2_4152o"]
 
 [resource]

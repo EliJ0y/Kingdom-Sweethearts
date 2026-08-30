@@ -1,9 +1,11 @@
 [gd_resource type="Resource" script_class="PagesResource" format=3 uid="uid://cslgxh711euwo"]
 
-[ext_resource type="Script" uid="uid://bfol2ssr330a1" path="res://Scripts/pages_resource.gd" id="1_pc23u"]
+[ext_resource type="Texture2D" uid="uid://b2hrp64h7cdg2" path="res://Graphics/Crests/Vigoust Crest.png" id="1_1cvmn"]
+[ext_resource type="Script" uid="uid://bfol2ssr330a1" path="res://Scripts/Resource Scripts/pages_resource.gd" id="1_pc23u"]
 
 [resource]
 script = ExtResource("1_pc23u")
 page_title = "Vigoust"
+crest = ExtResource("1_1cvmn")
 page_content = Array[String](["Vigoust is home to warriors, peace-keepers, and adventurers. The people hone themselves in pursuit of greatness.", "Those in Vigoust are courageous and determined, giving their body and soul to fight, protect, or conquer.", "Vigoust’s legends tell tales of both heroes and tyrants."])
 metadata/_custom_type_script = "uid://bfol2ssr330a1"

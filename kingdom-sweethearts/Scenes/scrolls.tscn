@@ -6,7 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://cv77htlibthwt" path="res://Graphics/Scrolls/Opened Scroll.PNG" id="4_qmqk0"]
 [ext_resource type="Texture2D" uid="uid://c7mlstotxyst5" path="res://Graphics/UI/Coins.PNG" id="5_qmqk0"]
 [ext_resource type="Texture2D" uid="uid://bbo2o33b6xwix" path="res://Graphics/Scrolls/Ribbon Arrow.png" id="8_hw0rl"]
-[ext_resource type="PackedScene" uid="uid://37tq3gi8sclw" path="res://Scenes/pause_screen.tscn" id="8_pu1om"]
+[ext_resource type="PackedScene" uid="uid://37tq3gi8sclw" path="res://Scenes/UI Screens/pause_screen.tscn" id="8_pu1om"]
 [ext_resource type="FontFile" uid="uid://dob7bf1fqfppd" path="res://Fonts/The Seasons Regular.ttf" id="10_hw0rl"]
 
 [node name="Scrolls" type="Node2D" unique_id=1368439968]

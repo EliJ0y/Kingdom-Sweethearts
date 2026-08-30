@@ -1,6 +1,6 @@
 [gd_resource type="Resource" script_class="ShopsResource" format=3 uid="uid://sf2jpmhbr6e6"]
 
-[ext_resource type="Script" uid="uid://s28xadn5y5j3" path="res://Scripts/shops_resource.gd" id="1_nngid"]
+[ext_resource type="Script" uid="uid://s28xadn5y5j3" path="res://Scripts/Resource Scripts/shops_resource.gd" id="1_nngid"]
 [ext_resource type="Texture2D" uid="uid://drdhfqkuunbs2" path="res://Graphics/Craft Shop/Fancy (bundle).png" id="2_ntim8"]
 
 [resource]

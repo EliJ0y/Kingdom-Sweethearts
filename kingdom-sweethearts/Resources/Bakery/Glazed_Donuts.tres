@@ -1,6 +1,6 @@
 [gd_resource type="Resource" script_class="ShopsResource" format=3 uid="uid://dgf6xth73bsfp"]
 
-[ext_resource type="Script" uid="uid://s28xadn5y5j3" path="res://Scripts/shops_resource.gd" id="1_w4638"]
+[ext_resource type="Script" uid="uid://s28xadn5y5j3" path="res://Scripts/Resource Scripts/shops_resource.gd" id="1_w4638"]
 [ext_resource type="Texture2D" uid="uid://bcyvc5ykktpav" path="res://Graphics/Bakery/Glazed Donuts.png" id="2_we3t1"]
 
 [resource]

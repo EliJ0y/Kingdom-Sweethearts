@@ -1,6 +1,6 @@
 [gd_resource type="Resource" script_class="RequestedItemsResource" format=3 uid="uid://dj4giohk7fe33"]
 
-[ext_resource type="Script" uid="uid://s28xadn5y5j3" path="res://Scripts/shops_resource.gd" id="1_3haf3"]
+[ext_resource type="Script" uid="uid://s28xadn5y5j3" path="res://Scripts/Resource Scripts/shops_resource.gd" id="1_3haf3"]
 [ext_resource type="Resource" uid="uid://be61t6bb3vwts" path="res://Resources/Bakery/Baguettes.tres" id="2_3b5ag"]
 [ext_resource type="Resource" uid="uid://8nrhedf5l4uf" path="res://Resources/Bakery/Croissants.tres" id="3_nwqcp"]
 [ext_resource type="Resource" uid="uid://dgf6xth73bsfp" path="res://Resources/Bakery/Glazed_Donuts.tres" id="4_a2fpw"]
@@ -9,7 +9,7 @@
 [ext_resource type="Resource" uid="uid://s0mm7pxfq631" path="res://Resources/Bakery/Apple_Strudels.tres" id="7_rcw8m"]
 [ext_resource type="Resource" uid="uid://bblt3b8sx71fy" path="res://Resources/Bakery/Cinnamon_Rolls.tres" id="8_aw50d"]
 [ext_resource type="Resource" uid="uid://bi2wg4snaol5h" path="res://Resources/Bakery/Chocolate_Bread.tres" id="9_17mme"]
-[ext_resource type="Script" uid="uid://dbqtkxc5y0ql0" path="res://Scripts/requested_items_resource.gd" id="10_60kbp"]
+[ext_resource type="Script" uid="uid://dbqtkxc5y0ql0" path="res://Scripts/Resource Scripts/requested_items_resource.gd" id="10_60kbp"]
 
 [resource]
 script = ExtResource("10_60kbp")

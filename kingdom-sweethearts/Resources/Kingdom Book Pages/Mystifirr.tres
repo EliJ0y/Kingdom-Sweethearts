@@ -1,9 +1,11 @@
 [gd_resource type="Resource" script_class="PagesResource" format=3 uid="uid://beph32kew8rau"]
 
-[ext_resource type="Script" uid="uid://bfol2ssr330a1" path="res://Scripts/pages_resource.gd" id="1_8pl5m"]
+[ext_resource type="Script" uid="uid://bfol2ssr330a1" path="res://Scripts/Resource Scripts/pages_resource.gd" id="1_8pl5m"]
+[ext_resource type="Texture2D" uid="uid://ceeb85m20rnh2" path="res://Graphics/Crests/Mystifirr Crest.png" id="1_epa0u"]
 
 [resource]
 script = ExtResource("1_8pl5m")
 page_title = "Mystifirr"
+crest = ExtResource("1_epa0u")
 page_content = Array[String](["Mystifirr is home to magic wielders, problem-solvers, and visionaries. The people have power within they keep grounded.", "Those in Mystifirr are sharp and  optimistic, always ready to tackle challenges and hope for a better future for everyone.", "Mystifirr’s magic vary from small conveniences to incredible feats."])
 metadata/_custom_type_script = "uid://bfol2ssr330a1"

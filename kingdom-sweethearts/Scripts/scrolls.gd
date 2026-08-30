@@ -154,5 +154,5 @@ func _on_ribbon_arrow_pressed() -> void:
 			opened_scroll_2.hide()
 			_on_tied_scroll_1_pressed()
 	else:
-		get_tree().change_scene_to_file("res://Scenes/home_desk.tscn")
+		get_tree().change_scene_to_file("res://Scenes/Locations/home_desk.tscn")
 	return

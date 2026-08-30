@@ -11,16 +11,16 @@ func _process(delta: float) -> void:
 	pass
 
 func _on_home_icon_pressed() -> void:
-	get_tree().change_scene_to_file("res://Scenes/home_desk.tscn")
+	get_tree().change_scene_to_file("res://Scenes/Locations/home_desk.tscn")
 
 func _on_craft_shop_icon_pressed() -> void:
-	get_tree().change_scene_to_file("res://Scenes/craft_shop.tscn")
+	get_tree().change_scene_to_file("res://Scenes/Locations/craft_shop.tscn")
 
 func _on_gazebo_icon_pressed() -> void:
-	get_tree().change_scene_to_file("res://Scenes/dialogue.tscn")
+	get_tree().change_scene_to_file("res://Scenes/Locations/dialogue.tscn")
 
 func _on_bakery_icon_pressed() -> void:
-	get_tree().change_scene_to_file("res://Scenes/bakery.tscn")
+	get_tree().change_scene_to_file("res://Scenes/Locations/bakery.tscn")
 
 func _on_florist_icon_pressed() -> void:
-	get_tree().change_scene_to_file("res://Scenes/florist.tscn")
+	get_tree().change_scene_to_file("res://Scenes/Locations/florist.tscn")

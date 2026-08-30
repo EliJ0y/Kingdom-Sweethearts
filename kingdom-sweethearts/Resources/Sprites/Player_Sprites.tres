@@ -1,11 +1,11 @@
 [gd_resource type="Resource" script_class="SpritesResource" format=3 uid="uid://8b48kk7l5tpd"]
 
-[ext_resource type="Texture2D" uid="uid://ccy8y4n0141ci" path="res://Graphics/Characters/Player Idle.png" id="1_gai2g"]
-[ext_resource type="Script" uid="uid://c3hfy4nf71pn7" path="res://Scripts/sprites_resource.gd" id="2_vfwd6"]
-[ext_resource type="Texture2D" uid="uid://56yg3adocxi4" path="res://Graphics/Characters/Player Talking.png" id="3_hwgam"]
+[ext_resource type="Texture2D" uid="uid://du4ke0qv8vx0p" path="res://Graphics/Characters/Player Idle.PNG" id="1_gai2g"]
+[ext_resource type="Script" uid="uid://c3hfy4nf71pn7" path="res://Scripts/Resource Scripts/sprites_resource.gd" id="2_vfwd6"]
+[ext_resource type="Texture2D" uid="uid://cju3yq7ou5sr0" path="res://Graphics/Characters/Player Talking.PNG" id="3_vfwd6"]
 
 [resource]
 script = ExtResource("2_vfwd6")
 idle_sprite = ExtResource("1_gai2g")
-talking_sprite = ExtResource("3_hwgam")
+talking_sprite = ExtResource("3_vfwd6")
 metadata/_custom_type_script = "uid://c3hfy4nf71pn7"

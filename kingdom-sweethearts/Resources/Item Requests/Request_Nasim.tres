@@ -1,9 +1,9 @@
 [gd_resource type="Resource" script_class="RequestedItemsResource" format=3 uid="uid://cairpf24fxe6h"]
 
-[ext_resource type="Script" uid="uid://s28xadn5y5j3" path="res://Scripts/shops_resource.gd" id="1_mwd5v"]
+[ext_resource type="Script" uid="uid://s28xadn5y5j3" path="res://Scripts/Resource Scripts/shops_resource.gd" id="1_mwd5v"]
 [ext_resource type="Resource" uid="uid://bblt3b8sx71fy" path="res://Resources/Bakery/Cinnamon_Rolls.tres" id="2_2iouf"]
 [ext_resource type="Resource" uid="uid://s0mm7pxfq631" path="res://Resources/Bakery/Apple_Strudels.tres" id="3_6lr60"]
-[ext_resource type="Script" uid="uid://dbqtkxc5y0ql0" path="res://Scripts/requested_items_resource.gd" id="4_go3rh"]
+[ext_resource type="Script" uid="uid://dbqtkxc5y0ql0" path="res://Scripts/Resource Scripts/requested_items_resource.gd" id="4_go3rh"]
 
 [resource]
 script = ExtResource("4_go3rh")
