@@ -2,13 +2,13 @@
 
 importer="font_data_dynamic"
 type="FontFile"
-uid="uid://djt3y07vl5wfc"
-path="res://.godot/imported/Aprila-Regular.otf-88d4e5d44bd2a6a6b8d4603af26c4b74.fontdata"
+uid="uid://rhwtmvo511jl"
+path="res://.godot/imported/Cormorant-Bold.otf-f24ce46e7c1f5b1b7b4bf381885135f7.fontdata"
 
 [deps]
 
-source_file="res://Fonts/Aprila-Regular.otf"
-dest_files=["res://.godot/imported/Aprila-Regular.otf-88d4e5d44bd2a6a6b8d4603af26c4b74.fontdata"]
+source_file="res://Fonts/Cormorant-Bold.otf"
+dest_files=["res://.godot/imported/Cormorant-Bold.otf-f24ce46e7c1f5b1b7b4bf381885135f7.fontdata"]
 
 [params]
 

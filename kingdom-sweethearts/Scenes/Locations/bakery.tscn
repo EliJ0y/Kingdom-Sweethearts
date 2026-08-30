@@ -11,7 +11,7 @@
 [ext_resource type="Texture2D" uid="uid://bd5dxxer0el6j" path="res://Graphics/Bakery/Cinammon Rolls.png" id="9_70i4k"]
 [ext_resource type="Texture2D" uid="uid://vqn5ejqlfxif" path="res://Graphics/Bakery/Baguettes.png" id="9_fb6sb"]
 [ext_resource type="Texture2D" uid="uid://ef4srtjb57e8" path="res://Graphics/UI/Shop Panel.PNG" id="13_qqqo5"]
-[ext_resource type="FontFile" uid="uid://dob7bf1fqfppd" path="res://Fonts/The Seasons Regular.ttf" id="14_hwoo1"]
+[ext_resource type="FontFile" uid="uid://rhwtmvo511jl" path="res://Fonts/Cormorant-Bold.otf" id="14_hwoo1"]
 [ext_resource type="Texture2D" uid="uid://c7mlstotxyst5" path="res://Graphics/UI/Coins.PNG" id="15_plpos"]
 [ext_resource type="PackedScene" uid="uid://37tq3gi8sclw" path="res://Scenes/UI Screens/pause_screen.tscn" id="16_70i4k"]
 [ext_resource type="PackedScene" uid="uid://brewn7dcybla" path="res://Scenes/coins.tscn" id="16_s0ssm"]

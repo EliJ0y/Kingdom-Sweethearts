@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cv77htlibthwt"
-path="res://.godot/imported/Opened Scroll.png-cbb05486dc81433f5ae438ddb4634621.ctex"
+path="res://.godot/imported/Opened Scroll.PNG-a4baab64ef8b944cf65a4e898673a9f3.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Graphics/Scrolls/Opened Scroll.png"
-dest_files=["res://.godot/imported/Opened Scroll.png-cbb05486dc81433f5ae438ddb4634621.ctex"]
+source_file="res://Graphics/Scrolls/Opened Scroll.PNG"
+dest_files=["res://.godot/imported/Opened Scroll.PNG-a4baab64ef8b944cf65a4e898673a9f3.ctex"]
 
 [params]
 

@@ -2,13 +2,13 @@
 
 importer="font_data_dynamic"
 type="FontFile"
-uid="uid://ci7hx68ncaaoh"
-path="res://.godot/imported/Brixton Medium.ttf-73390111fe82827a0f1fb6c5d56fac82.fontdata"
+uid="uid://bwq63v8p14i66"
+path="res://.godot/imported/DroidSerif-Bold.ttf-b47239a4653b06e26addc1a9dff8030c.fontdata"
 
 [deps]
 
-source_file="res://Fonts/Brixton Medium.ttf"
-dest_files=["res://.godot/imported/Brixton Medium.ttf-73390111fe82827a0f1fb6c5d56fac82.fontdata"]
+source_file="res://Fonts/DroidSerif-Bold.ttf"
+dest_files=["res://.godot/imported/DroidSerif-Bold.ttf-b47239a4653b06e26addc1a9dff8030c.fontdata"]
 
 [params]
 

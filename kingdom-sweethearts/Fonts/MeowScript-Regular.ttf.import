@@ -2,13 +2,13 @@
 
 importer="font_data_dynamic"
 type="FontFile"
-uid="uid://dob7bf1fqfppd"
-path="res://.godot/imported/The Seasons Regular.ttf-8e08f61e061e3922e2bb44d8522437b5.fontdata"
+uid="uid://dunducxtqdlcx"
+path="res://.godot/imported/MeowScript-Regular.ttf-14e7fabfdd0a7ce6bca5d38d09238238.fontdata"
 
 [deps]
 
-source_file="res://Fonts/The Seasons Regular.ttf"
-dest_files=["res://.godot/imported/The Seasons Regular.ttf-8e08f61e061e3922e2bb44d8522437b5.fontdata"]
+source_file="res://Fonts/MeowScript-Regular.ttf"
+dest_files=["res://.godot/imported/MeowScript-Regular.ttf-14e7fabfdd0a7ce6bca5d38d09238238.fontdata"]
 
 [params]
 

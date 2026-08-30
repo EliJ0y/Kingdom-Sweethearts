@@ -13,7 +13,7 @@
 [ext_resource type="Texture2D" uid="uid://d14tc1gt6ae7o" path="res://Graphics/Craft Shop/Postcards_Mesas.png" id="11_asfm8"]
 [ext_resource type="Texture2D" uid="uid://u66xqn5aoobw" path="res://Graphics/Craft Shop/Postcards_Mountains.png" id="12_xtoal"]
 [ext_resource type="Texture2D" uid="uid://ef4srtjb57e8" path="res://Graphics/UI/Shop Panel.PNG" id="13_d1jvk"]
-[ext_resource type="FontFile" uid="uid://dob7bf1fqfppd" path="res://Fonts/The Seasons Regular.ttf" id="14_keuea"]
+[ext_resource type="FontFile" uid="uid://rhwtmvo511jl" path="res://Fonts/Cormorant-Bold.otf" id="14_keuea"]
 [ext_resource type="Texture2D" uid="uid://c7mlstotxyst5" path="res://Graphics/UI/Coins.PNG" id="15_61bjb"]
 [ext_resource type="PackedScene" uid="uid://brewn7dcybla" path="res://Scenes/coins.tscn" id="16_5ao4s"]
 [ext_resource type="PackedScene" uid="uid://cm6i7vcbypte4" path="res://Scenes/navigation.tscn" id="17_q6oo6"]

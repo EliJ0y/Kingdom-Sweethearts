@@ -2,13 +2,13 @@
 
 importer="font_data_dynamic"
 type="FontFile"
-uid="uid://2igbcqe8jbxy"
-path="res://.godot/imported/BERNIER™ Regular.ttf-b06a74449c007038206ec82611b757a8.fontdata"
+uid="uid://c8y2r24xmpp4g"
+path="res://.godot/imported/Poppins-ExtraLight.ttf-cee395e2cf09ec9738d100d98aa126fd.fontdata"
 
 [deps]
 
-source_file="res://Fonts/BERNIER™ Regular.ttf"
-dest_files=["res://.godot/imported/BERNIER™ Regular.ttf-b06a74449c007038206ec82611b757a8.fontdata"]
+source_file="res://Fonts/Poppins-ExtraLight.ttf"
+dest_files=["res://.godot/imported/Poppins-ExtraLight.ttf-cee395e2cf09ec9738d100d98aa126fd.fontdata"]
 
 [params]
 

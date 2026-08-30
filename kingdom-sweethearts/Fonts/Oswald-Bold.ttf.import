@@ -2,13 +2,13 @@
 
 importer="font_data_dynamic"
 type="FontFile"
-uid="uid://dgqasjigm6mb6"
-path="res://.godot/imported/OPTIEngraversOldEnglish.otf-6f129ef7d2dc2fc8b5c2f2216d94c81f.fontdata"
+uid="uid://bwycdxsujx745"
+path="res://.godot/imported/Oswald-Bold.ttf-06625ea27b7892e28553d05e943595b3.fontdata"
 
 [deps]
 
-source_file="res://Fonts/OPTIEngraversOldEnglish.otf"
-dest_files=["res://.godot/imported/OPTIEngraversOldEnglish.otf-6f129ef7d2dc2fc8b5c2f2216d94c81f.fontdata"]
+source_file="res://Fonts/Oswald-Bold.ttf"
+dest_files=["res://.godot/imported/Oswald-Bold.ttf-06625ea27b7892e28553d05e943595b3.fontdata"]
 
 [params]
 

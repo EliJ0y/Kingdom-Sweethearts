@@ -2,13 +2,13 @@
 
 importer="font_data_dynamic"
 type="FontFile"
-uid="uid://bjg45k55yvke5"
-path="res://.godot/imported/ITC Bauhaus Light.ttf-435ed2cf22108e6f2fc102138a4ff0bb.fontdata"
+uid="uid://lh83l7mmkuti"
+path="res://.godot/imported/GrandHotel-Regular.ttf-c4b660a90a011aea1e14c161c8133f95.fontdata"
 
 [deps]
 
-source_file="res://Fonts/ITC Bauhaus Light.ttf"
-dest_files=["res://.godot/imported/ITC Bauhaus Light.ttf-435ed2cf22108e6f2fc102138a4ff0bb.fontdata"]
+source_file="res://Fonts/GrandHotel-Regular.ttf"
+dest_files=["res://.godot/imported/GrandHotel-Regular.ttf-c4b660a90a011aea1e14c161c8133f95.fontdata"]
 
 [params]
 
