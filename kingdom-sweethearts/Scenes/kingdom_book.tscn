@@ -50,54 +50,30 @@ offset_bottom = -160.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="Left Page Title" type="Label" parent="CanvasLayer/Set of Pages" unique_id=1445054715]
+[node name="Page Title" type="Label" parent="CanvasLayer/Set of Pages" unique_id=1445054715]
 layout_mode = 0
-offset_left = 120.0
+offset_left = 115.0
 offset_top = 50.0
-offset_right = 420.0
+offset_right = 415.0
 offset_bottom = 128.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("5_l573l")
 theme_override_font_sizes/font_size = 60
 horizontal_alignment = 1
-
-[node name="Left Page Content" type="Label" parent="CanvasLayer/Set of Pages" unique_id=1051202939]
-custom_minimum_size = Vector2(376, 520)
-custom_maximum_size = Vector2(376, 520)
-layout_mode = 0
-offset_left = 75.0
-offset_top = 140.0
-offset_right = 451.0
-offset_bottom = 660.0
-theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_fonts/font = ExtResource("5_l573l")
-theme_override_font_sizes/font_size = 30
-autowrap_mode = 3
 
 [node name="Crest" type="Sprite2D" parent="CanvasLayer/Set of Pages" unique_id=1471010418]
 position = Vector2(70, 190)
 scale = Vector2(0.4, 0.4)
 centered = false
 
-[node name="Right Page Title" type="Label" parent="CanvasLayer/Set of Pages" unique_id=1689107159]
-layout_mode = 0
-offset_left = 520.0
-offset_top = 50.0
-offset_right = 820.0
-offset_bottom = 128.0
-theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_fonts/font = ExtResource("5_l573l")
-theme_override_font_sizes/font_size = 60
-horizontal_alignment = 1
-
-[node name="Right Page Content" type="Label" parent="CanvasLayer/Set of Pages" unique_id=2098679803]
+[node name="Page Content" type="Label" parent="CanvasLayer/Set of Pages" unique_id=2098679803]
 custom_minimum_size = Vector2(376, 520)
 custom_maximum_size = Vector2(376, 520)
 layout_mode = 0
 offset_left = 495.0
-offset_top = 140.0
+offset_top = 115.0
 offset_right = 871.0
-offset_bottom = 660.0
+offset_bottom = 635.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("5_l573l")
 theme_override_font_sizes/font_size = 30

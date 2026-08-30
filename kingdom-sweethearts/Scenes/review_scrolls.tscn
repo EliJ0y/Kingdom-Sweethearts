@@ -1,0 +1,107 @@
+[gd_scene format=3 uid="uid://cg0q708ktcslr"]
+
+[ext_resource type="Script" uid="uid://dblps0uum2pio" path="res://Scripts/review_scrolls.gd" id="1_gt1dx"]
+[ext_resource type="FontFile" uid="uid://dob7bf1fqfppd" path="res://Fonts/The Seasons Regular.ttf" id="2_gt1dx"]
+[ext_resource type="Texture2D" uid="uid://cv77htlibthwt" path="res://Graphics/Scrolls/Opened Scroll.PNG" id="3_wuk2y"]
+[ext_resource type="Texture2D" uid="uid://bbo2o33b6xwix" path="res://Graphics/Scrolls/Ribbon Arrow.png" id="4_i50e2"]
+[ext_resource type="PackedScene" uid="uid://37tq3gi8sclw" path="res://Scenes/pause_screen.tscn" id="5_ctw6k"]
+
+[node name="Review Scrolls" type="Node2D" unique_id=333765644]
+script = ExtResource("1_gt1dx")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=677963730]
+
+[node name="Panel" type="Panel" parent="CanvasLayer" unique_id=606787658]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+metadata/_edit_use_anchors_ = true
+
+[node name="Opened Scroll" type="Sprite2D" parent="CanvasLayer" unique_id=504537658]
+position = Vector2(960, 540)
+scale = Vector2(1.1, 1.1)
+texture = ExtResource("3_wuk2y")
+
+[node name="Text 1" type="Label" parent="CanvasLayer/Opened Scroll" unique_id=2117785961]
+custom_minimum_size = Vector2(436, 556)
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -185.0
+offset_top = -225.0
+offset_right = -195.0
+offset_bottom = -245.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.70779884, 0.6540894)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 32
+autowrap_mode = 3
+
+[node name="Text 2" type="Label" parent="CanvasLayer/Opened Scroll" unique_id=1029622713]
+visible = false
+custom_minimum_size = Vector2(436, 556)
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -185.0
+offset_top = -225.0
+offset_right = -195.0
+offset_bottom = -245.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.70779884, 0.6540894)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 32
+autowrap_mode = 3
+
+[node name="Ribbon Arrow" type="TextureButton" parent="CanvasLayer/Opened Scroll" unique_id=310731560]
+offset_left = 100.0
+offset_top = 200.0
+offset_right = 500.00012
+offset_bottom = 298.00012
+scale = Vector2(0.59, 0.59)
+texture_normal = ExtResource("4_i50e2")
+
+[node name="Next Scroll" type="Label" parent="CanvasLayer/Opened Scroll/Ribbon Arrow" unique_id=2092410699]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -95.00006
+offset_top = -34.50006
+offset_right = 94.99994
+offset_bottom = 18.499939
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("2_gt1dx")
+theme_override_font_sizes/font_size = 40
+text = "Next Scroll"
+
+[node name="Finish Reading" type="Label" parent="CanvasLayer/Opened Scroll/Ribbon Arrow" unique_id=1211839180]
+visible = false
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -134.00006
+offset_top = -34.50006
+offset_right = 121.99994
+offset_bottom = 18.499939
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("2_gt1dx")
+theme_override_font_sizes/font_size = 40
+text = "Finish Reading"
+
+[node name="Pause Screen" parent="CanvasLayer" unique_id=1599019131 instance=ExtResource("5_ctw6k")]
+visible = false
+
+[connection signal="pressed" from="CanvasLayer/Opened Scroll/Ribbon Arrow" to="." method="_on_ribbon_arrow_pressed"]

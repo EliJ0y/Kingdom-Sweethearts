@@ -1,15 +1,17 @@
 extends Node2D
 
-@onready var left_page_title: Label = $"CanvasLayer/Set of Pages/Left Page Title"
-@onready var left_page_content: Label = $"CanvasLayer/Set of Pages/Left Page Content"
+@onready var page_title: Label = $"CanvasLayer/Set of Pages/Page Title"
 @onready var crest: Sprite2D = $"CanvasLayer/Set of Pages/Crest"
-@onready var right_page_title: Label = $"CanvasLayer/Set of Pages/Right Page Title"
-@onready var right_page_content: Label = $"CanvasLayer/Set of Pages/Right Page Content"
+@onready var page_content: Label = $"CanvasLayer/Set of Pages/Page Content"
 
-var sets_of_pages = [preload("res://Resources/Kingdom Book Pages/Kingdom_Set.tres"),
-					 preload("res://Resources/Kingdom Book Pages/First_Set.tres"),
-					 preload("res://Resources/Kingdom Book Pages/Second_Set.tres"),
-					 preload("res://Resources/Kingdom Book Pages/Third_Set.tres")]
+
+var sets_of_pages = [preload("res://Resources/Kingdom Book Pages/Uurais.tres"),
+					 preload("res://Resources/Kingdom Book Pages/Oceirea.tres"),
+					 preload("res://Resources/Kingdom Book Pages/Wildegon.tres"),
+					 preload("res://Resources/Kingdom Book Pages/Mystifirr.tres"),
+					 preload("res://Resources/Kingdom Book Pages/Vigoust.tres"),
+					 preload("res://Resources/Kingdom Book Pages/Crathod.tres"),
+					 preload("res://Resources/Kingdom Book Pages/Philsopoll.tres")]
 
 var current_set_index = 0
 
@@ -50,8 +52,6 @@ func previous_set_of_pages():
 
 func update_book_pages():
 	var current_pages = sets_of_pages[current_set_index]
-	left_page_title.text = current_pages.left_page_title
-	left_page_content.text = "\n\n".join(current_pages.left_page_content)
+	page_title.text = current_pages.page_title
 	crest.texture = current_pages.crest
-	right_page_title.text = current_pages.right_page_title
-	right_page_content.text = "\n\n".join(current_pages.right_page_content)
+	page_content.text = "\n\n".join(current_pages.page_content)

@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="PagesResource" format=3 uid="uid://6u1tdb0lfnw8"]
+
+[ext_resource type="Script" uid="uid://bfol2ssr330a1" path="res://Scripts/pages_resource.gd" id="1_uo6yu"]
+
+[resource]
+script = ExtResource("1_uo6yu")
+page_title = "Philsopoll"
+page_content = Array[String](["Philsopoll is home to scientists, knowledge-seekers, and scholars. The people hunger for answers to anything and everything.", "Those in Philsopoll are curious and intelligent, uncovering as well as recording the details of the world and our lives.", "Philsopoll’s libraries can be overwhelming to average people."])
+metadata/_custom_type_script = "uid://bfol2ssr330a1"

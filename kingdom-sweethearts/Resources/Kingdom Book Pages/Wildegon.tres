@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="PagesResource" format=3 uid="uid://gqexqfwu0evl"]
+
+[ext_resource type="Script" uid="uid://bfol2ssr330a1" path="res://Scripts/pages_resource.gd" id="1_5v7h4"]
+
+[resource]
+script = ExtResource("1_5v7h4")
+page_title = "Wildegon"
+page_content = Array[String](["Wildegon is home to hunters, survivalists, and fighters. The people live as one with the surrounding nature.", "Those in Wildegon are adaptable and resourceful, subsisting off the land while appreciating its beauty.", "Wildegon’s forests regularly bloom with flowers, namely trilliums and violets."])
+metadata/_custom_type_script = "uid://bfol2ssr330a1"

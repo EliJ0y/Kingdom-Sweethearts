@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="PagesResource" format=3 uid="uid://hqugv28snqh0"]
+
+[ext_resource type="Script" uid="uid://bfol2ssr330a1" path="res://Scripts/pages_resource.gd" id="1_qi06s"]
+
+[resource]
+script = ExtResource("1_qi06s")
+page_title = "Oceirea"
+page_content = Array[String](["Oceirea is home to fishers, seafarers, and coastal guards. The people have seen the world, or merely settled by the waters.", "Those in Oceirea are sturdy and resilient, at the forefront of maritime disasters and our seafood supply lines.", "Oceirea’s waters border and give life to forests and deserts."])
+metadata/_custom_type_script = "uid://bfol2ssr330a1"

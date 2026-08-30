@@ -20,8 +20,6 @@ centered = false
 
 [node name="Coins" parent="." unique_id=1568081122 instance=ExtResource("5_o1j7g")]
 
-[node name="Navigation" parent="." unique_id=651092304 instance=ExtResource("5_0ttai")]
-
 [node name="Kingdom Book" type="TextureButton" parent="." unique_id=70601697]
 anchors_preset = 8
 anchor_left = 0.5
@@ -36,6 +34,8 @@ grow_horizontal = 2
 grow_vertical = 2
 action_mode = 0
 texture_normal = ExtResource("5_vmmc8")
+
+[node name="Navigation" parent="." unique_id=651092304 instance=ExtResource("5_0ttai")]
 
 [node name="Panel" type="Panel" parent="." unique_id=1443207450]
 visible = false

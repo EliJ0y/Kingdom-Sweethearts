@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="PagesResource" format=3 uid="uid://dsgi8p32ew32f"]
+
+[ext_resource type="Texture2D" uid="uid://cdxkk7486xq0o" path="res://Graphics/Kingdom Book Castle.png" id="1_fysgb"]
+[ext_resource type="Script" uid="uid://bfol2ssr330a1" path="res://Scripts/pages_resource.gd" id="2_xhixm"]
+
+[resource]
+script = ExtResource("2_xhixm")
+page_title = "Uurais"
+crest = ExtResource("1_fysgb")
+page_content = Array[String](["Uurais is a marvelous kingdom that spans many territories. It prides itself on its rich diversity and vibrance that allows anyone to flourish.", "Its history is unfortunately marred by inner conflicts, though none too devastating. The kingdom has always come out stronger after.", "Prosperity to Uurais!"])
+metadata/_custom_type_script = "uid://bfol2ssr330a1"
