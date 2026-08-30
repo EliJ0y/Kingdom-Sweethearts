@@ -64,43 +64,49 @@ texture = ExtResource("5_qmqk0")
 [node name="Text 1" type="Label" parent="CanvasLayer/Opened Scroll" unique_id=1205525138]
 visible = false
 custom_minimum_size = Vector2(436, 556)
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-offset_left = -185.0
-offset_top = -225.0
-offset_right = -195.0
-offset_bottom = -245.0
+anchors_preset = -1
+anchor_left = 0.16363636
+anchor_top = 0.18571429
+anchor_right = 0.8585661
+anchor_bottom = 0.8211154
+offset_left = -275.0
+offset_top = -345.0
+offset_right = -117.211365
+offset_bottom = -109.78076
 grow_horizontal = 2
 grow_vertical = 2
 scale = Vector2(0.70779884, 0.6540894)
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 32
 autowrap_mode = 3
+metadata/_edit_use_anchors_ = true
 
 [node name="Text 2" type="Label" parent="CanvasLayer/Opened Scroll" unique_id=348963257]
 visible = false
 custom_minimum_size = Vector2(436, 556)
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-offset_left = -185.0
-offset_top = -225.0
-offset_right = -195.0
-offset_bottom = -245.0
+anchors_preset = -1
+anchor_left = 0.16363636
+anchor_top = 0.18571429
+anchor_right = 0.8585661
+anchor_bottom = 0.8211154
+offset_left = -275.0
+offset_top = -345.0
+offset_right = -117.211365
+offset_bottom = -109.78076
 grow_horizontal = 2
 grow_vertical = 2
 scale = Vector2(0.70779884, 0.6540894)
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 32
 autowrap_mode = 3
+metadata/_edit_use_anchors_ = true
 
 [node name="Ribbon Arrow" type="TextureButton" parent="CanvasLayer/Opened Scroll" unique_id=1263998519]
 visible = false
 offset_left = 100.0
-offset_top = 200.0
+offset_top = 230.0
 offset_right = 500.00012
-offset_bottom = 298.00012
+offset_bottom = 328.00012
 scale = Vector2(0.59, 0.59)
 texture_normal = ExtResource("8_hw0rl")
 
@@ -168,7 +174,7 @@ stream = ExtResource("9_ewrjh")
 volume_db = 8.446
 
 [connection signal="pressed" from="CanvasLayer/Opened Scroll/Ribbon Arrow" to="." method="_on_ribbon_arrow_pressed"]
-[connection signal="pressed" from="CanvasLayer/Tied Scroll 1" to="." method="_on_tied_scroll_1_pressed"]
 [connection signal="pressed" from="CanvasLayer/Tied Scroll 1" to="." method="_on_tied_scroll_silv_pressed"]
-[connection signal="pressed" from="CanvasLayer/Tied Scroll 2" to="." method="_on_tied_scroll_2_pressed"]
+[connection signal="pressed" from="CanvasLayer/Tied Scroll 1" to="." method="_on_tied_scroll_1_pressed"]
 [connection signal="pressed" from="CanvasLayer/Tied Scroll 2" to="." method="_on_tied_scroll_kohan_pressed"]
+[connection signal="pressed" from="CanvasLayer/Tied Scroll 2" to="." method="_on_tied_scroll_2_pressed"]
