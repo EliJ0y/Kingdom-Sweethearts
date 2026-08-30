@@ -7,7 +7,7 @@
 [ext_resource type="PackedScene" uid="uid://cm6i7vcbypte4" path="res://Scenes/navigation.tscn" id="5_80ut4"]
 [ext_resource type="Texture2D" uid="uid://ef4srtjb57e8" path="res://Graphics/UI/Shop Panel.PNG" id="6_ovl2a"]
 [ext_resource type="FontFile" uid="uid://dob7bf1fqfppd" path="res://Fonts/The Seasons Regular.ttf" id="7_k1frb"]
-[ext_resource type="Texture2D" uid="uid://cp2yn3d5b313s" path="res://Graphics/Icons/Scroll Icon.PNG" id="8_cutc5"]
+[ext_resource type="Texture2D" uid="uid://cp2yn3d5b313s" path="res://Graphics/Icons/Scroll Icon.png" id="8_cutc5"]
 [ext_resource type="Texture2D" uid="uid://bteijx4vbhw0e" path="res://Graphics/UI/Coins Sparkle.png" id="9_m4g7f"]
 [ext_resource type="PackedScene" uid="uid://37tq3gi8sclw" path="res://Scenes/UI Screens/pause_screen.tscn" id="10_vcgwa"]
 

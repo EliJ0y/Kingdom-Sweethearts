@@ -1,7 +1,8 @@
 extends Node2D
-
+@onready var home_bgm = preload("res://Audio/Music/KSH_HomeScrolls.wav")
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
+	GlobalAudio.play_music(home_bgm)
 	if GlobalTracker.new_game == true:
 		$Navigation.process_mode = Node.PROCESS_MODE_DISABLED
 		$"Kingdom Book".process_mode = Node.PROCESS_MODE_DISABLED

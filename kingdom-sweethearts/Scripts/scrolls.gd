@@ -1,5 +1,7 @@
 extends Node2D
 
+@onready var home_bgm = preload("res://Audio/Music/KSH_HomeScrolls.wav")
+
 var level_number: LevelsResource
 var scroll_1 
 var scroll_2 
@@ -21,6 +23,7 @@ var stop_text_animation = false
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
+	GlobalAudio.play_music(home_bgm)
 	load_level()
 	
 func load_level():

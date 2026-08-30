@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" uid="uid://f2a3njcvtagk" path="res://Scripts/map.gd" id="1_p3ir5"]
 [ext_resource type="Texture2D" uid="uid://c73akm0cu0qd0" path="res://Graphics/UI/Map BG.PNG" id="2_w7jjh"]
-[ext_resource type="Texture2D" uid="uid://08m2k4yr6rt3" path="res://Graphics/Icons/Home Icon.PNG" id="3_w7jjh"]
+[ext_resource type="Texture2D" uid="uid://08m2k4yr6rt3" path="res://Graphics/Icons/Home Icon.png" id="3_w7jjh"]
 [ext_resource type="Texture2D" uid="uid://br0x2o6fknce1" path="res://Graphics/Icons/Craft Shop Icon.PNG" id="4_6q3n4"]
 [ext_resource type="Texture2D" uid="uid://dacqwtviyedg7" path="res://Graphics/Icons/Gazebo Icon.png" id="5_6q3n4"]
 [ext_resource type="Texture2D" uid="uid://cyba2s1kj8jec" path="res://Graphics/Icons/Bakery Icon.PNG" id="6_4c2oa"]

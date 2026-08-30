@@ -9,10 +9,12 @@ var levels = [preload("res://Resources/Levels/Level_1.tres"),
 			  preload("res://Resources/Levels/Level_3.tres")]
 
 var player_inventory = preload("res://Resources/Player_Inventory.tres")
-var total_coins = 200
+var total_coins = 0
 var scroll_count = 0
 
 var gazebo_first_visit = true
+
+var is_scrolls_open = false
 
 var date_tiers:Array[int] = [-1, -1]
 

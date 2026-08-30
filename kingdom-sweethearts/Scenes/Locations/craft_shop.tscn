@@ -188,7 +188,7 @@ visible = false
 
 [node name="Paper Rustle SFX" type="AudioStreamPlayer2D" parent="." unique_id=1562068406]
 stream = ExtResource("19_j7wxw")
-volume_db = 2.0
+volume_db = 9.306
 
 [node name="Coin Purchase SFX" type="AudioStreamPlayer2D" parent="." unique_id=1260242848]
 stream = ExtResource("20_qtgxe")

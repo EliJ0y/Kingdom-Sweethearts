@@ -2,6 +2,10 @@ extends Node2D
 
 var is_inventory_open = false
 
+@onready var home_fx = preload("res://Audio/Sound/Door OpenClose.wav")
+@onready var scroll_fx = preload("res://Audio/Sound/Scroll Unfurl.wav")
+@onready var inventory_fx = preload("res://Audio/Sound/Satchel OpenClose.wav")
+@onready var book_fx = preload("res://Audio/Sound/Book OpenClose.wav")
 
 func _ready() -> void:
 	if GlobalTracker.unread_scrolls:
@@ -21,12 +25,13 @@ func _input(event: InputEvent) -> void:
 				get_viewport().set_input_as_handled()
 
 func _on_home_icon_pressed() -> void:
-	$"Home Icon SFX".play()
+	GlobalAudio.play_fx(home_fx)
+	GlobalTracker.is_scrolls_open = false
 	get_tree().change_scene_to_file("res://Scenes/Locations/home_desk.tscn")
 
 func _on_scroll_icon_pressed() -> void:
-	$"Scroll Icon SFX".play()
-	if get_tree().current_scene.scene_file_path != "res://Scenes/Locations/dialogue.tscn":
+	GlobalAudio.play_fx(scroll_fx)
+	if get_tree().current_scene.scene_file_path != "res://Scenes/Locations/dialogue.tscn" && GlobalTracker.is_scrolls_open == false:
 		if GlobalTracker.scroll_count < 2:
 			$"Scroll Icon".disabled = false
 			get_tree().change_scene_to_file("res://Scenes/scrolls.tscn")
@@ -37,11 +42,13 @@ func _on_scroll_icon_pressed() -> void:
 		$"Scroll Icon".disabled = true
 
 func _on_map_icon_pressed() -> void:
-	$"Map Icon SFX".play()
+	GlobalAudio.play_fx(home_fx)
+	GlobalTracker.is_scrolls_open = false
 	get_tree().change_scene_to_file("res://Scenes/map.tscn")
 
 func _on_inventory_icon_pressed() -> void:
-	$"Inventory Icon SFX".play()
+	GlobalAudio.play_fx(inventory_fx)
+	GlobalTracker.is_scrolls_open = false
 	$Inventory.update_slots()
 	if is_inventory_open:
 		$Inventory.visible = false
@@ -51,7 +58,8 @@ func _on_inventory_icon_pressed() -> void:
 		is_inventory_open = true
 
 func _on_book_icon_pressed() -> void:
-	$"Book Icon SFX".play()
+	GlobalAudio.play_fx(book_fx)
+	GlobalTracker.is_scrolls_open = false
 	get_tree().change_scene_to_file("res://Scenes/kingdom_book.tscn")
 
 

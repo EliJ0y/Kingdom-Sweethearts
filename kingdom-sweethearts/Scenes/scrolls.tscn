@@ -3,7 +3,7 @@
 [ext_resource type="Texture2D" uid="uid://yra6wmejvfs" path="res://Graphics/Home Desk.png" id="1_sryen"]
 [ext_resource type="Script" uid="uid://c0mmneywuh3j3" path="res://Scripts/scrolls.gd" id="1_t1w5x"]
 [ext_resource type="Texture2D" uid="uid://bteijx4vbhw0e" path="res://Graphics/UI/Coins Sparkle.png" id="4_pu1om"]
-[ext_resource type="Texture2D" uid="uid://cv77htlibthwt" path="res://Graphics/Scrolls/Opened Scroll.PNG" id="4_qmqk0"]
+[ext_resource type="Texture2D" uid="uid://cv77htlibthwt" path="res://Graphics/Scrolls/Opened Scroll.png" id="4_qmqk0"]
 [ext_resource type="Texture2D" uid="uid://c7mlstotxyst5" path="res://Graphics/UI/Coins.PNG" id="5_qmqk0"]
 [ext_resource type="Texture2D" uid="uid://bbo2o33b6xwix" path="res://Graphics/Scrolls/Ribbon Arrow.png" id="8_hw0rl"]
 [ext_resource type="PackedScene" uid="uid://37tq3gi8sclw" path="res://Scenes/UI Screens/pause_screen.tscn" id="8_pu1om"]
@@ -161,14 +161,14 @@ visible = false
 
 [node name="Scroll Unfurl SFX" type="AudioStreamPlayer2D" parent="." unique_id=869003462]
 stream = ExtResource("9_hw0rl")
-volume_db = -15.0
+volume_db = -3.397
 
 [node name="Coin Sparkle SFX" type="AudioStreamPlayer2D" parent="." unique_id=209093658]
 stream = ExtResource("9_ewrjh")
-volume_db = 2.0
+volume_db = 8.446
 
 [connection signal="pressed" from="CanvasLayer/Opened Scroll/Ribbon Arrow" to="." method="_on_ribbon_arrow_pressed"]
 [connection signal="pressed" from="CanvasLayer/Tied Scroll 1" to="." method="_on_tied_scroll_silv_pressed"]
 [connection signal="pressed" from="CanvasLayer/Tied Scroll 1" to="." method="_on_tied_scroll_1_pressed"]
-[connection signal="pressed" from="CanvasLayer/Tied Scroll 2" to="." method="_on_tied_scroll_2_pressed"]
 [connection signal="pressed" from="CanvasLayer/Tied Scroll 2" to="." method="_on_tied_scroll_kohan_pressed"]
+[connection signal="pressed" from="CanvasLayer/Tied Scroll 2" to="." method="_on_tied_scroll_2_pressed"]

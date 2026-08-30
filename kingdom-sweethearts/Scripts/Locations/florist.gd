@@ -14,6 +14,10 @@ var pansies = preload("res://Resources/Florist/Pansies.tres")
 var carnations = preload("res://Resources/Florist/Carnations.tres")
 var clematis = preload("res://Resources/Florist/Clematis.tres")
 
+@onready var maptown_bgm = preload("res://Audio/Music/KSH_MapTown.wav")
+
+func _ready() -> void:
+	GlobalAudio.play_music(maptown_bgm)
 
 func update_shop_panel():
 	description.text = selected_item.description

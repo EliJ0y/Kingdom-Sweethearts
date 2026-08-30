@@ -14,6 +14,10 @@ var chocolate_bread = preload("res://Resources/Bakery/Chocolate_Bread.tres")
 var plain_muffins = preload("res://Resources/Bakery/Plain_Muffins.tres")
 var croissants = preload("res://Resources/Bakery/Croissants.tres")
 
+@onready var maptown_bgm = preload("res://Audio/Music/KSH_MapTown.wav")
+
+func _ready() -> void:
+	GlobalAudio.play_music(maptown_bgm)
 
 func update_shop_panel():
 	description.text = selected_item.description

@@ -3,11 +3,10 @@
 [ext_resource type="Script" uid="uid://c51frugbjl4eq" path="res://Scripts/Locations/dialogue.gd" id="1_fwwaw"]
 [ext_resource type="Texture2D" uid="uid://dlw4alek70ojt" path="res://Graphics/Gazebo BG.png" id="2_57jq7"]
 [ext_resource type="PackedScene" uid="uid://cm6i7vcbypte4" path="res://Scenes/navigation.tscn" id="3_t60tv"]
-[ext_resource type="Texture2D" uid="uid://cnagpsybv6r7k" path="res://Graphics/UI/Dialogue Panel.PNG" id="4_0no31"]
+[ext_resource type="Texture2D" uid="uid://cnagpsybv6r7k" path="res://Graphics/UI/Dialogue Panel.png" id="4_0no31"]
 [ext_resource type="FontFile" uid="uid://crb2i4elinjsj" path="res://Fonts/PirataOne-Regular.ttf" id="5_0vhwh"]
 [ext_resource type="Texture2D" uid="uid://c5r5wbudl45sh" path="res://Graphics/UI/Dialogue Option.PNG" id="6_o4iev"]
 [ext_resource type="PackedScene" uid="uid://37tq3gi8sclw" path="res://Scenes/UI Screens/pause_screen.tscn" id="7_6f6u1"]
-[ext_resource type="AudioStream" uid="uid://wjcirryx57oq" path="res://Audio/Music/KSH_Gazebo.wav" id="8_57jq7"]
 [ext_resource type="Script" uid="uid://cd3222nx3y3k5" path="res://addons/dialogue_manager/nodes/context/dialogue_state_context.gd" id="8_upa4e"]
 
 [node name="Dialogue" type="Node2D" unique_id=565725109]
@@ -98,10 +97,6 @@ autowrap_mode = 3
 
 [node name="Pause Screen" parent="CanvasLayer" unique_id=1599019131 instance=ExtResource("7_6f6u1")]
 visible = false
-
-[node name="Gazebo Theme" type="AudioStreamPlayer2D" parent="." unique_id=22371732]
-stream = ExtResource("8_57jq7")
-autoplay = true
 
 [node name="DialogueStateContext" type="Node" parent="." unique_id=1004891195 node_paths=PackedStringArray("target")]
 script = ExtResource("8_upa4e")

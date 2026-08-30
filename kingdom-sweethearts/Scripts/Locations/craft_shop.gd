@@ -17,6 +17,10 @@ var postcards_forests = preload("res://Resources/Craft Shop/Postcards_Forests.tr
 var postcards_mesas = preload("res://Resources/Craft Shop/Postcards_Mesas.tres")
 var postcards_mountains = preload("res://Resources/Craft Shop/Postcards_Mountains.tres")
 
+@onready var maptown_bgm = preload("res://Audio/Music/KSH_MapTown.wav")
+
+func _ready() -> void:
+	GlobalAudio.play_music(maptown_bgm)
 
 func update_shop_panel():
 	description.text = selected_item.description

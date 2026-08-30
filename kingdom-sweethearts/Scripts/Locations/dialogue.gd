@@ -6,6 +6,8 @@ var level_number: LevelsResource
 @onready var character_sprite: Sprite2D = $"CanvasLayer/Character Sprite"
 @onready var character_sprite_date: Sprite2D = $"CanvasLayer/Character Sprite Date"
 @onready var navigation: Node2D = $CanvasLayer/Navigation
+@onready var dialogue_bgm = preload("res://Audio/Music/KSH_Gazebo.wav")
+
 
 var player_sprites = preload("res://Resources/Sprites/Player_Sprites.tres")
 
@@ -30,6 +32,7 @@ var grey_out = Color(0.5, 0.5, 0.5, 1.0)
 
 
 func _ready() -> void:
+	GlobalAudio.play_music(dialogue_bgm)
 	level_number = GlobalTracker.get_current_level()
 
 	DialogueManager.got_dialogue.connect(dialogue_character_check)
