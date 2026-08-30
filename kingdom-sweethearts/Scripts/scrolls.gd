@@ -18,10 +18,15 @@ var scroll_1_pressed = false
 var scroll_2_pressed = false
 var stop_text_animation = false
 
+var is_review_mode = false
+
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	load_level()
+	if GlobalTracker.scroll_count >= 2:
+		is_review_mode = true
+		review_mode()
 	
 func load_level():
 	level_number = GlobalTracker.get_current_level()
@@ -50,6 +55,23 @@ func _input(event: InputEvent) -> void:
 	if (Input.is_action_just_pressed("ui_accept") or left_click) && opened_scroll_2.visible_characters > 0:
 		stop_text_animation = true
 		opened_scroll_2.visible_characters = -1
+
+func review_mode():
+	tied_scroll_1.hide()
+	tied_scroll_2.hide()
+	$"CanvasLayer/Coin Counter".hide()
+	$"CanvasLayer/Opened Scroll/Coins Sparkle".hide()
+	scroll_1_pressed = true
+	scroll_2_pressed = false
+	
+	$"CanvasLayer/Opened Scroll".show()
+	opened_scroll_1.show()
+	opened_scroll_2.hide()
+	opened_scroll_1.visible_characters = -1
+	
+	$"CanvasLayer/Opened Scroll/Ribbon Arrow".show()
+	$"CanvasLayer/Opened Scroll/Ribbon Arrow/Next Scroll".show()
+	$"CanvasLayer/Opened Scroll/Ribbon Arrow/Finish Reading".hide()
 
 
 func _on_tied_scroll_1_pressed() -> void:
@@ -137,6 +159,19 @@ func _type_scroll_text() -> void:
 		$"CanvasLayer/Opened Scroll/Ribbon Arrow/Next Scroll".hide()
 
 func _on_ribbon_arrow_pressed() -> void:
+	if is_review_mode:
+		if scroll_1_pressed:
+			scroll_1_pressed = false
+			scroll_2_pressed = true
+			opened_scroll_1.hide()
+			opened_scroll_2.show()
+			opened_scroll_2.visible_characters = -1
+			$"CanvasLayer/Opened Scroll/Ribbon Arrow/Next Scroll".hide()
+			$"CanvasLayer/Opened Scroll/Ribbon Arrow/Finish Reading".show()
+		else:
+			get_tree().change_scene_to_file("res://Scenes/home_desk.tscn")
+		return
+		
 	$"CanvasLayer/Opened Scroll".hide()
 	stop_text_animation = false
 	
@@ -155,3 +190,4 @@ func _on_ribbon_arrow_pressed() -> void:
 			_on_tied_scroll_1_pressed()
 	else:
 		get_tree().change_scene_to_file("res://Scenes/home_desk.tscn")
+	return

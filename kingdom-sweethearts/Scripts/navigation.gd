@@ -24,10 +24,9 @@ func _on_home_icon_pressed() -> void:
 	get_tree().change_scene_to_file("res://Scenes/home_desk.tscn")
 
 func _on_scroll_icon_pressed() -> void:
-	if get_tree().current_scene.scene_file_path == "res://Scenes/home_desk.tscn":
+	if get_tree().current_scene.scene_file_path != "res://Scenes/dialogue.tscn":
 		$"Scroll Icon".disabled = false
-		if GlobalTracker.scroll_count < 2:
-			get_tree().change_scene_to_file("res://Scenes/scrolls.tscn")
+		get_tree().change_scene_to_file("res://Scenes/scrolls.tscn")
 	else:
 		$"Scroll Icon".disabled = true
 

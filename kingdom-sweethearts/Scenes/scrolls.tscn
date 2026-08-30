@@ -3,7 +3,7 @@
 [ext_resource type="Texture2D" uid="uid://yra6wmejvfs" path="res://Graphics/Home Desk.png" id="1_sryen"]
 [ext_resource type="Script" uid="uid://c0mmneywuh3j3" path="res://Scripts/scrolls.gd" id="1_t1w5x"]
 [ext_resource type="Texture2D" uid="uid://bteijx4vbhw0e" path="res://Graphics/UI/Coins Sparkle.png" id="4_pu1om"]
-[ext_resource type="Texture2D" uid="uid://cv77htlibthwt" path="res://Graphics/Scrolls/Opened Scroll.png" id="4_qmqk0"]
+[ext_resource type="Texture2D" uid="uid://cv77htlibthwt" path="res://Graphics/Scrolls/Opened Scroll.PNG" id="4_qmqk0"]
 [ext_resource type="Texture2D" uid="uid://c7mlstotxyst5" path="res://Graphics/UI/Coins.PNG" id="5_qmqk0"]
 [ext_resource type="Texture2D" uid="uid://bbo2o33b6xwix" path="res://Graphics/Scrolls/Ribbon Arrow.png" id="8_hw0rl"]
 [ext_resource type="PackedScene" uid="uid://37tq3gi8sclw" path="res://Scenes/pause_screen.tscn" id="8_pu1om"]
@@ -109,10 +109,10 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -95.0
-offset_top = -27.000053
-offset_right = 95.0
-offset_bottom = 14.999947
+offset_left = -95.00006
+offset_top = -34.50006
+offset_right = 94.99994
+offset_bottom = 18.499939
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_fonts/font = ExtResource("10_hw0rl")
@@ -127,10 +127,10 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -134.0
-offset_top = -27.000053
-offset_right = 122.0
-offset_bottom = 14.999947
+offset_left = -134.00006
+offset_top = -34.50006
+offset_right = 121.99994
+offset_bottom = 18.499939
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_fonts/font = ExtResource("10_hw0rl")
@@ -159,5 +159,5 @@ visible = false
 [connection signal="pressed" from="CanvasLayer/Opened Scroll/Ribbon Arrow" to="." method="_on_ribbon_arrow_pressed"]
 [connection signal="pressed" from="CanvasLayer/Tied Scroll 1" to="." method="_on_tied_scroll_silv_pressed"]
 [connection signal="pressed" from="CanvasLayer/Tied Scroll 1" to="." method="_on_tied_scroll_1_pressed"]
-[connection signal="pressed" from="CanvasLayer/Tied Scroll 2" to="." method="_on_tied_scroll_kohan_pressed"]
 [connection signal="pressed" from="CanvasLayer/Tied Scroll 2" to="." method="_on_tied_scroll_2_pressed"]
+[connection signal="pressed" from="CanvasLayer/Tied Scroll 2" to="." method="_on_tied_scroll_kohan_pressed"]
