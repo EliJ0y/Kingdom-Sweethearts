@@ -5,7 +5,7 @@
 
 [resource]
 script = ExtResource("1_eqbdq")
-description = "Violets. Edible and nutritious wildflowers which are gifted to show faithful love. Costs 10 gold."
+description = "Violets. Edible and nutritious wildflowers which are gifted to show faithful love."
 price = "10G"
 texture = ExtResource("2_nru7b")
 item_type = 3

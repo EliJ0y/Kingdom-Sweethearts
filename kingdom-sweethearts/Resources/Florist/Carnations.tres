@@ -5,7 +5,7 @@
 
 [resource]
 script = ExtResource("1_0risv")
-description = "Carnations. Cultivated for over a thousand years and associated with deep love. Costs 25 gold. "
+description = "Carnations. Cultivated for over a thousand years and associated with deep love."
 price = "25G"
 texture = ExtResource("2_gg1n1")
 item_type = 3

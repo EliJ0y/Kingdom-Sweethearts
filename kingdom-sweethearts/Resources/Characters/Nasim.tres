@@ -2,10 +2,12 @@
 
 [ext_resource type="Resource" uid="uid://cwltsj1sby5so" path="res://Resources/Sprites/Nasim_Sprites.tres" id="1_ctpq7"]
 [ext_resource type="Script" uid="uid://dbqtkxc5y0ql0" path="res://Scripts/Resource Scripts/requested_items_resource.gd" id="2_ipr6h"]
+[ext_resource type="Resource" uid="uid://cairpf24fxe6h" path="res://Resources/Item Requests/Request_Nasim.tres" id="3_o58k8"]
 [ext_resource type="Script" uid="uid://ccwxluiyextw2" path="res://Scripts/Resource Scripts/characters_resource.gd" id="4_8awwn"]
 
 [resource]
 script = ExtResource("4_8awwn")
 character_name = "Nasim"
 character_sprites = ExtResource("1_ctpq7")
+item_requests = Array[ExtResource("2_ipr6h")]([ExtResource("3_o58k8"), ExtResource("3_o58k8")])
 metadata/_custom_type_script = "uid://ccwxluiyextw2"

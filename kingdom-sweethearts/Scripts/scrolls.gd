@@ -63,6 +63,7 @@ func _on_tied_scroll_1_pressed() -> void:
 	scroll_1_tween.tween_callback(open_scroll_1)
 
 func open_scroll_1() -> void:
+	$"Scroll Unfurl SFX".play()
 	await get_tree().create_timer(0.2).timeout
 	tied_scroll_1.hide()
 	$"CanvasLayer/Opened Scroll".show()
@@ -81,6 +82,7 @@ func _on_tied_scroll_2_pressed() -> void:
 	scroll_2_tween.tween_callback(open_scroll_2)
 
 func open_scroll_2() -> void:
+	$"Scroll Unfurl SFX".play()
 	await get_tree().create_timer(0.2).timeout
 	tied_scroll_2.hide()
 	$"CanvasLayer/Opened Scroll".show()
@@ -89,6 +91,7 @@ func open_scroll_2() -> void:
 
 
 func _coins_appear() -> void:
+	$"Coin Sparkle SFX".play()
 	GlobalTracker.total_coins += scroll_coins
 	var coinsappeartween = create_tween()
 	coinsappeartween.tween_property($"CanvasLayer/Opened Scroll/Coins Sparkle", "scale", Vector2(5, 5), 0.5)

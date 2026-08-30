@@ -5,7 +5,7 @@
 
 [resource]
 script = ExtResource("1_up4ph")
-description = "Lavenders. Purple, aromatic wildflowers with stress relieving herbal properties. Costs 10 gold. "
+description = "Lavenders. Purple, aromatic wildflowers with stress relieving herbal properties."
 price = "10G"
 texture = ExtResource("2_jil4m")
 item_type = 3

@@ -21,41 +21,49 @@ func update_shop_panel():
 	reset_to_buy()
 
 func _on_trilliums_pressed() -> void:
+	$"Flower Rustle SFX".play()
 	$"CanvasLayer/Shop Panel".show()
 	selected_item = trilliums
 	update_shop_panel()
 
 func _on_lavenders_pressed() -> void:
+	$"Flower Rustle SFX".play()
 	$"CanvasLayer/Shop Panel".show()
 	selected_item = lavenders
 	update_shop_panel()
 
 func _on_anemones_pressed() -> void:
+	$"Flower Rustle SFX".play()
 	$"CanvasLayer/Shop Panel".show()
 	selected_item = anemones
 	update_shop_panel()
 
 func _on_violets_pressed() -> void:
+	$"Flower Rustle SFX".play()
 	$"CanvasLayer/Shop Panel".show()
 	selected_item = violets
 	update_shop_panel()
 
 func _on_roses_pressed() -> void:
+	$"Flower Rustle SFX".play()
 	$"CanvasLayer/Shop Panel".show()
 	selected_item = roses
 	update_shop_panel()
 
 func _on_pansies_pressed() -> void:
+	$"Flower Rustle SFX".play()
 	$"CanvasLayer/Shop Panel".show()
 	selected_item = pansies
 	update_shop_panel()
 
 func _on_carnations_pressed() -> void:
+	$"Flower Rustle SFX".play()
 	$"CanvasLayer/Shop Panel".show()
 	selected_item = carnations
 	update_shop_panel()
 
 func _on_clematis_pressed() -> void:
+	$"Flower Rustle SFX".play()
 	$"CanvasLayer/Shop Panel".show()
 	selected_item = clematis
 	update_shop_panel()
@@ -71,6 +79,7 @@ func _on_buy_item_pressed() -> void:
 		$"CanvasLayer/Shop Panel/Confirm".show()
 
 func _on_confirm_pressed() -> void:
+	$"Coin Purchase SFX".play()
 	GlobalTracker.player_inventory.inventory.append(selected_item)
 	GlobalTracker.total_coins -= int(selected_item.price)
 	reset_to_buy()

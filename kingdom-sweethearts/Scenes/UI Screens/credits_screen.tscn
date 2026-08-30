@@ -3,6 +3,7 @@
 [ext_resource type="Texture2D" uid="uid://c73akm0cu0qd0" path="res://Graphics/UI/Map BG.PNG" id="1_c4fpl"]
 [ext_resource type="Script" uid="uid://dbmkjcccewdn3" path="res://Scripts/UI Screens/credits_screen.gd" id="1_kwkrj"]
 [ext_resource type="FontFile" uid="uid://crb2i4elinjsj" path="res://Fonts/PirataOne-Regular.ttf" id="2_kwkrj"]
+[ext_resource type="AudioStream" uid="uid://d8erni3prc38" path="res://Audio/Music/KSH_Ending_Theme.wav" id="4_peux2"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_amjhk"]
 texture = ExtResource("1_c4fpl")
@@ -139,3 +140,8 @@ theme_override_fonts/font = ExtResource("2_kwkrj")
 theme_override_font_sizes/font_size = 80
 text = "Character artist"
 metadata/_edit_use_anchors_ = true
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="." unique_id=1548666993]
+stream = ExtResource("4_peux2")
+volume_db = -10.0
+autoplay = true

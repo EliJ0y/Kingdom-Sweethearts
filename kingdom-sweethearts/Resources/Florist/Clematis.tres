@@ -5,7 +5,7 @@
 
 [resource]
 script = ExtResource("1_rt1b3")
-description = "Clematis. Beautifully cultivated flowers that always reach for the sun symbolise mental beauty. Costs 25 gold.  "
+description = "Clematis. Beautifully cultivated flowers that always reach for the sun symbolise mental beauty."
 price = "25G"
 texture = ExtResource("2_d21my")
 item_type = 3

@@ -21,9 +21,11 @@ func _input(event: InputEvent) -> void:
 				get_viewport().set_input_as_handled()
 
 func _on_home_icon_pressed() -> void:
+	$"Home Icon SFX".play()
 	get_tree().change_scene_to_file("res://Scenes/Locations/home_desk.tscn")
 
 func _on_scroll_icon_pressed() -> void:
+	$"Scroll Icon SFX".play()
 	if get_tree().current_scene.scene_file_path != "res://Scenes/Locations/dialogue.tscn":
 		if GlobalTracker.scroll_count < 2:
 			$"Scroll Icon".disabled = false
@@ -35,9 +37,11 @@ func _on_scroll_icon_pressed() -> void:
 		$"Scroll Icon".disabled = true
 
 func _on_map_icon_pressed() -> void:
+	$"Map Icon SFX".play()
 	get_tree().change_scene_to_file("res://Scenes/map.tscn")
 
 func _on_inventory_icon_pressed() -> void:
+	$"Inventory Icon SFX".play()
 	$Inventory.update_slots()
 	if is_inventory_open:
 		$Inventory.visible = false
@@ -45,6 +49,10 @@ func _on_inventory_icon_pressed() -> void:
 	else:
 		$Inventory.visible = true
 		is_inventory_open = true
+
+func _on_book_icon_pressed() -> void:
+	$"Book Icon SFX".play()
+	get_tree().change_scene_to_file("res://Scenes/kingdom_book.tscn")
 
 
 func open_inventory_for_dialogue(number_of_requests: int) -> Array[ShopsResource]:
@@ -71,6 +79,3 @@ func open_inventory_for_dialogue(number_of_requests: int) -> Array[ShopsResource
 	is_inventory_open = false
 	
 	return items_handed_over
-
-func _on_book_icon_pressed() -> void:
-	get_tree().change_scene_to_file("res://Scenes/kingdom_book.tscn")

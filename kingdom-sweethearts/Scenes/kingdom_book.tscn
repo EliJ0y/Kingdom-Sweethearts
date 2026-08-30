@@ -6,6 +6,8 @@
 [ext_resource type="Texture2D" uid="uid://bbo2o33b6xwix" path="res://Graphics/Scrolls/Ribbon Arrow.png" id="5_0gn10"]
 [ext_resource type="FontFile" uid="uid://crb2i4elinjsj" path="res://Fonts/PirataOne-Regular.ttf" id="5_l573l"]
 [ext_resource type="PackedScene" uid="uid://37tq3gi8sclw" path="res://Scenes/UI Screens/pause_screen.tscn" id="7_cj5e8"]
+[ext_resource type="AudioStream" uid="uid://dto0wxcu1m7ic" path="res://Audio/Sound/Page Flip.wav" id="7_mvst3"]
+[ext_resource type="AudioStream" uid="uid://cx8inflmfu6wu" path="res://Audio/Sound/Book OpenClose.wav" id="7_yqo5v"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_n01f5"]
 
@@ -117,6 +119,13 @@ scale = Vector2(0.4, 0.6)
 action_mode = 0
 texture_normal = ExtResource("5_0gn10")
 flip_h = true
+
+[node name="Book Open & Close SFX" type="AudioStreamPlayer2D" parent="." unique_id=2020476344]
+stream = ExtResource("7_yqo5v")
+
+[node name="Page Flip SFX" type="AudioStreamPlayer2D" parent="." unique_id=19342350]
+stream = ExtResource("7_mvst3")
+volume_db = 2.0
 
 [connection signal="pressed" from="CanvasLayer/Set of Pages/Flip Page Right" to="." method="_on_flip_page_right_pressed"]
 [connection signal="pressed" from="CanvasLayer/Set of Pages/Flip Page Left" to="." method="_on_flip_page_left_pressed"]

@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://cx8inflmfu6wu"
+path="res://.godot/imported/Book OpenClose.wav-1f60b0867bca3ede9e46f0e4ec81e36b.sample"
+
+[deps]
+
+source_file="res://Audio/Sound/Book OpenClose.wav"
+dest_files=["res://.godot/imported/Book OpenClose.wav-1f60b0867bca3ede9e46f0e4ec81e36b.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

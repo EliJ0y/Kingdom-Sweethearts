@@ -20,23 +20,29 @@ func _ready() -> void:
 
 func _unhandled_input(event: InputEvent) -> void:
 	if event.is_action_pressed("ui_cancel"):
+		$"Book Open & Close SFX".play()
 		get_tree().change_scene_to_file("res://Scenes/Locations/home_desk.tscn")
 	
 	if event is InputEventMouseButton:
 		if event.button_index == MOUSE_BUTTON_LEFT and event.pressed:
 			if not $"CanvasLayer/Set of Pages".get_global_rect().has_point(event.position):
+				$"Book Open & Close SFX".play()
 				get_tree().change_scene_to_file("res://Scenes/Locations/home_desk.tscn")
 
 func _on_ribbon_arrow_next_pressed() -> void:
+	$"Page Flip SFX".play()
 	next_set_of_pages()
 
 func _on_ribbon_arrow_previous_pressed() -> void:
+	$"Page Flip SFX".play()
 	previous_set_of_pages()
 
 func _on_flip_page_right_pressed() -> void:
+	$"Page Flip SFX".play()
 	next_set_of_pages()
 
 func _on_flip_page_left_pressed() -> void:
+	$"Page Flip SFX".play()
 	previous_set_of_pages()
 
 

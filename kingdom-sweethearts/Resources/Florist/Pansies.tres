@@ -5,7 +5,7 @@
 
 [resource]
 script = ExtResource("1_s7r80")
-description = "Pansies. Polychromatic flowers cultivated  and used to honour fond memories. Costs 25 gold.   "
+description = "Pansies. Polychromatic flowers cultivated  and used to honour fond memories."
 price = "25G"
 texture = ExtResource("2_rhfa4")
 item_type = 3

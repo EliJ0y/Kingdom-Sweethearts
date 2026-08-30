@@ -5,7 +5,7 @@
 
 [resource]
 script = ExtResource("1_mfdlo")
-description = "Roses. Iconic symbols of love, cultivated in a variety of  colours to show different types of love. 25 Gold"
+description = "Roses. Iconic symbols of love, cultivated in a variety of  colours to show different types of love."
 price = "25G"
 texture = ExtResource("2_6v0bk")
 item_type = 3

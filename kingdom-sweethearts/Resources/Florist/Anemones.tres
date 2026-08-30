@@ -5,7 +5,7 @@
 
 [resource]
 script = ExtResource("1_yf0c8")
-description = "Anemone. Wildflowers with poisonous sap, believed to protect against ill wishes. Costs 10 gold."
+description = "Anemone. Wildflowers with poisonous sap, believed to protect against ill wishes."
 price = "10G"
 texture = ExtResource("2_o0l7h")
 item_type = 3

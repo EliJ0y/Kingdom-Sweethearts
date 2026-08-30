@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://b2qmfygakox5t"
+path="res://.godot/imported/Bread Crunch.wav-eabf64d5ead76e067c2750ac39067a5f.sample"
+
+[deps]
+
+source_file="res://Audio/Sound/Bread Crunch.wav"
+dest_files=["res://.godot/imported/Bread Crunch.wav-eabf64d5ead76e067c2750ac39067a5f.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

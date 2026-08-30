@@ -24,52 +24,62 @@ func update_shop_panel():
 	reset_to_buy()
 
 func _on_plain_bundle_pressed() -> void:
+	$"Paper Rustle SFX".play()
 	$"CanvasLayer/Shop Panel".show()
 	selected_item = plain_bundle
 	update_shop_panel()
 
 func _on_plain_stack_pressed() -> void:
+	$"Paper Rustle SFX".play()
 	$"CanvasLayer/Shop Panel".show()
 	selected_item = plain_stack
 	update_shop_panel()
 
 func _on_fancy_bundle_pressed() -> void:
+	$"Paper Rustle SFX".play()
 	$"CanvasLayer/Shop Panel".show()
 	selected_item = fancy_bundle
 	update_shop_panel()
 
 func _on_fancy_stack_pressed() -> void:
+	$"Paper Rustle SFX".play()
 	$"CanvasLayer/Shop Panel".show()
 	selected_item = fancy_stack
 	update_shop_panel()
 
 func _on_ornate_bundle_pressed() -> void:
+	$"Paper Rustle SFX".play()
 	$"CanvasLayer/Shop Panel".show()
 	selected_item = ornate_bundle
 	update_shop_panel()
 
 
 func _on_postcards_coast_pressed() -> void:
+	$"Paper Rustle SFX".play()
 	$"CanvasLayer/Shop Panel".show()
 	selected_item = postcards_coasts
 	update_shop_panel()
 
 func _on_postcards_deserts_pressed() -> void:
+	$"Paper Rustle SFX".play()
 	$"CanvasLayer/Shop Panel".show()
 	selected_item = postcards_deserts
 	update_shop_panel()
 
 func _on_postcards_forests_pressed() -> void:
+	$"Paper Rustle SFX".play()
 	$"CanvasLayer/Shop Panel".show()
 	selected_item = postcards_forests
 	update_shop_panel()
 
 func _on_postcards_mesas_pressed() -> void:
+	$"Paper Rustle SFX".play()
 	$"CanvasLayer/Shop Panel".show()
 	selected_item = postcards_mesas
 	update_shop_panel()
 
 func _on_postcards_mountains_pressed() -> void:
+	$"Paper Rustle SFX".play()
 	$"CanvasLayer/Shop Panel".show()
 	selected_item = postcards_mountains
 	update_shop_panel()
@@ -85,6 +95,7 @@ func _on_buy_item_pressed() -> void:
 		$"CanvasLayer/Shop Panel/Confirm".show()
 
 func _on_confirm_pressed() -> void:
+	$"Coin Purchase SFX".play()
 	GlobalTracker.player_inventory.inventory.append(selected_item)
 	GlobalTracker.total_coins -= int(selected_item.price)
 	reset_to_buy()

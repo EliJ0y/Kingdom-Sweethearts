@@ -5,7 +5,7 @@
 
 [resource]
 script = ExtResource("1_xdjph")
-description = "Trilliums. Wildflowers, named for their three petals, sepals and bracts. Costs 10 gold."
+description = "Trilliums. Wildflowers, named for their three petals, sepals and bracts."
 price = "10G"
 texture = ExtResource("2_shcq8")
 item_type = 3
