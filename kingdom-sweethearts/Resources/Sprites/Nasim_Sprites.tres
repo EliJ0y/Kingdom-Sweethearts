@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="SpritesResource" format=3 uid="uid://cwltsj1sby5so"]
+
+[ext_resource type="Texture2D" uid="uid://bx31b70ykcsoj" path="res://Graphics/Characters/Nasim Idle.PNG" id="1_sqi61"]
+[ext_resource type="Script" uid="uid://c3hfy4nf71pn7" path="res://Scripts/sprites_resource.gd" id="2_lkhv6"]
+[ext_resource type="Texture2D" uid="uid://ddjxd0a8n3od2" path="res://Graphics/Characters/Nasim Talking.PNG" id="3_ymchf"]
+
+[resource]
+script = ExtResource("2_lkhv6")
+idle_sprite = ExtResource("1_sqi61")
+talking_sprite = ExtResource("3_ymchf")
+metadata/_custom_type_script = "uid://c3hfy4nf71pn7"

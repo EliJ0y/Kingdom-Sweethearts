@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c3ikit0jb0two"
-path="res://.godot/imported/Kingdom Book.png-51e0ebec52d5e674b26b4b08b0c6e666.ctex"
+uid="uid://d010dnfgab24i"
+path="res://.godot/imported/Book Icon.png-d57f216b3c99dab3c9d197e1db484b53.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Graphics/Icons/Kingdom Book.png"
-dest_files=["res://.godot/imported/Kingdom Book.png-51e0ebec52d5e674b26b4b08b0c6e666.ctex"]
+source_file="res://Graphics/Icons/Book Icon.png"
+dest_files=["res://.godot/imported/Book Icon.png-d57f216b3c99dab3c9d197e1db484b53.ctex"]
 
 [params]
 

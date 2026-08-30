@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bl6u8v2kxdh6f"
-path="res://.godot/imported/Kingdom Book Open.png-b80e899b17fade783ee17c808de3a339.ctex"
+uid="uid://ddjxd0a8n3od2"
+path="res://.godot/imported/Nasim Talking.PNG-539f1eca362d2166363137f9f4e9b135.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Graphics/Icons/Kingdom Book Open.png"
-dest_files=["res://.godot/imported/Kingdom Book Open.png-b80e899b17fade783ee17c808de3a339.ctex"]
+source_file="res://Graphics/Characters/Nasim Talking.PNG"
+dest_files=["res://.godot/imported/Nasim Talking.PNG-539f1eca362d2166363137f9f4e9b135.ctex"]
 
 [params]
 

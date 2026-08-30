@@ -4,12 +4,12 @@
 [ext_resource type="Script" uid="uid://eo10k053o0vc" path="res://Scripts/home_desk.gd" id="1_tr8l1"]
 [ext_resource type="PackedScene" uid="uid://cm6i7vcbypte4" path="res://Scenes/navigation.tscn" id="5_0ttai"]
 [ext_resource type="PackedScene" uid="uid://brewn7dcybla" path="res://Scenes/coins.tscn" id="5_o1j7g"]
+[ext_resource type="Texture2D" uid="uid://cvswrvt0i0tg1" path="res://Graphics/Open Book.png" id="5_vmmc8"]
 [ext_resource type="Texture2D" uid="uid://ef4srtjb57e8" path="res://Graphics/UI/Shop Panel.PNG" id="6_0ttai"]
 [ext_resource type="FontFile" uid="uid://dob7bf1fqfppd" path="res://Fonts/The Seasons Regular.ttf" id="7_bsgyu"]
-[ext_resource type="Texture2D" uid="uid://cp2yn3d5b313s" path="res://Graphics/Icons/Scroll Icon.png" id="8_cx8jn"]
+[ext_resource type="Texture2D" uid="uid://cp2yn3d5b313s" path="res://Graphics/Icons/Scroll Icon.PNG" id="8_cx8jn"]
 [ext_resource type="Texture2D" uid="uid://bteijx4vbhw0e" path="res://Graphics/UI/Coins Sparkle.png" id="9_fecnm"]
 [ext_resource type="PackedScene" uid="uid://37tq3gi8sclw" path="res://Scenes/pause_screen.tscn" id="9_vmmc8"]
-[ext_resource type="Texture2D" uid="uid://c3ikit0jb0two" path="res://Graphics/Icons/Kingdom Book.png" id="10_vmmc8"]
 
 [node name="HomeDesk" type="Node2D" unique_id=719714100]
 script = ExtResource("1_tr8l1")
@@ -28,15 +28,14 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = 840.0
-offset_top = 630.0
-offset_right = 1292.0
-offset_bottom = 1182.0
+offset_left = 735.0
+offset_top = 600.0
+offset_right = 1180.0002
+offset_bottom = 909.0
 grow_horizontal = 2
 grow_vertical = 2
-scale = Vector2(0.5, 0.5)
 action_mode = 0
-texture_normal = ExtResource("10_vmmc8")
+texture_normal = ExtResource("5_vmmc8")
 
 [node name="Panel" type="Panel" parent="." unique_id=1443207450]
 visible = false

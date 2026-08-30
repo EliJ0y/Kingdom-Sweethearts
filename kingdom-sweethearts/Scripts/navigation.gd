@@ -68,3 +68,6 @@ func open_inventory_for_dialogue(number_of_requests: int) -> Array[ShopsResource
 	is_inventory_open = false
 	
 	return items_handed_over
+
+func _on_book_icon_pressed() -> void:
+	get_tree().change_scene_to_file("res://Scenes/kingdom_book.tscn")
