@@ -75,7 +75,8 @@ theme_override_font_sizes/font_size = 30
 autowrap_mode = 3
 
 [node name="Crest" type="Sprite2D" parent="CanvasLayer/Set of Pages" unique_id=1471010418]
-position = Vector2(120, 200)
+position = Vector2(70, 190)
+scale = Vector2(0.4, 0.4)
 centered = false
 
 [node name="Right Page Title" type="Label" parent="CanvasLayer/Set of Pages" unique_id=1689107159]

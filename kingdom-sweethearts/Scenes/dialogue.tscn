@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://bvsqho1pn4i5c"]
 
 [ext_resource type="Script" uid="uid://c51frugbjl4eq" path="res://Scripts/dialogue.gd" id="1_5mcti"]
-[ext_resource type="Texture2D" uid="uid://cf5xateryb4nj" path="res://Graphics/Gazebo_Background.png" id="1_dgfud"]
+[ext_resource type="Texture2D" uid="uid://dlw4alek70ojt" path="res://Graphics/Gazebo BG.png" id="2_j1ns2"]
 [ext_resource type="PackedScene" uid="uid://cm6i7vcbypte4" path="res://Scenes/navigation.tscn" id="3_p21q5"]
 [ext_resource type="Texture2D" uid="uid://c5r5wbudl45sh" path="res://Graphics/UI/Dialogue Option.PNG" id="4_4hwkt"]
 [ext_resource type="Texture2D" uid="uid://cnagpsybv6r7k" path="res://Graphics/UI/Dialogue Panel.PNG" id="4_shd1d"]
@@ -17,9 +17,8 @@ script = ExtResource("1_5mcti")
 process_mode = 3
 
 [node name="Gazebo BG" type="Sprite2D" parent="CanvasLayer" unique_id=1369257598]
-position = Vector2(975, 450)
-scale = Vector2(3.2930665, 2.2154703)
-texture = ExtResource("1_dgfud")
+texture = ExtResource("2_j1ns2")
+centered = false
 
 [node name="Character Sprite" type="Sprite2D" parent="CanvasLayer" unique_id=1597908151]
 position = Vector2(1300, 180)

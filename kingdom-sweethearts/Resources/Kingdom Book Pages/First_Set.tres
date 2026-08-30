@@ -5,7 +5,7 @@
 [resource]
 script = ExtResource("1_31455")
 left_page_title = "Oceirea"
-left_page_content = Array[String](["Oceirea is home to fishers, seafarers, and coastal guards. The people have seen the world, or not even travelled out of their town.", "Those in Oceirea are sturdy and resilient, at the forefront of maritime disasters and our seafood supply lines.", "Oceirea’s waters border and give life to forests and deserts."])
+left_page_content = Array[String](["Oceirea is home to fishers, seafarers, and coastal guards. The people have seen the world, or merely settled by the waters.", "Those in Oceirea are sturdy and resilient, at the forefront of maritime disasters and our seafood supply lines.", "Oceirea’s waters border and give life to forests and deserts."])
 right_page_title = "Wildegon"
 right_page_content = Array[String](["Wildegon is home to hunters, survivalists, and fighters. The people live as one with the surrounding nature.", "Those in Wildegon are adaptable and resourceful, subsisting off the land while appreciating its beauty.", "Wildegon’s forests regularly bloom with flowers, namely trilliums and violets."])
 metadata/_custom_type_script = "uid://bfol2ssr330a1"

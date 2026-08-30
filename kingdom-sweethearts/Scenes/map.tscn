@@ -4,7 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://c73akm0cu0qd0" path="res://Graphics/UI/Map BG.PNG" id="2_w7jjh"]
 [ext_resource type="Texture2D" uid="uid://08m2k4yr6rt3" path="res://Graphics/Icons/Home Icon.PNG" id="3_w7jjh"]
 [ext_resource type="Texture2D" uid="uid://br0x2o6fknce1" path="res://Graphics/Icons/Craft Shop Icon.PNG" id="4_6q3n4"]
-[ext_resource type="Texture2D" uid="uid://crfal3rdn80ah" path="res://Graphics/Gazebo_Foreground.png" id="5_q0mm3"]
+[ext_resource type="Texture2D" uid="uid://dacqwtviyedg7" path="res://Graphics/Icons/Gazebo Icon.png" id="5_6q3n4"]
 [ext_resource type="Texture2D" uid="uid://cyba2s1kj8jec" path="res://Graphics/Icons/Bakery Icon.PNG" id="6_4c2oa"]
 [ext_resource type="Texture2D" uid="uid://bi4ccrahu424h" path="res://Graphics/Icons/Florist Icon.PNG" id="7_olcgw"]
 [ext_resource type="PackedScene" uid="uid://37tq3gi8sclw" path="res://Scenes/pause_screen.tscn" id="8_6q3n4"]
@@ -19,41 +19,41 @@ texture = ExtResource("2_w7jjh")
 centered = false
 
 [node name="Home Icon" type="TextureButton" parent="CanvasLayer" unique_id=51589049]
-offset_left = 175.0
+offset_left = 145.0
 offset_top = 514.0
-offset_right = 453.0
+offset_right = 423.0
 offset_bottom = 792.0
 scale = Vector2(1.2, 1.2)
 texture_normal = ExtResource("3_w7jjh")
 
 [node name="Craft Shop Icon" type="TextureButton" parent="CanvasLayer" unique_id=1487133905]
-offset_left = 518.0
+offset_left = 488.0
 offset_top = 220.0
-offset_right = 800.0
+offset_right = 770.0
 offset_bottom = 449.0
 scale = Vector2(1.105, 1.105)
 texture_normal = ExtResource("4_6q3n4")
 
 [node name="Gazebo Icon" type="TextureButton" parent="CanvasLayer" unique_id=1974336633]
-offset_left = 1454.0
-offset_top = 330.0
-offset_right = 1913.0
-offset_bottom = 710.0
-scale = Vector2(0.8622824, 0.8622824)
-texture_normal = ExtResource("5_q0mm3")
+offset_left = 1410.0
+offset_top = 360.0
+offset_right = 1743.0
+offset_bottom = 643.0
+scale = Vector2(1.2, 1.2)
+texture_normal = ExtResource("5_6q3n4")
 
 [node name="Bakery Icon" type="TextureButton" parent="CanvasLayer" unique_id=296191679]
-offset_left = 879.00006
+offset_left = 849.00006
 offset_top = 749.0
-offset_right = 1188.0
+offset_right = 1158.0
 offset_bottom = 955.0
 scale = Vector2(1.2, 1.2)
 texture_normal = ExtResource("6_4c2oa")
 
 [node name="Florist Icon" type="TextureButton" parent="CanvasLayer" unique_id=63312706]
-offset_left = 1110.0
+offset_left = 1080.0
 offset_top = 124.0
-offset_right = 1385.0
+offset_right = 1355.0
 offset_bottom = 366.0
 scale = Vector2(1.1, 1.1)
 texture_normal = ExtResource("7_olcgw")

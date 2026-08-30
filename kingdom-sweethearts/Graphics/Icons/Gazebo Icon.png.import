@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://crfal3rdn80ah"
-path="res://.godot/imported/Gazebo_Foreground.png-d0119ed5675f8daf06c296f38334940b.ctex"
+uid="uid://dacqwtviyedg7"
+path="res://.godot/imported/Gazebo Icon.png-81ce0037f288a7a9ee0284e7bd49089b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Graphics/Gazebo_Foreground.png"
-dest_files=["res://.godot/imported/Gazebo_Foreground.png-d0119ed5675f8daf06c296f38334940b.ctex"]
+source_file="res://Graphics/Icons/Gazebo Icon.png"
+dest_files=["res://.godot/imported/Gazebo Icon.png-81ce0037f288a7a9ee0284e7bd49089b.ctex"]
 
 [params]
 
