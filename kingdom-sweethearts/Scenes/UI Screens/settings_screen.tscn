@@ -183,7 +183,6 @@ text = "Audio"
 alignment = 0
 
 [node name="Audio Settings" type="Control" parent="Control" unique_id=763026987]
-visible = false
 anchors_preset = 0
 offset_right = 40.0
 offset_bottom = 40.0
@@ -300,7 +299,7 @@ offset_bottom = 729.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("3_ieuc7")
 theme_override_font_sizes/font_size = 100
-text = "MUSIC"
+text = "SOUND"
 horizontal_alignment = 2
 
 [node name="Sound Integer" type="Label" parent="Control/Audio Settings/Sound Volume Settings" unique_id=1996563086]
