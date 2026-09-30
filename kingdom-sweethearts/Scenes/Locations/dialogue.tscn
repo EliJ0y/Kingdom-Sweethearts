@@ -3,7 +3,7 @@
 [ext_resource type="Script" uid="uid://c51frugbjl4eq" path="res://Scripts/Locations/dialogue.gd" id="1_fwwaw"]
 [ext_resource type="Texture2D" uid="uid://dlw4alek70ojt" path="res://Graphics/Gazebo BG.png" id="2_57jq7"]
 [ext_resource type="PackedScene" uid="uid://cm6i7vcbypte4" path="res://Scenes/navigation.tscn" id="3_t60tv"]
-[ext_resource type="Texture2D" uid="uid://cnagpsybv6r7k" path="res://Graphics/UI/Dialogue Panel.png" id="4_0no31"]
+[ext_resource type="Texture2D" uid="uid://cnagpsybv6r7k" path="res://Graphics/UI/Dialogue Panel.PNG" id="4_0no31"]
 [ext_resource type="FontFile" uid="uid://crb2i4elinjsj" path="res://Fonts/PirataOne-Regular.ttf" id="5_0vhwh"]
 [ext_resource type="Texture2D" uid="uid://c5r5wbudl45sh" path="res://Graphics/UI/Dialogue Option.PNG" id="6_o4iev"]
 [ext_resource type="PackedScene" uid="uid://37tq3gi8sclw" path="res://Scenes/UI Screens/pause_screen.tscn" id="7_6f6u1"]

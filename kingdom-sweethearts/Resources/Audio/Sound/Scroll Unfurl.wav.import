@@ -3,12 +3,12 @@
 importer="wav"
 type="AudioStreamWAV"
 uid="uid://cf51yelkwgcj4"
-path="res://.godot/imported/Scroll Unfurl.wav-51b5a08cd52716a8502f2c03965858cc.sample"
+path="res://.godot/imported/Scroll Unfurl.wav-dbac371e189e790a0a671ed86c491c86.sample"
 
 [deps]
 
-source_file="res://Resources/Characters/Audio/Sound/Scroll Unfurl.wav"
-dest_files=["res://.godot/imported/Scroll Unfurl.wav-51b5a08cd52716a8502f2c03965858cc.sample"]
+source_file="res://Resources/Audio/Sound/Scroll Unfurl.wav"
+dest_files=["res://.godot/imported/Scroll Unfurl.wav-dbac371e189e790a0a671ed86c491c86.sample"]
 
 [params]
 

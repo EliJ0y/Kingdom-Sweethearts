@@ -3,12 +3,12 @@
 importer="wav"
 type="AudioStreamWAV"
 uid="uid://87wmcr26auky"
-path="res://.godot/imported/KSH_Gazebo.wav-4957b4d5a2f5538cd63dfbadf61297cf.sample"
+path="res://.godot/imported/KSH_Gazebo.wav-bf4892bcf214e872bae0808cc60973d0.sample"
 
 [deps]
 
-source_file="res://Resources/Characters/Audio/Music/KSH_Gazebo.wav"
-dest_files=["res://.godot/imported/KSH_Gazebo.wav-4957b4d5a2f5538cd63dfbadf61297cf.sample"]
+source_file="res://Resources/Audio/Music/KSH_Gazebo.wav"
+dest_files=["res://.godot/imported/KSH_Gazebo.wav-bf4892bcf214e872bae0808cc60973d0.sample"]
 
 [params]
 

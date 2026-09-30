@@ -3,12 +3,12 @@
 importer="wav"
 type="AudioStreamWAV"
 uid="uid://cyafwtopwrax3"
-path="res://.godot/imported/KSH_MapTown.wav-54c22c58c94cf3fa7020e925b3268dd1.sample"
+path="res://.godot/imported/KSH_MapTown.wav-1b32ab40f1f7401c50ebff5184d19fa3.sample"
 
 [deps]
 
-source_file="res://Resources/Characters/Audio/Music/KSH_MapTown.wav"
-dest_files=["res://.godot/imported/KSH_MapTown.wav-54c22c58c94cf3fa7020e925b3268dd1.sample"]
+source_file="res://Resources/Audio/Music/KSH_MapTown.wav"
+dest_files=["res://.godot/imported/KSH_MapTown.wav-1b32ab40f1f7401c50ebff5184d19fa3.sample"]
 
 [params]
 

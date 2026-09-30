@@ -3,12 +3,12 @@
 importer="wav"
 type="AudioStreamWAV"
 uid="uid://be6nulecukhsi"
-path="res://.godot/imported/KSH_Ending_Theme.wav-e457d9448a19c852140430ac6741b528.sample"
+path="res://.godot/imported/KSH_Ending_Theme.wav-f703ad7f6f84f6ccf0e40b0ab2b2df48.sample"
 
 [deps]
 
-source_file="res://Resources/Characters/Audio/Music/KSH_Ending_Theme.wav"
-dest_files=["res://.godot/imported/KSH_Ending_Theme.wav-e457d9448a19c852140430ac6741b528.sample"]
+source_file="res://Resources/Audio/Music/KSH_Ending_Theme.wav"
+dest_files=["res://.godot/imported/KSH_Ending_Theme.wav-f703ad7f6f84f6ccf0e40b0ab2b2df48.sample"]
 
 [params]
 

@@ -4,6 +4,9 @@ extends Node2D
 @onready var crest: Sprite2D = $"CanvasLayer/Set of Pages/Crest"
 @onready var page_content: Label = $"CanvasLayer/Set of Pages/Page Content"
 
+@onready var book_fx = preload("res://Audio/Sound/Book OpenClose.wav")
+@onready var page_fx = preload("res://Audio/Sound/Page Flip.wav")
+
 
 var sets_of_pages = [preload("res://Resources/Kingdom Book Pages/Uurais.tres"),
 					 preload("res://Resources/Kingdom Book Pages/Oceirea.tres"),
@@ -20,29 +23,29 @@ func _ready() -> void:
 
 func _unhandled_input(event: InputEvent) -> void:
 	if event.is_action_pressed("ui_cancel"):
-		$"Book Open & Close SFX".play()
+		GlobalAudio.play_fx(book_fx, -10)
 		get_tree().change_scene_to_file("res://Scenes/Locations/home_desk.tscn")
 	
 	if event is InputEventMouseButton:
 		if event.button_index == MOUSE_BUTTON_LEFT and event.pressed:
 			if not $"CanvasLayer/Set of Pages".get_global_rect().has_point(event.position):
-				$"Book Open & Close SFX".play()
+				GlobalAudio.play_fx(book_fx, -10)
 				get_tree().change_scene_to_file("res://Scenes/Locations/home_desk.tscn")
 
 func _on_ribbon_arrow_next_pressed() -> void:
-	$"Page Flip SFX".play()
+	GlobalAudio.play_fx(page_fx, 5)
 	next_set_of_pages()
 
 func _on_ribbon_arrow_previous_pressed() -> void:
-	$"Page Flip SFX".play()
+	GlobalAudio.play_fx(page_fx, 5)
 	previous_set_of_pages()
 
 func _on_flip_page_right_pressed() -> void:
-	$"Page Flip SFX".play()
+	GlobalAudio.play_fx(page_fx, 5)
 	next_set_of_pages()
 
 func _on_flip_page_left_pressed() -> void:
-	$"Page Flip SFX".play()
+	GlobalAudio.play_fx(page_fx, 5)
 	previous_set_of_pages()
 
 

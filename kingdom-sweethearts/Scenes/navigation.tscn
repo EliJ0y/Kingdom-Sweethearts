@@ -144,23 +144,28 @@ texture_normal = ExtResource("8_c3rqk")
 
 [node name="Home Icon SFX" type="AudioStreamPlayer2D" parent="." unique_id=804372314]
 stream = ExtResource("9_vu05f")
-volume_db = 24.0
+volume_db = -10.0
+bus = &"Sound"
 
 [node name="Scroll Icon SFX" type="AudioStreamPlayer2D" parent="." unique_id=1197703044]
 stream = ExtResource("10_l8eqh")
-volume_db = 24.0
+volume_db = -50.0
+bus = &"Sound"
 
 [node name="Map Icon SFX" type="AudioStreamPlayer2D" parent="." unique_id=1043762091]
 stream = ExtResource("9_vu05f")
-volume_db = 24.0
+volume_db = -10.0
+bus = &"Sound"
 
 [node name="Inventory Icon SFX" type="AudioStreamPlayer2D" parent="." unique_id=407334739]
 stream = ExtResource("11_lpn1g")
-volume_db = -20.0
+volume_db = -80.0
+bus = &"Sound"
 
 [node name="Book Icon SFX" type="AudioStreamPlayer2D" parent="." unique_id=1794781253]
 stream = ExtResource("12_lpn1g")
-volume_db = 24.0
+volume_db = -10.0
+bus = &"Sound"
 
 [connection signal="pressed" from="Inventory Confirmation/Yes" to="." method="_on_yes_pressed"]
 [connection signal="pressed" from="Inventory Confirmation/No" to="." method="_on_no_pressed"]

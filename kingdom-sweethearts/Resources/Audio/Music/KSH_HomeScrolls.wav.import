@@ -3,12 +3,12 @@
 importer="wav"
 type="AudioStreamWAV"
 uid="uid://f23egb1w28wf"
-path="res://.godot/imported/KSH_HomeScrolls.wav-9a81c8a5767602baf64c6606d3659789.sample"
+path="res://.godot/imported/KSH_HomeScrolls.wav-e7f010ae4a2d591323cf47282a80f853.sample"
 
 [deps]
 
-source_file="res://Resources/Characters/Audio/Music/KSH_HomeScrolls.wav"
-dest_files=["res://.godot/imported/KSH_HomeScrolls.wav-9a81c8a5767602baf64c6606d3659789.sample"]
+source_file="res://Resources/Audio/Music/KSH_HomeScrolls.wav"
+dest_files=["res://.godot/imported/KSH_HomeScrolls.wav-e7f010ae4a2d591323cf47282a80f853.sample"]
 
 [params]
 

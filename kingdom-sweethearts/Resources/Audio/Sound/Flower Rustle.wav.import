@@ -3,12 +3,12 @@
 importer="wav"
 type="AudioStreamWAV"
 uid="uid://dcikos3dlsqjw"
-path="res://.godot/imported/Flower Rustle.wav-b72cdc48a33c51cc3de146d60a991e5a.sample"
+path="res://.godot/imported/Flower Rustle.wav-f10edca462b0cbdac1abc80be7ea8504.sample"
 
 [deps]
 
-source_file="res://Resources/Characters/Audio/Sound/Flower Rustle.wav"
-dest_files=["res://.godot/imported/Flower Rustle.wav-b72cdc48a33c51cc3de146d60a991e5a.sample"]
+source_file="res://Resources/Audio/Sound/Flower Rustle.wav"
+dest_files=["res://.godot/imported/Flower Rustle.wav-f10edca462b0cbdac1abc80be7ea8504.sample"]
 
 [params]
 

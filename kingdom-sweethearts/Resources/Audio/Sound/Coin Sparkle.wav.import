@@ -3,12 +3,12 @@
 importer="wav"
 type="AudioStreamWAV"
 uid="uid://bnnuijounxftu"
-path="res://.godot/imported/Coin Sparkle.wav-f09bb9cdfefeb58dfca15a79881b9fc8.sample"
+path="res://.godot/imported/Coin Sparkle.wav-8f7eec7e251a15fdbd8460ad2b11999e.sample"
 
 [deps]
 
-source_file="res://Resources/Characters/Audio/Sound/Coin Sparkle.wav"
-dest_files=["res://.godot/imported/Coin Sparkle.wav-f09bb9cdfefeb58dfca15a79881b9fc8.sample"]
+source_file="res://Resources/Audio/Sound/Coin Sparkle.wav"
+dest_files=["res://.godot/imported/Coin Sparkle.wav-8f7eec7e251a15fdbd8460ad2b11999e.sample"]
 
 [params]
 

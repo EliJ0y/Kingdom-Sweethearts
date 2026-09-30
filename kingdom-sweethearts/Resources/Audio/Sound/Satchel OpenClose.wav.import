@@ -3,12 +3,12 @@
 importer="wav"
 type="AudioStreamWAV"
 uid="uid://d2nu87wbcurd3"
-path="res://.godot/imported/Satchel OpenClose.wav-bf48529647448e518dee911ffe396b38.sample"
+path="res://.godot/imported/Satchel OpenClose.wav-a8ecb0dd3a8c4670977824260b834a39.sample"
 
 [deps]
 
-source_file="res://Resources/Characters/Audio/Sound/Satchel OpenClose.wav"
-dest_files=["res://.godot/imported/Satchel OpenClose.wav-bf48529647448e518dee911ffe396b38.sample"]
+source_file="res://Resources/Audio/Sound/Satchel OpenClose.wav"
+dest_files=["res://.godot/imported/Satchel OpenClose.wav-a8ecb0dd3a8c4670977824260b834a39.sample"]
 
 [params]
 

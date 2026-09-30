@@ -3,12 +3,12 @@
 importer="wav"
 type="AudioStreamWAV"
 uid="uid://ck8fv4yi4o14w"
-path="res://.godot/imported/Bread Crunch.wav-7db186b902e2338bffbbcd5b67df764a.sample"
+path="res://.godot/imported/Bread Crunch.wav-a22f9f332d4986166eabc7355504bb33.sample"
 
 [deps]
 
-source_file="res://Resources/Characters/Audio/Sound/Bread Crunch.wav"
-dest_files=["res://.godot/imported/Bread Crunch.wav-7db186b902e2338bffbbcd5b67df764a.sample"]
+source_file="res://Resources/Audio/Sound/Bread Crunch.wav"
+dest_files=["res://.godot/imported/Bread Crunch.wav-a22f9f332d4986166eabc7355504bb33.sample"]
 
 [params]
 

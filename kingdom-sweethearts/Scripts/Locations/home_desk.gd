@@ -1,5 +1,7 @@
 extends Node2D
 @onready var home_bgm = preload("res://Audio/Music/KSH_HomeScrolls.wav")
+@onready var book_fx = preload("res://Audio/Sound/Book OpenClose.wav")
+
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	GlobalAudio.play_music(home_bgm)
@@ -28,4 +30,5 @@ func _on_scroll_icon_pressed() -> void:
 	$"Scroll Icon".visible = false
 
 func _on_kingdom_book_pressed() -> void:
+	GlobalAudio.play_fx(book_fx, -10)
 	get_tree().change_scene_to_file("res://Scenes/kingdom_book.tscn")

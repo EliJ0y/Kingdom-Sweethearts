@@ -11,21 +11,21 @@ func _process(delta: float) -> void:
 	pass
 
 func _on_home_icon_pressed() -> void:
-	GlobalAudio.play_fx(door_fx)
+	GlobalAudio.play_fx(door_fx, -10)
 	get_tree().change_scene_to_file("res://Scenes/Locations/home_desk.tscn")
 
 func _on_craft_shop_icon_pressed() -> void:
-	GlobalAudio.play_fx(door_fx)
+	GlobalAudio.play_fx(door_fx, -10)
 	get_tree().change_scene_to_file("res://Scenes/Locations/craft_shop.tscn")
 
 func _on_gazebo_icon_pressed() -> void:
-	GlobalAudio.play_fx(door_fx)
+	GlobalAudio.play_fx(door_fx, -10)
 	get_tree().change_scene_to_file("res://Scenes/Locations/dialogue.tscn")
 
 func _on_bakery_icon_pressed() -> void:
-	GlobalAudio.play_fx(door_fx)
+	GlobalAudio.play_fx(door_fx, -10)
 	get_tree().change_scene_to_file("res://Scenes/Locations/bakery.tscn")
 
 func _on_florist_icon_pressed() -> void:
-	GlobalAudio.play_fx(door_fx)
+	GlobalAudio.play_fx(door_fx, -10)
 	get_tree().change_scene_to_file("res://Scenes/Locations/florist.tscn")

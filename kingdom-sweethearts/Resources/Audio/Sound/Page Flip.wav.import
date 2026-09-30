@@ -3,12 +3,12 @@
 importer="wav"
 type="AudioStreamWAV"
 uid="uid://2ht6m74vof36"
-path="res://.godot/imported/Page Flip.wav-94b504c894eeccb30519ecac900cd40c.sample"
+path="res://.godot/imported/Page Flip.wav-1189ae6497bc62296e4a330013a937e3.sample"
 
 [deps]
 
-source_file="res://Resources/Characters/Audio/Sound/Page Flip.wav"
-dest_files=["res://.godot/imported/Page Flip.wav-94b504c894eeccb30519ecac900cd40c.sample"]
+source_file="res://Resources/Audio/Sound/Page Flip.wav"
+dest_files=["res://.godot/imported/Page Flip.wav-1189ae6497bc62296e4a330013a937e3.sample"]
 
 [params]
 
