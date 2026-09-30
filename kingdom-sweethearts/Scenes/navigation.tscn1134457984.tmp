@@ -1,0 +1,158 @@
+[gd_scene format=3 uid="uid://cm6i7vcbypte4"]
+
+[ext_resource type="Script" uid="uid://mfvy44yu6jwn" path="res://Scripts/navigation.gd" id="1_gxgjm"]
+[ext_resource type="PackedScene" uid="uid://dscywhb6lbuyh" path="res://Scenes/inventory.tscn" id="2_wi6jk"]
+[ext_resource type="Texture2D" uid="uid://cp4u6tk8ix2gh" path="res://Graphics/UI/Inventory BG.PNG" id="3_o2stv"]
+[ext_resource type="Texture2D" uid="uid://08m2k4yr6rt3" path="res://Graphics/Icons/Home Icon.PNG" id="3_wi6jk"]
+[ext_resource type="FontFile" uid="uid://dob7bf1fqfppd" path="res://Fonts/The Seasons Regular.ttf" id="4_t03rb"]
+[ext_resource type="Texture2D" uid="uid://cp2yn3d5b313s" path="res://Graphics/Icons/Scroll Icon.PNG" id="4_wi6jk"]
+[ext_resource type="Texture2D" uid="uid://drnrdl4arl283" path="res://Graphics/Icons/Inventory Icon.png" id="5_5pagq"]
+[ext_resource type="Texture2D" uid="uid://bteijx4vbhw0e" path="res://Graphics/UI/Coins Sparkle.png" id="5_hoqp4"]
+[ext_resource type="Texture2D" uid="uid://dj1frigyo2fxb" path="res://Graphics/Icons/Map Icon.png" id="5_wi6jk"]
+[ext_resource type="Texture2D" uid="uid://d010dnfgab24i" path="res://Graphics/Icons/Book Icon.png" id="8_c3rqk"]
+[ext_resource type="AudioStream" uid="uid://1pk0lxylnfln" path="res://Audio/Sound/Door OpenClose.wav" id="9_vu05f"]
+[ext_resource type="AudioStream" uid="uid://dto0wxcu1m7ic" path="res://Audio/Sound/Page Flip.wav" id="10_l8eqh"]
+[ext_resource type="AudioStream" uid="uid://dul23wquwnsx1" path="res://Audio/Sound/Satchel OpenClose.wav" id="11_lpn1g"]
+[ext_resource type="AudioStream" uid="uid://cx8inflmfu6wu" path="res://Audio/Sound/Book OpenClose.wav" id="12_lpn1g"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_4kxuq"]
+texture = ExtResource("3_o2stv")
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_4kxuq"]
+
+[node name="Navigation" type="Node2D" unique_id=651092304]
+script = ExtResource("1_gxgjm")
+
+[node name="Outside Inventory" type="Control" parent="." unique_id=1274824769]
+visible = false
+layout_mode = 3
+anchors_preset = 0
+offset_right = 1920.0
+offset_bottom = 1090.0
+
+[node name="Inventory" parent="." unique_id=1905093856 instance=ExtResource("2_wi6jk")]
+offset_left = 215.0
+offset_top = 154.0
+offset_right = 3735.0
+offset_bottom = 1984.0
+
+[node name="Inventory Confirmation" type="Panel" parent="." unique_id=151952436]
+visible = false
+offset_left = 675.0
+offset_top = 375.0
+offset_right = 1275.0
+offset_bottom = 725.0
+theme_override_styles/panel = SubResource("StyleBoxTexture_4kxuq")
+
+[node name="Label" type="Label" parent="Inventory Confirmation" unique_id=1698018097]
+layout_mode = 0
+offset_left = 110.0
+offset_top = 50.0
+offset_right = 500.0
+offset_bottom = 185.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("4_t03rb")
+theme_override_font_sizes/font_size = 50
+text = "Finished handing 
+over items?"
+horizontal_alignment = 1
+
+[node name="Yes" type="Button" parent="Inventory Confirmation" unique_id=2084388410]
+layout_mode = 0
+offset_left = 100.0
+offset_top = 230.0
+offset_right = 173.0
+offset_bottom = 296.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("4_t03rb")
+theme_override_font_sizes/font_size = 50
+theme_override_styles/normal = SubResource("StyleBoxEmpty_4kxuq")
+text = "Yes"
+
+[node name="No" type="Button" parent="Inventory Confirmation" unique_id=1900548256]
+layout_mode = 0
+offset_left = 420.0
+offset_top = 230.0
+offset_right = 493.0
+offset_bottom = 296.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("4_t03rb")
+theme_override_font_sizes/font_size = 50
+theme_override_styles/normal = SubResource("StyleBoxEmpty_4kxuq")
+text = "No"
+
+[node name="Home Icon" type="TextureButton" parent="." unique_id=1801588294]
+offset_left = 1785.0
+offset_top = 10.0
+offset_right = 2063.0
+offset_bottom = 288.0
+scale = Vector2(0.45, 0.45)
+texture_normal = ExtResource("3_wi6jk")
+
+[node name="Scroll Icon" type="TextureButton" parent="." unique_id=1993742965]
+offset_left = 1790.0
+offset_top = 140.0
+offset_right = 2030.0
+offset_bottom = 380.0
+scale = Vector2(0.5, 0.5)
+action_mode = 0
+texture_normal = ExtResource("4_wi6jk")
+
+[node name="Sparkle" type="Sprite2D" parent="Scroll Icon" unique_id=2046641428]
+visible = false
+position = Vector2(120, 110)
+scale = Vector2(2, 2)
+texture = ExtResource("5_hoqp4")
+
+[node name="Map Icon" type="TextureButton" parent="." unique_id=310295487]
+offset_left = 1785.0
+offset_top = 260.0
+offset_right = 2025.0
+offset_bottom = 500.0
+scale = Vector2(0.5, 0.5)
+action_mode = 0
+texture_normal = ExtResource("5_wi6jk")
+
+[node name="Inventory Icon" type="TextureButton" parent="." unique_id=915603776]
+offset_left = 1790.0
+offset_top = 380.0
+offset_right = 2030.0
+offset_bottom = 620.0
+scale = Vector2(0.5, 0.5)
+texture_normal = ExtResource("5_5pagq")
+
+[node name="Book Icon" type="TextureButton" parent="." unique_id=296095968]
+offset_left = 1785.0
+offset_top = 500.0
+offset_right = 2025.0
+offset_bottom = 740.0
+scale = Vector2(0.5, 0.5)
+texture_normal = ExtResource("8_c3rqk")
+
+[node name="Home Icon SFX" type="AudioStreamPlayer2D" parent="." unique_id=804372314]
+stream = ExtResource("9_vu05f")
+volume_db = 24.0
+
+[node name="Scroll Icon SFX" type="AudioStreamPlayer2D" parent="." unique_id=1197703044]
+stream = ExtResource("10_l8eqh")
+volume_db = 24.0
+
+[node name="Map Icon SFX" type="AudioStreamPlayer2D" parent="." unique_id=1043762091]
+stream = ExtResource("9_vu05f")
+volume_db = 24.0
+
+[node name="Inventory Icon SFX" type="AudioStreamPlayer2D" parent="." unique_id=407334739]
+stream = ExtResource("11_lpn1g")
+volume_db = -20.0
+
+[node name="Book Icon SFX" type="AudioStreamPlayer2D" parent="." unique_id=1794781253]
+stream = ExtResource("12_lpn1g")
+volume_db = 24.0
+
+[connection signal="pressed" from="Inventory Confirmation/Yes" to="." method="_on_yes_pressed"]
+[connection signal="pressed" from="Inventory Confirmation/No" to="." method="_on_no_pressed"]
+[connection signal="pressed" from="Home Icon" to="." method="_on_home_icon_pressed"]
+[connection signal="pressed" from="Scroll Icon" to="." method="_on_scroll_icon_pressed"]
+[connection signal="pressed" from="Map Icon" to="." method="_on_map_icon_pressed"]
+[connection signal="pressed" from="Inventory Icon" to="." method="_on_inventory_icon_pressed"]
+[connection signal="pressed" from="Book Icon" to="." method="_on_book_icon_pressed"]

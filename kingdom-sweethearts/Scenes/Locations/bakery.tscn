@@ -95,6 +95,7 @@ offset_bottom = 511.0
 texture_normal = ExtResource("9_fb6sb")
 
 [node name="Shop Panel" type="Sprite2D" parent="CanvasLayer" unique_id=1228542888]
+visible = false
 position = Vector2(820, 90)
 texture = ExtResource("13_qqqo5")
 centered = false

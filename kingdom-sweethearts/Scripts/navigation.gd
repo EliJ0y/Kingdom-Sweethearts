@@ -19,10 +19,13 @@ func _input(event: InputEvent) -> void:
 	if event is InputEventMouseButton:
 		if event.button_index == MOUSE_BUTTON_LEFT and event.pressed:
 			if not ($Inventory.get_global_rect().has_point(event.position) or $"Inventory Icon".get_global_rect().has_point(event.position)):
-				$Inventory.visible = false
-				is_inventory_open = false
-				$Inventory.item_selected.emit(null)
-				get_viewport().set_input_as_handled()
+				if get_tree().current_scene.scene_file_path == "res://Scenes/Locations/dialogue.tscn":
+					$"Inventory Confirmation".visible = true
+				else:
+					$Inventory.visible = false
+					is_inventory_open = false
+					$Inventory.item_selected.emit(null)
+					get_viewport().set_input_as_handled()
 
 func _on_home_icon_pressed() -> void:
 	GlobalAudio.play_fx(home_fx)
@@ -87,3 +90,13 @@ func open_inventory_for_dialogue(number_of_requests: int) -> Array[ShopsResource
 	is_inventory_open = false
 	
 	return items_handed_over
+
+func _on_yes_pressed() -> void:
+	$Inventory.visible = false
+	is_inventory_open = false
+	$Inventory.item_selected.emit(null)
+	get_viewport().set_input_as_handled()
+	$"Inventory Confirmation".visible = false
+
+func _on_no_pressed() -> void:
+	$"Inventory Confirmation".visible = false
