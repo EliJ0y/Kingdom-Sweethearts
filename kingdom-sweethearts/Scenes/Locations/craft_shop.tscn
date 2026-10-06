@@ -189,10 +189,12 @@ visible = false
 [node name="Paper Rustle SFX" type="AudioStreamPlayer2D" parent="." unique_id=1562068406]
 stream = ExtResource("19_j7wxw")
 volume_db = 9.306
+bus = &"Sound"
 
 [node name="Coin Purchase SFX" type="AudioStreamPlayer2D" parent="." unique_id=1260242848]
 stream = ExtResource("20_qtgxe")
 volume_db = -20.0
+bus = &"Sound"
 
 [connection signal="pressed" from="CanvasLayer/Plain (Bundle)" to="." method="_on_plain_bundle_pressed"]
 [connection signal="pressed" from="CanvasLayer/Plain (Stack)" to="." method="_on_plain_stack_pressed"]
@@ -205,6 +207,6 @@ volume_db = -20.0
 [connection signal="pressed" from="CanvasLayer/Postcards (Mesas)" to="." method="_on_postcards_mesas_pressed"]
 [connection signal="pressed" from="CanvasLayer/Postcards (Mountains)" to="." method="_on_postcards_mountains_pressed"]
 [connection signal="pressed" from="CanvasLayer/Shop Panel/Buy Item" to="." method="_on_buy_item_pressed"]
-[connection signal="pressed" from="CanvasLayer/Shop Panel/Confirm" to="." method="_on_buy_item_pressed"]
 [connection signal="pressed" from="CanvasLayer/Shop Panel/Confirm" to="." method="_on_confirm_pressed"]
+[connection signal="pressed" from="CanvasLayer/Shop Panel/Confirm" to="." method="_on_buy_item_pressed"]
 [connection signal="pressed" from="CanvasLayer/Shop Panel/Back" to="." method="_on_back_pressed"]

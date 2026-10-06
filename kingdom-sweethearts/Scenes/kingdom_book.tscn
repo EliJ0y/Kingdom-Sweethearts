@@ -122,10 +122,12 @@ flip_h = true
 
 [node name="Book Open & Close SFX" type="AudioStreamPlayer2D" parent="." unique_id=2020476344]
 stream = ExtResource("7_yqo5v")
+bus = &"Sound"
 
 [node name="Page Flip SFX" type="AudioStreamPlayer2D" parent="." unique_id=19342350]
 stream = ExtResource("7_mvst3")
 volume_db = 2.0
+bus = &"Sound"
 
 [connection signal="pressed" from="CanvasLayer/Set of Pages/Flip Page Right" to="." method="_on_flip_page_right_pressed"]
 [connection signal="pressed" from="CanvasLayer/Set of Pages/Flip Page Left" to="." method="_on_flip_page_left_pressed"]
