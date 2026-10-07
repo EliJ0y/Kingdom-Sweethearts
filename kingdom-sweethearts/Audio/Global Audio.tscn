@@ -3,4 +3,5 @@
 [ext_resource type="Script" uid="uid://c5lmklo1re2me" path="res://Audio/global_audio.gd" id="1_iwg7x"]
 
 [node name="GlobalAudio" type="AudioStreamPlayer2D" unique_id=237597548]
+bus = &"Music"
 script = ExtResource("1_iwg7x")

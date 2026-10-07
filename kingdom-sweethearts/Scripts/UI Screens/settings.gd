@@ -64,7 +64,7 @@ func set_bus_volume(bus_name: String, ui_value: int):
 		AudioServer.set_bus_mute(bus_index, true)
 	else:
 		AudioServer.set_bus_mute(bus_index, false)
-		AudioServer.set_bus_volume_db(bus_index, linear_to_db(ui_value))
+		AudioServer.set_bus_volume_db(bus_index, linear_to_db(ui_value / 10.0))
 
 func change_master_volume(direction: int):
 	master_volume = clampi(master_volume + direction, 0, 10)
@@ -78,7 +78,7 @@ func change_music_volume(direction: int):
 	apply_music_volume()
 
 func apply_music_volume():
-	set_bus_volume("Music", sound_volume)
+	set_bus_volume("Music", music_volume)
 
 func change_sound_volume(direction: int):
 	sound_volume = clampi(sound_volume + direction, 0, 10)

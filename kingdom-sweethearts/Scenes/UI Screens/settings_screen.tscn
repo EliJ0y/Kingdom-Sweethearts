@@ -183,6 +183,7 @@ text = "Audio"
 alignment = 0
 
 [node name="Audio Settings" type="Control" parent="Control" unique_id=763026987]
+visible = false
 anchors_preset = 0
 offset_right = 40.0
 offset_bottom = 40.0
