@@ -70,6 +70,7 @@ func open_inventory_for_dialogue(number_of_requests: int) -> Array[ShopsResource
 	var items_handed_over: Array[ShopsResource] = []
 	$Inventory.update_slots()
 	$Inventory.visible = true
+	$"Item Confirmation".visible = true
 	is_inventory_open = true
 	
 	while items_handed_over.size() < number_of_requests:
@@ -100,3 +101,11 @@ func _on_yes_pressed() -> void:
 
 func _on_no_pressed() -> void:
 	$"Inventory Confirmation".visible = false
+
+func _on_item_confirmation_pressed() -> void:
+	$Inventory.visible = false
+	is_inventory_open = false
+	$Inventory.item_selected.emit(null)
+	get_viewport().set_input_as_handled()
+	$"Inventory Confirmation".visible = false
+	$"Item Confirmation".visible = false

@@ -3,9 +3,9 @@
 [ext_resource type="Script" uid="uid://mfvy44yu6jwn" path="res://Scripts/navigation.gd" id="1_gxgjm"]
 [ext_resource type="PackedScene" uid="uid://dscywhb6lbuyh" path="res://Scenes/inventory.tscn" id="2_wi6jk"]
 [ext_resource type="Texture2D" uid="uid://cp4u6tk8ix2gh" path="res://Graphics/UI/Inventory BG.PNG" id="3_o2stv"]
-[ext_resource type="Texture2D" uid="uid://08m2k4yr6rt3" path="res://Graphics/Icons/Home Icon.PNG" id="3_wi6jk"]
+[ext_resource type="Texture2D" uid="uid://08m2k4yr6rt3" path="res://Graphics/Icons/Home Icon.png" id="3_wi6jk"]
 [ext_resource type="FontFile" uid="uid://dob7bf1fqfppd" path="res://Fonts/The Seasons Regular.ttf" id="4_t03rb"]
-[ext_resource type="Texture2D" uid="uid://cp2yn3d5b313s" path="res://Graphics/Icons/Scroll Icon.PNG" id="4_wi6jk"]
+[ext_resource type="Texture2D" uid="uid://cp2yn3d5b313s" path="res://Graphics/Icons/Scroll Icon.png" id="4_wi6jk"]
 [ext_resource type="Texture2D" uid="uid://drnrdl4arl283" path="res://Graphics/Icons/Inventory Icon.png" id="5_5pagq"]
 [ext_resource type="Texture2D" uid="uid://bteijx4vbhw0e" path="res://Graphics/UI/Coins Sparkle.png" id="5_hoqp4"]
 [ext_resource type="Texture2D" uid="uid://dj1frigyo2fxb" path="res://Graphics/Icons/Map Icon.png" id="5_wi6jk"]
@@ -14,6 +14,9 @@
 [ext_resource type="AudioStream" uid="uid://dto0wxcu1m7ic" path="res://Audio/Sound/Page Flip.wav" id="10_l8eqh"]
 [ext_resource type="AudioStream" uid="uid://dul23wquwnsx1" path="res://Audio/Sound/Satchel OpenClose.wav" id="11_lpn1g"]
 [ext_resource type="AudioStream" uid="uid://cx8inflmfu6wu" path="res://Audio/Sound/Book OpenClose.wav" id="12_lpn1g"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_n01f5"]
+texture = ExtResource("3_o2stv")
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_4kxuq"]
 texture = ExtResource("3_o2stv")
@@ -44,6 +47,19 @@ offset_left = 215.0
 offset_top = 154.0
 offset_right = 3735.0
 offset_bottom = 1984.0
+
+[node name="Item Confirmation" type="Button" parent="." unique_id=1624132774]
+visible = false
+offset_left = 840.0
+offset_top = 485.0
+offset_right = 1090.0
+offset_bottom = 635.0
+scale = Vector2(1, 1.0023682)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("4_t03rb")
+theme_override_font_sizes/font_size = 50
+theme_override_styles/normal = SubResource("StyleBoxTexture_n01f5")
+text = "Confirm"
 
 [node name="Inventory Confirmation" type="Panel" parent="." unique_id=151952436]
 visible = false
@@ -167,6 +183,7 @@ stream = ExtResource("12_lpn1g")
 volume_db = -10.0
 bus = &"Sound"
 
+[connection signal="pressed" from="Item Confirmation" to="." method="_on_item_confirmation_pressed"]
 [connection signal="pressed" from="Inventory Confirmation/Yes" to="." method="_on_yes_pressed"]
 [connection signal="pressed" from="Inventory Confirmation/No" to="." method="_on_no_pressed"]
 [connection signal="pressed" from="Home Icon" to="." method="_on_home_icon_pressed"]
