@@ -16,6 +16,7 @@ func _ready() -> void:
 	if get_tree().current_scene.scene_file_path == "res://Scenes/Locations/dialogue.tscn":
 		for icon in [$"Home Icon", $"Scroll Icon", $"Map Icon", $"Inventory Icon", $"Book Icon"]:
 			icon.disabled = true
+			icon.self_modulate = Color(0.5, 0.5, 0.5)
 
 func _input(event: InputEvent) -> void:
 	if !is_inventory_open:
@@ -31,13 +32,13 @@ func _input(event: InputEvent) -> void:
 					get_viewport().set_input_as_handled()
 
 func _on_home_icon_pressed() -> void:
-	GlobalAudio.play_fx(home_fx, -10)
+	GlobalAudio.play_fx(home_fx, 10)
 	GlobalTracker.is_scrolls_open = false
 	get_tree().change_scene_to_file("res://Scenes/Locations/home_desk.tscn")
 
 func _on_scroll_icon_pressed() -> void:
-	GlobalAudio.play_fx(scroll_fx, -20)
-	if get_tree().current_scene.scene_file_path != "res://Scenes/Locations/dialogue.tscn" && GlobalTracker.is_scrolls_open == false:
+	GlobalAudio.play_fx(scroll_fx, 0)
+	if GlobalTracker.is_scrolls_open == false:
 		if GlobalTracker.scroll_count < 2:
 			$"Scroll Icon".disabled = false
 			get_tree().change_scene_to_file("res://Scenes/scrolls.tscn")
@@ -48,25 +49,24 @@ func _on_scroll_icon_pressed() -> void:
 		$"Scroll Icon".disabled = true
 
 func _on_map_icon_pressed() -> void:
-	GlobalAudio.play_fx(home_fx, -10)
+	GlobalAudio.play_fx(home_fx, 10)
 	GlobalTracker.is_scrolls_open = false
 	get_tree().change_scene_to_file("res://Scenes/map.tscn")
 
 func _on_inventory_icon_pressed() -> void:
-	GlobalAudio.play_fx(inventory_fx, -20)
+	GlobalAudio.play_fx(inventory_fx, 0)
 	GlobalTracker.is_scrolls_open = false
 	$Inventory.update_slots()
 	
-	if get_tree().current_scene.scene_file_path != "res://Scenes/Locations/dialogue.tscn":
-		if is_inventory_open:
-			$Inventory.visible = false
-			is_inventory_open = false
-		else:
-			$Inventory.visible = true
-			is_inventory_open = true
+	if is_inventory_open:
+		$Inventory.visible = false
+		is_inventory_open = false
+	else:
+		$Inventory.visible = true
+		is_inventory_open = true
 
 func _on_book_icon_pressed() -> void:
-	GlobalAudio.play_fx(book_fx, -10)
+	GlobalAudio.play_fx(book_fx, 10)
 	GlobalTracker.is_scrolls_open = false
 	get_tree().change_scene_to_file("res://Scenes/kingdom_book.tscn")
 

@@ -27,8 +27,8 @@ var item_wrong_type = false
 var character_index = -1
 var ending_result
 
-var normal_colour = Color(1.0, 1.0, 1.0, 1.0)
-var grey_out = Color(0.5, 0.5, 0.5, 1.0)
+var normal_colour = Color(1.0, 1.0, 1.0)
+var grey_out = Color(0.5, 0.5, 0.5)
 
 
 func _ready() -> void:
@@ -40,10 +40,16 @@ func _ready() -> void:
 	DialogueManager.dialogue_ended.connect(end_dialogue)
 	DialogueManager.show_dialogue_balloon(load("res://Dialogue Manager/Start_Dialogue.dialogue"), "start")
 
+func _on_not_ready_button_pressed() -> void:
+	$"CanvasLayer/Buttons Box".visible = false
+	get_tree().change_scene_to_file("res://Scenes/map.tscn")
+
 func start_dialogue(resource: DialogueResource):
 	if resource.resource_path == "res://Dialogue Manager/Start_Dialogue.dialogue":
-		$CanvasLayer/Button.visible = true
-		$"CanvasLayer/Button/Button Text".text = "Start Dialogue"
+		$"CanvasLayer/Buttons Box/Start Button".visible = true
+		$"CanvasLayer/Buttons Box/Start Button/Start Button Text".text = "Start Dialogue"
+		$"CanvasLayer/Buttons Box/Not Ready Button".visible = true
+		$"CanvasLayer/Buttons Box/Not Ready Button/Not Ready Button Text".text = "Not Ready Yet"
 
 func end_dialogue(resource: DialogueResource):
 	if resource == level_number.character_dialogues[0]:
@@ -52,8 +58,9 @@ func end_dialogue(resource: DialogueResource):
 		DialogueManager.show_dialogue_balloon(load("res://Dialogue Manager/Connector_Dialogue.dialogue"), "start")
 		
 	elif resource.resource_path == "res://Dialogue Manager/Connector_Dialogue.dialogue":
-		$"CanvasLayer/Button".visible = true
-		$"CanvasLayer/Button/Button Text".text = "Start Dialogue"
+		$"CanvasLayer/Buttons Box".visible = true
+		$"CanvasLayer/Buttons Box/Start Button".visible = true
+		$"CanvasLayer/Buttons Box/Start Button/Start Button Text".text = "Start Dialogue"
 		
 	elif resource == level_number.character_dialogues[1]:
 		character_2 = character
@@ -73,11 +80,12 @@ func end_dialogue(resource: DialogueResource):
 		else:
 			$"CanvasLayer/Ending Title Panel/Ending Title".text = "Love Ending"
 		
-		$"CanvasLayer/Button".visible = true
+		$"CanvasLayer/Buttons Box".visible = true
+		$"CanvasLayer/Buttons Box/Start Button".visible = true
 		if GlobalTracker.is_last_level():
-			$"CanvasLayer/Button/Button Text".text = "Thank you for playing!"
+			$"CanvasLayer/Buttons Box/Start Button/Start Button Text".text = "Thank you for playing!"
 		else:
-			$"CanvasLayer/Button/Button Text".text = "Return Home"
+			$"CanvasLayer/Buttons Box/Start Button/Start Button Text".text = "Return Home"
 
 func date_dialogue():
 	is_date_scene = true
@@ -93,8 +101,11 @@ func date_dialogue():
 	ending_result = GlobalTracker.get_date_ending()
 	DialogueManager.show_dialogue_balloon(load("res://Dialogue Manager/Date_Dialogue.dialogue"), ending_result)
 
-func _on_button_pressed() -> void:
-	$CanvasLayer/Button.visible = false
+func _on_start_button_pressed() -> void:
+	$"CanvasLayer/Buttons Box".visible = false
+	$"CanvasLayer/Buttons Box/Start Button".visible = false
+	$"CanvasLayer/Buttons Box/Not Ready Button".visible = false
+	
 	if !has_character_1_spoken:
 		character_index = 0
 		DialogueManager.show_dialogue_balloon((level_number.character_dialogues[0]), "start")

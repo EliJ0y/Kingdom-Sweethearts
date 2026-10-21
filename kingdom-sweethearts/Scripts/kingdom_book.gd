@@ -23,7 +23,7 @@ func _ready() -> void:
 
 func _unhandled_input(event: InputEvent) -> void:
 	if event.is_action_pressed("ui_cancel"):
-		GlobalAudio.play_fx(book_fx, -10)
+		GlobalAudio.play_fx(book_fx, 10)
 		get_tree().change_scene_to_file("res://Scenes/Locations/home_desk.tscn")
 	
 	if event is InputEventMouseButton:
@@ -33,19 +33,19 @@ func _unhandled_input(event: InputEvent) -> void:
 				get_tree().change_scene_to_file("res://Scenes/Locations/home_desk.tscn")
 
 func _on_ribbon_arrow_next_pressed() -> void:
-	GlobalAudio.play_fx(page_fx, 5)
+	GlobalAudio.play_fx(page_fx, 10)
 	next_set_of_pages()
 
 func _on_ribbon_arrow_previous_pressed() -> void:
-	GlobalAudio.play_fx(page_fx, 5)
+	GlobalAudio.play_fx(page_fx, 10)
 	previous_set_of_pages()
 
 func _on_flip_page_right_pressed() -> void:
-	GlobalAudio.play_fx(page_fx, 5)
+	GlobalAudio.play_fx(page_fx, 10)
 	next_set_of_pages()
 
 func _on_flip_page_left_pressed() -> void:
-	GlobalAudio.play_fx(page_fx, 5)
+	GlobalAudio.play_fx(page_fx, 10)
 	previous_set_of_pages()
 
 

@@ -59,22 +59,45 @@ theme_override_fonts/font = ExtResource("5_0vhwh")
 theme_override_font_sizes/font_size = 150
 horizontal_alignment = 1
 
-[node name="Button" type="TextureButton" parent="CanvasLayer" unique_id=1789056820]
+[node name="Buttons Box" type="VBoxContainer" parent="CanvasLayer" unique_id=622159897]
+offset_left = 475.0
+offset_top = 375.0
+offset_right = 1438.0
+offset_bottom = 779.0
+alignment = 1
+
+[node name="Start Button" type="TextureButton" parent="CanvasLayer/Buttons Box" unique_id=1789056820]
 visible = false
+layout_mode = 2
+texture_normal = ExtResource("6_o4iev")
+
+[node name="Start Button Text" type="Label" parent="CanvasLayer/Buttons Box/Start Button" unique_id=1009411958]
+custom_minimum_size = Vector2(820, 120)
+layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -481.5
-offset_top = -100.0
-offset_right = 481.5
-offset_bottom = 100.0
+offset_left = -410.0
+offset_top = -64.5
+offset_right = 410.0
+offset_bottom = 64.5
 grow_horizontal = 2
 grow_vertical = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("5_0vhwh")
+theme_override_font_sizes/font_size = 100
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="Not Ready Button" type="TextureButton" parent="CanvasLayer/Buttons Box" unique_id=1453436795]
+visible = false
+layout_mode = 2
 texture_normal = ExtResource("6_o4iev")
 
-[node name="Button Text" type="Label" parent="CanvasLayer/Button" unique_id=1009411958]
+[node name="Not Ready Button Text" type="Label" parent="CanvasLayer/Buttons Box/Not Ready Button" unique_id=1280396770]
 custom_minimum_size = Vector2(820, 120)
 layout_mode = 1
 anchors_preset = 8
@@ -104,4 +127,6 @@ alias = "dialogue"
 target = NodePath("..")
 metadata/_custom_type_script = "uid://cd3222nx3y3k5"
 
-[connection signal="pressed" from="CanvasLayer/Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="CanvasLayer/Buttons Box/Start Button" to="." method="_on_start_button_pressed"]
+[connection signal="pressed" from="CanvasLayer/Buttons Box/Start Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="CanvasLayer/Buttons Box/Not Ready Button" to="." method="_on_not_ready_button_pressed"]

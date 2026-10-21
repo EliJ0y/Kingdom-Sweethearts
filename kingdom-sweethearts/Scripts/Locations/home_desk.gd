@@ -30,5 +30,5 @@ func _on_scroll_icon_pressed() -> void:
 	$"Scroll Icon".visible = false
 
 func _on_kingdom_book_pressed() -> void:
-	GlobalAudio.play_fx(book_fx, -10)
+	GlobalAudio.play_fx(book_fx, 10)
 	get_tree().change_scene_to_file("res://Scenes/kingdom_book.tscn")

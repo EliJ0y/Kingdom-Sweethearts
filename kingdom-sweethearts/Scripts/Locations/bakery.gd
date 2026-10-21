@@ -27,49 +27,49 @@ func update_shop_panel():
 	reset_to_buy()
 
 func _on_glazed_donuts_pressed() -> void:
-	GlobalAudio.play_fx(bread_fx, -5)
+	GlobalAudio.play_fx(bread_fx, 10)
 	$"CanvasLayer/Shop Panel".show()
 	selected_item = glazed_donuts
 	update_shop_panel()
 
 func _on_chocolate_bread_pressed() -> void:
-	GlobalAudio.play_fx(bread_fx, -5)
+	GlobalAudio.play_fx(bread_fx, 10)
 	$"CanvasLayer/Shop Panel".show()
 	selected_item = chocolate_bread
 	update_shop_panel()
 
 func _on_plain_muffins_pressed() -> void:
-	GlobalAudio.play_fx(bread_fx, -5)
+	GlobalAudio.play_fx(bread_fx, 10)
 	$"CanvasLayer/Shop Panel".show()
 	selected_item = plain_muffins
 	update_shop_panel()
 
 func _on_croissants_pressed() -> void:
-	GlobalAudio.play_fx(bread_fx, -5)
+	GlobalAudio.play_fx(bread_fx, 10)
 	$"CanvasLayer/Shop Panel".show()
 	selected_item = croissants
 	update_shop_panel()
 
 func _on_apple_strudels_pressed() -> void:
-	GlobalAudio.play_fx(bread_fx, -5)
+	GlobalAudio.play_fx(bread_fx, 10)
 	$"CanvasLayer/Shop Panel".show()
 	selected_item = apple_strudels
 	update_shop_panel()
 
 func _on_loaf_of_bread_pressed() -> void:
-	GlobalAudio.play_fx(bread_fx, -5)
+	GlobalAudio.play_fx(bread_fx, 10)
 	$"CanvasLayer/Shop Panel".show()
 	selected_item = loaf_of_bread
 	update_shop_panel()
 
 func _on_cinammon_rolls_pressed() -> void:
-	GlobalAudio.play_fx(bread_fx, -5)
+	GlobalAudio.play_fx(bread_fx, 10)
 	$"CanvasLayer/Shop Panel".show()
 	selected_item = cinnamon_rolls
 	update_shop_panel()
 
 func _on_baguettes_pressed() -> void:
-	GlobalAudio.play_fx(bread_fx, -5)
+	GlobalAudio.play_fx(bread_fx, 10)
 	$"CanvasLayer/Shop Panel".show()
 	selected_item = baguettes
 	update_shop_panel()
