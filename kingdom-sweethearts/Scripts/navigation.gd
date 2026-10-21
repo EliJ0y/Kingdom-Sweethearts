@@ -12,19 +12,22 @@ func _ready() -> void:
 		$"Scroll Icon/Sparkle".visible = true
 	else:
 		$"Scroll Icon/Sparkle".visible = false
+	
+	if get_tree().current_scene.scene_file_path == "res://Scenes/Locations/dialogue.tscn":
+		for icon in [$"Home Icon", $"Scroll Icon", $"Map Icon", $"Inventory Icon", $"Book Icon"]:
+			icon.disabled = true
 
 func _input(event: InputEvent) -> void:
 	if !is_inventory_open:
 		return
 	if event is InputEventMouseButton:
 		if event.button_index == MOUSE_BUTTON_LEFT and event.pressed:
-			if not ($Inventory.get_global_rect().has_point(event.position) or $"Inventory Icon".get_global_rect().has_point(event.position)):
+			if not ($Inventory.get_global_rect().has_point(event.position)):
 				if get_tree().current_scene.scene_file_path == "res://Scenes/Locations/dialogue.tscn":
 					$"Inventory Confirmation".visible = true
 				else:
 					$Inventory.visible = false
 					is_inventory_open = false
-					$Inventory.item_selected.emit(null)
 					get_viewport().set_input_as_handled()
 
 func _on_home_icon_pressed() -> void:
@@ -53,12 +56,14 @@ func _on_inventory_icon_pressed() -> void:
 	GlobalAudio.play_fx(inventory_fx, -20)
 	GlobalTracker.is_scrolls_open = false
 	$Inventory.update_slots()
-	if is_inventory_open:
-		$Inventory.visible = false
-		is_inventory_open = false
-	else:
-		$Inventory.visible = true
-		is_inventory_open = true
+	
+	if get_tree().current_scene.scene_file_path != "res://Scenes/Locations/dialogue.tscn":
+		if is_inventory_open:
+			$Inventory.visible = false
+			is_inventory_open = false
+		else:
+			$Inventory.visible = true
+			is_inventory_open = true
 
 func _on_book_icon_pressed() -> void:
 	GlobalAudio.play_fx(book_fx, -10)
@@ -67,45 +72,28 @@ func _on_book_icon_pressed() -> void:
 
 
 func open_inventory_for_dialogue(number_of_requests: int) -> Array[ShopsResource]:
-	var items_handed_over: Array[ShopsResource] = []
+	$Inventory.handing_items_over = true
 	$Inventory.update_slots()
 	$Inventory.visible = true
 	$"Item Confirmation".visible = true
 	is_inventory_open = true
 	
-	while items_handed_over.size() < number_of_requests:
-		var inventory = $Inventory.player_inventory.inventory
-		var item: ShopsResource = await $Inventory.item_selected
-		
-		if !is_inventory_open or item == null:
-			return items_handed_over
-		
-		var item_index = inventory.find(item)
-		if item_index != -1:
-			inventory.remove_at(item_index)
-			items_handed_over.append(item)
-			
-		$Inventory.update_slots()
+	var items_handed_over: Array[ShopsResource] = await $Inventory.items_confirmed
 	
+	$Inventory.handing_items_over = false
+	$Inventory.update_slots()
 	$Inventory.visible = false
+	$"Item Confirmation".visible = false
 	is_inventory_open = false
 	
 	return items_handed_over
 
 func _on_yes_pressed() -> void:
-	$Inventory.visible = false
-	is_inventory_open = false
-	$Inventory.item_selected.emit(null)
-	get_viewport().set_input_as_handled()
+	$Inventory.confirm_selection()
 	$"Inventory Confirmation".visible = false
 
 func _on_no_pressed() -> void:
 	$"Inventory Confirmation".visible = false
 
 func _on_item_confirmation_pressed() -> void:
-	$Inventory.visible = false
-	is_inventory_open = false
-	$Inventory.item_selected.emit(null)
-	get_viewport().set_input_as_handled()
-	$"Inventory Confirmation".visible = false
-	$"Item Confirmation".visible = false
+	$Inventory.confirm_selection()
