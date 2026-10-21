@@ -209,7 +209,10 @@ func _disable_plugin() -> void:
 	remove_tool_menu_item(API_MENU_ITEM)
 	remove_tool_menu_item(CONFIG_MENU_ITEM)
 	
-	remove_control_from_bottom_panel(counter_instance)
+	# SAFE CLEANUP: Check if the counter instance is still a valid object before removing
+	if is_instance_valid(counter_instance):
+		remove_control_from_bottom_panel(counter_instance)
+		counter_instance.queue_free()
 	
 
 func send_heartbeat(filepath: String, catagory: String, line_num: int, cursor_pos: int, lines: int, is_write: bool) -> void:
