@@ -41,11 +41,13 @@ func load_level():
 func setup_scrolls():
 	opened_scroll_1.text = scroll_1_text
 	opened_scroll_1.add_theme_font_override("font", scroll_1.font)
+	opened_scroll_1.add_theme_font_size_override("font_size", scroll_1.font_size)
 	opened_scroll_1.visible_characters = 0
 	tied_scroll_1.texture_normal = scroll_1.texturebutton
 	
 	opened_scroll_2.text = scroll_2_text
 	opened_scroll_2.add_theme_font_override("font", scroll_2.font)
+	opened_scroll_2.add_theme_font_size_override("font_size", scroll_2.font_size)
 	opened_scroll_2.visible_characters = 0
 	tied_scroll_2.texture_normal = scroll_2.texturebutton
 	

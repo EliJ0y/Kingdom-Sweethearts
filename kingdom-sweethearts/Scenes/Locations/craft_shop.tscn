@@ -18,7 +18,7 @@
 [ext_resource type="PackedScene" uid="uid://brewn7dcybla" path="res://Scenes/coins.tscn" id="16_5ao4s"]
 [ext_resource type="PackedScene" uid="uid://cm6i7vcbypte4" path="res://Scenes/navigation.tscn" id="17_q6oo6"]
 [ext_resource type="PackedScene" uid="uid://37tq3gi8sclw" path="res://Scenes/UI Screens/pause_screen.tscn" id="18_q5kbj"]
-[ext_resource type="AudioStream" uid="uid://kf8ao685ktgx" path="res://Audio/Sound/Paper Rustle.wav" id="19_j7wxw"]
+[ext_resource type="AudioStream" uid="uid://dydtedtmefgul" path="res://Audio/Sound/Paper Rustle.wav" id="19_j7wxw"]
 [ext_resource type="AudioStream" uid="uid://3o8i5ikxu7qn" path="res://Audio/Sound/Coin Purchase.wav" id="20_qtgxe"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_n01f5"]

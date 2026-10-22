@@ -9,4 +9,5 @@ script = ExtResource("1_3k75i")
 texturebutton = ExtResource("3_6thkk")
 lines = Array[String](["I am Duke Kohan from Wildegon.", "I am aware that you, Cupid, will assist in my matchmaking with the charming Duke Silvester from Oceirea in three days.", "One of the few things I know of him is his great sense of responsibility to Oceirea. It seems unlikely for him to travel.", "As such, I believe it would be beneficial to bring postcards of other regions as a gift.", "May we get along well."])
 font = ExtResource("1_6thkk")
+font_size = 28
 metadata/_custom_type_script = "uid://b8ely3pohkd0v"

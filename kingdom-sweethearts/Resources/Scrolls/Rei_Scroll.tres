@@ -9,4 +9,5 @@ script = ExtResource("2_0aj7n")
 texturebutton = ExtResource("3_jg2ef")
 lines = Array[String](["Greetings from Princess Rei of the territory of Vigoust.", "My match, Royal Farai, is one who is deeply entwined with magic. My sources tell me that they take great joy in life’s natural beauty as well.", "On this related note, many praise the skill of baking to be akin to magic. I believe a few delicious pastries, let's say three, ought to sweeten our first meeting.", "Thank you for your service."])
 font = ExtResource("1_jg2ef")
+font_size = 28
 metadata/_custom_type_script = "uid://b8ely3pohkd0v"

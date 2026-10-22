@@ -2,13 +2,13 @@
 
 importer="font_data_dynamic"
 type="FontFile"
-uid="uid://dunducxtqdlcx"
-path="res://.godot/imported/MeowScript-Regular.ttf-14e7fabfdd0a7ce6bca5d38d09238238.fontdata"
+uid="uid://bqfrfkwuwmyih"
+path="res://.godot/imported/PlaywriteUSTrad-VariableFont_wght.ttf-0ea39283dc202f66065c1292c1ee6da3.fontdata"
 
 [deps]
 
-source_file="res://Fonts/MeowScript-Regular.ttf"
-dest_files=["res://.godot/imported/MeowScript-Regular.ttf-14e7fabfdd0a7ce6bca5d38d09238238.fontdata"]
+source_file="res://Fonts/PlaywriteUSTrad-VariableFont_wght.ttf"
+dest_files=["res://.godot/imported/PlaywriteUSTrad-VariableFont_wght.ttf-0ea39283dc202f66065c1292c1ee6da3.fontdata"]
 
 [params]
 

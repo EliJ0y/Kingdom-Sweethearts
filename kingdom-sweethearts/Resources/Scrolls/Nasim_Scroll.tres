@@ -9,4 +9,5 @@ script = ExtResource("2_myqg7")
 texturebutton = ExtResource("3_ksrpf")
 lines = Array[String](["Pleased to meet you, Cupid. I am Nasim Cranter, heir of Crathod.", "I simply cannot wait to meet the heir of Philsopoll, Izzy! While our fields differ, I am sure we can learn much from each other!", "Due to her passion, I recall tales of them forgetting its bodily needs. I hazard a guess that the pastries for our meeting might need more intricacy for him to be intirgued enough take a bite.", "Well wishes to you and Izzy!"])
 font = ExtResource("1_ksrpf")
+font_size = 28
 metadata/_custom_type_script = "uid://b8ely3pohkd0v"

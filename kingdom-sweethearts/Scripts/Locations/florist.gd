@@ -27,49 +27,49 @@ func update_shop_panel():
 	reset_to_buy()
 
 func _on_trilliums_pressed() -> void:
-	GlobalAudio.play_fx(flower_fx, 10)
+	GlobalAudio.play_fx(flower_fx, 5)
 	$"CanvasLayer/Shop Panel".show()
 	selected_item = trilliums
 	update_shop_panel()
 
 func _on_lavenders_pressed() -> void:
-	GlobalAudio.play_fx(flower_fx, 10)
+	GlobalAudio.play_fx(flower_fx, 5)
 	$"CanvasLayer/Shop Panel".show()
 	selected_item = lavenders
 	update_shop_panel()
 
 func _on_anemones_pressed() -> void:
-	GlobalAudio.play_fx(flower_fx, 10)
+	GlobalAudio.play_fx(flower_fx, 5)
 	$"CanvasLayer/Shop Panel".show()
 	selected_item = anemones
 	update_shop_panel()
 
 func _on_violets_pressed() -> void:
-	GlobalAudio.play_fx(flower_fx, 10)
+	GlobalAudio.play_fx(flower_fx, 5)
 	$"CanvasLayer/Shop Panel".show()
 	selected_item = violets
 	update_shop_panel()
 
 func _on_roses_pressed() -> void:
-	GlobalAudio.play_fx(flower_fx, 10)
+	GlobalAudio.play_fx(flower_fx, 5)
 	$"CanvasLayer/Shop Panel".show()
 	selected_item = roses
 	update_shop_panel()
 
 func _on_pansies_pressed() -> void:
-	GlobalAudio.play_fx(flower_fx, 10)
+	GlobalAudio.play_fx(flower_fx, 5)
 	$"CanvasLayer/Shop Panel".show()
 	selected_item = pansies
 	update_shop_panel()
 
 func _on_carnations_pressed() -> void:
-	GlobalAudio.play_fx(flower_fx, 10)
+	GlobalAudio.play_fx(flower_fx, 5)
 	$"CanvasLayer/Shop Panel".show()
 	selected_item = carnations
 	update_shop_panel()
 
 func _on_clematis_pressed() -> void:
-	GlobalAudio.play_fx(flower_fx, 10)
+	GlobalAudio.play_fx(flower_fx, 5)
 	$"CanvasLayer/Shop Panel".show()
 	selected_item = clematis
 	update_shop_panel()
