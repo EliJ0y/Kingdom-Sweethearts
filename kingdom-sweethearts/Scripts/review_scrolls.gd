@@ -15,9 +15,11 @@ func _ready() -> void:
 	scroll_1 = level_number.scrolls[0]
 	text_1.text = "\n\n".join(scroll_1.lines)
 	text_1.add_theme_font_override("font", scroll_1.font)
+	text_1.add_theme_font_size_override("font_size", scroll_1.font_size)
 	scroll_2 = level_number.scrolls[1]
 	text_2.text = "\n\n".join(scroll_2.lines)
 	text_2.add_theme_font_override("font", scroll_2.font)
+	text_2.add_theme_font_size_override("font_size", scroll_2.font_size)
 	
 	text_1.visible_characters = -1
 	text_2.hide()

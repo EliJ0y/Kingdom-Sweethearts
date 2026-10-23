@@ -4,12 +4,12 @@ Cupid: Greetings, Princess Rei. Here they are as requested.
 
 $> dialogue.start_item_requests(3)
 
-if dialogue.wrong_item_type():
-	$> dialogue.record_tier_result(0)
-	Rei: Are you making a mockery of me? You will be dealt with another time.
-else:
+if dialogue.all_acceptable_items():
 	$> dialogue.record_tier_result(2)
 	=> player_choice
+elif dialogue.wrong_item_type():
+	$> dialogue.record_tier_result(0)
+	Rei: Are you making a mockery of me? You will be dealt with another time.
 
 => END
 

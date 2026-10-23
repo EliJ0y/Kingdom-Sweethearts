@@ -4,15 +4,15 @@ Cupid: Greetings, Royal Farai. Here are the materials, and you're welcome.
 
 $> dialogue.start_item_requests(1)
 
-if dialogue.wrong_item_type():
-	$> dialogue.record_tier_result(0)
-	Farai: Well, this certainly isn’t right. I will remember this the next time we meet.
+if dialogue.all_acceptable_items():
+	$> dialogue.record_tier_result(2)
+	=> player_choice
 elif dialogue.wrong_specific_item():
 	$> dialogue.record_tier_result(1)
 	Farai: Thank you, I will take my leave now. May we meet again. 
-else:
-	$> dialogue.record_tier_result(2)
-	=> player_choice
+elif dialogue.wrong_item_type():
+	$> dialogue.record_tier_result(0)
+	Farai: Well, this certainly isn’t right. I will remember this the next time we meet.
 
 => END
 

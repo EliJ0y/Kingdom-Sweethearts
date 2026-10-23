@@ -188,10 +188,10 @@ func reset_item_requests():
 func item_handed_over(item: ShopsResource):
 	var same_item_type = false
 	
-	for i in range(character.item_requests.size()):
+	for i in character.item_requests:
 		if completed_item_requests.has(i):
 			continue
-		var request = character.item_requests[i]
+		var request = i
 			
 		for acceptable_item in request.acceptable_items:
 			if item == acceptable_item:
@@ -205,8 +205,12 @@ func item_handed_over(item: ShopsResource):
 	else:
 		item_wrong_type = true
 
-func all_requests_completed() -> bool:
-	return completed_item_requests.size() >= character.item_requests.size()
+func all_acceptable_items() -> bool:
+	for acceptable_item in character.item_requests:
+		if !completed_item_requests.has(acceptable_item):
+			return false
+
+	return true
 	
 func wrong_specific_item() -> bool:
 	return item_wrong_specific

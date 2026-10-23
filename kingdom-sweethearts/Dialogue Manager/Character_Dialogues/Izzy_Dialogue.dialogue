@@ -4,15 +4,15 @@ Cupid: Greetings heir of Philsopoll, here are the suitable flowers.
 
 $> dialogue.start_item_requests(1)
 
-if dialogue.wrong_item_type():
-	$> dialogue.record_tier_result(0)
-	Izzy: Ah, oh my, this is all wrong! Doom awaits me now because of you!
+if dialogue.all_acceptable_items():
+	$> dialogue.record_tier_result(2)
+	=> player_choice
 elif dialogue.wrong_specific_item():
 	$> dialogue.record_tier_result(1)
 	Izzy: Thank you and may you have a good day! 
-else:
-	$> dialogue.record_tier_result(2)
-	=> player_choice
+elif dialogue.wrong_item_type():
+	$> dialogue.record_tier_result(0)
+	Izzy: Ah, oh my, this is all wrong! Doom awaits me now because of you!
 
 => END
 

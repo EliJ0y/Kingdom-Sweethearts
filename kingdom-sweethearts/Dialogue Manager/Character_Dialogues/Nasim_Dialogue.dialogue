@@ -4,15 +4,15 @@ Cupid: Greetings heir of Crathod, the pleasure is all mine. Here are the pastrie
 
 $> dialogue.start_item_requests(2)
 
-if dialogue.wrong_item_type():
-	$> dialogue.record_tier_result(0)
-	Nasim: I gave you clear instructions. Pray that your incompetence will not ruin the meeting.
+if dialogue.all_acceptable_items():
+	$> dialogue.record_tier_result(2)
+	=> player_choice
 elif dialogue.wrong_specific_item():
 	$> dialogue.record_tier_result(1)
 	Nasim: Thank you, I will see you another time. 
-else:
-	$> dialogue.record_tier_result(2)
-	=> player_choice
+elif dialogue.wrong_item_type():
+	$> dialogue.record_tier_result(0)
+	Nasim: I gave you clear instructions. Pray that your incompetence will not ruin the meeting.
 
 => END
 
