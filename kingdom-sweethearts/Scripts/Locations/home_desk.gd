@@ -52,8 +52,8 @@ func disable_holder_scrolls(is_disabled: bool):
 func holder_review_scrolls():
 	disable_holder_scrolls(true)
 	var review_scrolls = load("res://Scenes/review_scrolls.tscn").instantiate()
-	review_scrolls.tree_exited.connect(disable_holder_scrolls.bind(false))
 	get_tree().current_scene.add_child(review_scrolls)
+	review_scrolls.tree_exited.connect(disable_holder_scrolls.bind(false))
 
 func _on_scroll_1_pressed() -> void:
 	holder_review_scrolls()

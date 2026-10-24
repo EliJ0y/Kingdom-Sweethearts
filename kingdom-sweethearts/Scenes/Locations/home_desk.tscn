@@ -28,16 +28,14 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = 735.0
+offset_left = 732.0
 offset_top = 600.0
-offset_right = 1180.0002
+offset_right = 1177.0
 offset_bottom = 909.0
 grow_horizontal = 2
 grow_vertical = 2
 action_mode = 0
 texture_normal = ExtResource("4_6we3t")
-
-[node name="Navigation" parent="." unique_id=651092304 instance=ExtResource("5_80ut4")]
 
 [node name="Holder Control" type="Control" parent="." unique_id=1630560141]
 layout_mode = 3
@@ -76,6 +74,8 @@ position = Vector2(0, 40)
 scale = Vector2(0.5, 0.6)
 texture = ExtResource("6_j50uc")
 centered = false
+
+[node name="Navigation" parent="." unique_id=651092304 instance=ExtResource("5_80ut4")]
 
 [node name="Panel" type="Panel" parent="." unique_id=1443207450]
 visible = false

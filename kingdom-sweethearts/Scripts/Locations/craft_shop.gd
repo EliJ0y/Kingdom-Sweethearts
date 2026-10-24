@@ -101,11 +101,12 @@ func _on_buy_item_pressed() -> void:
 		$"CanvasLayer/Shop Panel/Confirm".show()
 
 func _on_confirm_pressed() -> void:
-	GlobalAudio.play_fx(coin_fx, -25)
-	GlobalTracker.player_inventory.inventory.append(selected_item)
-	GlobalTracker.total_coins -= int(selected_item.price)
-	reset_to_buy()
-	$"CanvasLayer/Shop Panel".hide()
+	if GlobalTracker.player_inventory.inventory.size() < 8:
+		GlobalAudio.play_fx(coin_fx, -25)
+		GlobalTracker.player_inventory.inventory.append(selected_item)
+		GlobalTracker.total_coins -= int(selected_item.price)
+		reset_to_buy()
+		$"CanvasLayer/Shop Panel".hide()
 
 func reset_to_buy():
 	$"CanvasLayer/Shop Panel/Buy Item".show()

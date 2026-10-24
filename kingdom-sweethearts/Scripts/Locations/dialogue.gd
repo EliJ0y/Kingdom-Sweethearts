@@ -196,21 +196,23 @@ func start_item_requests():
 func reset_item_requests():
 	completed_item_requests.clear()
 	counted_items.clear()
+	
 	best_item_count = 0
 	second_best_item_count = 0
+	
 	item_all_correct = false
 	item_wrong_specific = false
 	item_wrong_type = false
 
 func check_items_best(item: ShopsResource):
-	if best_item_count < character.item_requests:
-		if character.best_items.has(item):
-			if counted_items.count(item) < character.best_items.count(item):
-				counted_items.append(item)
+	if best_item_count < character.item_requests: #checks that not all the requested items have been given yet
+		if character.best_items.has(item): 
+			if counted_items.count(item) < character.best_items.count(item): #checks if the best item has been counted only once
+				counted_items.append(item) #adds the best item to the counted array so any dupes will trigger the else
 				best_item_count += 1
 			else:
 				item_wrong_specific = true
-		elif character.best_items[0].item_type == item.item_type:
+		elif character.best_items[0].item_type == item.item_type: #as of now, unoptimised and only checks first index item type
 			item_wrong_specific = true
 		else:
 			item_wrong_type = true
@@ -233,9 +235,9 @@ func check_items_second_best(item: ShopsResource):
 		item_all_correct = true
 
 func all_correct_items() -> bool:
-	if best_item_count >= character.item_requests:
+	if best_item_count >= character.item_requests: #this is required as item_all_correct in the checking functions will not trigger unless another item on top of the best items are given
 		item_all_correct = true
-	if character.item_requests_second != 0 and second_best_item_count >= character.item_requests_second:
+	if character.item_requests_second != 0 and second_best_item_count >= character.item_requests_second: #if there is a second best list, check for item_all_correct too
 		item_all_correct = true
 	return item_all_correct
 	
