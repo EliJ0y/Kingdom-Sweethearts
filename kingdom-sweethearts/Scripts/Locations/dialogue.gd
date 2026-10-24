@@ -189,6 +189,7 @@ func start_item_requests():
 	for item in items_handed_over:
 		check_items_best(item)
 		if character.item_requests_second != 0 and !item_all_correct:
+			best_item_count = 0
 			check_items_second_best(item)
 
 func reset_item_requests():
