@@ -2,9 +2,9 @@
 Nasim: What a pleasure to meet you, Cupid, and to receive your help.
 Cupid: Greetings heir of Crathod, the pleasure is all mine. Here are the pastries.
 
-$> dialogue.start_item_requests(2)
+$> dialogue.start_item_requests()
 
-if dialogue.all_acceptable_items():
+if dialogue.all_correct_items():
 	$> dialogue.record_tier_result(2)
 	=> player_choice
 elif dialogue.wrong_specific_item():

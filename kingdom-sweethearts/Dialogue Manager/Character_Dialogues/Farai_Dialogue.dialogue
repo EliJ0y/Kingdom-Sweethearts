@@ -2,9 +2,9 @@
 Farai: Nice to put a name to a face, Cupid. Thank you for meeting me early.
 Cupid: Greetings, Royal Farai. Here are the materials, and you're welcome.
 
-$> dialogue.start_item_requests(1)
+$> dialogue.start_item_requests()
 
-if dialogue.all_acceptable_items():
+if dialogue.all_correct_items():
 	$> dialogue.record_tier_result(2)
 	=> player_choice
 elif dialogue.wrong_specific_item():

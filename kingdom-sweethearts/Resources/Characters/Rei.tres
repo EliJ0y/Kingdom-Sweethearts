@@ -1,13 +1,21 @@
 [gd_resource type="Resource" script_class="CharactersResource" format=3 uid="uid://bv7u46mjudthi"]
 
+[ext_resource type="Script" uid="uid://s28xadn5y5j3" path="res://Scripts/Resource Scripts/shops_resource.gd" id="1_80n8r"]
 [ext_resource type="Resource" uid="uid://bpyyp05lygrko" path="res://Resources/Sprites/Rei_Sprites.tres" id="1_q64xr"]
-[ext_resource type="Script" uid="uid://dbqtkxc5y0ql0" path="res://Scripts/Resource Scripts/requested_items_resource.gd" id="2_du2bf"]
-[ext_resource type="Resource" uid="uid://dj4giohk7fe33" path="res://Resources/Item Requests/Request_Rei.tres" id="3_tokul"]
+[ext_resource type="Resource" uid="uid://s0mm7pxfq631" path="res://Resources/Bakery/Apple_Strudels.tres" id="2_28wcg"]
+[ext_resource type="Resource" uid="uid://be61t6bb3vwts" path="res://Resources/Bakery/Baguettes.tres" id="3_3hb10"]
+[ext_resource type="Resource" uid="uid://bi2wg4snaol5h" path="res://Resources/Bakery/Chocolate_Bread.tres" id="4_bu6rv"]
 [ext_resource type="Script" uid="uid://ccwxluiyextw2" path="res://Scripts/Resource Scripts/characters_resource.gd" id="4_i7cmy"]
+[ext_resource type="Resource" uid="uid://bblt3b8sx71fy" path="res://Resources/Bakery/Cinnamon_Rolls.tres" id="5_p3typ"]
+[ext_resource type="Resource" uid="uid://8nrhedf5l4uf" path="res://Resources/Bakery/Croissants.tres" id="6_41um5"]
+[ext_resource type="Resource" uid="uid://dgf6xth73bsfp" path="res://Resources/Bakery/Glazed_Donuts.tres" id="7_0okq0"]
+[ext_resource type="Resource" uid="uid://c3srfa4uhwt6e" path="res://Resources/Bakery/Loaf_of_Bread.tres" id="8_jilvo"]
+[ext_resource type="Resource" uid="uid://ddlyvyrdthbmm" path="res://Resources/Bakery/Plain_Muffins.tres" id="9_r7vc7"]
 
 [resource]
 script = ExtResource("4_i7cmy")
 character_name = "Rei"
 character_sprites = ExtResource("1_q64xr")
-item_requests = Array[ExtResource("2_du2bf")]([ExtResource("3_tokul"), ExtResource("3_tokul"), ExtResource("3_tokul")])
+item_requests = 3
+best_items = Array[ExtResource("1_80n8r")]([ExtResource("2_28wcg"), ExtResource("3_3hb10"), ExtResource("4_bu6rv"), ExtResource("5_p3typ"), ExtResource("6_41um5"), ExtResource("7_0okq0"), ExtResource("8_jilvo"), ExtResource("9_r7vc7")])
 metadata/_custom_type_script = "uid://ccwxluiyextw2"

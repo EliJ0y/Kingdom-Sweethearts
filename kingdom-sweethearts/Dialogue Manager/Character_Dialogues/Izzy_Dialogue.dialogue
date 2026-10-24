@@ -2,9 +2,9 @@
 Izzy: Hello! Hey! Hi! Cupid! So good to see you.
 Cupid: Greetings heir of Philsopoll, here are the suitable flowers.
 
-$> dialogue.start_item_requests(1)
+$> dialogue.start_item_requests()
 
-if dialogue.all_acceptable_items():
+if dialogue.all_correct_items():
 	$> dialogue.record_tier_result(2)
 	=> player_choice
 elif dialogue.wrong_specific_item():

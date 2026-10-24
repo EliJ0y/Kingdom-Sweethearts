@@ -1,13 +1,15 @@
 [gd_resource type="Resource" script_class="CharactersResource" format=3 uid="uid://cm3esupirrw1i"]
 
 [ext_resource type="Resource" uid="uid://cwltsj1sby5so" path="res://Resources/Sprites/Nasim_Sprites.tres" id="1_ctpq7"]
-[ext_resource type="Script" uid="uid://dbqtkxc5y0ql0" path="res://Scripts/Resource Scripts/requested_items_resource.gd" id="2_ipr6h"]
-[ext_resource type="Resource" uid="uid://cairpf24fxe6h" path="res://Resources/Item Requests/Request_Nasim.tres" id="3_o58k8"]
+[ext_resource type="Script" uid="uid://s28xadn5y5j3" path="res://Scripts/Resource Scripts/shops_resource.gd" id="1_ipr6h"]
+[ext_resource type="Resource" uid="uid://s0mm7pxfq631" path="res://Resources/Bakery/Apple_Strudels.tres" id="2_jkfgb"]
+[ext_resource type="Resource" uid="uid://bblt3b8sx71fy" path="res://Resources/Bakery/Cinnamon_Rolls.tres" id="3_8awwn"]
 [ext_resource type="Script" uid="uid://ccwxluiyextw2" path="res://Scripts/Resource Scripts/characters_resource.gd" id="4_8awwn"]
 
 [resource]
 script = ExtResource("4_8awwn")
 character_name = "Nasim"
 character_sprites = ExtResource("1_ctpq7")
-item_requests = Array[ExtResource("2_ipr6h")]([ExtResource("3_o58k8"), ExtResource("3_o58k8")])
+item_requests = 2
+best_items = Array[ExtResource("1_ipr6h")]([ExtResource("2_jkfgb"), ExtResource("3_8awwn")])
 metadata/_custom_type_script = "uid://ccwxluiyextw2"

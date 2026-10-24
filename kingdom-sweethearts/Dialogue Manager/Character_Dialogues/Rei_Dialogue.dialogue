@@ -2,9 +2,9 @@
 Rei: Greetings, Cupid. I take it that you brought the pastries? 
 Cupid: Greetings, Princess Rei. Here they are as requested.
 
-$> dialogue.start_item_requests(3)
+$> dialogue.start_item_requests()
 
-if dialogue.all_acceptable_items():
+if dialogue.all_correct_items():
 	$> dialogue.record_tier_result(2)
 	=> player_choice
 elif dialogue.wrong_item_type():

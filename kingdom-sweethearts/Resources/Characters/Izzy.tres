@@ -1,13 +1,19 @@
 [gd_resource type="Resource" script_class="CharactersResource" format=3 uid="uid://bpllo2dbd4hk7"]
 
 [ext_resource type="Resource" uid="uid://bh7ys4gdrt8wv" path="res://Resources/Sprites/Izzy_Sprites.tres" id="1_b1fkk"]
-[ext_resource type="Script" uid="uid://dbqtkxc5y0ql0" path="res://Scripts/Resource Scripts/requested_items_resource.gd" id="2_b1fkk"]
-[ext_resource type="Resource" uid="uid://cfd5vvd4brl6j" path="res://Resources/Item Requests/Request_Izzy.tres" id="3_sfno1"]
+[ext_resource type="Script" uid="uid://s28xadn5y5j3" path="res://Scripts/Resource Scripts/shops_resource.gd" id="1_s02pt"]
+[ext_resource type="Resource" uid="uid://ca1bqx3qv4ng3" path="res://Resources/Florist/Roses.tres" id="2_sfno1"]
+[ext_resource type="Resource" uid="uid://c6vuvrp0ff63u" path="res://Resources/Florist/Carnations.tres" id="3_lsvv5"]
+[ext_resource type="Resource" uid="uid://c2y7aay51ani8" path="res://Resources/Florist/Clematis.tres" id="4_a2fsp"]
 [ext_resource type="Script" uid="uid://ccwxluiyextw2" path="res://Scripts/Resource Scripts/characters_resource.gd" id="4_s02pt"]
+[ext_resource type="Resource" uid="uid://dfq4wqvftxik5" path="res://Resources/Florist/Pansies.tres" id="5_c7lqq"]
 
 [resource]
 script = ExtResource("4_s02pt")
 character_name = "Izzy"
 character_sprites = ExtResource("1_b1fkk")
-item_requests = Array[ExtResource("2_b1fkk")]([ExtResource("3_sfno1"), ExtResource("3_sfno1")])
+item_requests = 1
+best_items = Array[ExtResource("1_s02pt")]([ExtResource("2_sfno1")])
+item_requests_second = 2
+best_items_second = Array[ExtResource("1_s02pt")]([ExtResource("3_lsvv5"), ExtResource("4_a2fsp"), ExtResource("5_c7lqq")])
 metadata/_custom_type_script = "uid://ccwxluiyextw2"

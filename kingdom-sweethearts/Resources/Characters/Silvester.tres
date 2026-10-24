@@ -2,12 +2,14 @@
 
 [ext_resource type="Resource" uid="uid://dnx7fyw1s0r0l" path="res://Resources/Sprites/Silvester_Sprites.tres" id="1_376r7"]
 [ext_resource type="Script" uid="uid://ccwxluiyextw2" path="res://Scripts/Resource Scripts/characters_resource.gd" id="1_hvpyk"]
-[ext_resource type="Script" uid="uid://dbqtkxc5y0ql0" path="res://Scripts/Resource Scripts/requested_items_resource.gd" id="2_5lhho"]
-[ext_resource type="Resource" uid="uid://cwkghs2f1rr7l" path="res://Resources/Item Requests/Request_Silvester.tres" id="3_qcyfe"]
+[ext_resource type="Script" uid="uid://s28xadn5y5j3" path="res://Scripts/Resource Scripts/shops_resource.gd" id="1_qcyfe"]
+[ext_resource type="Resource" uid="uid://8t0ut6unuisn" path="res://Resources/Florist/Trilliums.tres" id="2_ssr11"]
+[ext_resource type="Resource" uid="uid://bm7xc84uxsatf" path="res://Resources/Florist/Violets.tres" id="3_yxpml"]
 
 [resource]
 script = ExtResource("1_hvpyk")
 character_name = "Silvester"
 character_sprites = ExtResource("1_376r7")
-item_requests = Array[ExtResource("2_5lhho")]([ExtResource("3_qcyfe"), ExtResource("3_qcyfe")])
+item_requests = 2
+best_items = Array[ExtResource("1_qcyfe")]([ExtResource("2_ssr11"), ExtResource("3_yxpml")])
 metadata/_custom_type_script = "uid://ccwxluiyextw2"

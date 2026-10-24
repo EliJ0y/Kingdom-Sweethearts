@@ -22,6 +22,8 @@ var character_1: CharactersResource
 var character_2: CharactersResource
 
 var completed_item_requests: Array[int] = []
+var best_item_count: int = 0
+var item_all_correct = false
 var item_wrong_specific = false
 var item_wrong_type = false
 var character_index = -1
@@ -171,46 +173,59 @@ func get_character(character_name: String) -> CharactersResource:
 	return null
 
 
-func start_item_requests(number_of_requests: int):
+func start_item_requests():
 	reset_item_requests()
-	var items_handed_over: Array[ShopsResource] = await navigation.open_inventory_for_dialogue(number_of_requests)
-	if items_handed_over.size() < number_of_requests:
-		item_wrong_type = true
-		return 
+	var items_handed_over: Array[ShopsResource] = await navigation.open_inventory_for_dialogue()
+	
+	if items_handed_over.size() < character.item_requests:
+		if character.item_requests_second != 0:
+			if items_handed_over.size() < character.item_requests_second:
+				item_wrong_type = true
+				return 
+		else:
+			item_wrong_type = true
+			return 
+
 	for item in items_handed_over:
-		item_handed_over(item)
+		check_items_best(item)
+		if character.item_requests_second != 0 and !item_all_correct:
+			check_items_second_best(item)
 
 func reset_item_requests():
 	completed_item_requests.clear()
+	best_item_count = 0
+	item_all_correct = false
 	item_wrong_specific = false
 	item_wrong_type = false
 
-func item_handed_over(item: ShopsResource):
-	var same_item_type = false
-	
-	for i in character.item_requests:
-		if completed_item_requests.has(i):
-			continue
-		var request = i
-			
-		for acceptable_item in request.acceptable_items:
-			if item == acceptable_item:
-				completed_item_requests.append(i)
-				return
-			if item.item_type == acceptable_item.item_type:
-				same_item_type = true #don't immediately set last_item_wrong_specific = true as the item could be acceptable for another request
-	
-	if same_item_type:
-		item_wrong_specific = true
+func check_items_best(item: ShopsResource):
+	if best_item_count < character.item_requests:
+		if character.best_items.has(item):
+			best_item_count += 1
+		elif character.best_items[0].item_type == item.item_type:
+			item_wrong_specific = true
+		else:
+			item_wrong_type = true
 	else:
-		item_wrong_type = true
+		item_all_correct = true
 
-func all_acceptable_items() -> bool:
-	for acceptable_item in character.item_requests:
-		if !completed_item_requests.has(acceptable_item):
-			return false
+func check_items_second_best(item: ShopsResource):
+	if best_item_count < character.item_requests_second:
+		if character.best_items_second.has(item):
+			best_item_count += 1
+		elif character.best_items_second[0].item_type == item.item_type:
+			item_wrong_specific = true
+		else:
+			item_wrong_type = true
+	else:
+		item_all_correct = true
 
-	return true
+func all_correct_items() -> bool:
+	if best_item_count >= character.item_requests:
+		item_all_correct = true
+	if character.item_requests_second != 0 and best_item_count >= character.item_requests_second:
+		item_all_correct = true
+	return item_all_correct
 	
 func wrong_specific_item() -> bool:
 	return item_wrong_specific

@@ -2,9 +2,9 @@
 Silvester: Hey, Cupid! It is nice to meet you. 
 Cupid: Greetings, Duke Silvester. I prepared the bouquet as requested.
 
-$> dialogue.start_item_requests(2)
+$> dialogue.start_item_requests()
 
-if dialogue.all_acceptable_items():
+if dialogue.all_correct_items():
 	$> dialogue.record_tier_result(2)
 	=> player_choice
 elif dialogue.wrong_specific_item():

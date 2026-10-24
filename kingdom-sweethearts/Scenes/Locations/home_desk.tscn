@@ -5,6 +5,7 @@
 [ext_resource type="PackedScene" uid="uid://brewn7dcybla" path="res://Scenes/coins.tscn" id="3_j50uc"]
 [ext_resource type="Texture2D" uid="uid://cvswrvt0i0tg1" path="res://Graphics/Open Book.png" id="4_6we3t"]
 [ext_resource type="PackedScene" uid="uid://cm6i7vcbypte4" path="res://Scenes/navigation.tscn" id="5_80ut4"]
+[ext_resource type="Texture2D" uid="uid://dhk5e2btjawhi" path="res://Graphics/UI/Inventory Slot.PNG" id="6_j50uc"]
 [ext_resource type="Texture2D" uid="uid://ef4srtjb57e8" path="res://Graphics/UI/Shop Panel.PNG" id="6_ovl2a"]
 [ext_resource type="FontFile" uid="uid://rhwtmvo511jl" path="res://Fonts/Cormorant-Bold.otf" id="7_k1frb"]
 [ext_resource type="Texture2D" uid="uid://cp2yn3d5b313s" path="res://Graphics/Icons/Scroll Icon.png" id="8_cutc5"]
@@ -38,12 +39,40 @@ texture_normal = ExtResource("4_6we3t")
 
 [node name="Navigation" parent="." unique_id=651092304 instance=ExtResource("5_80ut4")]
 
+[node name="Holder Control" type="Control" parent="." unique_id=1630560141]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 1300.0
+offset_top = 620.0
+offset_right = 1494.0
+offset_bottom = 856.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Scroll Holder" type="Sprite2D" parent="Holder Control" unique_id=820484029]
+scale = Vector2(0.6, 0.8)
+texture = ExtResource("6_j50uc")
+centered = false
+
+[node name="Scroll 1" type="TextureButton" parent="Holder Control" unique_id=716903776]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Scroll 2" type="TextureButton" parent="Holder Control" unique_id=1734945508]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
 [node name="Panel" type="Panel" parent="." unique_id=1443207450]
 visible = false
 offset_right = 1920.0
 offset_bottom = 1080.0
 
-[node name="Control" type="Control" parent="." unique_id=491510518]
+[node name="Context Control" type="Control" parent="." unique_id=491510518]
+visible = false
 layout_mode = 3
 anchors_preset = 0
 offset_left = 340.0
@@ -51,13 +80,13 @@ offset_top = 700.0
 offset_right = 1540.0
 offset_bottom = 1020.0
 
-[node name="Context Panel" type="Sprite2D" parent="Control" unique_id=1448397763]
+[node name="Context Panel" type="Sprite2D" parent="Context Control" unique_id=1448397763]
 position = Vector2(-8, 0)
 scale = Vector2(1.45, 0.9)
 texture = ExtResource("6_ovl2a")
 centered = false
 
-[node name="Context" type="Label" parent="Control" unique_id=1894080612]
+[node name="Context" type="Label" parent="Context Control" unique_id=1894080612]
 custom_minimum_size = Vector2(1140, 260)
 layout_mode = 1
 anchors_preset = 15
@@ -96,6 +125,12 @@ visible = false
 [node name="Book Open & Close SFX" type="AudioStreamPlayer2D" parent="." unique_id=133045376]
 stream = ExtResource("11_1bsgf")
 bus = &"Sound"
+
+[node name="Control2" type="Control" parent="." unique_id=534486366]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
 
 [connection signal="pressed" from="Kingdom Book" to="." method="_on_kingdom_book_pressed"]
 [connection signal="pressed" from="Scroll Icon" to="." method="_on_scroll_icon_pressed"]

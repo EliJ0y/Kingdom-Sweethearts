@@ -2,10 +2,10 @@
 Kohan: You are Cupid, yes? I am Kohan Wildri. Did you bring the postcards?
 Cupid: Greetings, Duke Kohan. Yes, I am and here are the postcards.
 
-$> dialogue.start_item_requests(1)
+$> dialogue.start_item_requests()
 
 
-if dialogue.all_acceptable_items():
+if dialogue.all_correct_items():
 	$> dialogue.record_tier_result(2)
 	=> player_choice
 elif dialogue.wrong_specific_item():

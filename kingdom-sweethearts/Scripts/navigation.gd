@@ -71,7 +71,7 @@ func _on_book_icon_pressed() -> void:
 	get_tree().change_scene_to_file("res://Scenes/kingdom_book.tscn")
 
 
-func open_inventory_for_dialogue(number_of_requests: int) -> Array[ShopsResource]:
+func open_inventory_for_dialogue() -> Array[ShopsResource]:
 	$Inventory.handing_items_over = true
 	$Inventory.update_slots()
 	$Inventory.visible = true

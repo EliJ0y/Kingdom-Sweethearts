@@ -1,13 +1,15 @@
 [gd_resource type="Resource" script_class="CharactersResource" format=3 uid="uid://dq8mrh3vm43qn"]
 
+[ext_resource type="Script" uid="uid://s28xadn5y5j3" path="res://Scripts/Resource Scripts/shops_resource.gd" id="1_5vcm5"]
 [ext_resource type="Script" uid="uid://ccwxluiyextw2" path="res://Scripts/Resource Scripts/characters_resource.gd" id="1_8di1a"]
 [ext_resource type="Resource" uid="uid://dag083k2ldyhm" path="res://Resources/Sprites/Kohan_Sprites.tres" id="1_54ipx"]
-[ext_resource type="Script" uid="uid://dbqtkxc5y0ql0" path="res://Scripts/Resource Scripts/requested_items_resource.gd" id="2_kg5m5"]
-[ext_resource type="Resource" uid="uid://c2eumddlg0u8w" path="res://Resources/Item Requests/Request_Kohan.tres" id="3_5vcm5"]
+[ext_resource type="Resource" uid="uid://kdtwc35bstlt" path="res://Resources/Craft Shop/Postcards_Mesas.tres" id="2_fcep7"]
+[ext_resource type="Resource" uid="uid://cadcvieuruw6j" path="res://Resources/Craft Shop/Postcards_Mountains.tres" id="3_qwauh"]
 
 [resource]
 script = ExtResource("1_8di1a")
 character_name = "Kohan"
 character_sprites = ExtResource("1_54ipx")
-item_requests = Array[ExtResource("2_kg5m5")]([ExtResource("3_5vcm5")])
+item_requests = 1
+best_items = Array[ExtResource("1_5vcm5")]([ExtResource("2_fcep7"), ExtResource("3_qwauh")])
 metadata/_custom_type_script = "uid://ccwxluiyextw2"
