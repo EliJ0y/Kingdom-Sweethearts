@@ -23,7 +23,8 @@ var character_2: CharactersResource
 
 var completed_item_requests: Array[int] = []
 var counted_items: Array[ShopsResource] = []
-var best_item_count: int = 0
+var best_item_count = 0
+var second_best_item_count = 0
 var item_all_correct = false
 var item_wrong_specific = false
 var item_wrong_type = false
@@ -190,12 +191,13 @@ func start_item_requests():
 	for item in items_handed_over:
 		check_items_best(item)
 		if character.item_requests_second != 0 and !item_all_correct:
-			best_item_count = 0
 			check_items_second_best(item)
 
 func reset_item_requests():
 	completed_item_requests.clear()
+	counted_items.clear()
 	best_item_count = 0
+	second_best_item_count = 0
 	item_all_correct = false
 	item_wrong_specific = false
 	item_wrong_type = false
@@ -216,11 +218,11 @@ func check_items_best(item: ShopsResource):
 		item_all_correct = true
 
 func check_items_second_best(item: ShopsResource):
-	if best_item_count < character.item_requests_second:
+	if second_best_item_count < character.item_requests_second:
 		if character.best_items_second.has(item):
-			if counted_items.count(item) < character.best_items.count(item):
+			if counted_items.count(item) < character.best_items_second.count(item):
 				counted_items.append(item)
-				best_item_count += 1
+				second_best_item_count += 1
 			else:
 				item_wrong_specific = true
 		elif character.best_items_second[0].item_type == item.item_type:
@@ -233,7 +235,7 @@ func check_items_second_best(item: ShopsResource):
 func all_correct_items() -> bool:
 	if best_item_count >= character.item_requests:
 		item_all_correct = true
-	if character.item_requests_second != 0 and best_item_count >= character.item_requests_second:
+	if character.item_requests_second != 0 and second_best_item_count >= character.item_requests_second:
 		item_all_correct = true
 	return item_all_correct
 	

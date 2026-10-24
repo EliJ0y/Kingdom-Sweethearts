@@ -2,6 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://yra6wmejvfs" path="res://Graphics/Home Desk.png" id="1_sryen"]
 [ext_resource type="Script" uid="uid://c0mmneywuh3j3" path="res://Scripts/scrolls.gd" id="1_t1w5x"]
+[ext_resource type="FontFile" uid="uid://dob7bf1fqfppd" path="res://Fonts/The Seasons Regular.ttf" id="4_k3gyr"]
 [ext_resource type="Texture2D" uid="uid://bteijx4vbhw0e" path="res://Graphics/UI/Coins Sparkle.png" id="4_pu1om"]
 [ext_resource type="Texture2D" uid="uid://cv77htlibthwt" path="res://Graphics/Scrolls/Opened Scroll.png" id="4_qmqk0"]
 [ext_resource type="Texture2D" uid="uid://c7mlstotxyst5" path="res://Graphics/UI/Coins.PNG" id="5_qmqk0"]
@@ -40,7 +41,7 @@ offset_left = 148.419
 offset_top = -10.0
 offset_right = 338.419
 offset_bottom = 121.0
-theme_override_fonts/font = ExtResource("10_hw0rl")
+theme_override_fonts/font = ExtResource("4_k3gyr")
 theme_override_font_sizes/font_size = 100
 text = "G"
 metadata/_edit_use_anchors_ = true
@@ -149,7 +150,7 @@ text = "Finish Reading"
 [node name="Tied Scroll 1" type="TextureButton" parent="CanvasLayer" unique_id=1428922647]
 offset_left = 260.0
 offset_top = 440.0
-offset_right = 710.0006
+offset_right = 710.0
 offset_bottom = 640.0
 scale = Vector2(1.2568711, 1.2568711)
 action_mode = 0
@@ -157,8 +158,8 @@ action_mode = 0
 [node name="Tied Scroll 2" type="TextureButton" parent="CanvasLayer" unique_id=271329927]
 offset_left = 1100.0
 offset_top = 440.0
-offset_right = 1463.0001
-offset_bottom = 604.0001
+offset_right = 1550.0
+offset_bottom = 640.0
 scale = Vector2(1.2568711, 1.2568711)
 action_mode = 0
 

@@ -76,7 +76,7 @@ func open_scroll_1() -> void:
 	await get_tree().create_timer(0.2).timeout
 	tied_scroll_1.hide()
 	$"CanvasLayer/Opened Scroll".show()
-	scroll_coins = 50
+	scroll_coins = 40
 	_coins_appear()
 
 
@@ -95,7 +95,7 @@ func open_scroll_2() -> void:
 	await get_tree().create_timer(0.2).timeout
 	tied_scroll_2.hide()
 	$"CanvasLayer/Opened Scroll".show()
-	scroll_coins = 50
+	scroll_coins = 40
 	_coins_appear()
 
 
