@@ -106,18 +106,44 @@ position = Vector2(870, 669)
 texture = ExtResource("11_wwwl2")
 centered = false
 
-[node name="Buy Item" type="Button" parent="CanvasLayer/Shop Panel" unique_id=1123596191]
-offset_left = 590.0
+[node name="Buy 1 Stalk" type="Button" parent="CanvasLayer/Shop Panel" unique_id=1123596191]
+offset_left = 430.0
 offset_top = 285.0
-offset_right = 708.0
-offset_bottom = 317.0
+offset_right = 492.0
+offset_bottom = 322.0
 theme_override_colors/font_color = Color(0.4, 0.14117648, 0, 1)
 theme_override_fonts/font = ExtResource("12_cli3s")
 theme_override_font_sizes/font_size = 30
 theme_override_styles/normal = SubResource("StyleBoxEmpty_g0vu2")
 theme_override_styles/pressed = SubResource("StyleBoxEmpty_a3he5")
 theme_override_styles/hover = SubResource("StyleBoxEmpty_c0oai")
-text = "Buy Item"
+text = "Buy 1"
+
+[node name="Buy 2 Stalks" type="Button" parent="CanvasLayer/Shop Panel" unique_id=1135847830]
+offset_left = 535.0
+offset_top = 285.0
+offset_right = 599.0
+offset_bottom = 322.0
+theme_override_colors/font_color = Color(0.4, 0.14117648, 0, 1)
+theme_override_fonts/font = ExtResource("12_cli3s")
+theme_override_font_sizes/font_size = 30
+theme_override_styles/normal = SubResource("StyleBoxEmpty_g0vu2")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_a3he5")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_c0oai")
+text = "Buy 2"
+
+[node name="Buy 5 Stalks" type="Button" parent="CanvasLayer/Shop Panel" unique_id=31216825]
+offset_left = 640.0
+offset_top = 285.0
+offset_right = 704.0
+offset_bottom = 322.0
+theme_override_colors/font_color = Color(0.4, 0.14117648, 0, 1)
+theme_override_fonts/font = ExtResource("12_cli3s")
+theme_override_font_sizes/font_size = 30
+theme_override_styles/normal = SubResource("StyleBoxEmpty_g0vu2")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_a3he5")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_c0oai")
+text = "Buy 5"
 
 [node name="Confirm" type="Button" parent="CanvasLayer/Shop Panel" unique_id=1643157335]
 visible = false
@@ -194,6 +220,8 @@ bus = &"Sound"
 [connection signal="pressed" from="CanvasLayer/Pansies" to="." method="_on_pansies_pressed"]
 [connection signal="pressed" from="CanvasLayer/Carnations" to="." method="_on_carnations_pressed"]
 [connection signal="pressed" from="CanvasLayer/Clematis" to="." method="_on_clematis_pressed"]
-[connection signal="pressed" from="CanvasLayer/Shop Panel/Buy Item" to="." method="_on_buy_item_pressed"]
+[connection signal="pressed" from="CanvasLayer/Shop Panel/Buy 1 Stalk" to="." method="_on_buy_1_stalk_pressed"]
+[connection signal="pressed" from="CanvasLayer/Shop Panel/Buy 2 Stalks" to="." method="_on_buy_2_stalks_pressed"]
+[connection signal="pressed" from="CanvasLayer/Shop Panel/Buy 5 Stalks" to="." method="_on_buy_5_stalks_pressed"]
 [connection signal="pressed" from="CanvasLayer/Shop Panel/Confirm" to="." method="_on_confirm_pressed"]
 [connection signal="pressed" from="CanvasLayer/Shop Panel/Back" to="." method="_on_back_pressed"]

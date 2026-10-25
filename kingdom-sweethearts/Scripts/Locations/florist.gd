@@ -4,6 +4,7 @@ extends Node2D
 @onready var price: Label = $"CanvasLayer/Shop Panel/Coins (Cost)/Price"
 
 var selected_item
+var number_of_stalks: int 
 
 var trilliums = preload("res://Resources/Florist/Trilliums.tres")
 var lavenders = preload("res://Resources/Florist/Lavenders.tres")
@@ -79,22 +80,41 @@ func _on_back_pressed() -> void:
 	reset_to_buy()
 	$"CanvasLayer/Shop Panel".hide()
 
-func _on_buy_item_pressed() -> void:
-	if GlobalTracker.total_coins >= int(selected_item.price):
-		$"CanvasLayer/Shop Panel/Buy Item".hide()
+func _on_buy_1_stalk_pressed() -> void:
+	number_of_stalks = 1
+	if GlobalTracker.total_coins >= (int(selected_item.price) * number_of_stalks):
+		$"CanvasLayer/Shop Panel/Buy 1 Stalk".hide()
+		$"CanvasLayer/Shop Panel/Buy 2 Stalks".hide()
+		$"CanvasLayer/Shop Panel/Buy 5 Stalks".hide()
 		$"CanvasLayer/Shop Panel/Confirm".show()
 
-# add functions for buy 2 and buy 5, maybe more later
-# figure out best way to store in inv without overloading
+func _on_buy_2_stalks_pressed() -> void:
+	number_of_stalks = 2
+	if GlobalTracker.total_coins >= (int(selected_item.price) * number_of_stalks):
+		$"CanvasLayer/Shop Panel/Buy 1 Stalk".hide()
+		$"CanvasLayer/Shop Panel/Buy 2 Stalks".hide()
+		$"CanvasLayer/Shop Panel/Buy 5 Stalks".hide()
+		$"CanvasLayer/Shop Panel/Confirm".show()
+
+func _on_buy_5_stalks_pressed() -> void:
+	number_of_stalks = 5
+	if GlobalTracker.total_coins >= (int(selected_item.price) * number_of_stalks):
+		$"CanvasLayer/Shop Panel/Buy 1 Stalk".hide()
+		$"CanvasLayer/Shop Panel/Buy 2 Stalks".hide()
+		$"CanvasLayer/Shop Panel/Buy 5 Stalks".hide()
+		$"CanvasLayer/Shop Panel/Confirm".show()
 
 func _on_confirm_pressed() -> void:
 	if GlobalTracker.player_inventory.inventory.size() < 8:
 		GlobalAudio.play_fx(coin_fx, -25)
-		GlobalTracker.player_inventory.inventory.append(selected_item)
-		GlobalTracker.total_coins -= int(selected_item.price)
+		for stalks in number_of_stalks:
+			GlobalTracker.player_inventory.inventory.append(selected_item)
+		GlobalTracker.total_coins -= (int(selected_item.price) * number_of_stalks)
 		reset_to_buy()
 		$"CanvasLayer/Shop Panel".hide()
 
 func reset_to_buy():
-	$"CanvasLayer/Shop Panel/Buy Item".show()
+	$"CanvasLayer/Shop Panel/Buy 1 Stalk".show()
+	$"CanvasLayer/Shop Panel/Buy 2 Stalks".show()
+	$"CanvasLayer/Shop Panel/Buy 5 Stalks".show()
 	$"CanvasLayer/Shop Panel/Confirm".hide()
