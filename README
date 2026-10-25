@@ -1,4 +1,33 @@
 When the title of “Royal Cupid” is mistakenly given to you, a normal mortal, the kingdom’s matchmaking troubles are thrust upon your shoulders. Wars or alliances, enemies or lovers, so much can arise from one well- or un-planned date!
-This is a point-and-click game with visual novel elements. Music was made using virtual instruments in Bandlab.
+This is a point-and-click game with visual novel elements, playable on the web at https://the-cove.itch.io/kingdom-sweethearts.
 
-You can play the demo of this on ithc.io which we made during a gamejam.
+The game is set in a fantasy medieval period, where magic and technology exist alongside each other. Though the story isn't there yet, the reason the player is mistaken as Cupid is partly due o their elf ears. 
+Gameplay mainly consists of reading the scrolls/the book, learning about the nobles + territories, buying items for the matchmaking, handing them over, and then watching the fruits of your labour.
+
+
+Built in Godot game engine with GDScript. Music made with virtual instruments in Bandlab. Fonts and sound effects were found free online. 
+SFX:
+Book Open/Close: The Big Book.mp3 by thepaganpanda -- https://freesound.org/s/626443/ -- License: Attribution 4.0
+Door Open/Close: Door opening and closing 7 by JakLocke -- https://freesound.org/s/261110/ -- License: Attribution 4.0
+Scroll Unfurl: rolldown1.flac by Werunos -- https://freesound.org/s/320214/ -- License: Attribution 3.0
+Coin Sparkle: Menu Click-Sparkle  by Soughtaftersounds -- https://freesound.org/s/145459/ -- License: Attribution 3.0
+Page Flip: rustling paper.wav by keweldog -- https://freesound.org/s/181774/ -- License: Creative Commons 0
+Satchel OpenClose: leather-bag-cloth-movement-5.wav by jarhead123 -- https://freesound.org/s/557401/ -- License: Attribution 3.0
+Bread Crunch: bread crunch.wav by mealwyrm -- https://freesound.org/s/495813/ -- License: Creative Commons 0
+Paper Rustle: PaperRustling01.wav by nickyg11p -- https://freesound.org/s/390863/ -- License: Creative Commons 0
+Flower Rustle: Stroking flower.wav by Edelhanie -- https://freesound.org/s/594639/ -- License: Attribution 4.0
+
+Fonts:
+Pirata One
+Cormorant Garamond
+Playwrite US Trad
+Oswald Bold
+Grand Hotel
+Droid Serif
+Poppins ExtraLight
+
+
+Made by a team of 3! 
+Elijah - Programmer, Music & Audio
+Fae - Backgrounds & Assets Artist
+Raine - Character Artist
