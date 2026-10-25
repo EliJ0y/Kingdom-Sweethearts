@@ -106,12 +106,13 @@ func _on_buy_5_stalks_pressed() -> void:
 
 func _on_confirm_pressed() -> void:
 	if GlobalTracker.player_inventory.inventory.size() < 8:
-		GlobalAudio.play_fx(coin_fx, -25)
-		for stalks in number_of_stalks:
-			GlobalTracker.player_inventory.inventory.append(selected_item)
-		GlobalTracker.total_coins -= (int(selected_item.price) * number_of_stalks)
-		reset_to_buy()
-		$"CanvasLayer/Shop Panel".hide()
+		if number_of_stalks <= 8 - GlobalTracker.player_inventory.inventory.size():
+			GlobalAudio.play_fx(coin_fx, -25)
+			for stalks in number_of_stalks:
+				GlobalTracker.player_inventory.inventory.append(selected_item)
+			GlobalTracker.total_coins -= (int(selected_item.price) * number_of_stalks)
+			reset_to_buy()
+			$"CanvasLayer/Shop Panel".hide()
 
 func reset_to_buy():
 	$"CanvasLayer/Shop Panel/Buy 1 Stalk".show()
