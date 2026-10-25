@@ -43,19 +43,19 @@ anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 offset_left = 1300.0
-offset_top = 640.0
-offset_right = 1494.0
-offset_bottom = 848.0
+offset_top = 680.0
+offset_right = 1462.0
+offset_bottom = 858.0
 grow_horizontal = 2
 grow_vertical = 2
 
 [node name="Scroll 1" type="TextureButton" parent="Holder Control" unique_id=716903776]
 visible = false
 layout_mode = 0
-offset_left = 70.0
-offset_top = -125.0
-offset_right = 520.0
-offset_bottom = 75.0
+offset_left = 65.0
+offset_top = -160.0
+offset_right = 515.0
+offset_bottom = 40.0
 rotation = 1.3962634
 scale = Vector2(0.7, 0.7)
 
@@ -63,14 +63,13 @@ scale = Vector2(0.7, 0.7)
 visible = false
 layout_mode = 0
 offset_left = 230.0
-offset_top = -70.0
+offset_top = -100.0
 offset_right = 680.0
-offset_bottom = 130.0
+offset_bottom = 100.0
 rotation = 1.8325957
 scale = Vector2(0.7, 0.7)
 
 [node name="Scroll Holder" type="Sprite2D" parent="Holder Control" unique_id=820484029]
-position = Vector2(0, 40)
 scale = Vector2(0.5, 0.6)
 texture = ExtResource("6_j50uc")
 centered = false
@@ -144,6 +143,8 @@ offset_right = 40.0
 offset_bottom = 40.0
 
 [connection signal="pressed" from="Kingdom Book" to="." method="_on_kingdom_book_pressed"]
+[connection signal="mouse_entered" from="Holder Control/Scroll 1" to="." method="_on_scroll_1_mouse_entered"]
 [connection signal="pressed" from="Holder Control/Scroll 1" to="." method="_on_scroll_1_pressed"]
+[connection signal="mouse_entered" from="Holder Control/Scroll 2" to="." method="_on_scroll_2_mouse_entered"]
 [connection signal="pressed" from="Holder Control/Scroll 2" to="." method="_on_scroll_2_pressed"]
 [connection signal="pressed" from="Scroll Icon" to="." method="_on_scroll_icon_pressed"]

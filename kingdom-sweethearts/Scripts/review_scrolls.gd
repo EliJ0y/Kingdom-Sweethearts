@@ -30,7 +30,6 @@ func _on_ribbon_arrow_pressed() -> void:
 		text_1.hide()
 		text_2.show()
 		text_2.visible_characters = -1
-		GlobalTracker.is_scrolls_open = false
 		$"CanvasLayer/Opened Scroll/Ribbon Arrow/Next Scroll".hide()
 		$"CanvasLayer/Opened Scroll/Ribbon Arrow/Finish Reading".show()
 	else:

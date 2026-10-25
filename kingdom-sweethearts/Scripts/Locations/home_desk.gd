@@ -60,3 +60,23 @@ func _on_scroll_1_pressed() -> void:
 
 func _on_scroll_2_pressed() -> void:
 	holder_review_scrolls()
+
+func _on_scroll_1_mouse_entered() -> void:
+	var scroll_1 = $"Holder Control/Scroll 1"
+	var scroll_1_tween = get_tree().create_tween()
+	
+	var nudge = randf_range(2, 6) * [-1, 1].pick_random()
+	var scroll_1_movement = clampf(scroll_1.position.x + nudge, 65, 130)
+	#possibly add some rotation at some point
+	
+	scroll_1_tween.tween_property(scroll_1, "position:x", scroll_1_movement, 0.1)
+
+func _on_scroll_2_mouse_entered() -> void:
+	var scroll_2 = $"Holder Control/Scroll 2"
+	var scroll_2_tween = get_tree().create_tween()
+	
+	var nudge = randf_range(2, 6) * [-1, 1].pick_random()
+	var scroll_2_movement = clampf(scroll_2.position.x + nudge, 175, 230)
+	#possibly add some rotation at some point
+	
+	scroll_2_tween.tween_property(scroll_2, "position:x", scroll_2_movement, 0.1)
