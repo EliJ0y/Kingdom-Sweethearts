@@ -1,8 +1,19 @@
 When the title of “Royal Cupid” is mistakenly given to you, a normal mortal, the kingdom’s matchmaking troubles are thrust upon your shoulders. Wars or alliances, enemies or lovers, so much can arise from one well- or un-planned date!
 This is a point-and-click game with visual novel elements, playable on the web at https://the-cove.itch.io/kingdom-sweethearts.
-
 The game is set in a fantasy medieval period, where magic and technology exist alongside each other. Though the story isn't there yet, the reason the player is mistaken as Cupid is partly due o their elf ears. 
-Gameplay mainly consists of reading the scrolls/the book, learning about the nobles + territories, buying items for the matchmaking, handing them over, and then watching the fruits of your labour.
+
+
+How to play:
+1. Go to the itch.io link, run the game, press start
+2. Read the panel that shows up then click to move on
+3. Click on the scrolls icon near the top right
+4. Read to learn about the nobles
+5. Click on different icons like the book to learn about the territories, the map to go to shops, etc.
+6. Buy items for the nobles' matchmaking date
+7. Go to the gazebo to hand the items over (And choose some dialogue options if you excelled!)
+8. Finally, watch the fruits of your labour!
+
+Repeat this loop from step 3 onwards for each level in a similar fashion
 
 
 Built in Godot game engine with GDScript. Music made with virtual instruments in Bandlab. Fonts and sound effects were found free online. 
